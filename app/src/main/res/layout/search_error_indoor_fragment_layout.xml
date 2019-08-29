@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/search_result_list_header_normal_voice"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/error_page_img" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:src="@drawable/err" android:contentDescription="@null"/>
+            <TextView android:textSize="16dp" android:gravity="center_horizontal" android:id="@+id/tip_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:includeFontPadding="false"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+                <View android:background="@color/search_indoor_error_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_centerInParent="true"/>
+                <TextView android:textSize="14dp" android:background="#efefef" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_indoor_error_message" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <com.autonavi.bundle.searchcommon.view.HotwordGridLayout android:id="@+id/hot_words" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" app:item_color="@color/f_c_3"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

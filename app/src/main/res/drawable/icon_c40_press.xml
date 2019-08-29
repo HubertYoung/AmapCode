@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:drawable="@drawable/icon_c40"/>
+    <item android:drawable="@drawable/icon_c_pre_single"/>
+</layer-list>

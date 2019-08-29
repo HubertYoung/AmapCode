@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/route_tab_tool_bar_container" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/route_widget_mask" android:background="@color/c_5_c" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.amap.bundle.planhome.view.RouteToolboxView android:id="@+id/route_input_tool_bar" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</merge>

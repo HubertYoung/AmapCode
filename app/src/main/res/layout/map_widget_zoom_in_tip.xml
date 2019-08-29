@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:background="@drawable/zoom_tip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="@color/ssoblue" android:id="@+id/tv_zoom_in_tip" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_zoom_tip_street"/>
+</LinearLayout>

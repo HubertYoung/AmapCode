@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/keyboard_key_text_size" android:gravity="center" android:layout_gravity="center" android:id="@+id/key_name" android:background="@drawable/bg_keyboard_key" android:visibility="visible" android:layout_width="@dimen/keyboard_key_width" android:layout_height="@dimen/keyboard_key_height" android:layout_marginTop="@dimen/keyboard_key_padding_vertical" android:layout_marginBottom="@dimen/keyboard_key_padding_vertical"/>
+</LinearLayout>

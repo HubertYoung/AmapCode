@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/realbus_lines_inquiry_outside_main" android:layout_width="wrap_content" android:layout_height="135dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/realbus_lines_inquiry_content_main" android:background="@drawable/realtimebus_pop_stop" android:layout_width="wrap_content" android:layout_height="56.5dp" android:layout_centerVertical="true">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/realbus_lines_inquiry_main" android:layout_width="wrap_content" android:layout_height="49.5dp" android:layout_marginLeft="7dp">
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/realbus_lines_inquiry_businfo_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center" android:id="@+id/realbus_lines_inquiry__main" android:background="@drawable/realbus_linename" android:paddingLeft="@dimen/route_3dp" android:paddingRight="@dimen/route_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="15sp" android:textStyle="bold" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/realbus_lines_inquiry_linename" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="1dp" android:text="340路"/>
+                    </LinearLayout>
+                    <TextView android:textSize="16sp" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/realbus_lines_inquiry_linetime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_8dp" android:text="1站 3分钟"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/realbus_lines_inquiry_flag_main" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginLeft="-6dp" android:layout_marginBottom="@dimen/route_8dp">
+                <ImageView android:id="@+id/realbus_lines_inquiry_flag_icon" android:layout_width="21dp" android:layout_height="21dp" android:src="@drawable/realtimebus_pop_signalicon" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

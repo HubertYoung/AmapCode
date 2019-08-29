@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_14" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" app:title_style="4"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp">
+            <Button android:textSize="@dimen/font_28" android:textColor="@color/search_btn_text_color" android:gravity="center" android:id="@+id/btn_search" android:background="@drawable/common_btn_b_selector" android:paddingLeft="12dp" android:paddingRight="12dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="34dp" android:layout_marginRight="7dp" android:text="@string/common_search_header_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/common_search_header_search"/>
+            <com.autonavi.minimap.widget.ClearableEditText android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:textColorHint="@color/default_font_color_cad" android:ellipsize="end" android:id="@+id/search_text" android:background="@drawable/search_input_framebg" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="34dp" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="10dp" android:layout_marginBottom="5dp" android:hint="请输入需要修改的地点名称" android:singleLine="true" android:maxLength="100" android:drawableLeft="@drawable/icon_b3_normal" android:drawablePadding="@dimen/title_edit_text_padding" android:layout_toLeftOf="@+id/btn_search" android:layout_centerVertical="true" android:inputType="text" android:dropDownAnchor="@+id/search_root" android:imeOptions="actionDone" android:textCursorDrawable="@null"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/searchLayout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ListView android:id="@+id/suggest_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null"/>
+            <ListView android:id="@+id/history_list_view" android:background="@drawable/border_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+        </FrameLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/refresh_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/contribution_list" android:background="#ffffff" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="10dp" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="1px" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true"/>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/error_layout" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/error_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:src="@drawable/feedback_amap_no_data" android:layout_centerHorizontal="true" android:contentDescription="@string/search_no_result_displayed_message"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:gravity="center_horizontal" android:id="@+id/error_text" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/search_no_result_displayed_message" android:layout_below="@+id/error_icon"/>
+            <Button android:textColor="@color/f_c_1" android:id="@+id/contribution_add_btn" android:background="@drawable/common_btn_b_selector" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="新增地点" android:layout_below="@+id/error_text" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

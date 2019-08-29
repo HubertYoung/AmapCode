@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/title_view_layout"/>
+    <TextView android:gravity="left" android:id="@+id/instruction" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_6A" android:text="@string/save_useful_instruction" android:layout_below="@+id/title_layout" android:lineSpacingExtra="@dimen/default_margin_1_5A"/>
+    <ExpandableListView android:id="@+id/expandablelist" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@drawable/divider_line" android:layout_above="@+id/btn_sure" android:layout_below="@+id/instruction"/>
+    <LinearLayout android:background="#dddddd" android:layout_width="match_parent" android:layout_height="1px" android:layout_above="@+id/btn_sure"/>
+    <Button android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_6" android:id="@+id/btn_sure" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/sure" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

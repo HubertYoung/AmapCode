@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<plugins>
+    <plugin key="plugin_phone_cashier" value="com.alipay.android.phone.inside.cashier.PhoneCashierPlugin" />
+    <plugin key="login_external_plugin" value="com.ali.user.mobile.external.LoginExternalPlugin" />
+    <plugin key="barcode_plugin" value="com.alipay.android.phone.inside.barcode.plugin.BarcodePlugin" />
+    <plugin key="scan_plugin" value="com.alipay.android.phone.inside.scan.plugin.ScanPlugin" />
+    <plugin key="report_device_location_plugin" value="com.alipay.android.phone.inside.commonbiz.report.ReportLocationPlugin" />
+    <plugin key="change_code_plugin" value="com.alipay.android.phone.inside.changecode.plugin.ChangeCodePlugin" />
+    <plugin key="offlinecode_plugin" value="com.alipay.android.phone.inside.offlinecode.plugin.BusCodePlugin" />
+    <plugin key="jiebei_plugin" value="com.alipay.android.phone.inside.jiebei.plugin.JiebeiPlugin" />
+    <plugin key="general_h5biz_plugin" value="com.alipay.android.phone.inside.generalh5biz.plugin.GeneralH5BizPlugin" />
+    <plugin key="wallet_plugin" value="com.alipay.android.phone.inside.wallet.plugin.WalletPlugin" />
+    <plugin key="sharetoken_plugin" value="com.alipay.android.phone.inside.sharetoken.plugin.ShareTokenPlugin" />
+    <plugin key="onceauth_v2_plugin" value="com.alipay.android.phone.inside.onceauthv2.OnceAuthV2Plugin" />
+    <plugin key="iotpay_plugin" value="com.alipay.android.phone.inside.iotpay.plugin.IotPayPlugin" />
+    <plugin key="iotftfpay_plugin" value="com.alipay.android.phone.inside.iotftfpay.plugin.IotFtfPayPlugin" />
+    <plugin key="config_plugin" value="com.alipay.android.phone.inside.config.plugin.ConfigPlugin" />
+    <plugin key="account_oauth_plugin" value="com.alipay.mobile.accountopenauth.biz.insideplugin.AccountOAuthPlugin" />
+    <plugin key="account4inside_plugin" value="com.alipay.mobile.account4insideservice.insideservice.Account4InsidePlugin" />
+    <plugin key="iotads_plugin" value="com.alipay.android.phone.inside.ad.plugin.IotAdsPlugin" />
+    <plugin key="iotcashier_plugin" value="com.alipay.android.phone.inside.cashier.plugin.IotCashierPlugin" />
+    <plugin key="iot_auth_plugin" value="com.alipay.mobile.iotauth.biz.insideplugin.IotAuthPlugin" />
+</plugins>
+

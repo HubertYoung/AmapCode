@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:drawable="@drawable/icon_c_bg_d"/>
+    <item>
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/icon_c_pre_circle2"/>
+        </selector>
+    </item>
+</layer-list>

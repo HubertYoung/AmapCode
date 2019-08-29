@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/stationsign_icon" android:layout_width="@dimen/route_40dp" android:layout_height="@dimen/route_45dp" android:src="@drawable/marker_realtime_station"/>
+</RelativeLayout>

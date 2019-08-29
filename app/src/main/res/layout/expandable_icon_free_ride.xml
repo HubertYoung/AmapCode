@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="horizontal" android:id="@+id/expandable_icon_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/free_ride_content_container" android:background="@drawable/free_ride_ballon" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_gravity="center_vertical" android:id="@+id/icon_container" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="@dimen/drivecommon_route_10dp" android:layout_marginRight="4dp"/>
+        <TextView android:textSize="13dp" android:textColor="#000000" android:gravity="left" android:layout_gravity="center_vertical" android:id="@+id/expandable_icon_text" android:layout_width="104dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/drivecommon_route_10dp" android:text="附近有5位乘客和您顺路哦" android:singleLine="false"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/expandable_free_ride_icon" android:background="@drawable/icon_c_bg_single" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size" android:src="@drawable/icon_c55" android:scaleType="fitCenter"/>
+</LinearLayout>

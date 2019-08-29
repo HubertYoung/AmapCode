@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="4"/>
+    <com.autonavi.widget.ui.CommonTab android:id="@+id/tab" android:layout_width="match_parent" android:layout_height="wrap_content" app:tab_style="0"/>
+    <com.autonavi.bundle.feedback.widget.NonSwipeableViewPager android:id="@+id/feedback_main_fragment_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

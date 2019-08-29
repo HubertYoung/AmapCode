@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="41dp">
+    <View android:id="@+id/sep" android:background="@drawable/bg_gray" android:layout_width="1dp" android:layout_height="30dp" android:layout_marginTop="6dp" android:layout_marginBottom="6dp"/>
+    <RelativeLayout android:id="@+id/item_layout" android:tag="layout0" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon_iv" android:visibility="gone" android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="6dp" android:contentDescription="@null"/>
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_2" android:layout_gravity="center_vertical" android:id="@+id/item_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/more_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_2" android:layout_gravity="center_vertical" android:id="@+id/more_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/more_group_buy"/>
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:src="@drawable/search_more_arrow" android:contentDescription="@null"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

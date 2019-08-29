@@ -1,0 +1,11 @@
+#files for ASR
+#aec_beamformer
+#cantonese
+#aec_beamformer
+#afe
+mandarin
+#cei.cfg
+cei.json
+nui.json
+nui_1.json
+

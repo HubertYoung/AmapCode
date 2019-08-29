@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/frequent_location_line_view" android:background="@color/c_1_f" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="34dp" android:layout_marginRight="14dp" android:layout_alignParentBottom="true"/>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:visibility="invisible" android:layout_width="10dp" android:layout_height="10dp"/>
+    <com.autonavi.minimap.route.common.widget.RouteStrokeTextView android:textSize="@dimen/font_20" android:textColor="#4a6c8c" android:id="@+id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+</LinearLayout>

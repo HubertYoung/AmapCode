@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/reg_region" android:layout_width="match_parent" android:layout_height="48dp">
+        <TextView android:id="@+id/reg_region_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay_choiceregion" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/alipay_phone_region_text"/>
+        <ImageView android:id="@+id/reg_region_pick" android:layout_width="18dp" android:layout_height="18dp" android:src="@drawable/alipay_arrow_right" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/reg_region_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/alipay_china" android:layout_toLeftOf="@+id/reg_region_pick" android:layout_centerVertical="true" style="@style/alipay_phone_region_text"/>
+        <View android:background="@color/alipay_list_select_color2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <com.ali.user.mobile.ui.widget.AUInputBox android:id="@+id/phone_num" android:background="@drawable/alipay_register_input_background" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="10dp" app:alipay_inputName="@string/alipay_phoneNumber" app:alipay_inputNameTextSize="17dp" app:alipay_inputTextSize="21dp" app:alipay_inputHintSize="17dp" app:alipay_inputHint="@string/alipay_reg_phone_hint" app:alipay_inputHintTextColor="@color/alipay_colorccc" app:alipay_maxLength="128" app:alipay_inputType="2002"/>
+</LinearLayout>

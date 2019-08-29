@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/ll_desc" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/route_80dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f_s_20" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:id="@+id/run_recommend_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp"/>
+            <TextView android:textSize="@dimen/f_s_20" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:id="@+id/run_recommend_time" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center_horizontal" android:id="@+id/run_recommend_kcal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_2dp"/>
+    </LinearLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="80dp" android:src="@drawable/run_recommend_loading_anim"/>
+    <include android:id="@+id/run_recommend_loading_status" android:visibility="gone" layout="@layout/run_recommend_loading_status"/>
+    <com.autonavi.minimap.route.run.view.RouteHorizontalSelectorView android:id="@+id/horizontal_scroll_view_id" android:layout_width="match_parent" android:layout_height="68dp"/>
+    <Button android:textSize="20dp" android:id="@+id/run_recommend_start_run" android:layout_width="match_parent" android:layout_height="42dp" android:layout_marginLeft="@dimen/route_10dp" android:layout_marginTop="@dimen/route_20dp" android:layout_marginRight="@dimen/route_10dp" android:layout_marginBottom="@dimen/route_10dp" android:text="@string/running_route_start_run" style="@style/btn_a1"/>
+</LinearLayout>

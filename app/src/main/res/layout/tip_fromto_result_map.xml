@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/tips_layout" android:background="@drawable/tip_fromto_result_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="12dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/txt_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:text="@string/tip_fromto_result_map_distance" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/tips_marker" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/b_poi" android:layout_below="@+id/tips_layout" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+</RelativeLayout>

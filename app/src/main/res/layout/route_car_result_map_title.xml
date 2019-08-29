@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/route_car_result_map_title_favorite" android:background="@color/c_4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height">
+        <ImageView android:id="@+id/title_back_img" android:padding="@dimen/title_bar_back_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_a1_selector" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_18" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/title_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/favorites_route" android:singleLine="true" android:layout_centerInParent="true"/>
+        <View android:background="@color/c_13" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/route_car_result_map_title_push" android:background="@color/c_12" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height">
+        <ImageView android:id="@+id/title_back_img" android:padding="@dimen/title_bar_back_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_a15_selector" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="@dimen/f_s_18" android:textColor="@color/f_c_1" android:ellipsize="end" android:gravity="center" android:id="@+id/title_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/traffic_reminder" android:singleLine="true" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/title_action_img" android:padding="@dimen/title_bar_back_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commute_setting_button_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/count_layout" layout="@layout/rd_camera_payment_item_count"/>
+    <ListView android:id="@+id/naviinfo_list" android:paddingTop="@dimen/rd_camera_payment_listview_padding" android:paddingBottom="@dimen/rd_camera_payment_listview_padding" android:scrollbars="none" android:fadingEdge="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@null" android:dividerHeight="0dp"/>
+    <include android:id="@+id/empty_layout" layout="@layout/rd_camera_payment_list_empty_view"/>
+</LinearLayout>

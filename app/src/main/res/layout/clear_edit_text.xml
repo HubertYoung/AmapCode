@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.widget.ClearableEditText xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:textSize="@dimen/font_34" android:textColor="@color/gary" android:textColorHint="@color/gray_disabled" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/clear_edit_input" android:singleLine="true" android:maxLength="30" android:inputType="phone"/>

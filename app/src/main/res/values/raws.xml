@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <raw name="create_worker">res-462/raw/create_worker.html</raw>
+    <raw name="worker">res-462/raw/worker.html</raw>
+    <raw name="workerjs">res-462/raw/workerjs.js</raw>
+    <raw name="tinydemo">res-60/raw/tinydemo.html</raw>
+    <raw name="beep">res-72/raw/beep.ogg</raw>
+    <raw name="h5_bizlog_pre">res-76/raw/h5_bizlog_pre.js</raw>
+    <raw name="h5_bridge">res-76/raw/h5_bridge.js</raw>
+    <raw name="h5_debug_console_sw">res-76/raw/h5_debug_console_sw.js</raw>
+    <raw name="h5_dev_vorlon">res-76/raw/h5_dev_vorlon.js</raw>
+    <raw name="h5_keyboard">res-76/raw/h5_keyboard.js</raw>
+    <raw name="h5_newembedview">res-76/raw/h5_newembedview.js</raw>
+    <raw name="h5_page_error">res-76/raw/h5_page_error.html</raw>
+    <raw name="h5_performance">res-76/raw/h5_performance.js</raw>
+    <raw name="h5_scan">res-76/raw/h5_scan.js</raw>
+    <raw name="h5_startparam">res-76/raw/h5_startparam.js</raw>
+    <raw name="h5_trans_page_error">res-76/raw/h5_trans_page_error.html</raw>
+    <raw name="h5location_min">res-76/raw/h5location_min.js</raw>
+    <raw name="redirect_link">res-76/raw/redirect_link.html</raw>
+    <raw name="security_link">res-76/raw/security_link.html</raw>
+    <raw name="share_new_min">res-76/raw/share_new_min.js</raw>
+    <raw name="white_link">res-76/raw/white_link.html</raw>
+</resources>

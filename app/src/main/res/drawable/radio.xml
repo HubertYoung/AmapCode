@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_enabled="false" android:drawable="@drawable/readio_btn_off"/>
+    <item android:state_checked="false" android:drawable="@drawable/readio_btn_off"/>
+    <item android:state_checked="true" android:drawable="@drawable/readio_btn_on"/>
+</selector>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/traffic_item_dialog_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/traffic_event_status_container" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/traffic_event_expired" android:layout_width="match_parent" android:layout_height="180dp" layout="@layout/layout_traffic_event_expired"/>
+        <include android:id="@+id/traffic_event_error" android:layout_width="match_parent" android:layout_height="180dp" layout="@layout/layout_traffic_event_error"/>
+        <include android:id="@+id/traffic_event_loading" android:layout_width="match_parent" android:layout_height="180dp" layout="@layout/layout_traffic_event_loading"/>
+        <ImageView android:id="@+id/img_item_close_not_success" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/operation_title_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <View android:id="@+id/img_item_divider_not_success" android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/traffic_event_content" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <ImageView android:id="@+id/layerImage" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginLeft="11dp" android:src="@drawable/traffic_report_accident" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_34" android:textStyle="bold" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/layer_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="20dp" android:text="事故" android:singleLine="true" android:layout_toRightOf="@+id/layerImage" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:id="@+id/tv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46dp" android:layout_marginTop="4dp" android:text="五环主路（西红门南桥哈哈哈哈哈哈哈哈哈哈哈）" android:maxLines="2" android:lineSpacingExtra="3.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/item_url_link_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46dp" android:layout_marginTop="4dp">
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_6" android:ellipsize="end" android:id="@+id/item_url_link_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="查看详情" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/event_detail_head_url_arrow"/>
+                </FrameLayout>
+                <View android:layout_width="12dp" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <ListView android:id="@+id/lv_traffic_ploy" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="46dp" android:layout_marginTop="9dp" android:listSelector="#00000000" android:divider="#00000000"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_item_close" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/operation_title_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <View android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="5"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <RelativeLayout android:id="@+id/weibo_ll_submit" android:background="@drawable/v4_com_btn_choose_selector" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:layout_marginTop="8dp" android:layout_marginRight="8dp">
+                <EditText android:textColor="@color/black" android:gravity="top" android:id="@+id/weibo_txt" android:background="#00000000" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:hint="@string/sns_input_share_content" android:maxLines="15" android:minLines="1" android:singleLine="false" android:layout_alignParentLeft="true" android:textCursorDrawable="@null"/>
+                <FrameLayout android:id="@+id/phoneLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/weibo_txt" android:layout_below="@+id/weibo_txt" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <ImageView android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/id_photo_bg" android:scaleType="fitXY" android:contentDescription="@null"/>
+                    <ImageButton android:layout_gravity="center" android:id="@+id/imgview_camera" android:background="@null" android:layout_width="100dp" android:layout_height="100dp" android:src="@drawable/photo_report" android:scaleType="fitXY" android:contentDescription="@null"/>
+                </FrameLayout>
+                <RelativeLayout android:id="@+id/weibo_qrcode_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/weibo_txt">
+                    <TextView android:textSize="@dimen/font_36" android:textColor="@color/black" android:id="@+id/tv_poiname" android:background="#00000000" android:padding="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_tips_share_qrcode" android:singleLine="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+                    <ImageView android:id="@+id/imgview_qrcode" android:clickable="true" android:layout_width="200dp" android:layout_height="200dp" android:layout_below="@+id/tv_poiname" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/end_navi_pic_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginTop="-10dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:layout_below="@+id/weibo_txt">
+                    <ImageView android:id="@+id/end_navi_pic_img" android:paddingTop="0dp" android:layout_width="100dp" android:layout_height="100dp" android:scaleType="fitStart" android:adjustViewBounds="true" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/myImageView1" android:layout_width="140dp" android:layout_height="140dp" android:layout_marginTop="14dp" android:layout_below="@+id/weibo_submit" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

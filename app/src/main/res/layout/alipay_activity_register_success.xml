@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/set_layout" style="@style/alipay_client_application_bg">
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/imageTip" android:layout_width="100dp" android:layout_height="100dp" android:layout_marginTop="88dp" android:src="@drawable/alipay_icon_result_ok" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="20dp" android:textColor="@color/alipay_colorBlack" android:gravity="center" android:id="@+id/reigsterSuccessTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:text="@string/alipay_reigsterSuccess" android:layout_below="@+id/imageTip"/>
+            <TextView android:textSize="12dp" android:textColor="@color/alipay_colorLightGrayV2" android:gravity="center" android:id="@+id/textTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="80dp" android:layout_marginRight="16dp" android:layout_below="@+id/reigsterSuccessTip"/>
+            <WebView android:id="@+id/webTip" android:layout_width="match_parent" android:layout_height="33.3dp" android:layout_marginLeft="16dp" android:layout_marginTop="15.3dp" android:layout_marginRight="16dp" android:layout_below="@+id/textTip" android:layerType="software"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="24dp" android:layout_below="@+id/webTip" android:layout_alignParentBottom="true">
+                <Button android:id="@+id/comfirmSetting" android:text="@string/alipay_enterWallet" android:layout_alignParentBottom="true" style="@style/alipay_mainButtonStyle"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="3dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/redesign_floor_widget_view_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:elevation="2dp">
+        <com.autonavi.bundle.uitemplate.indoor.RedesignFloorWidgetViewLayout android:id="@+id/floor_root_layout" android:layout_width="@dimen/floor_widget_width" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/floor_root" android:background="#ffffff" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ListView android:id="@+id/floor_list" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="2dp" android:layout_marginBottom="2dp" android:listSelector="#00000000" android:divider="@null" android:overScrollMode="never" android:overScrollHeader="@android:color/transparent" android:overScrollFooter="@android:color/transparent"/>
+                <ImageView android:id="@+id/floor_arrow_up" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/floor_widget_up" android:layout_alignParentTop="true"/>
+                <ImageView android:id="@+id/floor_arrow_down" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/floor_widget_down" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </com.autonavi.bundle.uitemplate.indoor.RedesignFloorWidgetViewLayout>
+    </RelativeLayout>
+</RelativeLayout>

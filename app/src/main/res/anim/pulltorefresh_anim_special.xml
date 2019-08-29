@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:drawable="@drawable/pulltorefresh_nearby_loading" android:pivotX="50%" android:pivotY="50%" android:repeatCount="infinite"/>

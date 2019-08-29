@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:shape="rectangle">
+    <solid android:color="#ffffff"/>
+    <corners android:radius="18dp"/>
+    <stroke android:width="1px" android:color="#cccccc"/>
+    <size android:height="36dp" android:width="88dp"/>
+</shape>

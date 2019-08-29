@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/ele_bike_guide_root" android:background="@color/c_5_e" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/f_s_22" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_30dp" android:text="@string/electric_bike_guide_text"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ele_bike_choose_root" android:layout_width="match_parent" android:layout_height="230dp" android:layout_margin="@dimen/route_10dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/bicycle_choose" android:background="@drawable/ele_guide_bg" android:paddingTop="@dimen/route_40dp" android:layout_width="@dimen/route_0dp" android:layout_height="230dp" android:layout_marginRight="@dimen/route_10dp" android:layout_weight="1">
+                <ImageView android:layout_width="match_parent" android:layout_height="85dp" android:src="@drawable/ride_bike_guide_icon"/>
+                <TextView android:textSize="@dimen/f_s_17" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_22dp" android:text="@string/ride_type_bicycle"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/ele_choose" android:background="@drawable/ele_guide_bg" android:paddingTop="@dimen/route_40dp" android:layout_width="@dimen/route_0dp" android:layout_height="230dp" android:layout_weight="1">
+                <ImageView android:id="@+id/ele_guide_icon" android:visibility="invisible" android:layout_width="114dp" android:layout_height="85dp" android:layout_marginRight="114dp" android:src="@drawable/ele_bike_guide_icon"/>
+                <TextView android:textSize="@dimen/f_s_17" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_22dp" android:text="@string/ride_type_ele_bike"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_6dp" android:text="@string/ride_navi_avoid_limit"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/ele_guide_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:src="@drawable/ele_guide_close"/>
+    </LinearLayout>
+</LinearLayout>

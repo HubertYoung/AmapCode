@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="108dp" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textStyle="bold" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/tab_name" android:layout_width="wrap_content" android:layout_height="22dp"/>
+    <View android:layout_gravity="center_horizontal" android:id="@+id/tab_icon" android:layout_width="24dp" android:layout_height="2dp" android:layout_marginTop="3dp"/>
+</LinearLayout>

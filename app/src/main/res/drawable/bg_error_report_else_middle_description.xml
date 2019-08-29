@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_pressed="false">
+        <layer-list>
+            <item android:left="-2dp" android:right="-2dp">
+                <shape>
+                    <solid android:color="@color/bg_b"/>
+                    <stroke android:width="@dimen/route_1px" android:color="@color/font_cdg"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_pressed="true">
+        <layer-list>
+            <item android:left="-2dp" android:right="-2dp">
+                <shape>
+                    <solid android:color="@color/color_10_off_e2"/>
+                    <stroke android:width="@dimen/route_1px" android:color="@color/font_cdg"/>
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

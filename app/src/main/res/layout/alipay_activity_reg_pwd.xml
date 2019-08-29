@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ali.user.mobile.util.ResizeScrollView android:id="@+id/scrollview" android:paddingLeft="20dp" android:paddingRight="20dp" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:text="@string/alipay_reg_pwd_title" style="@style/alipay_reg_title_text"/>
+            <TextView android:textSize="17dp" android:textColor="@color/alipay_reg_tip" android:gravity="center" android:id="@+id/mainTip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/alipay_reg_pwd_sub_title"/>
+            <com.ali.user.mobile.ui.widget.AUInputBox android:id="@+id/reg_pwd_input" android:background="@drawable/alipay_register_input_background" android:nextFocusDown="@+id/bindConfirm" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="40dp" app:alipay_inputTextSize="21dp" app:alipay_inputHintSize="17dp" app:alipay_inputTextColor="@color/alipay_colorBlack" app:alipay_inputHint="@string/alipay_reg_pwd_hint" app:alipay_inputHintTextColor="@color/alipay_colorccc" app:alipay_specialFuncImg="@drawable/alipay_eye_1" app:alipay_inputType="81"/>
+            <TextView android:textSize="14dp" android:textColor="@color/alipay_reg_error" android:id="@+id/reg_pwd_error" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+            <Button android:enabled="false" android:id="@+id/reg_confirm" android:layout_marginTop="13dp" android:text="@string/alipay_comfirm" style="@style/alipay_reg_main_button"/>
+        </LinearLayout>
+    </com.ali.user.mobile.util.ResizeScrollView>
+    <com.ali.user.mobile.ui.widget.APTitleBar android:id="@+id/titlebar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+</RelativeLayout>

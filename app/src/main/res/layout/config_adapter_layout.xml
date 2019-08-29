@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:textSize="15dp" android:textColor="#555555" android:id="@+id/item_tv" android:paddingLeft="10dp" android:paddingTop="3dp" android:paddingRight="10dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="dsofdspkf" android:singleLine="false"/>

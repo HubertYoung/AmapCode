@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_pressed="true">
+        <shape>
+            <solid android:color="#33a7ff"/>
+            <corners android:radius="2.5dp"/>
+            <size android:height="25dp" android:width="50dp"/>
+        </shape>
+    </item>
+    <item android:state_pressed="false">
+        <shape>
+            <size android:height="25dp" android:width="50dp"/>
+            <solid android:color="#ffffff"/>
+            <corners android:radius="2.5dp"/>
+            <stroke android:width="1dp" android:color="#33a7ff"/>
+        </shape>
+    </item>
+</selector>

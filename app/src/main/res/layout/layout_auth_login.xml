@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:orientation="vertical" android:background="#fff" android:padding="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="18dp" android:textColor="#000" android:ellipsize="end" android:gravity="center" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/fast_open_login_title" android:maxLines="1"/>
+    <ImageView android:id="@+id/loginAccountImg" android:layout_width="57dp" android:layout_height="57dp" android:layout_marginTop="30dp" android:src="@drawable/defaul_avatar"/>
+    <TextView android:textSize="17dp" android:textColor="#000" android:id="@+id/loginAccountPhone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+    <com.alipay.mobile.accountopenauth.ui.widget.LottieAnimationView android:id="@+id/lottieAnimation" android:visibility="gone" android:layout_width="30dp" android:layout_height="8dp" android:layout_marginTop="20dp"/>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/timepicker_title_height">
+        <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/btn_datetime_cancel" android:background="@drawable/v4_common_icon_transprent_btn" android:paddingLeft="@dimen/default_margin_8A" android:paddingRight="@dimen/default_margin_8A" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancel" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_3" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/timepicker_select_reminder_time" android:layout_centerInParent="true"/>
+        <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/btn_datetime_sure" android:background="@drawable/v4_common_icon_transprent_btn" android:paddingLeft="@dimen/default_margin_8A" android:paddingRight="@dimen/default_margin_8A" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sure" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/mid_pos_divider" android:background="@color/default_font_color_c99" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@+id/timePicker1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_5A" android:layout_marginBottom="@dimen/default_margin_5A" android:minWidth="240dp">
+        <com.autonavi.map.widget.wheel.TimePickerWidgetView android:id="@+id/hour" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+        <com.autonavi.map.widget.wheel.TimePickerWidgetView android:id="@+id/mins" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="bottom" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_40" android:textColor="@color/list_large_txt_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="13dp" android:text="@string/address_txt_demo"/>
+        <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/housenob_sample" android:contentDescription="@null"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:src="@drawable/streetnob_sample" android:contentDescription="@null"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="13dp">
+            <CheckedTextView android:gravity="center_vertical" android:id="@+id/i_Know" android:background="@drawable/v4_com_btn_bg_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checkMark="@drawable/v4_common_checkbox_selector"/>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_2" android:id="@+id/i_Know_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/do_not_notify_any_more"/>
+        </LinearLayout>
+        <Button android:textSize="16dp" android:textColor="@color/v3_font_white" android:id="@+id/i_Know_but" android:background="@drawable/btn_busline_mapmode_selector" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:layout_marginBottom="10dp" android:text="@string/known"/>
+    </LinearLayout>
+</LinearLayout>

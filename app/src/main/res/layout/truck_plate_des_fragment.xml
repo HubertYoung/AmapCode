@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/turck_plate_des_container" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/truck_des_title" app:title_style="4"/>
+    <Button android:textColor="@drawable/truck_des_button_text_selector" android:id="@+id/truck_plate_confirm" android:background="@drawable/truck_des_button_selector" android:layout_width="match_parent" android:layout_height="40dp" android:layout_margin="12dp" android:text="@string/truck_confirm_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/turck_plate_contentView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/truck_plate_confirm" android:layout_below="@+id/title">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/icon_view" android:layout_width="53dp" android:layout_height="53dp" android:layout_marginTop="13dp" android:src="@drawable/v3_icon"/>
+        <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/truck_des_title"/>
+        <TextView android:textSize="14dp" android:textColor="@color/f_c_2" android:id="@+id/truck_des_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="15dp" android:layout_marginRight="12dp" android:lineSpacingExtra="12dp"/>
+    </LinearLayout>
+</RelativeLayout>

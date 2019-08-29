@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@drawable/white_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="5"/>
+    <com.autonavi.minimap.drive.navi.navitts.widget.StickHeadScrollView android:id="@+id/navitts_sticky_scrollview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="28dp" android:textColor="@color/f_c_2" android:id="@+id/tts_voice_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginBottom="21dp" android:text="导航语音包"/>
+            <RadioGroup android:orientation="horizontal" android:id="@+id/voice_radiogroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_below="@+id/tts_voice_desc">
+                <RadioButton android:textSize="@dimen/f_s_18" android:textColor="@color/car_tts_radio_text_color" android:gravity="center" android:id="@+id/voice_square" android:background="@drawable/car_tts_radio_item_selector" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@null" android:text="语音广场"/>
+                <RadioButton android:textSize="@dimen/f_s_18" android:textColor="@color/car_tts_radio_text_color" android:gravity="center" android:id="@+id/voice_my" android:background="@drawable/car_tts_radio_item_selector" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="28dp" android:button="@null" android:text="我的语音"/>
+            </RadioGroup>
+            <android.support.v4.view.ViewPager android:layout_gravity="center" android:id="@+id/viewpager_navitts" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/voice_radiogroup"/>
+        </LinearLayout>
+    </com.autonavi.minimap.drive.navi.navitts.widget.StickHeadScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/download_pp_apk_progress" android:background="#99000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/pp_progress_layout" android:background="@drawable/navitts_pp_progress_bg" android:layout_width="270dp" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="26dp" android:text="PP高速下载引擎启动中"/>
+            <FrameLayout android:layout_width="198dp" android:layout_height="6dp" android:layout_marginLeft="36dp">
+                <View android:background="@drawable/pp_progress_background" android:layout_width="198dp" android:layout_height="6dp"/>
+                <View android:id="@+id/download_pp_apk_progress_img" android:background="@drawable/pp_progress" android:layout_width="1px" android:layout_height="6dp"/>
+            </FrameLayout>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginBottom="5dp" android:text="启动后，请确认安装并打开PP助手"/>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:id="@+id/download_pp_apk_progress_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20dp" android:text="语音将进入高速下载"/>
+        </LinearLayout>
+        <View android:id="@+id/pp_dialog_divider" android:background="@color/c_1" android:layout_width="1px" android:layout_height="60dp"/>
+        <View android:id="@+id/download_pp_apk_cancel" android:background="@drawable/navitts_pp_close_selector" android:layout_width="26dp" android:layout_height="26dp"/>
+        <View android:layout_width="1dp" android:layout_height="0dp" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

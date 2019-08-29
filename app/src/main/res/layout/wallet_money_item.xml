@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" android:layout_marginLeft="14dp"/>
+    <RelativeLayout android:id="@+id/money_item" android:clickable="true" android:layout_width="match_parent" android:layout_height="46dp">
+        <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/right_arrow" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="17dp" android:src="@drawable/wallet_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="@dimen/font_28" android:textColor="@color/blue" android:gravity="center" android:id="@+id/cash" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/right_arrow" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/map_zoom_tip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/zoomInTip" android:visibility="invisible" android:layout_width="58dp" android:layout_height="@dimen/map_container_btn_size" android:layout_marginTop="5dp" layout="@layout/map_widget_zoom_in_tip"/>
+        <include android:id="@+id/zoomOutTip" android:visibility="invisible" android:layout_width="58dp" android:layout_height="@dimen/map_container_btn_size" layout="@layout/map_widget_zoom_out_tip"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/old_map_widget_bg" android:layout_width="48dp" android:layout_height="90.5dp">
+        <com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout android:gravity="center" android:id="@+id/zoom_in_container" android:layout_width="match_parent" android:layout_height="40dp" android:contentDescription="@string/zoom_in">
+            <ImageView android:id="@+id/zoom_in" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/map_widget_zoom_in_icon"/>
+        </com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout>
+        <View android:layout_gravity="center" android:background="#1a000000" android:layout_width="24dp" android:layout_height="0.5dp"/>
+        <com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout android:gravity="center" android:id="@+id/zoom_out_container" android:layout_width="match_parent" android:layout_height="40dp" android:contentDescription="@string/zoom_out">
+            <ImageView android:id="@+id/zoom_out" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/map_widget_zoom_out_icon"/>
+        </com.autonavi.bundle.uitemplate.mapwidget.widget.zoom.ZoomWidgetLayout>
+    </LinearLayout>
+</LinearLayout>

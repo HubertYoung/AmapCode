@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.route.bus.localbus.view.RouteBusStationUpDownNameView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="@dimen/route_25dp" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+        <ImageView android:layout_gravity="center" android:id="@+id/endpoint" android:background="@drawable/route_bus_detail_item_line_endpoint_bg" android:visibility="gone" android:layout_width="@dimen/route_13dp" android:layout_height="@dimen/route_13dp" android:src="@drawable/route_bus_result_up_station_icon" android:scaleType="center"/>
+        <View android:layout_gravity="center" android:id="@+id/point" android:background="@drawable/route_bus_detail_item_line_point_bg" android:visibility="gone" android:layout_width="@dimen/route_7dp" android:layout_height="@dimen/route_7dp"/>
+    </FrameLayout>
+    <com.autonavi.map.widget.FlowLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_40dp" android:layout_marginRight="@dimen/route_50dp" android:layout_centerVertical="true" app:horizontalSpacing="@dimen/route_5dp" app:verticalSpacing="@dimen/route_3dp">
+        <TextView android:textSize="@dimen/font_32" android:textStyle="bold" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_24" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/subway_entrance" android:background="@drawable/route_bus_detail_item_tag_bg" android:paddingLeft="@dimen/route_4dp" android:paddingRight="@dimen/route_4dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:singleLine="true"/>
+        </FrameLayout>
+    </com.autonavi.map.widget.FlowLayout>
+</com.autonavi.minimap.route.bus.localbus.view.RouteBusStationUpDownNameView>

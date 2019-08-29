@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="30sp" android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="等待调试器"/>
+    <View android:gravity="center_horizontal" android:background="@android:color/background_dark" android:layout_width="match_parent" android:layout_height="1px" android:layout_margin="5dp"/>
+    <TextView android:gravity="center_horizontal" android:id="@+id/pageurl" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="调试页面路径"/>
+    <Button android:textSize="24sp" android:gravity="center" android:id="@+id/cancel" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="取消调试"/>
+</LinearLayout>

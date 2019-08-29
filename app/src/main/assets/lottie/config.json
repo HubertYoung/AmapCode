@@ -1,0 +1,44 @@
+{
+	"lottie": [
+		{
+			"mainTitle": "开启专属足迹地图",
+			"subTitle": "串联“我的”出行记忆",
+			"frontAnimationDuration": 0,
+			"loopingAnimationDuration": 4.00,
+			"transitionAnimationDuration": 0,
+			"totalDuration": 4.00,
+			"autoPlay": 1,
+			"json": "1.json",
+			"resource": "/resource"
+		},
+		{
+			"mainTitle": "长途信息更丰富",
+			"subTitle": "长途行驶更安心",
+			"frontAnimationDuration": 0,
+			"loopingAnimationDuration": 3.00,
+			"transitionAnimationDuration": 0,
+			"totalDuration": 3.00,
+			"autoPlay": 0,
+			"json": "2.json",
+			"resource": "/resource"
+		},
+		{
+			"mainTitle": "高德打车推荐上车点",
+			"subTitle": "司乘碰头更轻松",
+			"frontAnimationDuration": 0,
+			"loopingAnimationDuration": 3.00,
+			"transitionAnimationDuration": 0,
+			"totalDuration": 3.00,
+			"autoPlay": 0,
+			"json": "3.json",
+			"resource": "/resource"
+		}
+
+	],
+	"mode": "lottie", 
+	"options": {
+		"progressDebug": 0,
+		"scale": 1,
+		"borderDebug": 0
+	}
+}

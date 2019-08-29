@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:divider="@drawable/filter_popup_view_divider" android:showDividers="middle" android:dividerPadding="4dp">
+        <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/cancel_filter" android:layout_width="0dp" android:layout_height="match_parent" android:text="重置" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="center" android:id="@+id/ok_filter" android:layout_width="0dp" android:layout_height="match_parent" android:text="确定" android:layout_weight="1"/>
+    </LinearLayout>
+</FrameLayout>

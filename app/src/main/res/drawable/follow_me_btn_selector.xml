@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_focused="true" android:drawable="@drawable/follow_me_btn_focus"/>
+    <item android:state_pressed="true" android:drawable="@drawable/follow_me_btn_focus"/>
+    <item android:state_selected="true" android:drawable="@drawable/follow_me_btn_focus"/>
+    <item android:drawable="@drawable/follow_me_btn_normal"/>
+</selector>

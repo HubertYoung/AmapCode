@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_gas1" android:layout_width="wrap_content" android:layout_height="16dp">
+        <TextView android:textSize="11dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/txt_gas_name1" android:layout_width="27dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="11dp" android:textColor="@color/c_38" android:gravity="center" android:id="@+id/txt_gas_price1" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_gas2" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_marginLeft="5dp">
+        <TextView android:textSize="11dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/txt_gas_name2" android:layout_width="27dp" android:layout_height="match_parent" android:minWidth="22.5dp"/>
+        <TextView android:textSize="11dp" android:textColor="@color/c_38" android:gravity="center" android:id="@+id/txt_gas_price2" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+    </LinearLayout>
+</merge>

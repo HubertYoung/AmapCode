@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/guide_view_area" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/imageView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerCrop"/>
+        <com.amap.bundle.commonui.lottie.LottieView android:id="@+id/lottieView" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:lottie_imageAssetsFolder="images/"/>
+    </RelativeLayout>
+</RelativeLayout>

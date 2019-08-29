@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/tbTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/drive_navigation_issue" app:title_style="5"/>
+    <FrameLayout android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/navigation_history_listview" android:background="@color/c_3" android:visibility="visible" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:mPtrAnimationStyle="3"/>
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+    <View style="@style/Divider"/>
+    <Button android:id="@+id/to_other_navigation_issue_btn" android:layout_margin="15dp" android:text="@string/other_navi_issue" style="@style/btn_a2"/>
+</LinearLayout>

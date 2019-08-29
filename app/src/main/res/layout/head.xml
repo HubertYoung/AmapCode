@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/head_contentLayout" android:paddingLeft="30dp" android:paddingTop="5dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/head_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow" android:contentDescription="@null"/>
+            <ProgressBar android:layout_gravity="center" android:id="@+id/head_progressBar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleSmall"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/gary" android:id="@+id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/head_pulldown_ref"/>
+            <TextView android:textSize="12dp" android:textColor="@color/gray" android:id="@+id/head_lastUpdatedTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/head_last_update"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

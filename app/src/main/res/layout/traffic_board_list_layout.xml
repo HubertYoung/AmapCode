@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gray_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/traffic_board_title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/traffic_board_title" app:title_style="7" app:action_img="@drawable/icon_a6_selector"/>
+        <View android:id="@+id/title_splitline" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <include android:id="@+id/tab_layout" android:visibility="gone" layout="@layout/live_search_result_tab"/>
+    </LinearLayout>
+    <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/traffic_topboard_lv" android:background="@color/gray_bg" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="15dp" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+</LinearLayout>

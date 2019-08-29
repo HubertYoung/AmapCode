@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/rl_ugc_busresult_edit_bg" android:background="@color/c_5_b" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_bottom" android:background="@color/c_1" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/route_45dp">
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/tv_cancle" android:background="@null" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/route_16dp" android:text="@string/cancel"/>
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_6_c" android:gravity="center" android:id="@+id/tv_submit" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/route_16dp" android:text="@string/taxi_order_submit" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/route_16dp" android:paddingTop="@dimen/route_6dp" android:paddingRight="@dimen/route_16dp" android:paddingBottom="@dimen/route_16dp" android:layout_width="match_parent" android:layout_height="@dimen/route_145dp">
+            <EditText android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_4" android:gravity="top" android:id="@+id/et_ugc_bus_result" android:background="@null" android:focusable="true" android:layout_width="match_parent" android:layout_height="0dp" android:hint="@string/route_ugc_bus_result_edit_hint" android:maxLength="100" android:layout_weight="1" android:lineSpacingExtra="@dimen/route_4dp" android:inputType="textMultiLine" android:imeOptions="actionDone">
+                <requestFocus/>
+            </EditText>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_4" android:ellipsize="end" android:gravity="right" android:id="@+id/tv_count" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/route_ugc_bus_result_edit_count" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<styles>
+    <custom>
+        <style id="pressBtn">
+            <button>
+                <state id="normal" bgcolor="#ffffff"/>
+                <state id="highlighted" bgcolor="#00000033"/>
+            </button>
+        </style>
+    </custom>
+</styles>

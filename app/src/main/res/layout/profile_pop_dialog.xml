@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:tag="EvAluAtE" android:background="#99000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:visibility="visible" android:layout_width="280dp" android:layout_height="match_parent">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/evaluate_pop_window" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:textColor="#8a000000" android:textColorHint="#33000000" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/evaluate_editText_user_insight_detail" android:background="@null" android:layout_width="240dp" android:layout_height="100dp" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:hint="输入测试caseID" android:lines="5" android:inputType="number" android:layout_marginStart="20dp" android:layout_marginEnd="20dp"/>
+            <View android:gravity="center" android:layout_gravity="center" android:background="#e5e5e5" android:layout_width="240dp" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="20dp">
+                <Button android:textSize="18dp" android:textColor="#8a000000" android:id="@+id/evaluate_button_user_insight_cancel" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:text="返回" android:layout_weight="1"/>
+                <Button android:enabled="false" android:textSize="18dp" android:textColor="#ffc0c0c0" android:id="@+id/evaluate_button_user_insight_send" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:text="保存" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

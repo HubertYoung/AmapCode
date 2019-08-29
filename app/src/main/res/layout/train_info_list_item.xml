@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1.4">
+        <TextView android:textSize="10dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/station_no" android:background="@drawable/train_station_middle_logo_background" android:layout_width="14dp" android:layout_height="14dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/f_c_2" android:gravity="left" android:id="@+id/station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/tt_train_start_station" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/arrival_time" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/autonavi_sample_time_with_format" android:layout_weight="1"/>
+    <TextView android:textSize="14dp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/departure_time" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/tt_train_start_time" android:layout_weight="1"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14dp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/saty_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autonavi_data_result_minute"/>
+        <View android:id="@+id/saty_time_line" android:background="@drawable/train_staytime_dashline" android:layout_width="36dp" android:layout_height="3dp"/>
+    </LinearLayout>
+</LinearLayout>

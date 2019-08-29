@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="@dimen/frequent_footer_height">
+    <RelativeLayout android:id="@+id/to_add_state_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/frequent_location_icon_to_add_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/icon_frequent_location_add" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/item_frequent_location_to_add_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="9dp" android:text="@string/edit_location_to_add_name" android:includeFontPadding="false" android:layout_toRightOf="@+id/frequent_location_icon_to_add_view" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/view_state_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/item_frequent_location_edit_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_location_type_name" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/edit_state_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/frequent_location_icon_add_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="8dp" android:src="@drawable/frequent_location_add_btn_selector" android:scaleType="center" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/frequent_location_add_btn_color_selector" android:gravity="center_vertical" android:id="@+id/item_frequent_location_add_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:layout_marginRight="9dp" android:text="@string/edit_location_add" android:includeFontPadding="false" android:layout_toRightOf="@+id/frequent_location_icon_add_view" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/frequent_location_edit" android:gravity="center_vertical" android:id="@+id/item_frequent_location_finish_view" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="15dp" android:text="@string/edit_location_finish" android:includeFontPadding="false" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

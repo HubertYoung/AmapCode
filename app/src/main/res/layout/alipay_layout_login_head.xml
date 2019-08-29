@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.ali.user.mobile.ui.widget.APRoundAngleImageView android:id="@+id/userAccountImage" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginTop="16dp" android:src="@drawable/alipay_head" android:scaleType="centerCrop" android:layout_centerHorizontal="true" app:alipay_roundWidth="4dp" app:alipay_roundHeight="4dp"/>
+    <TextView android:textSize="32dp" android:id="@+id/mainTip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

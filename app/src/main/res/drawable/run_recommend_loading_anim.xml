@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:oneshot="false">
+    <item android:duration="100" android:drawable="@drawable/run_recommend_loading1"/>
+    <item android:duration="100" android:drawable="@drawable/run_recommend_loading2"/>
+    <item android:duration="100" android:drawable="@drawable/run_recommend_loading3"/>
+    <item android:duration="100" android:drawable="@drawable/run_recommend_loading4"/>
+    <item android:duration="100" android:drawable="@drawable/run_recommend_loading5"/>
+    <item android:duration="100" android:drawable="@drawable/run_recommend_loading6"/>
+</animation-list>

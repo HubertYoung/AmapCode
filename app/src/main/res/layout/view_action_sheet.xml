@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_4" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="36dp"/>
+        <ImageView android:gravity="fill_horizontal" android:id="@+id/titleDivider" android:layout_width="match_parent" android:layout_height="1px" android:src="@color/c_2" android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <View android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/alert_button_selector" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/cancel"/>
+</LinearLayout>

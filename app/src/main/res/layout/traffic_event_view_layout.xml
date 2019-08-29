@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.widget.slidinguppanel.SlidingUpPanelLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/traffic_slidingview" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="0dp" app:dragView="@+id/dragView" app:expandPointInParent="0.5" app:initialState="3" app:panelHeight="100dp" app:sensitivity="1.1">
+    <FrameLayout android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/drag_view" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/traffic_event_container" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="25dp" android:textColor="#0000ff" android:gravity="center" android:background="#00ff0000" android:layout_width="match_parent" android:layout_height="120dp" android:text="hello"/>
+        </FrameLayout>
+    </RelativeLayout>
+</com.autonavi.widget.slidinguppanel.SlidingUpPanelLayout>

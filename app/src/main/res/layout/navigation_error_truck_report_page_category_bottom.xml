@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/c_1_f" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="13dp" android:textColor="@color/f_c_4" android:gravity="center" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/car_error_choose_category"/>
+    <View android:background="@color/c_1_f" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/error_category_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/truck_cannot_pass_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_cannot_pass_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/car_error_category_restriction_info_error"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/truck_around_way_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_around_way_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/car_error_category_line_unreasonable"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/truck_msg_error_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_msg_error_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/car_error_category_msg_error"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="24dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/truck_camera_error_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_camera_error_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/car_error_category_camera_feedback"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/truck_destination_error_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_destination_error_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/car_error_category_destination_error"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

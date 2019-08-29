@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/onfoot_navimap_title_header_height">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_16dp">
+        <TextView android:textSize="17dp" android:textColor="#ffffff" android:id="@+id/distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        <ImageView android:id="@+id/icon" android:layout_width="46dp" android:layout_height="46dp" android:src="@drawable/sou15"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/default_path_result_gray_line_normal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="11dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp"/>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:id="@+id/current" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="" style="@style/route_foot_navi_top_text_big"/>
+        <TextView android:id="@+id/prompt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="3dp" android:text="" style="@style/route_foot_navi_top_text_big"/>
+    </LinearLayout>
+</LinearLayout>

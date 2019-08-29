@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_text_container" android:background="@drawable/route_foot_result_tab_bg_n" android:layout_width="match_parent" android:layout_height="@dimen/route_74dp" android:layout_marginLeft="@dimen/route_4dp" android:layout_marginTop="@dimen/route_4dp" android:layout_marginRight="@dimen/route_4dp">
+        <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/tv_tip_plan" android:background="@drawable/route_foot_result_tab_title_n" android:layout_width="match_parent" android:layout_height="@dimen/route_22dp" android:maxLines="1"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="@dimen/route_52dp">
+            <TextView android:textSize="20dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/tv_tip_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1"/>
+            <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_3" android:id="@+id/tv_tip_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_3dp" android:maxLines="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

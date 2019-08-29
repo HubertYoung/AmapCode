@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gary_frame"
+    android:orientation="vertical">
+
+    <com.autonavi.widget.ui.TitleBar
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:title="@string/oper_report_type"
+        app:title_style="4" />
+
+    <Button
+        android:id="@+id/txt_pay_for_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="18dp"
+        android:background="@color/transparent"
+        android:drawableLeft="@drawable/activities_payfor_choose_address_icon"
+        android:drawablePadding="5dp"
+        android:gravity="left|center_vertical|center_horizontal|center"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"
+        android:text="@string/activities_apply_payfor_description"
+        android:textColor="@color/black"
+        android:textSize="15dp" />
+
+    <RelativeLayout
+        android:id="@+id/ckb_pay_for_wrongplace"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:text="@string/activities_apply_payfor_type_wrongplace"
+            android:textColor="@color/f_c_2"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/activities_payfor_choose_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ckb_pay_for_have_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:background="@color/transparent"
+            android:text="@string/activities_apply_payfor_type_have_loc"
+            android:textColor="@color/f_c_2"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/activities_payfor_choose_icon" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/ckb_pay_for_no_loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="1dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingTop="16dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/activities_apply_payfor_type_no_loc"
+            android:textColor="@color/f_c_2"
+            android:textSize="15dp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@string/contentDescription"
+            android:src="@drawable/activities_payfor_choose_icon" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <com.autonavi.minimap.widget.AmapTextView
+            android:id="@+id/applyTip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/activities_apply_maypayed_without_moneycount"
+            android:textColor="@color/f_c_3"
+            android:textSize="13dp" />
+
+        <com.autonavi.minimap.widget.AmapTextView
+            android:id="@+id/look_over_activities_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="@string/activities_know_about_safety"
+            android:textColor="@color/f_c_6"
+            android:textSize="13dp" />
+    </LinearLayout>
+</LinearLayout>

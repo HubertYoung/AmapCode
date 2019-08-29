@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp">
+    <View android:id="@+id/first_divider" android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="1px"/>
+    <View android:id="@+id/top_divider" android:background="@color/gray_c" android:layout_width="1px" android:layout_height="22dp" android:layout_marginLeft="11dp"/>
+    <View android:background="@color/gray_c" android:layout_width="1px" android:layout_height="22dp" android:layout_marginLeft="11dp" android:layout_marginTop="22dp"/>
+    <View android:background="@drawable/gray_dot" android:layout_width="7dp" android:layout_height="7dp" android:layout_marginLeft="7.5dp" android:layout_marginTop="18.5dp"/>
+    <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_3" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/text_date" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="21dp" android:layout_marginRight="15dp" android:singleLine="true"/>
+</FrameLayout>

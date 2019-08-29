@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/transparent_background" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/ll_bottom" android:layout_width="match_parent" android:layout_height="100dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/rl_top" android:background="@color/gray_white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:id="@+id/tab_layout" layout="@layout/report_result_tab"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@+id/tab_layout">
+            <LinearLayout android:orientation="vertical" android:id="@+id/leftLL" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/left_title" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/leftTxt" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/bussiness_area"/>
+                    <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/left_blue_line" android:background="@color/poidetail_dlg_right_btn_text_normal" android:layout_width="42dp" android:layout_height="3dp"/>
+                </LinearLayout>
+                <ListView android:id="@+id/lv_main" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/rightLL" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <LinearLayout android:orientation="vertical" android:id="@+id/right_title" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/rightTxt" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/subway_area"/>
+                    <View android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/right_blue_line" android:background="@color/poidetail_dlg_right_btn_text_normal" android:layout_width="42dp" android:layout_height="3dp"/>
+                </LinearLayout>
+                <ListView android:id="@+id/lv_sub" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/tetestid" android:background="#10ff0000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

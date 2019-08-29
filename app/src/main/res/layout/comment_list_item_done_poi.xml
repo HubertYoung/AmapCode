@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/gray_c" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="11dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/comment_title_part" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true" android:layout_weight="1"/>
+            <include android:id="@+id/comment_gold" android:layout_width="78dp" android:layout_height="25dp" layout="@layout/comment_view_badge"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/comment_content_part" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp">
+            <ImageView android:id="@+id/comment_poi_icon1" android:visibility="visible" android:layout_width="75dp" android:layout_height="75dp" android:src="@drawable/poi_list_item_img_default" android:scaleType="centerCrop"/>
+            <ImageView android:id="@+id/comment_poi_icon2" android:visibility="visible" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="15dp" android:src="@drawable/poi_list_item_img_default" android:scaleType="centerCrop"/>
+            <ImageView android:id="@+id/comment_poi_icon3" android:visibility="visible" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="15dp" android:src="@drawable/poi_list_item_img_default" android:scaleType="centerCrop"/>
+            <RelativeLayout android:id="@+id/comment_poi_icon4_ll" android:layout_width="75dp" android:layout_height="75dp" android:layout_marginLeft="15dp">
+                <ImageView android:id="@+id/comment_poi_icon4" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/poi_list_item_img_default" android:scaleType="centerCrop"/>
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/white" android:gravity="center" android:id="@+id/text_pic_size" android:background="@color/transparent_black" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:background="@color/gray_c" android:layout_width="wrap_content" android:layout_height="1px" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

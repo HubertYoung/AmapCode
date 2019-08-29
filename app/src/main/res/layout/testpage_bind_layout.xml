@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="codeType:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_codetype" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="1注册2找密码3绑手机4绑邮箱5打车9登录15修改绑定前校验" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="targetType:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_targettype" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="1:email 2:phone" android:singleLine="true"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindswitch" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑定"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="address:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="手机号/邮箱" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="verify:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_code" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="验证码" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="repType:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_replacetype" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="0不允许1允许2唯一绑定信息仍允许" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="Type:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_type" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="0检查账户已绑定则报错1重新绑定不检查" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="updateMode:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_bind_updatemode" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="0x01头像0x02昵称" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_account_testpage_bind_verifycode" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="验证码"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindmobile" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑手机"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindemail" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑邮箱"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_account_testpage_bind_bindqq" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑QQ"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindweixin" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑微信"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindweibo" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑微博"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindtaobao" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑淘宝"/>
+        <Button android:id="@+id/btn_account_testpage_bind_bindalipay" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="绑支付宝"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/auto_title" app:title_style="15" app:action_img="@drawable/icon_a17_selector"/>
+    <RelativeLayout android:id="@+id/staterelativeLayout" android:background="@color/c_12" android:layout_width="match_parent" android:layout_height="134dp" android:layout_marginBottom="10dp">
+        <ImageView android:id="@+id/auto_state_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:src="@drawable/auto_car_connected_icon_selector" android:layout_centerHorizontal="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/connected_text_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/auto_state_icon" android:layout_centerHorizontal="true">
+            <TextView android:textSize="11dp" android:textColor="#ffffff" android:id="@+id/connection_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/auto_connection_state_text1"/>
+            <TextView android:textSize="11dp" android:textColor="#9ec9fe" android:id="@+id/connection_style_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/auto_connection_style"/>
+        </LinearLayout>
+        <TextView android:textSize="11dp" android:textColor="#ffffff" android:id="@+id/disconnected_text_info" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/lost_auto_connection" android:layout_below="@+id/auto_state_icon" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/connection_limition_tips_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="25dp">
+        <LinearLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/connection_limition_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auto_bluetooth_tips"/>
+            <RelativeLayout android:id="@+id/bluetooth_function_limition" android:layout_width="30dp" android:layout_height="25dp">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/auto_bluetooth_tips_icon" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/content_layout" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/auto_send_route_to_auto" android:background="@drawable/auto_control_selector" android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginTop="10dp">
+            <ImageView android:id="@+id/send_route_to_auto_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:src="@drawable/auto_sendto_car" android:layout_centerVertical="true"/>
+            <TextView android:textSize="16dp" android:textColor="@drawable/auto_send_route_text_title_selector" android:id="@+id/auto_send_route_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:text="@string/send_route_to_auto" android:layout_toRightOf="@+id/send_route_to_auto_icon" android:layout_centerVertical="true" android:layout_toEndOf="@+id/send_route_to_auto_icon"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/auto_send_mapdata_to_auto" android:background="@drawable/auto_control_selector" android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginTop="10dp" android:layout_below="@+id/auto_send_route_to_auto">
+            <ImageView android:id="@+id/auto_send_mapdata_to_auto_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:src="@drawable/auto_send_mapdata_icon_selector" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/auto_send_mapdata_to_auto_title_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_toRightOf="@+id/auto_send_mapdata_to_auto_icon" android:layout_centerVertical="true" android:layout_toEndOf="@+id/auto_send_mapdata_to_auto_icon">
+                <TextView android:textSize="16dp" android:textColor="@drawable/auto_send_route_text_title_selector" android:id="@+id/auto_send_mapdata_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_mapdata_to_auto"/>
+                <TextView android:textSize="13dp" android:textColor="@drawable/auto_send_route_text_detail_selector" android:id="@+id/update_city_list" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/update_city_info"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/mapdata_function_limition" android:layout_width="30dp" android:layout_height="25dp" android:layout_toRightOf="@+id/auto_send_mapdata_to_auto_title_content" android:layout_centerVertical="true" android:layout_toEndOf="@+id/auto_send_mapdata_to_auto_title_content">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:src="@drawable/auto_bluetooth_tips_icon" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/auto_send_apk_to_auto" android:background="@drawable/auto_control_selector" android:layout_width="match_parent" android:layout_height="90dp" android:layout_marginTop="10dp" android:layout_below="@+id/auto_send_mapdata_to_auto">
+            <ImageView android:id="@+id/auto_send_apk_to_auto_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:src="@drawable/auto_send_apk_icon_selector" android:layout_centerVertical="true"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_toRightOf="@+id/auto_send_apk_to_auto_icon" android:layout_centerVertical="true" android:layout_toEndOf="@+id/auto_send_apk_to_auto_icon">
+                <TextView android:textSize="16dp" android:textColor="@drawable/auto_send_route_text_title_selector" android:id="@+id/auto_send_apk_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/send_apk_to_auto"/>
+                <TextView android:textSize="13dp" android:textColor="@drawable/auto_send_route_text_detail_selector" android:id="@+id/apk_version_number" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/update_apk_info"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

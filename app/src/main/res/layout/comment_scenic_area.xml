@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="14sp" android:textColor="@color/color_212121" android:id="@+id/scenic_comment_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="20dp" android:text="@string/comment_scenic_title"/>
+    <include android:id="@+id/scenic_commnet_item1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" layout="@layout/comment_scenic_item"/>
+    <include android:id="@+id/scenic_commnet_item2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" layout="@layout/comment_scenic_item"/>
+    <include android:id="@+id/scenic_commnet_item3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" layout="@layout/comment_scenic_item"/>
+    <include android:id="@+id/scenic_commnet_item4" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" layout="@layout/comment_scenic_item"/>
+    <include android:id="@+id/scenic_commnet_item5" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginBottom="40dp" layout="@layout/comment_scenic_item"/>
+</LinearLayout>

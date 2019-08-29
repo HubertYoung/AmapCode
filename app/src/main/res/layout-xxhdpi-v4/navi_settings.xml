@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/root" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/quickautonavi_setting_tile_name" app:title_style="4"/>
+    <ScrollView android:id="@+id/content" android:background="@color/gary_tab" android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="2dp">
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:text="@string/navi_line_set"/>
+                <com.amap.bundle.drivecommon.route.result.view.RoutingPreferenceView android:id="@+id/routing_preference_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_item_preference_left_margin" android:layout_marginRight="@dimen/ns_item_preference_left_margin" android:layout_marginBottom="8dp" android:baselineAligned="false"/>
+            </LinearLayout>
+            <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/avoid_way_limits" android:background="#ffffff" android:paddingLeft="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/avoid_way_limits_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_avoit_way_limits_text" android:drawableLeft="@drawable/avoid_way_limits" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <ImageView android:id="@+id/avoid_way_limits_tips" android:padding="7dp" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/ns_navigation_voice_description" android:layout_toRightOf="@+id/avoid_way_limits_text" android:layout_centerVertical="true" android:contentDescription="@string/route_detail"/>
+                <CheckBox android:id="@+id/avoid_way_limits_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="63dp" android:layout_height="44dp" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/car_plate_layout" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/rlayout_minibus_avoid_limit_navi_setting_lable" android:background="@drawable/bg_minibus_avoid_limit_line_lable" android:padding="@dimen/route_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_12dp" android:layout_marginRight="@dimen/route_12dp" android:layout_marginBottom="@dimen/route_8dp">
+                    <com.amap.bundle.drive.setting.quicknaviwidget.main.view.CarPlateTextView android:textSize="14dp" android:textColor="@color/f_c_3" android:id="@+id/car_plate" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ns_item_step_forward" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/divide_non_match_car" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:id="@+id/divide_match_car" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/search_route_in_net" android:background="#ffffff" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <ImageView android:id="@+id/light_intensity_icon" android:background="@drawable/ns_prefer_offline_navi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quickautonavi_padding_left" android:layout_toRightOf="@+id/light_intensity_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/light_intensity_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_prefer_offline_navi"/>
+                    <TextView android:textSize="@dimen/quickautonavi_common_dialog_sub_text_size" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_prefer_offline_navi_summary"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/search_route_in_net_choice" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:clickable="false" android:layout_width="63dp" android:layout_height="44dp" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:text="@string/quickautonavi_setting_voice_broadcast"/>
+            </LinearLayout>
+            <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <RelativeLayout android:id="@+id/navi_voice" android:background="#ffffff" android:paddingRight="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/navigation_voice_caption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_item_horizontal_margin" android:text="@string/navi_voice_pkg" android:drawableLeft="@drawable/ns_broadcast_mode" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/quickautonavi_common_sub_text_size" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/navi_voice_choice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_voice_default" android:drawableRight="@drawable/sugg_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/broadcast_mode" android:background="#ffffff" android:paddingRight="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/broadcast_mode_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_item_horizontal_margin" android:text="@string/quickautonavi_setting_broadcast_content" android:drawableLeft="@drawable/ns_navigation_voice" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/quickautonavi_common_sub_text_size" android:textColor="@color/f_c_3" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/broadcast_mode_choice_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/qa_setting_broadcast_mode_summary" android:drawableRight="@drawable/sugg_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/truck_avoid_limit_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:text="@string/quickautonavi_setting_truck_navigation"/>
+                </LinearLayout>
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <RelativeLayout android:id="@+id/truck_avoid_way_limits" android:background="#ffffff" android:paddingLeft="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/avoid_limit_for_nonlocal_truck_car" android:drawableLeft="@drawable/avoid_way_limits_truck" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/truck_avoid_way_limits_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="63dp" android:layout_height="44dp" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <include android:id="@+id/truck_detail_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="72dp" layout="@layout/truck_detail"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/divide_non_match_truck" android:background="#ffffff" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="0dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="bottom" android:id="@+id/divide_match_truck" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="8dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            </LinearLayout>
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <RelativeLayout android:id="@+id/display_entrance" android:background="#ffffff" android:paddingRight="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_item_horizontal_margin" android:text="@string/quickautonavi_setting_display" android:layout_centerVertical="true"/>
+                <TextView android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/sugg_arrow" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="0dp"/>
+            <include android:id="@+id/eagle_setting_layout" layout="@layout/eagle_setting_item_layout"/>
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <RelativeLayout android:id="@+id/display_carlogo" android:background="#ffffff" android:paddingRight="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_item_horizontal_margin" android:text="@string/quickautonavi_setting_carlogo" android:layout_centerVertical="true"/>
+                <TextView android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/sugg_arrow" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="0dp"/>
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+            <RelativeLayout android:id="@+id/accessibility" android:background="#ffffff" android:paddingRight="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/ns_item_horizontal_margin" android:text="@string/quickautonavi_setting_accessibility" android:layout_centerVertical="true"/>
+                <TextView android:gravity="bottom|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableRight="@drawable/sugg_arrow" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

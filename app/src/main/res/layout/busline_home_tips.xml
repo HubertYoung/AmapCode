@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/bus_footer_lineview" android:background="#ffdfdfdf" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="12dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/iv_collect" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/realbus_item_selected"/>
+                <TextView android:textSize="15dp" android:textColor="@color/f_c_2" android:id="@+id/tv_line_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="10dp" android:textColor="@color/f_c_3" android:id="@+id/tv_alert_time" android:background="@drawable/busline_alert_bg" android:paddingLeft="4dp" android:paddingTop="2dp" android:paddingRight="4dp" android:paddingBottom="2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/tv_lineto" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginBottom="7dp"/>
+            <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/tv_station" android:layout_width="match_parent" android:layout_height="wrap_content" android:drawableLeft="@anim/bus_radar_tip_anim" android:drawablePadding="4dp"/>
+        </LinearLayout>
+        <TextView android:textSize="15dp" android:textColor="#42a5ff" android:layout_gravity="center_vertical" android:id="@+id/tv_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/busline_setting_attention" android:drawableRight="@drawable/tip_detail_btn_go" android:drawablePadding="4dp"/>
+    </LinearLayout>
+</LinearLayout>

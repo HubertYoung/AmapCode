@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/album_folder_icon" android:layout_width="79dp" android:layout_height="79dp" android:layout_margin="15dp" android:src="@drawable/discover_image_default" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="35dp" android:layout_toRightOf="@+id/album_folder_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="16sp" android:textColor="@color/f_c_2" android:id="@+id/album_folder_name" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="13sp" android:textColor="@color/f_c_2" android:id="@+id/album_folder_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_below="@+id/album_folder_name"/>
+    </RelativeLayout>
+    <ImageView android:layout_width="18dp" android:layout_height="18dp" android:layout_marginRight="15dp" android:src="@drawable/traffic_remind_icon_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

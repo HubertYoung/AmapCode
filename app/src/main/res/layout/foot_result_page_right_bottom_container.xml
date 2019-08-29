@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="right" android:orientation="vertical" android:paddingLeft="4dp" android:paddingRight="4dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0dp">
+    <ImageView android:id="@+id/foot_result_page_refresh" android:background="@drawable/icon_c_bg_single" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size" android:src="@drawable/icon_c16_selector" android:scaleType="fitCenter"/>
+</LinearLayout>

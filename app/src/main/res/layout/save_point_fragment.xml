@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"> android:orientation=&quot;vertical&quot;\10              android:visibility=&quot;gone&quot;\10              android:layout_width=&quot;match_parent&quot;\10              android:layout_height=&quot;match_parent&quot;&gt;\10
+    <RelativeLayout android:orientation="vertical" android:id="@+id/layout_no_point_data" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/gary" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/text_no_point_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fav_no_poi_data" android:drawableTop="@drawable/err" android:layout_centerInParent="true" android:lineSpacingExtra="10dp" android:lineSpacingMultiplier="0.5"/>
+        <include android:id="@+id/layout_add_point_from_none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/text_no_point_data" layout="@layout/save_point_add_layout"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/layout_has_point" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ExpandableListView android:id="@+id/expandablelist" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@drawable/divider_line" android:splitMotionEvents="false"/>
+    </RelativeLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:paddingTop="@dimen/default_margin_5A" android:paddingBottom="@dimen/default_margin_5A" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2n" android:gravity="center_vertical" android:id="@+id/txt_template_id" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/txt_content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"/>
+</LinearLayout>

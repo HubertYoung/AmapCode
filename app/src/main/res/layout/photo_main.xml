@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/comment_backgroud" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/real_scene__publish_photo" app:title_style="13" app:action_text="@string/comment_publish" app:back_text="@string/cancel"/>
+    <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="2px"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/grid_album" android:layout_width="match_parent" android:layout_height="@dimen/photo_main_photo_height"/>
+    <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="2px"/>
+    <com.amap.bundle.webview.widget.WebViewEx android:id="@+id/txt_poi_introduce" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+</LinearLayout>

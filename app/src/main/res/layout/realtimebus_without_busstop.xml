@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/realtime_bus_without_busstop" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/real_bus_without_stop_outside" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/real_bus_without_stop_outside_main" android:layout_width="241dp" android:layout_height="81dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/real_bus_without_stop_main" android:background="@drawable/realtimebus_combg_pop" android:padding="@dimen/route_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <ImageView android:id="@+id/real_bus_without_stop_plate" android:layout_width="@dimen/route_40dp" android:layout_height="@dimen/route_40dp" android:layout_marginRight="@dimen/route_9dp" android:src="@drawable/without_notdata_busstop"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/real_bus_without_stop_conten_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_2dp">
+                    <TextView android:textSize="14sp" android:textStyle="bold" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/real_bus_without_stop_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/realtime_bus_without_title" android:maxLines="1"/>
+                    <TextView android:textSize="12sp" android:textColor="@color/f_c_4" android:ellipsize="end" android:id="@+id/real_bus_without_stop_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/realtime_bus_without_subtitle" android:maxLines="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@+id/real_bus_without_stop_close" android:layout_width="@dimen/route_30dp" android:layout_height="@dimen/route_30dp" android:src="@drawable/realtimebus_gray_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/route_fragment_popup_line" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.BalloonText android:gravity="center" android:id="@+id/route_fragment_popup_text_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true" android:layout_centerHorizontal="true" app:balloon_textSize="@dimen/f_s_13" app:balloon_text="@string/bus_result_popup_for_drive" app:balloon_style="0" app:balloon_type="0"/>
+    </RelativeLayout>
+</RelativeLayout>

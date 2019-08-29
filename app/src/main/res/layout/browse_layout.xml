@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/browse_dialog_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageButton android:id="@+id/browse_back" android:background="@drawable/discover_top_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:contentDescription="@null"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/browse_bottom" android:background="@color/v4_btn_layout_bg" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/layout_take_photo" android:background="@drawable/btn_take_photo_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageButton android:id="@+id/take_photo" android:background="@drawable/bg_tmc_photo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+                <TextView android:textSize="11dp" android:textColor="#7b8184" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/browse_take_photo"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:id="@+id/layout_from_files" android:background="@drawable/btn_take_select_grallery_bg" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                <ImageButton android:id="@+id/from_files" android:background="@drawable/bg_tmc_gallery" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+                <TextView android:textSize="11dp" android:textColor="#7b8184" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:text="@string/browse_gallery"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/img_browse" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/img_net_browse" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+    <ProgressBar android:id="@+id/progress_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/common_progressbar" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" android:layout_centerInParent="true"/>
+</RelativeLayout>

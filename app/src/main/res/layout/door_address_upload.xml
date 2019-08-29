@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/layout_root" android:background="@color/frame_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="horizontal" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/title_bar_height">
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/door_address_title" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/back_btn" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:contentDescription="@string/Back"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/board_list_content_bg" android:padding="11dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="4dp" android:layout_marginRight="5dp">
+        <EditText android:textSize="14dp" android:textColor="@color/black_lite" android:textColorHint="@color/gary_heavy" android:id="@+id/edit" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:hint="@string/please_enter_address" android:lines="1" android:maxLength="100"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/add_image_LinearLayout" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/photoshop_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp" android:src="@drawable/housenob_image_add"/>
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/gary_assist" android:textColorHint="@color/v5_navi_set_text_color" android:gravity="center_vertical" android:id="@+id/add_image_txt" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="18dp" android:hint="@string/add_door_photo"/>
+        </LinearLayout>
+    </LinearLayout>
+    <Button android:textSize="16dp" android:textColor="@color/v3_font_white" android:id="@+id/up_data_but" android:background="@drawable/btn_busline_mapmode_selector" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="5dp" android:layout_marginRight="5dp" android:text="@string/submit"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="40dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/poi_tips_tel" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:id="@+id/poi_tips_tel_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/life_tips_phone" android:drawableLeft="@drawable/tips_tel" style="@style/Style_MapBottom_TabWidget"/>
+    </LinearLayout>
+    <View android:background="@color/poi_detail_bottom_bar_divider_color" android:layout_width="1px" android:layout_height="30dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/poi_tips_route" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/life_tips_gothere" android:drawableLeft="@drawable/tips_route" style="@style/Style_MapBottom_TabWidget"/>
+    </LinearLayout>
+    <View android:background="@color/poi_detail_bottom_bar_divider_color" android:layout_width="1px" android:layout_height="30dp"/>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/poi_tips_navi" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+        <TextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/life_tips_navi" android:drawableLeft="@drawable/tips_navi" style="@style/Style_MapBottom_TabWidget"/>
+    </LinearLayout>
+</LinearLayout>

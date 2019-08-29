@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/rd_camera_payment_type_item_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/rd_camera_payment_text_size_xlarge" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/type_name" android:padding="@dimen/rd_camera_payment_type_common_padding" android:layout_width="match_parent" android:layout_height="@dimen/rd_camera_payment_type_item_height" android:text="超速违章赔付" android:drawableRight="@drawable/common_litblack_right_arrow"/>
+    <ImageView android:id="@+id/bottom_separator" android:background="@color/bg_ca" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/rd_camera_payment_type_common_padding"/>
+</LinearLayout>

@@ -1,0 +1,52 @@
+package com.ali.user.mobile.rpc.vo.mobilegw.login;
+
+import com.ali.user.mobile.rpc.vo.mobilegw.ToString;
+import com.alipay.mobile.tinyappcustom.h5plugin.ocr.tools.BehavorReporter;
+import java.io.Serializable;
+import java.util.Map;
+
+public class UnifyLoginReq extends ToString implements Serializable {
+    public String IMEI;
+    public String IMSI;
+    public String accessPoint;
+    public String alipayEnvJson;
+    public String apdid;
+    public Map<String, String> appData;
+    public String appId;
+    public String appKey;
+    public String cellId;
+    public String channel;
+    public String checkCode;
+    public String checkCodeId;
+    public String clientType;
+    public String deviceId;
+    public Map<String, String> externParams;
+    public String isPrisonBreak;
+    public String lacId;
+    public String location;
+    public String loginId;
+    public String loginPwd;
+    public String loginType = BehavorReporter.PROVIDE_BY_ALIPAY;
+    public String mac;
+    public String mobileBrand;
+    public String mobileModel;
+    public String productId;
+    public String productVersion;
+    public String scene;
+    public String screenHigh;
+    public String screenWidth;
+    public String sdkVersion;
+    public String signData;
+    public String ssoToken;
+    public String systemType;
+    public String systemVersion;
+    public String taobaoEnvJson;
+    public String tid;
+    public String token;
+    public String ttid;
+    public String umidToken;
+    public String userAgent;
+    public String utdid;
+    public String validateTpye = "withsndpwd";
+    public String wifiNodeName;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/title_bar_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height" app:title_style="10"/>
+    </FrameLayout>
+    <FrameLayout android:id="@+id/webview_wrapper" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar_wrapper" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/vg_terms_web_view_container" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar_wrapper" android:layout_alignParentBottom="true">
+        <com.autonavi.widget.ui.LoadingViewBL android:id="@+id/lv_terms_loading" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:loadingType="5"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/vg_terms_tips" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_blank_1"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/terms_load_failure_tips"/>
+            <TextView android:gravity="center" android:id="@+id/tv_terms_refresh" android:layout_marginTop="30dp" android:text="@string/refresh" style="@style/btn_d3"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

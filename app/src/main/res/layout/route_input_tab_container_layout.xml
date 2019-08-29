@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/rl_tab_container" android:layout_width="wrap_content" android:layout_height="@dimen/route_46dp">
+    <LinearLayout android:paddingLeft="@dimen/route_10dp" android:paddingRight="@dimen/route_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/route_input_conbine_bg" android:background="@drawable/route_input_tab_bg" android:layout_width="wrap_content" android:layout_height="@dimen/route_26dp">
+            <com.autonavi.widget.gif.GifImageView android:id="@+id/route_input_conbine_img" android:paddingRight="@dimen/route_3dp" android:visibility="gone" android:layout_width="23dp" android:layout_height="20dp" android:scaleType="fitXY"/>
+            <TextView android:id="@+id/route_input_conbine_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="测试"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

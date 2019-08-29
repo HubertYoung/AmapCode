@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/realbus_search_norecord" android:background="#efefef" android:layout_width="match_parent" android:layout_height="320dp">
+        <View android:background="@color/bg_h" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/attention_banner" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-32dp" android:src="@drawable/realbus_search_banner"/>
+        <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_3" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="48dp" android:text="@string/bus_real_time_search_tips"/>
+    </FrameLayout>
+</FrameLayout>

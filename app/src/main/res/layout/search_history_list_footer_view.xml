@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/display_more_history_btn" android:background="@drawable/search_sugg_history_item_selector" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <View android:background="@drawable/board_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <TextView android:textSize="@dimen/default_font_size_t26" android:textColor="@color/f_c_3" android:gravity="center" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="40dp" android:text="更多历史记录"/>
+    </LinearLayout>
+    <View android:background="@drawable/board_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="@dimen/default_font_size_t26" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/delete_all_history_btn" android:background="@drawable/search_sugg_history_item_selector" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/del_history"/>
+</LinearLayout>

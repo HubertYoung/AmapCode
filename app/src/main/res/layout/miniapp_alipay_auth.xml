@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#fff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/parent" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+        <TextView android:textSize="18sp" android:textColor="#212121" android:id="@+id/miniapp_auth_close" android:paddingTop="9dp" android:paddingRight="9dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/auth_close"/>
+        <RelativeLayout android:id="@+id/auth_icon" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:layout_marginBottom="26dp" android:layout_below="@+id/miniapp_auth_close">
+            <ImageView android:id="@+id/ic_both" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_both" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/appIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="24dp" android:src="@drawable/ic_amap" android:scaleType="fitXY" android:layout_toLeftOf="@+id/ic_both" android:layout_centerVertical="true"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:src="@drawable/ic_alipay" android:scaleType="fitXY" android:layout_toRightOf="@+id/ic_both" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/divider" android:background="#e0e0e0" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginBottom="20dp" android:layout_below="@+id/auth_icon"/>
+        <TextView android:textSize="28sp" android:textColor="#de000000" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/auth_title" android:layout_below="@+id/divider"/>
+        <TextView android:textSize="16sp" android:textColor="#8a000000" android:id="@+id/description_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/description_1" android:layout_below="@+id/title"/>
+        <TextView android:textSize="18sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/action_button" android:background="@drawable/auth_action_btn_bg" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="24dp" android:text="@string/go_to_alipay_auth" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

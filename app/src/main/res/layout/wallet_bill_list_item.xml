@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/month" android:background="#efefef" android:paddingLeft="17dp" android:layout_width="match_parent" android:layout_height="28dp"/>
+    <View android:id="@+id/month_line" android:background="#cbcbcb" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="13dp" android:src="@drawable/wallet_bill_icon"/>
+        <RelativeLayout android:paddingLeft="12dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/source" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="source" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_3" android:id="@+id/money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="money" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_3" android:id="@+id/time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32dp" android:text="time" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_6" android:id="@+id/status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="status" android:layout_alignTop="@+id/time" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" android:layout_marginLeft="13dp"/>
+</LinearLayout>

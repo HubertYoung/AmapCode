@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_layout" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@+id/left_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <Button android:textSize="@dimen/font_h22" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/title_btn_left_illegal" android:background="@drawable/v4_common_title_btn_selector" android:paddingLeft="5dp" android:paddingTop="0dp" android:paddingRight="5dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/illegal_webview_gaode"/>
+            <ImageButton android:id="@+id/title_btn_img_left" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/illegal_webview_esc"/>
+        </LinearLayout>
+        <Button android:textSize="@dimen/font_h22" android:textColor="@color/white" android:gravity="center" android:id="@+id/title_btn_right" android:background="@drawable/v4_common_title_btn_selector" android:paddingLeft="5dp" android:paddingTop="0dp" android:paddingRight="5dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:text="@string/illegal_webview_ref" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/title_text_name" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:singleLine="true" android:layout_toLeftOf="@+id/title_btn_right" android:layout_toRightOf="@+id/left_btn" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <com.amap.bundle.webview.widget.ExtendedWebView android:id="@+id/webView" android:background="@android:color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/loading" android:background="@color/splash_day" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70dp" android:src="@drawable/loading_amap_icon" android:contentDescription="@null"/>
+                <TextView android:textSize="@dimen/font_34" android:textColor="@color/gary_" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp" android:text="@string/illegal_webview_gaode"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/loading_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="26dp">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_point_small" android:contentDescription="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

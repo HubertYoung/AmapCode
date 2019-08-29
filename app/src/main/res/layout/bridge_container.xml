@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="@dimen/AU_SPACE12">
+        <TextView android:textSize="@dimen/back_button_text_size" android:textColor="@color/back_button_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/button" android:layout_width="@dimen/AU_SPACE12" android:layout_height="@dimen/AU_SPACE12" android:text="@string/back_button_text"/>
+        <View android:layout_gravity="center_vertical" android:id="@+id/divider" android:background="@color/AU_COLOR7" android:layout_width="@dimen/AU_DIVIDER_SPACE1" android:layout_height="@dimen/AU_HEIGHT4"/>
+        <TextView android:textSize="@dimen/AU_TEXT_SIZE4" android:textColor="@color/title_text_color" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:layout_marginStart="@dimen/AU_SPACE3"/>
+    </LinearLayout>
+    <com.alipay.mobile.android.verify.bridge.BridgeWebView android:id="@+id/webView" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

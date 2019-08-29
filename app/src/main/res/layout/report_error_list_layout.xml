@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/text_report_navigating_title" app:title_style="5"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/empty" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/title">
+        <TextView android:textSize="15dp" android:textColor="@color/v6_navi_average_speed_color" android:gravity="center" android:id="@+id/emptyA" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/report_error_empty_down" android:singleLine="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/ll_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title"/>
+    <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/listview" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@drawable/search_dialog_listview_item_bg" android:cacheColorHint="#00000000" android:divider="@color/transparent" android:layout_above="@+id/bottom_layout" android:layout_below="@+id/ll_top"/>
+    <View android:background="@color/report_error_divider_color" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/listview"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_layout" android:background="@color/gray_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <EditText android:textSize="13dp" android:textColorHint="#adadad" android:id="@+id/edt_concact_way" android:background="@drawable/shape_navi_report" android:paddingLeft="4dp" android:paddingTop="10dp" android:paddingRight="4dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="8dp" android:hint="@string/text_report_error_contact_hint" android:singleLine="true" android:maxLength="40"/>
+    </LinearLayout>
+</RelativeLayout>

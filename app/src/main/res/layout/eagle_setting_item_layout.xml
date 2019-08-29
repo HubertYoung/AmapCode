@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/eagle_map_layout" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="12dp" android:layout_marginRight="4dp" android:layout_weight="1">
+            <ImageView android:id="@+id/eagle_map_bg_iv" android:background="@drawable/eagle_v_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/eagle_map_iv" android:layout_width="65dp" android:layout_height="65dp" android:layout_marginRight="30dp" android:src="@drawable/eagle_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/eagle_mapselected_iv" android:background="@drawable/eagle_setting_stroke_selected" android:layout_width="match_parent" android:layout_height="80dp"/>
+            <ImageView android:id="@+id/eagle_mapselected_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eagle_setting_selected_day" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/eagle_light_layout" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="4dp" android:layout_marginRight="12dp" android:layout_weight="1">
+            <ImageView android:id="@+id/eagle_light_bg_iv" android:background="@drawable/eagle_v_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/eagle_light_iv" android:layout_width="16dp" android:layout_height="73dp" android:layout_marginTop="4dp" android:layout_marginRight="30dp" android:layout_marginBottom="4dp" android:src="@drawable/eagle_lightcross_icon" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/eagle_lightselected_iv" android:background="@drawable/eagle_setting_stroke_selected" android:layout_width="match_parent" android:layout_height="80dp"/>
+            <ImageView android:id="@+id/eagle_lightselected_icon_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/eagle_setting_selected_day" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/eagle_text_layout" android:layout_width="match_parent" android:layout_height="50dp">
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/eagle_setting_map_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/eagle_setting_tmc" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/eagle_setting_light_tv" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/eagle_setting_eagle" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

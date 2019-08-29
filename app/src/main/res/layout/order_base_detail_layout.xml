@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/movie_list_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout android:id="@+id/movie_detial_title" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:layout_width="match_parent" android:layout_height="50dp" layout="@layout/title_back_layout"/>
+    </com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>
+    <com.amap.bundle.webview.widget.ExtendedWebView android:id="@+id/movie_detail_webview" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/movie_detial_title"/>
+</RelativeLayout>

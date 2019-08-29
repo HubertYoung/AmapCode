@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:id="@+id/expandable_icon_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/expandable_icon_text_container" android:layout_width="wrap_content" android:layout_height="40dp">
+        <TextView android:textSize="13dp" android:textColor="#ffffff" android:ellipsize="end" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/expandable_icon_text" android:background="@drawable/drive_layer_tip_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxEms="10" android:singleLine="true"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/expandable_icon_icon" android:background="@drawable/icon_c_bg_single" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size" android:src="@drawable/icon_c17_selector" android:scaleType="fitCenter"/>
+</LinearLayout>

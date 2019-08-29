@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:opacity="opaque">
+    <item android:drawable="@android:color/white"/>
+    <item android:top="40dp">
+        <bitmap android:gravity="top" android:src="@drawable/splash_top"/>
+    </item>
+    <item>
+        <bitmap android:gravity="center" android:src="@drawable/splash_center"/>
+    </item>
+    <item>
+        <bitmap android:gravity="bottom" android:src="@drawable/v3_splash"/>
+    </item>
+</layer-list>

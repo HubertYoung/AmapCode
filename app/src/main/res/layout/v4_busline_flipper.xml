@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/poi_detail_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/busline_staticon_info_layout" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="58dp">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/font_32" android:textColor="#42a5ff" android:gravity="center" android:id="@+id/busline_staticon_detail_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_detail" android:drawableRight="@drawable/bus_result_map_footer_arrow" android:drawablePadding="@dimen/route_4dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_10dp" android:layout_marginBottom="@dimen/route_10dp" android:layout_toLeftOf="@+id/busline_staticon_detail_textview" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/busline_staticon_info_textview" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/busline_station_realtime_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_5dp" android:singleLine="true" android:drawableLeft="@anim/realtime_busline_gif" android:drawablePadding="4dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="#e6e6e6" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/busline_station_search_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <RelativeLayout android:id="@+id/busline_search_around" android:background="@drawable/v4_common_idle_tap_selector" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/font_24" android:textColor="#676c65" android:gravity="center" android:id="@+id/tv_fujin" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/busline_arround_search" android:drawableLeft="@drawable/tips_nearby" android:drawablePadding="7dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <View android:layout_gravity="center_vertical" android:background="#e6e6e6" android:layout_width="@dimen/route_1px" android:layout_height="23dp" android:contentDescription="@null"/>
+        <RelativeLayout android:id="@+id/busline_search_route" android:background="@drawable/v4_common_idle_tap_selector" android:layout_width="0dp" android:layout_height="42dp" android:layout_weight="1">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/font_24" android:textColor="#676c65" android:gravity="center" android:id="@+id/tv_luxian" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/busline_route" android:drawableLeft="@drawable/tips_route" android:drawablePadding="7dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

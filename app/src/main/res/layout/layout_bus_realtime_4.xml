@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_rt_bus_stop_focus1" android:scaleType="fitCenter"/>
+    <com.autonavi.minimap.route.common.view.RouteStrokeTextView android:textSize="12dp" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/rt_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_4dp" android:maxLines="1" android:maxEms="20"/>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ali.user.mobile.util.ResizeScrollView android:id="@+id/scrollview" android:paddingLeft="20dp" android:paddingRight="20dp" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <RelativeLayout android:id="@+id/wrapper" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                <TextView android:text="@string/alipay_text_phone_register" style="@style/alipay_reg_title_text"/>
+                <com.ali.user.mobile.ui.widget.AUPhoneInputBox android:id="@+id/reg_phone_num" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp"/>
+                <Button android:enabled="false" android:id="@+id/reg_confirm" android:layout_marginTop="30dp" android:text="@string/alipay_registNew" style="@style/alipay_reg_main_button"/>
+            </LinearLayout>
+            <TextView android:textSize="14dp" android:textColor="@color/alipay_colorLightGrayV2" android:gravity="left" android:id="@+id/taobao_protocol" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="450dp" android:layout_marginRight="6dp" android:layout_marginBottom="30dp" android:layout_alignParentBottom="true" android:lineSpacingExtra="7dp"/>
+        </RelativeLayout>
+    </com.ali.user.mobile.util.ResizeScrollView>
+    <com.ali.user.mobile.ui.widget.APTitleBar android:id="@+id/titlebar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true"/>
+</RelativeLayout>

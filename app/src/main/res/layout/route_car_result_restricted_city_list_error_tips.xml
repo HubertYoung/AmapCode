@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:layout_gravity="center" android:id="@+id/restricted_city_list_error_tips" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/restrict_tips_icon_layout" android:layout_width="@dimen/restricted_list_loading_width" android:layout_height="@dimen/restricted_list_loading_height" android:layout_centerHorizontal="true">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@+id/restrict_tips_error_on_loading" android:layout_width="match_parent" android:layout_height="match_parent" android:indeterminateDrawable="@drawable/restricted_area_frament_loading"/>
+        <ImageView android:id="@+id/restrict_tips_error_icon" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/restricted_area_fragment_loading_failed_selector" android:scaleType="fitXY"/>
+    </FrameLayout>
+    <TextView android:textSize="14dp" android:textColor="@color/default_font_color_cad" android:gravity="center" android:id="@+id/restrict_tips_text" android:layout_width="130dp" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="您的网络好像有问题请稍后重试" android:layout_below="@+id/restrict_tips_icon_layout" android:layout_centerInParent="true"/>
+</RelativeLayout>

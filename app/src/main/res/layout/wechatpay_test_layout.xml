@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp">
+        <Button android:id="@+id/pay_test_wxpay_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付"/>
+        <Button android:id="@+id/pay_test_wxpay_login_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="登陆"/>
+        <Button android:id="@+id/pay_test_wxpay_signscore_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付分签约"/>
+        <Button android:id="@+id/pay_test_wxpay_isinstalled_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="是否安装"/>
+    </LinearLayout>
+</RelativeLayout>

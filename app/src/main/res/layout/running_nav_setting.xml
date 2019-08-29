@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/blank_container" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/running_cancel_mask" android:background="@color/c_5_b" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/root_view"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_view" android:background="@color/c_3" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/run_route_setting_to_voice_square" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/route_44dp" android:layout_marginLeft="15dp" android:layout_marginRight="18dp">
+                <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="35dp" android:text="@string/debug_run_navi_setting_voice_5s_tip" android:layout_centerVertical="true"/>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/aui_right_arrow" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/route_44dp" android:layout_marginLeft="@dimen/route_15dp">
+                <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_run_navi_setting_voice_swtich" android:layout_centerVertical="true"/>
+                <CheckBox android:layout_gravity="center_vertical" android:id="@+id/running_voice_setting" android:background="@drawable/v4_checkbox_bg" android:clickable="false" android:layout_width="63dp" android:layout_height="44dp" android:layout_marginRight="@dimen/route_3dp" android:checked="true" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <View android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/c_12" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/running_navi_setting_exit" android:background="@drawable/bg_foot_setting_exit" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/real_time_close"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/immersive_status_bar_placeholder" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="0dp" android:layout_alignParentTop="true"/>
+    <com.autonavi.bundle.searchcommon.view.SearchKeywordResultTitleView android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="@dimen/v3_bottom_bar_height" android:layout_below="@+id/immersive_status_bar_placeholder"/>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.autonavi.map.widget.RecyclableViewPager android:id="@+id/busline_station_bottom_viewpager" android:layout_width="match_parent" android:layout_height="@dimen/search_result_map_bottom"/>
+    </RelativeLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

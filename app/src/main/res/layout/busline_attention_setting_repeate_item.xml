@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/route_45dp">
+    <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/f_c_2" android:id="@+id/tv_day" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_12dp" android:layout_marginRight="@dimen/route_12dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/iv_checkoutyes" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_12dp" android:src="@drawable/order_hotel_choose_city_selected" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/view_line" android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_marginLeft="@dimen/route_8dp" android:layout_alignParentBottom="true"/>
+    <View android:id="@+id/view_line_parent" android:background="@color/bg_ea" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

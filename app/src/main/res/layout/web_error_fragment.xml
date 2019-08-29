@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#ffffff" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height" app:title="出错了" app:title_style="10"/>
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/web_error_image" android:layout_above="@+id/web_error_text" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="16dp" android:textColor="@color/f_c_3" android:id="@+id/web_error_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:text="页面好像出错了呢！" android:layout_centerInParent="true"/>
+    <Button android:textSize="14dp" android:textColor="#0091ff" android:id="@+id/refresh_btn" android:background="@drawable/web_refresh_btn" android:paddingLeft="20dp" android:paddingTop="8dp" android:paddingRight="20dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:text="刷新" android:layout_below="@+id/web_error_text" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

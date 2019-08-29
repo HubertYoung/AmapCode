@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_01" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="12sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/txt_name_01" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/txt_value_01" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp">
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/txt_name_02" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+        <TextView android:textSize="13sp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/txt_value_02" android:paddingLeft="2dp" android:paddingRight="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</merge>

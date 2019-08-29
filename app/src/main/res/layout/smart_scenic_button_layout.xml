@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <RelativeLayout android:id="@+id/childmenu" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/smart_scenic_height" android:layout_marginLeft="@dimen/smart_scenic_submenu_margin_left">
+        <com.autonavi.minimap.life.smartscenic.widget.SmartScenicItemsLayout android:id="@+id/recycler_line_nemu" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.autonavi.minimap.life.smartscenic.widget.SmartScenicItemsLayout android:id="@+id/recyler_search_menu" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.autonavi.minimap.life.smartscenic.widget.SmartScenicItemsLayout android:id="@+id/recyler_tour_menu" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/menulayout" android:layout_width="@dimen/map_container_btn_size" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+        <com.autonavi.minimap.life.smartscenic.widget.ScrollCallbackScrollView android:id="@+id/menuscroller" android:background="@drawable/smart_scenic_bg" android:paddingTop="@dimen/smart_scenic_item_padding" android:paddingBottom="@dimen/smart_scenic_item_padding" android:visibility="visible" android:scrollbars="none" android:layout_width="@dimen/map_container_btn_size" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/menucontainer" android:layout_width="@dimen/map_container_btn_size" android:layout_height="wrap_content"/>
+        </com.autonavi.minimap.life.smartscenic.widget.ScrollCallbackScrollView>
+        <View android:id="@+id/menuup" android:background="@drawable/guide_map_up" android:visibility="gone" android:layout_width="@dimen/map_container_btn_size" android:layout_height="33dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <View android:id="@+id/menudown" android:background="@drawable/guide_map_down" android:visibility="gone" android:layout_width="@dimen/map_container_btn_size" android:layout_height="33dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/smart_audio_guide" android:background="@drawable/icon_c_bg_single" android:visibility="gone" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size" android:src="@drawable/smart_scenic_audio_bg"/>
+</merge>

@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:textSize="16dp" android:textColor="@color/font_normal_title_text_color" android:gravity="center" android:id="@android:id/text1" android:background="@drawable/transparent" android:layout_width="match_parent" android:layout_height="250dp"/>

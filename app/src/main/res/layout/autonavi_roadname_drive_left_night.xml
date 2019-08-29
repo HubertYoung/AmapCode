@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/roadname_container" android:background="@drawable/autonavi_roadname_drive_left_night" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textColor="@color/white" android:layout_gravity="center" android:id="@+id/roadname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    </LinearLayout>
+    <TextView android:id="@+id/paddingview" android:background="#00000000" android:layout_width="1dp" android:layout_height="match_parent"/>
+</LinearLayout>

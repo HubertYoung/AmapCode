@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="3dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/scenic_area_root" android:background="@drawable/map_guide_view_center_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="@dimen/map_guide_center_height" android:elevation="2dp">
+        <TextView android:textSize="14dp" android:textColor="#547eff" android:id="@+id/scenic_area_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scenic_area_text" android:maxLines="1" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

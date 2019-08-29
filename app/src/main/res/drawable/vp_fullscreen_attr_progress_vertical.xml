@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:id="@android:id/background">
+        <shape>
+            <gradient android:startColor="#ff666666" android:endColor="#ff666666" android:angle="270" android:centerY="0.75" android:centerColor="#ff666666"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <clip android:gravity="bottom" android:clipOrientation="vertical">
+            <shape>
+                <gradient android:startColor="#ffe72c00" android:endColor="#ffe72c00" android:angle="270" android:centerY="0.75" android:centerColor="#ffe72c00"/>
+            </shape>
+        </clip>
+    </item>
+</layer-list>

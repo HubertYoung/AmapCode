@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header_container" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/search_title" layout="@layout/fav_common_search_header"/>
+        <View android:background="@color/c_13" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/select_poi_tab" android:background="@color/gary_tab" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_below="@+id/header_container">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/mylocation" android:background="@drawable/v4_common_tab_left_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="54dp" android:layout_weight="1">
+            <TextView android:gravity="center" android:focusable="false" android:text="@string/save_search_fragment_my_location" android:drawableLeft="@drawable/funicon_local_tab_quicknavi" android:drawablePadding="3dp" style="@style/Style_MapBottom_TabWidget"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/mappoint" android:background="@drawable/v4_common_tab_right_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:minHeight="54dp" android:layout_weight="1">
+            <TextView android:gravity="center" android:focusable="false" android:text="@string/v4_mapclick" android:drawableLeft="@drawable/funicon_mappoint_tab_quicknavi" android:drawablePadding="3dp" style="@style/Style_MapBottom_TabWidget"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ListView android:id="@+id/search_sug_container" android:background="@drawable/board_list_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_below="@+id/select_poi_tab"/>
+    <ListView android:id="@+id/history_list_view" android:background="@drawable/board_list_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null" android:layout_below="@+id/select_poi_tab"/>
+</RelativeLayout>

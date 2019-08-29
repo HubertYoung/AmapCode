@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/page_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.alipay.mobile.antui.basic.AUTitleBar android:id="@+id/aptitlebar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/container" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+            <RelativeLayout android:id="@+id/map_select_center_offset_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/iv_bubble_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_shadow" android:layout_centerInParent="true"/>
+                <ImageView android:id="@+id/iv_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5dp" android:layout_above="@+id/iv_bubble_shadow" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <ImageView android:id="@+id/activity_chooselocation_location" android:background="@drawable/miniapp_bg_location" android:layout_width="37dp" android:layout_height="37dp" android:layout_margin="13dp" android:src="@drawable/miniapp_navi_plane" android:scaleType="center" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <com.autonavi.miniapp.plugin.view.ChoosePointBottomBar android:id="@+id/choose_poi_bottomBar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</FrameLayout>

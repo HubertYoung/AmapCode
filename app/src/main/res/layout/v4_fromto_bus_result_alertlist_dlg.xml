@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/content_view" android:layout_width="match_parent" android:layout_height="355dp">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:gravity="center" android:background="@color/v4_btn_layout_bg" android:layout_width="match_parent" android:layout_height="35dp" android:text="@string/route_bus_detail_take_busnumber"/>
+        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="1px"/>
+        <ListView android:id="@+id/bus_result_alert_List" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="12dp" android:divider="@color/font_cdg" android:dividerHeight="1px" android:layout_weight="1"/>
+        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="1px"/>
+        <View android:background="@color/v4_btn_layout_bg" android:layout_width="match_parent" android:layout_height="10dp"/>
+        <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="1px"/>
+        <Button android:textSize="@dimen/font_34" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/btn_cancel" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/bus_green_end_cancel"/>
+    </LinearLayout>
+</RelativeLayout>

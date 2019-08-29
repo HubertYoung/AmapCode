@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true" android:splitMotionEvents="false">
+    <View android:id="@+id/cover" android:background="#99000000" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/feedback_layout" android:background="#f8f8f8" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="18dp" android:textColor="#0091ff" android:gravity="center_horizontal" android:id="@+id/feedback" android:paddingLeft="44dp" android:paddingRight="44dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/voice_loading" android:lineSpacingExtra="3dp"/>
+        <TextView android:textSize="18dp" android:textColor="#0091ff" android:gravity="center_horizontal" android:id="@+id/function" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25dp" android:layout_marginBottom="20dp" android:text="@string/go_to_set"/>
+    </LinearLayout>
+</RelativeLayout>

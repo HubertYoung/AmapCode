@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/tilte" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/title_btn_left" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/talkback_return"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/title_text_name" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginRight="60dp" android:text="LeakInfo" android:singleLine="true" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+    </RelativeLayout>
+    <ListView android:id="@+id/buginfo_list" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/tilte"/>
+</RelativeLayout>

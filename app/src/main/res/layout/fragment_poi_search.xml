@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AULinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/AU_COLOR_UNIVERSAL_BG" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.alipay.mobile.antui.basic.AURelativeLayout android:background="#262a3b" android:layout_width="match_parent" android:layout_height="48dp">
+        <com.autonavi.miniapp.plugin.search.AUSocialSearchBar android:id="@+id/search_bar" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </com.alipay.mobile.antui.basic.AURelativeLayout>
+    <com.alipay.mobile.antui.basic.AUFrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.alipay.mobile.antui.basic.AUListView android:id="@+id/search_result_list" android:layout_width="match_parent" android:layout_height="match_parent" android:divider="@color/divider" android:dividerHeight="1px" android:choiceMode="singleChoice" android:footerDividersEnabled="true"/>
+        <com.alipay.mobile.antui.basic.AUTextView android:gravity="center" android:id="@+id/search_no_result" android:visibility="gone" android:layout_width="match_parent" android:layout_height="64dp" android:text="@string/no_search_result"/>
+    </com.alipay.mobile.antui.basic.AUFrameLayout>
+</com.alipay.mobile.antui.basic.AULinearLayout>

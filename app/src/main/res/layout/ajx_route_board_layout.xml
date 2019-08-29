@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/defaultpage_drawer_content" android:background="#00000000" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:background="#ffffff" android:paddingLeft="16dp" android:paddingBottom="24dp" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</FrameLayout>

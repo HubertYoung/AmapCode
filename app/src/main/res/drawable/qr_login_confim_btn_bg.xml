@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:shape="rectangle">
+    <solid android:color="@color/c_12"/>
+    <stroke android:width="0.5dp" android:color="@color/c_12"/>
+    <corners android:topLeftRadius="@dimen/qr_login_confim_btn_corner" android:topRightRadius="@dimen/qr_login_confim_btn_corner" android:bottomLeftRadius="@dimen/qr_login_confim_btn_corner" android:bottomRightRadius="@dimen/qr_login_confim_btn_corner"/>
+</shape>

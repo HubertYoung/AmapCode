@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <Button android:id="@+id/button_open_log" android:background="@drawable/ajxdebug_log_icon" android:padding="5dp" android:layout_width="30dp" android:layout_height="30dp"/>
+        <Button android:id="@+id/refresh_online" android:background="@drawable/ajxdebug_refresh_online" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="15dp"/>
+        <Button android:id="@+id/refresh_local" android:background="@drawable/ajxdebug_refresh_local" android:padding="5dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="15dp"/>
+        <Button android:id="@+id/setting" android:background="@drawable/ajxdebug_scan" android:padding="5dp" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="15dp"/>
+    </LinearLayout>
+    <com.autonavi.minimap.auidebugger.boommenu.BoomMenuButton android:id="@+id/boom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.5" android:layout_alignParentStart="true" app:boom_inActionBar="false" app:boom_button_color="@color/colorPrimary" app:boom_button_pressed_color="@color/colorPrimaryDark"/>
+</RelativeLayout>

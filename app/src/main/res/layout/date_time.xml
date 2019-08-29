@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/date_selector_root" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/date_selector_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="8dp">
+        <com.autonavi.minimap.ajx3.widget.view.timepicker.TimePickerWidgetView android:id="@+id/date_year" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.autonavi.minimap.ajx3.widget.view.timepicker.TimePickerWidgetView android:id="@+id/date_month" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.autonavi.minimap.ajx3.widget.view.timepicker.TimePickerWidgetView android:id="@+id/date_day" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.autonavi.minimap.ajx3.widget.view.timepicker.TimePickerWidgetView android:id="@+id/date_hour" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+        <com.autonavi.minimap.ajx3.widget.view.timepicker.TimePickerWidgetView android:id="@+id/date_minute" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

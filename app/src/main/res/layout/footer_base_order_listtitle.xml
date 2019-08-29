@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/ll_footer_parent" android:layout_width="match_parent" android:layout_height="45dp">
+    <View android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="45dp"/>
+</LinearLayout>

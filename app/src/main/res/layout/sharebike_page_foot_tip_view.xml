@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sharebike_onfoot_tip" android:background="@drawable/sharebike_pop_foot_tip_bg" android:paddingLeft="@dimen/route_15dp" android:paddingRight="@dimen/route_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f_s_14" android:textStyle="bold" android:textColor="@color/c_15" android:id="@+id/sharebike_foot_time" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_4" android:id="@+id/sharebike_foot_distance" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:id="@+id/sharebike_foot_loading" android:paddingLeft="@dimen/route_14dp" android:paddingRight="@dimen/route_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/text_loading_sb_route"/>
+        </LinearLayout>
+        <View android:background="#d8d8d8" android:layout_width="@dimen/route_1dp" android:layout_height="match_parent" android:layout_margin="@dimen/route_8dp"/>
+        <ImageView android:id="@+id/sharebike_foot_tip_navi_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_3dp" android:layout_marginBottom="@dimen/route_3dp" android:src="@drawable/walk_navi_icon"/>
+    </LinearLayout>
+    <Button android:background="@color/transparent" android:layout_width="55dp" android:layout_height="52dp"/>
+</LinearLayout>

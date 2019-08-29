@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/capture_layout" android:background="@drawable/screen_capture_close_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/capture_btn" android:background="@drawable/screen_capture_close_btn" android:layout_width="48dp" android:layout_height="48dp" android:layout_centerInParent="true"/>
+</LinearLayout>

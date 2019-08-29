@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/realtime_bus_recom_common" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/real_bus_recom_common_outside" android:paddingBottom="@dimen/route_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/real_bus_recom_common_outside_main" android:layout_width="wrap_content" android:layout_height="85dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/real_bus_recom_common_content_main" android:background="@drawable/realtimebus_combg_pop" android:layout_width="wrap_content" android:layout_height="67.5dp" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/real_bus_recom_common_main" android:layout_width="wrap_content" android:layout_height="61.5dp">
+                    <LinearLayout android:gravity="center" android:id="@+id/real_bus_recom_common_flag_main" android:background="@drawable/recommed_search" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_3dp" android:layout_marginTop="@dimen/route_4dp" android:weightSum="1">
+                        <ImageView android:id="@+id/real_bus_recom_common_flag_icon" android:layout_width="13dp" android:layout_height="13dp" android:layout_marginLeft="@dimen/route_2dp" android:src="@drawable/realtimebus_search_big_pop" android:layout_weight="4.89"/>
+                        <TextView android:textSize="10sp" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/real_bus_recom_common_flag" android:layout_width="wrap_content" android:layout_height="@dimen/route_15dp" android:layout_marginRight="@dimen/route_3dp" android:text="@string/recommed_search"/>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:id="@+id/real_bus_recom_common_businfo_main" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.5dp">
+                        <TextView android:textSize="17sp" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/real_bus_recom_common_linename" android:layout_width="wrap_content" android:layout_height="25.5dp" android:layout_marginRight="@dimen/route_10dp" android:text="467路"/>
+                        <TextView android:textSize="12sp" android:textColor="@color/f_c_3" android:id="@+id/real_bus_recom_common_linenumtime" android:layout_width="wrap_content" android:layout_height="16.5dp" android:text="2站 15分钟"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/real_bus_recom_common_linetime_main" android:layout_width="21dp" android:layout_height="21dp" android:layout_marginLeft="-4dp" android:layout_marginTop="@dimen/route_5dp" android:layout_marginRight="3dp">
+                    <ImageView android:id="@+id/real_bus_recom_common_linename_icon" android:layout_width="21dp" android:layout_height="21dp" android:src="@drawable/realtimebus_pop_signalicon" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/realtime_bus_gray_close_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/real_bus_recom_common_close" android:layout_width="@dimen/route_30dp" android:layout_height="@dimen/route_30dp" android:src="@drawable/realtimebus_gray_close"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

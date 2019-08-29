@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/rescue_play_dlg_bg_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <RelativeLayout android:paddingBottom="16dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/rescue_play_dlg_bg_iv" android:layout_centerHorizontal="true">
+            <TextView android:textSize="19dp" android:textColor="#66340f" android:gravity="center" android:id="@+id/rescue_play_dlg_text_tv" android:background="#00000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="解救朋友成功\10送你500金币" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="20dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/rescue_play_dlg_btn_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.5dp" android:text="你好" android:layout_below="@+id/rescue_play_dlg_text_tv" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <View android:id="@+id/rescue_play_dlg_divide_view" android:background="#ffffff" android:layout_width="2dp" android:layout_height="43dp" android:layout_below="@+id/rescue_play_dlg_bg_iv" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/rescue_play_dlg_cancel_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/rescue_play_dlg_cancel" android:layout_below="@+id/rescue_play_dlg_divide_view" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

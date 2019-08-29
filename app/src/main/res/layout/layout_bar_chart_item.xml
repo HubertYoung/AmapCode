@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/bar_chart_left_right_padding" android:paddingRight="@dimen/bar_chart_left_right_padding" android:layout_width="wrap_content" android:layout_height="match_parent">
+    <TextView android:textSize="10dp" android:textColor="@color/f_c_2" android:id="@+id/tv_info" android:paddingTop="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/layout_view_bar_chart" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/tv_info" android:layout_centerHorizontal="true">
+        <View android:id="@+id/view_bar_chart" android:background="@drawable/bar_chart_item_bg_corner" android:paddingTop="4dp" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="10dp" android:textColor="@color/f_c_2" android:id="@+id/tv_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_above="@+id/layout_view_bar_chart" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

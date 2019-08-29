@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:shape="oval" android:useLevel="false">
+    <solid android:color="@color/c_27"/>
+    <size android:height="@dimen/route_180dp" android:width="@dimen/route_180dp"/>
+    <stroke android:width="2dp" android:color="@android:color/transparent"/>
+</shape>

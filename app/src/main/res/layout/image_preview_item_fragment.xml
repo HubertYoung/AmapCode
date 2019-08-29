@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#010000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.LoadingViewBL android:layout_gravity="center" android:id="@+id/image_detail_loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:loadingType="4"/>
+    <com.autonavi.widget.photoview.PhotoView android:id="@+id/image_detail_photo" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_gravity="bottom|left|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@color/bg_color_transparent" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginLeft="15dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp">
+        <TextView android:textSize="16dp" android:textColor="@color/text_color_white" android:id="@+id/image_detail_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1/11" android:singleLine="true" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/text_color_white" android:ellipsize="end" android:id="@+id/image_detail_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="5dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="照片" android:maxLines="2" android:layout_toLeftOf="@+id/image_detail_download" android:layout_toRightOf="@+id/image_detail_index" android:layout_alignBaseline="@+id/image_detail_index"/>
+        <ImageView android:id="@+id/image_detail_download" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/image_preview_download_btn" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</FrameLayout>

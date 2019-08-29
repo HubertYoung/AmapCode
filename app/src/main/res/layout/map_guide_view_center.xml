@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:paddingLeft="2dp" android:paddingTop="2dp" android:paddingRight="2dp" android:paddingBottom="3dp" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/map_guide_root" android:background="@drawable/map_guide_view_center_bg" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="@dimen/map_guide_center_height" android:contentDescription="@string/open_guide_fg" android:elevation="2dp">
+        <TextView android:textSize="14dp" android:textColor="#547eff" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/indoor_guide_text" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

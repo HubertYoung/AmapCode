@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="account:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_setting_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="邮箱/手机" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="auth:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_setting_auth" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="密码/支付宝免密协议号" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_account_testpage_setting_verifycode" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="验证码"/>
+        <Button android:id="@+id/btn_account_testpage_setting_initpwd" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="初始化密码"/>
+        <Button android:id="@+id/btn_account_testpage_setting_alipayauth" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="支付宝授权信息"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_account_testpage_setting_deactivate" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="注销"/>
+        <Button android:id="@+id/btn_account_testpage_login_appeal" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="申诉"/>
+    </LinearLayout>
+</LinearLayout>

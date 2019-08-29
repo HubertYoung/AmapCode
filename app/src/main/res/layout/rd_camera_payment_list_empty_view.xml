@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:id="@+id/empty_view" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textSize="15dp" android:textColor="@color/f_c_3" android:gravity="center_horizontal" android:id="@+id/info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activities_not_login_empty_list_info" android:lineSpacingExtra="10dp"/>
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="16dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/look_over_activities_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/amap_app_name" android:singleLine="true"/>
+    </LinearLayout>
+    <Button android:textSize="16dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/button1" android:background="@drawable/rd_carmera_blue_corner_btn_bg" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:layout_marginBottom="45dp" android:text="@string/amap_app_name"/>
+</LinearLayout>

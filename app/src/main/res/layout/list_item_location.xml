@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.alipay.mobile.antui.basic.AURelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@drawable/location_list_bg_selector" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="64dp" android:minHeight="64dp">
+    <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="78dp" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AUTextView android:textSize="16dp" android:textColor="#333333" android:id="@+id/poiselect_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawablePadding="6dp"/>
+        <com.alipay.mobile.antui.basic.AULinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <com.alipay.mobile.antui.basic.AUTextView android:textSize="13dp" android:textColor="#999999" android:id="@+id/poiselect_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="6dp" android:singleLine="true"/>
+            <com.alipay.mobile.antui.basic.AUTextView android:textSize="13dp" android:textColor="#999999" android:id="@+id/poiselect_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        </com.alipay.mobile.antui.basic.AULinearLayout>
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+    <com.alipay.mobile.antui.basic.AULinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <com.alipay.mobile.antui.basic.AUImageView android:id="@+id/poiselect_selection_mark" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="16dp"/>
+        <com.alipay.mobile.antui.basic.AUImageView android:id="@+id/action_phone" android:visibility="gone" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginRight="16dp"/>
+        <com.alipay.mobile.antui.basic.AUImageView android:id="@+id/action_goto" android:visibility="gone" android:layout_width="19dp" android:layout_height="19dp" android:layout_marginRight="16dp"/>
+    </com.alipay.mobile.antui.basic.AULinearLayout>
+    <com.alipay.mobile.antui.basic.AUImageView android:background="@color/AU_COLOR_UNIVERSAL_BG" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</com.alipay.mobile.antui.basic.AURelativeLayout>

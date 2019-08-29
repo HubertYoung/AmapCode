@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="30dp">
+    <Button android:id="@+id/bt02" android:background="@drawable/common_cut_btn_selector" android:layout_width="31dp" android:layout_height="30dp" android:contentDescription="@string/cut_day_description"/>
+    <TextView android:textSize="14sp" android:textColor="@color/black" android:gravity="center" android:id="@+id/et01" android:background="@drawable/add_cut_mid" android:layout_width="33dp" android:layout_height="30dp" android:singleLine="true" android:layout_toRightOf="@+id/bt02" android:layout_toEndOf="@+id/bt02"/>
+    <Button android:id="@+id/bt01" android:background="@drawable/common_add_btn_selector" android:layout_width="31dp" android:layout_height="30dp" android:layout_toRightOf="@+id/et01" android:contentDescription="@string/add_day_description" android:layout_toEndOf="@+id/et01"/>
+</RelativeLayout>

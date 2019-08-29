@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/quickautonavi_setting_bt_sound_channel_content" app:title_style="4"/>
+    <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <ScrollView android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/bt_sound_channel_layout" android:background="@drawable/ns_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/bt_sound_channel_text" android:paddingLeft="@dimen/quickautonavi_padding_right" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/quickautonavi_setting_bt_sound_channel_content" android:drawableLeft="@drawable/bluetooth_speaker_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/bt_channel_selection" android:background="@drawable/height_frame" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:minHeight="36dp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/checkbox_media_channel" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="2dp" android:text="@string/media_channel" android:layout_weight="1"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp"/>
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/checkbox_telephony_channel" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="@string/telephony_channel" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/f_c_4" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="8dp" android:text="@string/bt_sound_channel_prompt_media_title" android:singleLine="false"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/f_c_4" android:gravity="left" android:id="@+id/media_channel_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quickautonavi_padding_right" android:layout_marginTop="8dp" android:text="@string/bt_sound_channel_prompt_media_content" android:singleLine="false"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="12dp" android:textColor="@color/f_c_4" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/bt_sound_channel_prompt_telephony_title" android:singleLine="false"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/f_c_4" android:gravity="left" android:id="@+id/telephony_channel_summary" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quickautonavi_padding_right" android:layout_marginRight="16dp" android:layout_marginBottom="8dp" android:text="@string/bt_sound_channel_prompt_telephony_content" android:singleLine="false"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@drawable/ns_bg" android:paddingLeft="16dp" android:paddingRight="16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/bt_sound_channel_prompt_summary_one"/>
+                    <TextView android:textSize="@dimen/f_s_16" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/bt_sound_channel_prompt_summary_two"/>
+                    <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/bt_sound_channel_prompt_summary_three"/>
+                    <TextView android:textSize="@dimen/f_s_16" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="24dp" android:text="@string/bt_sound_channel_prompt_summary_four"/>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

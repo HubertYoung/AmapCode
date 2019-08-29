@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.search.comment.widget.SpuareLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_12" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/img_takephoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_takephoto" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+        <TextView android:textColor="@android:color/white" android:id="@+id/txt_takephoto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="13sp" android:text="@string/comment_photo_publish" android:layout_below="@+id/img_takephoto" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.autonavi.map.search.comment.widget.SpuareLayout>

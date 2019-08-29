@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/tab_layout" android:background="#f8f8f8" android:paddingTop="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="42dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:tag="layout1" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:tag="textview1" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/groupbug_fen" style="@style/filter_btn_text_style"/>
+        </LinearLayout>
+        <View android:background="#cacaca" android:layout_width="1px" android:layout_height="16dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp"/>
+        <LinearLayout android:gravity="center" android:tag="layout2" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:tag="textview2" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="搜索" style="@style/filter_btn_text_style"/>
+        </LinearLayout>
+        <View android:background="#cacaca" android:layout_width="1px" android:layout_height="16dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp"/>
+        <LinearLayout android:gravity="center" android:tag="layout3" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:tag="textview3" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/groupbug_fen_search" style="@style/filter_btn_text_style"/>
+        </LinearLayout>
+        <View android:background="#cacaca" android:layout_width="1px" android:layout_height="16dp" android:layout_marginTop="13dp" android:layout_marginBottom="13dp"/>
+        <LinearLayout android:gravity="center" android:tag="layout4" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:id="@+id/more_condition_textView" android:tag="textview4" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/groupbug_morecondition" style="@style/filter_btn_style"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#cacaca" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

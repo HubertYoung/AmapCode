@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:layout_gravity="center" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" layout="@layout/title_view_layout"/>
+    <RelativeLayout android:gravity="center" android:id="@+id/empty" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="15dp" android:textColor="@color/v6_navi_average_speed_color" android:gravity="center" android:id="@+id/emptyA" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/empty_push" android:singleLine="true"/>
+        <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:gravity="center" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/empty_push_test" android:singleLine="true" android:layout_below="@+id/emptyA"/>
+    </RelativeLayout>
+    <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/order_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="8dp" android:layout_below="@+id/title" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/channel_refresh_hl"/>
+    <include android:visibility="gone" layout="@layout/v4_order_hotel_phone_verify_layout"/>
+    <include android:visibility="gone" layout="@layout/order_base_login_layout"/>
+</RelativeLayout>

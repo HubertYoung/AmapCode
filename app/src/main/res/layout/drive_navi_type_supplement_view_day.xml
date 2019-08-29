@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:paddingTop="46dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/button_layout" android:background="@drawable/drive_common_dialog_day_bg" android:paddingTop="32dp" android:layout_width="match_parent" android:layout_height="206dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/container_down" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentBottom="true">
+                <com.amap.bundle.drive.common.dialog.nightmode.widget.NightModeTextView android:textSize="@dimen/f_s_19" android:textColor="@color/drive_common_button_blue_day_text_color" android:gravity="center" android:id="@+id/cancel_supplement" android:background="@drawable/drive_common_button_white_day_bg" android:clickable="true" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/cancel" android:layout_weight="1"/>
+                <View android:clickable="false" android:layout_width="10dp" android:layout_height="match_parent"/>
+                <com.amap.bundle.drive.common.dialog.nightmode.widget.NightModeTextView android:textSize="@dimen/f_s_19" android:textColor="@color/drive_common_button_white_day_text_color" android:gravity="center" android:id="@+id/go_to_supplement" android:background="@drawable/drive_common_button_blue_day_bg" android:clickable="true" android:layout_width="0dp" android:layout_height="44dp" android:text="@string/navi_type_go_to_supplement" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="30dp" android:layout_above="@+id/container_down">
+                <TextView android:textSize="@dimen/f_s_20" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_type_supplement_title"/>
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_type_supplement_summary"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/navi_type_supplement_bg_day"/>
+    </FrameLayout>
+</FrameLayout>

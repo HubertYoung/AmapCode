@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="5"/>
+    <android.support.v7.widget.RecyclerView android:id="@+id/order_base_tab" android:background="@color/white" android:paddingLeft="20dp" android:paddingRight="20dp" android:visibility="gone" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="40dp" android:layout_below="@+id/title"/>
+    <View android:id="@+id/divider" android:background="@color/poi_detail_bottom_bar_divider_color" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/order_base_tab"/>
+    <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/order_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:layout_marginRight="6dp" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="8dp" android:layout_below="@+id/divider" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/channel_refresh_hl" app:mPtrAnimationStyle="3"/>
+    <include layout="@layout/order_base_list_new_empty_layout"/>
+    <include android:visibility="gone" layout="@layout/order_bottom_delete_layout"/>
+</RelativeLayout>

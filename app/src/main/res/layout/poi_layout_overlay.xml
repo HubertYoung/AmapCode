@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="184dp" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/layout_bubble" android:background="@drawable/poi_overlay_bubble_normal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center" android:id="@+id/layout_bubble_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:id="@+id/txt_estimate_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:text="@string/poi_overlay_text_drive"/>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:id="@+id/txt_estimate_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="7dp" android:layout_toRightOf="@+id/txt_estimate_hint" android:layout_alignBaseline="@+id/txt_estimate_hint"/>
+            <View android:visibility="invisible" android:layout_width="12dp" android:layout_height="1dp" android:layout_toRightOf="@+id/txt_estimate_distance"/>
+            <TextView android:textSize="@dimen/f_s_13" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/txt_estimate_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_below="@+id/txt_estimate_hint"/>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:text="@string/poi_overlay_text_arrive" android:layout_toRightOf="@+id/txt_estimate_time" android:layout_alignBaseline="@+id/txt_estimate_time"/>
+        </RelativeLayout>
+        <FrameLayout android:layout_gravity="center" android:id="@+id/layout_bubble_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f_s_14" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/txt_bubble_placeholder" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="21dp" android:layout_marginRight="21dp" android:text="@string/poi_overlay_text_loading"/>
+        </FrameLayout>
+    </FrameLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/img_bubble_placeholder" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:src="@drawable/b_poi_hl" android:contentDescription="@null"/>
+</LinearLayout>

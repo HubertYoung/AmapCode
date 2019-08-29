@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="#000000" android:id="@+id/msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="兼容模式（不建议） "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_resmode_js_ajx" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="锁定JS生效 "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_resmode_js" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="锁定AJX生效（默认） "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_resmode_ajx" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="160dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="资源切换时用toast提示 "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_resmode_toast" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textColor="#ff4081" android:gravity="center" android:id="@+id/ajx_resmode_clear" android:background="#ccc" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="清除JS " android:singleLine="true" android:layout_weight="3"/>
+        <TextView android:textColor="#0091ff" android:gravity="center" android:id="@+id/ajx_resmode_clear_ajx" android:background="#ccc" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="清除AJX并重启" android:singleLine="true" android:layout_weight="4"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textColor="#ff4081" android:gravity="center" android:id="@+id/test_web_config" android:background="#ccc" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="获取ajx云控 " android:singleLine="true" android:layout_weight="3"/>
+        <TextView android:textColor="#0091ff" android:gravity="center" android:id="@+id/test_init" android:background="#ccc" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="获取init接口" android:singleLine="true" android:layout_weight="4"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textColor="#ff4081" android:gravity="center" android:id="@+id/test_patch_info" android:background="#ccc" android:padding="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="获取patch Info " android:singleLine="true" android:layout_weight="3"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/recommend_main_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/recommend_textview" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/poi_search_result_all"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/recommend_imageview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:src="@drawable/table_arrow_down" android:contentDescription="@null"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/recommend_progressbar" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_toRightOf="@+id/recommend_main_layout" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

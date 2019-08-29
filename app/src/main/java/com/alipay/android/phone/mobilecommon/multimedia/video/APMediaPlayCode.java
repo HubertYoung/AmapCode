@@ -1,0 +1,41 @@
+package com.alipay.android.phone.mobilecommon.multimedia.video;
+
+public interface APMediaPlayCode {
+    public static final int MEDIA_EDIT_ALREADY_INITED = -105;
+    public static final int MEDIA_EDIT_DECODE_ERROR = -3;
+    public static final int MEDIA_EDIT_ENCODE_ERROR = -2;
+    public static final int MEDIA_EDIT_EOF = 2;
+    public static final int MEDIA_EDIT_INIT_ERROR = -103;
+    public static final int MEDIA_EDIT_IO_ERROR = -1;
+    public static final int MEDIA_EDIT_MALLOC_ERROR = -10;
+    public static final int MEDIA_EDIT_NOT_INITED = -104;
+    public static final int MEDIA_EDIT_OK = 0;
+    public static final int MEDIA_EDIT_PARAM_ERROR = -102;
+    public static final int MEDIA_EDIT_STATE_ERROR = -101;
+    public static final int MEDIA_EDIT_UNKNOWN_ERROR = -500;
+    public static final int MEDIA_ERROR_GLES = -109;
+    public static final int MEDIA_ERROR_IO = -1004;
+    public static final int MEDIA_ERROR_MALFORMED = -1007;
+    public static final int MEDIA_ERROR_NOT_VALID_FOR_PROGRESSIVE_PLAYBACK = 200;
+    public static final int MEDIA_ERROR_SERVER_DIED = 100;
+    public static final int MEDIA_ERROR_TIMED_OUT = -110;
+    public static final int MEDIA_ERROR_UNACCESS_SOURCE = -10000;
+    public static final int MEDIA_ERROR_UNKNOWN = 1;
+    public static final int MEDIA_ERROR_UNSUPPORTED = -1010;
+    public static final int MEDIA_INFO_AUDIO_RENDERING_START = 10002;
+    public static final int MEDIA_INFO_BAD_INTERLEAVING = 800;
+    public static final int MEDIA_INFO_BUFFERING_END = 702;
+    public static final int MEDIA_INFO_BUFFERING_START = 701;
+    public static final int MEDIA_INFO_METADATA_UPDATE = 802;
+    public static final int MEDIA_INFO_NETWORK_BANDWIDTH = 703;
+    public static final int MEDIA_INFO_NOT_SEEKABLE = 801;
+    public static final int MEDIA_INFO_RETRY_START = 20000;
+    public static final int MEDIA_INFO_STARTED_AS_NEXT = 2;
+    public static final int MEDIA_INFO_SUBTITLE_TIMED_OUT = 902;
+    public static final int MEDIA_INFO_TIMED_TEXT_ERROR = 900;
+    public static final int MEDIA_INFO_UNKNOWN = 1;
+    public static final int MEDIA_INFO_UNSUPPORTED_SUBTITLE = 901;
+    public static final int MEDIA_INFO_VIDEO_RENDERING_START = 3;
+    public static final int MEDIA_INFO_VIDEO_ROTATION_CHANGED = 10001;
+    public static final int MEDIA_INFO_VIDEO_TRACK_LAGGING = 700;
+}

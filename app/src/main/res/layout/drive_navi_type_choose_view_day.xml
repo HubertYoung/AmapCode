@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="22dp">
+        <TextView android:textSize="@dimen/f_s_24" android:textStyle="bold" android:textColor="@color/f_c_1" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_type_choose_content" android:maxLines="1"/>
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_layout" android:layout_width="match_parent" android:layout_height="245dp">
+        <RelativeLayout android:id="@+id/car_option" android:background="@drawable/choose_type_bg_day" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/f_s_22" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/navi_type_car" android:maxLines="1"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:src="@drawable/navi_type_car_bg" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/truck_option" android:background="@drawable/choose_type_bg_day" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/f_s_22" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/navi_type_truck" android:maxLines="1"/>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="60dp" android:src="@drawable/navi_type_truck_bg" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

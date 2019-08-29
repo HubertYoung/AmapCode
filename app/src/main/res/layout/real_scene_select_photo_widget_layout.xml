@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#f0ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/anim_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/camera_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="175dp">
+            <ImageView android:id="@+id/camera_img" android:background="@drawable/real_scene_camera_bg" android:layout_width="58dp" android:layout_height="58dp" android:src="@drawable/real_scene_iwant_camera" android:scaleType="center" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16dp" android:textColor="@color/f_c_3" android:id="@+id/camera_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/browse_take_photo" android:layout_below="@+id/camera_img" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/photo_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <ImageView android:id="@+id/photo_img" android:background="@drawable/real_scene_photo_bg" android:layout_width="58dp" android:layout_height="58dp" android:src="@drawable/real_scene_iwant_photo" android:scaleType="center" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="16dp" android:textColor="@color/f_c_3" android:id="@+id/photo_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/browse_gallery" android:layout_below="@+id/photo_img" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/close_img" android:visibility="gone" android:layout_width="58dp" android:layout_height="58dp" android:layout_marginBottom="7dp" android:src="@drawable/real_scene_iwant_closed" android:scaleType="center" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:paddingLeft="4dp" android:paddingBottom="0dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="0dp">
+    <RelativeLayout android:id="@+id/route_long_sence_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="4dp">
+        <ImageView android:id="@+id/route_car_result_restrict_icon" android:visibility="gone" android:layout_width="36dp" android:layout_height="36dp" android:src="@drawable/route_car_result_restrict_sample" android:scaleType="centerInside"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/route_car_result_long_sence_fee" android:background="@drawable/route_car_viaroad_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="16dp">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="12dp" android:textColor="@color/bg_c" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/route_car_nofee" android:layout_weight="1"/>
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="12dp" android:textColor="@color/bg_c" android:gravity="center" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/route_car_fee" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,43 @@
+package com.alipay.mobile.common.nbnet.api;
+
+public final class NBNetStatus {
+    public static final int SC_AFTS_SECURITY_DELETE = 901;
+    public static final int SC_AUTHENTICATION_FAILED = 903;
+    public static final int SC_CAN_NOT_RW = -18;
+    public static final int SC_CREATE_FILE_FAIL = -21;
+    public static final int SC_DISK_SPACE_INSUFFICIENT = -19;
+    public static final int SC_EOF_ERROR = -20;
+    public static final int SC_FUSING_ERROR = -7;
+    public static final int SC_HEADER_CONFLICT = -25;
+    public static final int SC_HTTP_CONTINUE = 100;
+    public static final int SC_HTTP_OK = 200;
+    public static final int SC_HTTP_RANGE_NOT_SATISFIABLE = 416;
+    public static final int SC_ILLEGAL_ARGUMENT = -24;
+    public static final int SC_LIMIT_EXCEEDED_ERROR = -12;
+    public static final int SC_MANUAL_CANCEL_ERROR = -8;
+    public static final int SC_NETWORK_DNS_ERROR = -16;
+    public static final int SC_NETWORK_ERROR = -5;
+    public static final int SC_NETWORK_IS_UNREACHABLE = -26;
+    public static final int SC_NOT_FOUND = 404;
+    public static final int SC_NO_RESPONSE_ERROR = -17;
+    public static final int SC_OFFSET_BOUNDS_ERROR = -11;
+    public static final int SC_OK = 0;
+    public static final int SC_OPERATION_NOT_SUPPORTED = -2;
+    public static final int SC_PROTOCOL_ERROR = -3;
+    public static final int SC_SERVER_UNKNOWN_ERROR = -10;
+    public static final int SC_SOCKET_TIMEOUT_ERROR = -6;
+    public static final int SC_SRV_CONNECTION_ERROR = 1001;
+    public static final int SC_SRV_DOWNLOAD_LIMITED_FLOW_ERROR = 1007;
+    public static final int SC_SRV_DOWNLOAD_LIMITED_OPERATION_ERROR = 1006;
+    public static final int SC_SRV_INNER_ERROR = 1000;
+    public static final int SC_SRV_INVALID_TOKEN_ERROR = 5002;
+    public static final int SC_SRV_LIMITED_FLOW_ERROR = 429;
+    public static final int SC_SRV_RESPONSE_ERROR = 1002;
+    public static final int SC_SRV_UPLOAD_LIMITED_FLOW_ERROR = 1003;
+    public static final int SC_SSL_ERROR = -13;
+    public static final int SC_TASK_TIMEOUT = -23;
+    public static final int SC_THREAD_INTERRUPTED = -22;
+    public static final int SC_UNABLE_GET_TOKEN = -9;
+    public static final int SC_UNKNOWN_ERROR = -1;
+    public static final int SC_VERIFY_ERROR = -4;
+}

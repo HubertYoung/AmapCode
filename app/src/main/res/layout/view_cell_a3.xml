@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/cell_root" android:background="@drawable/alert_button_selector" android:layout_width="match_parent" android:layout_height="45dp">
+    <View android:id="@+id/cell_top_divide" android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+    <ImageView android:id="@+id/cell_icon" android:visibility="gone" android:layout_width="16dp" android:layout_height="16dp" android:layout_marginLeft="@dimen/cell_view_left_margin" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/cell_text_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_toLeftOf="@+id/cell_desc" android:layout_toRightOf="@+id/cell_icon" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/cell_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_4" android:ellipsize="end" android:id="@+id/cell_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:ellipsize="end" android:id="@+id/cell_desc" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:singleLine="true" android:layout_toLeftOf="@+id/cell_more" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/cell_more" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/cell_view_left_margin" android:src="@drawable/icon_tip_gray_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:id="@+id/cell_bottom_divide" android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

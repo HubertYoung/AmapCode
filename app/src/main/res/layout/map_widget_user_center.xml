@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center" android:id="@+id/user_center_container" android:layout_width="@dimen/map_widget_WH_s" android:layout_height="@dimen/map_widget_WH_s">
+    <include android:layout_gravity="center" android:id="@+id/bg_view" android:layout_width="@dimen/map_widget_WH_s" android:layout_height="@dimen/map_widget_WH_s" layout="@layout/map_widget_layout_bg_white_s"/>
+    <com.autonavi.minimap.widget.CircleImageView android:layout_gravity="center" android:id="@+id/mine_icon" android:layout_width="32dp" android:layout_height="32dp" android:src="@drawable/avatar_normal" android:scaleType="centerCrop" android:contentDescription="@string/new_map_cont_des_user_profile"/>
+    <ImageView android:layout_gravity="right" android:id="@+id/mine_dot_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:src="@drawable/idle_info" android:contentDescription="@null"/>
+    <RelativeLayout android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/mine_level_layout" android:background="@drawable/header_user_btn_level_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="11dp" android:contentDescription="@null">
+        <TextView android:textSize="8dp" android:textStyle="bold" android:textColor="#edcb9b" android:id="@+id/mine_level_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:layout_marginRight="4dp" android:text="Lv.1"/>
+    </RelativeLayout>
+</FrameLayout>

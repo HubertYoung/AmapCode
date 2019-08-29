@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/transparent_rect_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="178dp" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="19sp" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/blue_poi_info_tv" android:background="@color/c_1" android:paddingLeft="15dp" android:paddingTop="17dp" android:paddingRight="77dp" android:layout_width="match_parent" android:layout_height="85dp" android:maxLines="2" android:layout_below="@+id/transparent_rect_view"/>
+    <View android:background="@color/c_14" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/blue_poi_info_tv"/>
+    <TextView android:textSize="14dp" android:textColor="@color/c_21" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="60dp" android:text="@string/poi_detail_native_view_loading" android:layout_below="@+id/blue_poi_info_tv"/>
+</RelativeLayout>

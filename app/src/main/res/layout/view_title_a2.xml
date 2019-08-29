@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_left_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/title_back_img" android:padding="@dimen/title_bar_back_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_a15_selector"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_center_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_right_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/title_action_img" android:padding="@dimen/title_bar_back_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_a13_selector"/>
+    </LinearLayout>
+</merge>

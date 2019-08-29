@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:id="@+id/history_layout" android:background="@drawable/search_sugg_history_item_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/default_font_size_t26" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/history_del_tv" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/v4_del_his_footer_clear_history_all" android:includeFontPadding="false"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="start" android:orientation="vertical" android:id="@+id/vp_video_volume" android:visibility="gone" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginLeft="40dp" android:layout_centerVertical="true" android:layout_marginStart="40dp">
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/vp_fullscreen_attr_progress_bg" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+            <ProgressBar android:id="@+id/vp_video_volume_progressbar" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="3dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/vp_fullscreen_attr_progress_vertical" android:minWidth="3dp" android:layout_weight="1" style="?android:attr/progressBarStyleHorizontal"/>
+            <ImageView android:id="@+id/vp_video_volume_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/vp_volume"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:id="@+id/vp_video_brightness" android:visibility="gone" android:layout_width="30dp" android:layout_height="match_parent" android:layout_marginRight="40dp" android:layout_centerVertical="true" android:layout_marginEnd="40dp">
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5"/>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/vp_fullscreen_attr_progress_bg" android:paddingTop="10dp" android:paddingBottom="5dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="2">
+            <ProgressBar android:id="@+id/vp_video_brightness_progressbar" android:layout_width="wrap_content" android:layout_height="match_parent" android:maxWidth="3dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/vp_fullscreen_attr_progress_vertical" android:minWidth="3dp" android:layout_weight="1" style="?android:attr/progressBarStyleHorizontal"/>
+            <ImageView android:id="@+id/vp_video_brightness_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/vp_brightness"/>
+        </LinearLayout>
+        <View android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1.5"/>
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@+id/vp_video_change_progress_view" android:background="@drawable/vp_fullscreen_attr_progress_bg" android:visibility="gone" android:layout_width="144dp" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/vp_video_change_progress_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp"/>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+            <TextView android:textSize="12sp" android:textColor="#ffe72c00" android:id="@+id/vp_video_change_progress_current" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="12sp" android:textColor="@android:color/white" android:id="@+id/vp_video_change_progress_total" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <ProgressBar android:id="@+id/vp_video_change_progress_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="5dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:maxHeight="3dp" android:max="100" android:progress="0" android:progressDrawable="@drawable/vp_bottom_controller_seek_progress_drawable" android:minHeight="3dp" android:layout_marginStart="12dp" android:layout_marginEnd="12dp" style="?android:attr/progressBarStyleHorizontal"/>
+    </LinearLayout>
+</merge>

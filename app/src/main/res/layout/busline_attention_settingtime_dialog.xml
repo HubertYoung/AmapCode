@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/route_45dp">
+        <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/route_realtime_setttin_title" android:gravity="center" android:id="@+id/tv_cancle" android:background="@null" android:paddingLeft="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/cancle" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/route_realtime_setttin_title" android:gravity="center" android:id="@+id/tv_sure" android:background="@null" android:paddingLeft="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sure" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1dp"/>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+        <com.autonavi.map.widget.wheel.TimePickerWidgetView android:id="@+id/fromto_route_timepicker_day" android:layout_width="100dp" android:layout_height="wrap_content"/>
+        <com.autonavi.map.widget.wheel.TimePickerWidgetView android:id="@+id/fromto_route_timepicker_hour" android:layout_width="100dp" android:layout_height="wrap_content"/>
+        <com.autonavi.map.widget.wheel.TimePickerWidgetView android:id="@+id/fromto_route_timepicker_mins" android:layout_width="100dp" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="22" app:action_img="@drawable/icon_a11_normal"/>
+        <include android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/run_recommend_bottom_view"/>
+    </com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>
+    <include android:id="@+id/run_recommend_guide" android:visibility="gone" layout="@layout/run_recommend_guide"/>
+</RelativeLayout>

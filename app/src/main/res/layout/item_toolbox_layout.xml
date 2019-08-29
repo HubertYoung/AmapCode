@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/layout_mime_item" android:background="@drawable/toolbox_grid_item_bg" android:layout_width="match_parent" android:layout_height="90dp">
+    <RelativeLayout android:id="@+id/item_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/icon" android:layout_width="36dp" android:layout_height="36dp" android:layout_marginBottom="3dp" android:src="@drawable/ic_offline_map" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/img_news" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp" android:layout_marginBottom="-3dp" android:src="@drawable/mine_load_new_tip" android:layout_toRightOf="@+id/icon" android:layout_alignBottom="@+id/icon" android:contentDescription="@null"/>
+        <com.autonavi.mine.page.toolsbox.widget.AmapTextView android:textSize="12dp" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:id="@+id/txt_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:layout_below="@+id/icon"/>
+    </RelativeLayout>
+</RelativeLayout>

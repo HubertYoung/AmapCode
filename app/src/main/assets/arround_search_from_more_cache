@@ -1,0 +1,818 @@
+{
+  "categorys": [
+    
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "快餐厅",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "快餐厅",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "中餐厅",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "中餐厅",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "西餐厅",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "西餐厅",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "日本料理",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "日本料理",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "韩国料理",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "韩国料理",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "东南亚菜",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "东南亚菜",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "印度风味",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "印度风味",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "咖啡厅",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "咖啡厅",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "茶艺馆",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "茶艺馆",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "冷饮店",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "冷饮店",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "糕饼店",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "糕饼店",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "甜品店",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "甜品店",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_eat"
+    },
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "快捷连锁",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "快捷连锁",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "旅馆招待所",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "旅馆招待所",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "度假公寓",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "度假公寓",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "五星级宾馆",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "五星级宾馆",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "四星级宾馆",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "四星级宾馆",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "三星级宾馆",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "三星级宾馆",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_live"
+    },
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "公交站",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "公交站",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "地铁站",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "地铁站",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "停车场",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "停车场",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "加油站",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "加油站",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "机票代售点",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "机票代售点",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "长途汽车站",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "长途汽车站",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "火车票代售点",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "火车票代售点",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_walk"
+    },
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "电影院",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "电影院",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "网吧",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "网吧",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "KTV",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "KTV",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "洗浴推拿",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "洗浴推拿",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "夜店",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "夜店",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "游乐场",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "游乐场",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "游戏厅",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "游戏厅",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "棋牌室",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "棋牌室",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "健身中心",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "健身中心",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_play"
+    },
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "商场",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "商场",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "超市",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "超市",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "便利店",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "便利店",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_shopping"
+    },
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "银行",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "银行",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "ATM",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "ATM",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "公共厕所",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "公共厕所",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "医院",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "医院",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "药店",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "药店",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "电讯营业厅",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "电讯营业厅",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_life"
+    },
+    {
+      "bg_url": "",
+      "items": [
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "风景名胜",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "风景名胜",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "公园广场",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "公园广场",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "博物馆",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "博物馆",
+          "columns": "1"
+        },
+        {
+          "tips_icon_url": "",
+          "open_url": {
+            "url": "",
+            "announce": "",
+            "website_name": "",
+            "url_type": ""
+          },
+          "special_poi": "0",
+          "display_name": "游乐场",
+          "action_type": "1",
+          "tips_icon_type": "0",
+          "tips": "",
+          "search_name": "游乐场",
+          "columns": "1"
+        }
+      ],
+      "page_id": "3",
+      "columns": "3",
+      "icon_url": "default_generalsearch_nearby_icon_travel"
+    }
+  ],
+  "code": "1",
+  "timestamp": "1416194646.39",
+  "version": "2.0-2.0.4318.1902",
+  "result": "true",
+  "message": "Successful."
+}

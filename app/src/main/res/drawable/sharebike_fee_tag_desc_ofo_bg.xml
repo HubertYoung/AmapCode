@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <solid android:color="@color/sharebike_ofo_tag_desc_bg_color"/>
+    <corners android:radius="3dp"/>
+    <padding android:left="@dimen/route_2dp" android:top="@dimen/route_0dp" android:right="@dimen/route_2dp" android:bottom="@dimen/route_0dp"/>
+</shape>

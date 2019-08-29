@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <xml name="search_menu_filter_text">res-47/xml/search_menu_filter_text.xml</xml>
+    <xml name="h5_input_num">res-60/xml/h5_input_num.xml</xml>
+    <xml name="h5_bugme_setting">res-76/xml/h5_bugme_setting.xml</xml>
+</resources>

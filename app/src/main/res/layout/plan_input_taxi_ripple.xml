@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center_vertical" android:layout_width="@dimen/route_15dp" android:layout_height="@dimen/route_15dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+    <com.amap.bundle.planhome.view.RippleLayout android:id="@+id/ripple_layout" android:layout_width="match_parent" android:layout_height="match_parent" app:color="@color/c_12" app:radius="3dp" app:alphaDuration="500" app:scaleDuration="1000" app:rippleNums="2" app:scale="2.4"/>
+</RelativeLayout>

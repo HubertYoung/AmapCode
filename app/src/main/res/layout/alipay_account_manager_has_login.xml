@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" style="@style/alipay_client_application_gray_bg">
+    <LinearLayout android:orientation="vertical" android:id="@+id/am_userinfo_Layout" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="165dp" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_horizontal" android:id="@+id/avatar" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginTop="30dp" android:src="@drawable/alipay_head" android:scaleType="centerCrop"/>
+        <TextView android:textSize="17dp" android:textColor="@color/alipay_accountmanager_tip_color_333333" android:layout_gravity="center_horizontal" android:id="@+id/am_loginId" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/am_auth_Layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/am_userinfo_Layout" android:layout_centerHorizontal="true">
+        <TextView android:textSize="16dp" android:textColor="@color/alipay_text_light_gray" android:id="@+id/am_auth_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginBottom="8dp"/>
+        <com.ali.user.mobile.ui.widget.APListView android:id="@+id/am_auth_list" android:background="@color/alipay_colorWhite" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:cacheColorHint="@android:color/transparent" android:divider="@android:color/transparent" android:dividerHeight="0.5px"/>
+    </LinearLayout>
+    <Button android:id="@+id/am_logoutButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="30dp" android:text="@string/alipay_logout_current_account" android:layout_below="@+id/am_auth_Layout" style="@style/alipay_mainButtonStyle"/>
+</RelativeLayout>

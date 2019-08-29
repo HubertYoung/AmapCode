@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:left="@dimen/map_widget_shadow_width" android:top="@dimen/map_widget_shadow_width" android:right="@dimen/map_widget_shadow_width" android:bottom="@dimen/map_widget_shadow_width">
+        <shape android:shape="rectangle">
+            <solid android:color="@color/c_1"/>
+            <corners android:topLeftRadius="19dp" android:topRightRadius="19dp" android:bottomLeftRadius="19dp" android:bottomRightRadius="19dp"/>
+        </shape>
+    </item>
+    <item android:drawable="@drawable/mini_search_shadow"/>
+</layer-list>

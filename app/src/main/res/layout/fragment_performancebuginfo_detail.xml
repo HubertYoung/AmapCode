@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageButton android:id="@+id/title_btn_left" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/talkback_return"/>
+            <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/title_text_name" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="60dp" android:layout_marginRight="60dp" android:text="LeakInfo" android:singleLine="true" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/tv_version_name" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Version "/>
+        <ImageView android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="#444444" android:gravity="center" android:id="@+id/tv_title" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="this is title"/>
+        <ImageView android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="200dp">
+            <TextView android:textColor="#444444" android:ellipsize="end" android:id="@+id/leck_info" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="leck_info" android:layout_centerInParent="true"/>
+        </ScrollView>
+        <ImageView android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="模块"/>
+                <ImageView android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <Spinner android:id="@+id/sp_module" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+                <TextView android:padding="5dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="作者"/>
+                <ImageView android:background="#cccccc" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <EditText android:id="@+id/et_author" android:layout_width="match_parent" android:layout_height="wrap_content" android:spinnerMode="dialog"/>
+                <Button android:gravity="center" android:id="@+id/bt_commit" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="提交" android:layout_alignParentBottom="true"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</RelativeLayout>

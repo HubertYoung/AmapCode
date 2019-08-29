@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#ffffff" android:paddingBottom="20dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ali.user.mobile.ui.widget.AUPhoneInputBox android:id="@+id/phoneInput" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="39dp" android:layout_alignParentTop="true"/>
+    <Button android:id="@+id/loginButton" android:layout_marginLeft="0dp" android:layout_marginTop="30dp" android:layout_marginRight="0dp" android:text="@string/alipay_sms_login" android:layout_below="@+id/phoneInput" style="@style/alipay_mainButtonStyle"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/phoneInput">
+        <TextView android:textSize="17dp" android:textColor="@color/alipay_antBlue" android:id="@+id/moreView" android:padding="10dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="165dp" android:text="@string/alipay_more" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="17dp" android:textColor="@color/alipay_antBlue" android:id="@+id/smsRegView" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="165dp" android:text="@string/alipay_registNew" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</RelativeLayout>

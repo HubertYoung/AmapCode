@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/wrapper_layout" android:background="@color/c_5_b" android:layout_width="match_parent" android:layout_height="45dp"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/rootView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_vertical" android:id="@+id/ll_title" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/title" android:background="@color/c_3" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/sns_confirm_end_point"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/btn_netsearch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="16dp" android:text="网络搜索" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <include android:id="@+id/dlg_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/drive_clear_bottom"/>
+            <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/vouchers_pull_refresh_list" android:background="@color/white" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/search_callback_result_list_divider" android:dividerHeight="0.5dp" android:layout_above="@+id/dlg_bottom" android:layout_below="@+id/ll_title" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/clear_layout" android:background="@drawable/map_search_poi_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <View android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <View android:id="@+id/divider" android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <Button android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:id="@+id/btn_confirm" android:background="@drawable/map_search_poi_selector" android:visibility="gone" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/confirm"/>
+    <Button android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:id="@+id/clean_history" android:background="@drawable/map_search_poi_selector" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/cancel"/>
+</LinearLayout>

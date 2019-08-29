@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="70dp" android:layout_height="82dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@+id/content" android:background="@drawable/route_result_item_selector" android:padding="@dimen/diy_main_map_entry_popwindow_item_padding" android:layout_width="53dp" android:layout_height="53dp">
+            <ImageView android:id="@+id/icon" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitCenter"/>
+            <TextView android:textSize="9sp" android:textColor="@color/f_c_6" android:gravity="center_horizontal" android:id="@+id/info_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="" android:maxLines="1" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="11sp" android:textColor="@color/black" android:ellipsize="end" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/icon_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:maxLines="1"/>
+    </LinearLayout>
+</RelativeLayout>

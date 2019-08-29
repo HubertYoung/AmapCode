@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ali.user.mobile.ui.widget.APCheckBox android:textSize="16dp" android:textColor="@color/alipay_colorGray" android:id="@+id/custom_check_box" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:includeFontPadding="false" android:drawableLeft="@drawable/alipay_checkbox_style" android:drawablePadding="10dp"/>
+    </LinearLayout>
+    <com.ali.user.mobile.ui.widget.APImageView android:id="@+id/link_image" android:visibility="gone" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginRight="12dp" android:contentDescription="@null"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.ali.user.mobile.ui.widget.APTextView android:textSize="16dp" android:textColor="@color/alipay_antBlue" android:id="@+id/link_text" android:focusable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:includeFontPadding="false" android:textIsSelectable="true"/>
+    </LinearLayout>
+</merge>

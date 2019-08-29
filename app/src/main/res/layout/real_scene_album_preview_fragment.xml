@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.widget.ImmersiveTitleCompatRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.search.view.FixedViewPager android:id="@+id/scene_image_detail_pager" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/title" android:background="#e6f8f8f8" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:layout_alignParentTop="true">
+        <View android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+        <ImageView android:id="@+id/scene_detail_back" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/title_bar_back" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="18dp" android:textColor="@color/f_c_2" android:id="@+id/scene_detail_image_index" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+        <CheckBox android:id="@+id/album_image_checkbox" android:padding="11dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/real_scene_album_item_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textColor="@color/comment_highlight_bule" android:id="@+id/album_image_del_btn" android:padding="11dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/real_scene__preview_delete" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/real_scene_detail_bottom" android:background="#e6f8f8f8" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentBottom="true">
+        <View android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <TextView android:textSize="15dp" android:textColor="@drawable/real_scene_album_publish_text_color" android:gravity="center" android:id="@+id/album_publish" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/real_scene__publish" android:singleLine="true" android:layout_alignParentRight="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/album_num" android:background="@drawable/real_scene_camera_bg" android:layout_width="24dp" android:layout_height="24dp" android:text="@string/default_value" android:singleLine="true" android:layout_toLeftOf="@+id/album_publish" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</com.autonavi.minimap.widget.ImmersiveTitleCompatRelativeLayout>

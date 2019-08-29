@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:title="********************************************************" app:title_style="16"/>
+    <RelativeLayout android:id="@+id/coach_banner_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title_bar">
+        <com.autonavi.minimap.route.common.view.RouteBanner android:id="@+id/coach_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.autonavi.widget.ui.CommonTips android:id="@+id/coach_shift_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <include android:id="@+id/coach_title_time" android:layout_width="match_parent" android:layout_height="@dimen/route_57dp" android:layout_below="@+id/coach_banner_container" layout="@layout/coach_title_time"/>
+    <View android:id="@+id/coach_bottom_view" android:layout_width="match_parent" android:layout_height="@dimen/route_48dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:id="@+id/pull_to_refresh_viewgroup" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/coach_title_time">
+        <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/pull_to_coach_plan_info_listview" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="@dimen/route_45dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+        <View android:id="@+id/slide_list_shadow" android:background="@drawable/slide_panel_shadow" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3.5dp" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/coach_plan_non_list_item_tips" android:background="@null" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/coach_bottom_view" android:layout_below="@+id/coach_title_time">
+        <RelativeLayout android:id="@+id/no_result_status_img" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/listview_status_img" android:clickable="false" android:layout_width="75dp" android:layout_height="75dp" android:src="@drawable/rt_list_data_error" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/listview_status_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/train_not_found_tips" android:layout_below="@+id/listview_status_img" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/listview_status_loadingtext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="@string/train_change_search_keywords_or_date" android:layout_below="@+id/listview_status_text" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <com.autonavi.minimap.route.common.view.RouteLoadingView android:id="@+id/coach_loading_view" android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/coach_title_time" android:layout_centerInParent="true"/>
+</RelativeLayout>

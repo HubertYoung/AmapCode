@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/taxi_order_write" app:title_style="5" app:action_text="@string/taxi_order_submit"/>
+    <ScrollView android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="8dp" android:paddingTop="8dp" android:paddingRight="8dp" android:paddingBottom="40dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_choose_btn" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/taxi_goon" style="@style/Taxi_Text"/>
+                    <EditText android:id="@+id/edit_start" android:layout_width="0dp" android:hint="@string/taxi_add_goon_point" android:maxLength="20" android:layout_weight="1" style="@style/Taxi_EditText"/>
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/start_clear" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_input_clear_selector" android:contentDescription="@null"/>
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/start_voice" android:background="@drawable/v3_icon_btn_selector3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_voice" android:contentDescription="@null"/>
+                </LinearLayout>
+                <View android:background="@color/gray_white" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/taxi_off" style="@style/Taxi_Text"/>
+                    <EditText android:id="@+id/edit_end" android:layout_width="0dp" android:hint="@string/taxi_add_off_point" android:maxLength="20" android:layout_weight="1" android:imeOptions="actionUnspecified" style="@style/Taxi_EditText"/>
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/end_clear" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_input_clear_selector" android:contentDescription="@null"/>
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/end_voice" android:background="@drawable/v3_icon_btn_selector3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_voice" android:contentDescription="@null"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/common_choose_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <LinearLayout android:id="@+id/linearLayoutBoardTime" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                    <TextView android:text="@string/taxi_time" style="@style/Taxi_Text"/>
+                    <EditText android:id="@+id/btnSetBoardtime" android:background="@null" android:focusable="false" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/taxi_car_now_use" android:maxLength="20" android:layout_weight="1" android:inputType="phone" android:imeOptions="actionUnspecified" style="@style/Taxi_EditText"/>
+                </LinearLayout>
+                <View android:background="@color/gray_white" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:text="@string/taxi_phone" style="@style/Taxi_Text"/>
+                    <EditText android:id="@+id/edit_mobile" android:background="@null" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/taxi_add_phone" android:maxLength="20" android:layout_weight="1" android:inputType="phone" android:imeOptions="actionUnspecified" style="@style/Taxi_EditText"/>
+                    <ImageButton android:layout_gravity="center_vertical" android:id="@+id/mobile_clear" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/search_input_clear_selector" android:contentDescription="@null"/>
+                </LinearLayout>
+                <View android:id="@+id/textView2" android:background="@color/gray_white" android:layout_width="match_parent" android:layout_height="0.1dp"/>
+                <RelativeLayout android:id="@+id/verify_view" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:id="@+id/tv_verify" android:text="@string/taxi_verification_code" android:layout_alignParentLeft="true" style="@style/Taxi_Text"/>
+                    <EditText android:textSize="@dimen/font_30" android:textColor="@color/black" android:textColorHint="#bebebe" android:id="@+id/edit_verifi" android:background="@null" android:paddingTop="15dp" android:paddingBottom="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/taxi_add_verification_code" android:singleLine="true" android:maxLength="6" android:layout_toLeftOf="@+id/btn_verifi" android:layout_toRightOf="@+id/tv_verify" android:inputType="number"/>
+                    <Button android:textSize="15dp" android:textColor="#4c90f9" android:id="@+id/btn_verifi" android:background="@drawable/common_choose_btn" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="34dp" android:minWidth="70dp" android:text="@string/taxi_vertify_require_code" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:background="@drawable/common_choose_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <TextView android:text="@string/taxi_remarks" style="@style/Taxi_Text"/>
+                <EditText android:id="@+id/edit_des" android:layout_width="0dp" android:layout_height="wrap_content" android:hint="@string/taxi_add_remarks" android:layout_weight="1" style="@style/Taxi_EditText"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/linearLayoutHistorRoot" android:background="@drawable/common_choose_btn" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+                <include layout="@layout/v4_clear_top"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/linearlayoutHistoryEndPoi" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

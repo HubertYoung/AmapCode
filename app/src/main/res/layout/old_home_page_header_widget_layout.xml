@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:background="@drawable/old_map_widget_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="@dimen/old_map_page_header_height" android:layout_margin="@dimen/old_map_page_header_container_margin">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/user_and_search_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/old_map_page_header_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:orientation="horizontal" android:clipChildren="false" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <RelativeLayout android:layout_gravity="center_vertical" android:id="@+id/btn_voice" android:clipChildren="false" android:clipToPadding="false" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="16dp">
+            <com.autonavi.bundle.vui.common.emojiview.VUIEmojiView android:id="@+id/btn_emoji" android:visibility="gone" android:layout_width="32dp" android:layout_height="32dp" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/voice_input"/>
+        </RelativeLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/btn_qrscan" android:padding="4dp" android:layout_width="32dp" android:layout_height="32dp" android:layout_marginLeft="8dp" android:layout_marginRight="12dp" android:src="@drawable/quickservice_header_qrscan" android:contentDescription="@string/ctdes_text_scan"/>
+    </LinearLayout>
+</RelativeLayout>

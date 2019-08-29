@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:textSize="@dimen/font_34" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@android:id/text1" android:paddingLeft="31dp" android:layout_width="match_parent" android:layout_height="57dp"/>

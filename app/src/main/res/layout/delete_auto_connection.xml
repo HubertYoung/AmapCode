@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/bg_a" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/auto_link_delete_title" app:title_style="16"/>
+    <RelativeLayout android:id="@+id/delete_connection_lativeLayout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="10dp" android:layout_below="@+id/title" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:src="@drawable/auto_delete_connection" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:text="@string/auto_delete_text" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_below="@+id/delete_connection_lativeLayout">
+        <ImageView android:id="@+id/auto_delete_warning_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/auto_delete_warning_icon" android:layout_centerVertical="true"/>
+        <TextView android:textSize="12dp" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:text="@string/auto_delete_warning_text" android:layout_toRightOf="@+id/auto_delete_warning_icon" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

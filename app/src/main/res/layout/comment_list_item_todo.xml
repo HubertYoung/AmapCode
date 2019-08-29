@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/v4_list_item_bg_selector" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingRight="15dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:layout_width="60dp" android:layout_height="60dp">
+            <ImageView android:id="@+id/comment_poi_icon" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/poi_list_item_img_default" android:scaleType="centerCrop"/>
+            <ImageView android:id="@+id/comment_first_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_first_icon"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/visit_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:singleLine="true"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/comment_9" android:gravity="center" android:id="@+id/gold_num" android:background="@drawable/badge_orange_border" android:layout_width="wrap_content" android:layout_height="25dp"/>
+    </LinearLayout>
+    <View android:id="@+id/last_divider" android:background="@color/gray_c" android:layout_width="wrap_content" android:layout_height="1px" android:layout_marginLeft="15dp"/>
+    <View android:id="@+id/last_polyfill" android:background="@color/bg_f5" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

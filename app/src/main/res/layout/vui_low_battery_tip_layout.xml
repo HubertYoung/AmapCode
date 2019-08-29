@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@android:id/background" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center" android:orientation="vertical" android:id="@android:id/home" android:background="@drawable/layer_icon_bg_normal" android:layout_width="280dp" android:layout_height="190dp">
+        <TextView android:textSize="@dimen/f_s_20" android:textStyle="bold" android:textColor="@color/v3_font_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="手机电量低"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="31dp" android:layout_marginTop="12dp" android:layout_marginRight="31dp">
+            <com.autonavi.bundle.vui.common.emojiview.VUIEmojiView android:id="@android:id/icon" android:layout_width="36dp" android:layout_height="36dp"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="#212121" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="无法呼叫“你好小德”唤醒，只能使用手动唤醒" android:lines="2"/>
+        </LinearLayout>
+        <Button android:textSize="@dimen/f_s_16" android:textColor="@color/white" android:id="@android:id/closeButton" android:background="@drawable/vui_low_battery_button" android:layout_width="240dp" android:layout_height="36dp" android:layout_marginTop="24dp" android:text="我知道了"/>
+    </LinearLayout>
+</FrameLayout>

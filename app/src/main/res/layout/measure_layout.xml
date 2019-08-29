@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/centerMarkerLayout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:tag="measure_fragment_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include layout="@layout/title_view_layout"/>
+    </LinearLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

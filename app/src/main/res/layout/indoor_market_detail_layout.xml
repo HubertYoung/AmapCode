@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.minimap.life.marketdetail.view.TitleViewWithBackText android:id="@+id/market_detail_title" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/market_detail_filter" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="40dp" android:weightSum="3">
+        <LinearLayout android:gravity="center" android:id="@+id/linearLayoutFloor" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14dp" android:id="@+id/filter_floor" android:layout_width="wrap_content" android:layout_height="38dp" style="@style/filter_btn_text_style"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@+id/floor_view_line" android:background="@color/listview_divider" android:layout_width="0.2dp" android:layout_height="25dp"/>
+        <LinearLayout android:gravity="center" android:id="@+id/linearLayoutCategory" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14dp" android:id="@+id/filter_category" android:layout_width="wrap_content" android:layout_height="38dp" style="@style/filter_btn_text_style"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:id="@+id/category_view_line" android:background="@color/listview_divider" android:layout_width="0.2dp" android:layout_height="25dp"/>
+        <LinearLayout android:gravity="center" android:id="@+id/linearLayoutCategoryPreferential" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="14dp" android:id="@+id/filter_category_preferential" android:layout_width="wrap_content" android:layout_height="38dp" android:text="美食优惠" style="@style/filter_btn_text_style"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/listview_divider" android:layout_width="match_parent" android:layout_height="0.2dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/market_detail_list" android:background="@null" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:overScrollMode="never" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+        <com.autonavi.minimap.life.marketdetail.view.MarketDetailFilterListView android:id="@+id/filterListView" android:background="@color/transparent_background" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

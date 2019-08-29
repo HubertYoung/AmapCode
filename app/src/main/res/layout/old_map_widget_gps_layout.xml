@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <include android:layout_gravity="center" android:id="@+id/common_view_bg" android:layout_width="@dimen/map_widget_WH_s" android:layout_height="@dimen/map_widget_WH_s" layout="@layout/map_widget_layout_bg_white_s"/>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/map_widget_common_icon" android:layout_width="28dp" android:layout_height="28dp"/>
+</FrameLayout>

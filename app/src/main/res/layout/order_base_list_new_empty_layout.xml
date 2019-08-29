@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:id="@+id/order_empty_layout_new" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+    <ImageView android:id="@+id/order_empty_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/order_hotel_list_empty_icon"/>
+    <TextView android:textSize="@dimen/font_28" android:textColor="@color/order_hotel_text_gray" android:id="@+id/order_empty_tip_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/order_top_16" android:text="@string/order_hotel_empty_tip"/>
+    <TextView android:textSize="@dimen/font_28" android:textColor="@color/font_cff" android:gravity="center" android:id="@+id/go_ordering" android:background="@drawable/shape_bg_go_ordering" android:visibility="gone" android:layout_width="@dimen/order_hotel_width_138" android:layout_height="@dimen/order_hotel_height_55" android:layout_marginTop="@dimen/order_hotel_top_36" android:text="@string/order_go_ordering"/>
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@drawable/search_dialog_listview_item_bg" android:paddingLeft="15dp" android:paddingTop="14dp" android:paddingRight="15dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linearLayoutPayState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/imageViewPayState" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_taxi_logo_paypal" android:contentDescription="@null"/>
+        <TextView android:textSize="12dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txtPayState" android:background="@drawable/default_taxi_btn_pay_blue" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:minWidth="70dp" android:text="@string/v4_his_order_item_payment_success"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/linearLayoutPayState">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15dp" android:textColor="@color/black_lite" android:id="@+id/driver_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="21dp" android:text="@string/v4_his_order_item_driver_name" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+            <TextView android:textSize="15dp" android:textColor="@color/black_lite" android:id="@+id/licence_plate_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_his_order_item_license_plate"/>
+        </LinearLayout>
+        <TextView android:textSize="12dp" android:textColor="@color/f_c_3" android:id="@+id/company_name" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:text="@string/v4_his_order_item_company_name" android:layout_below="@+id/driver_name"/>
+        <TextView android:textSize="12dp" android:textColor="#999" android:id="@+id/order_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/v4_his_order_item_date" android:layout_below="@+id/company_name"/>
+        <TextView android:textSize="9dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/txtBoardtime" android:background="@drawable/taxi_boardtime_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_his_order_item_preorder"/>
+    </LinearLayout>
+    <RelativeLayout android:visibility="gone" android:layout_width="match_parent" android:layout_height="40dp">
+        <LinearLayout android:background="@drawable/directions_listdown_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btn_comment" android:background="@drawable/search_dialog_listview_item_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12dp" android:textColor="@color/gary" android:gravity="center" android:background="@null" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call" android:text="@string/v4_his_order_item_rate" android:drawableLeft="@drawable/icon_taxi_commend" android:drawablePadding="5dp"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/btn_call" android:background="@drawable/search_dialog_listview_item_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+                <TextView android:textSize="12dp" android:textColor="@color/gary" android:gravity="center" android:background="@null" android:paddingTop="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/call" android:text="@string/phone" android:drawableLeft="@drawable/search_result_call" android:drawablePadding="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/idle_tap_divider" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</RelativeLayout>

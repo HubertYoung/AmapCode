@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <anim name="anim_keyboard_dismiss">res-47/anim/anim_keyboard_dismiss.xml</anim>
+    <anim name="anim_keyboard_show">res-47/anim/anim_keyboard_show.xml</anim>
+    <anim name="au_pop_bar_zoom_out">res-47/anim/au_pop_bar_zoom_out.xml</anim>
+    <anim name="card_option_praise_anim">res-47/anim/card_option_praise_anim.xml</anim>
+    <anim name="slide_in_bottom">res-47/anim/slide_in_bottom.xml</anim>
+    <anim name="slide_out_bottom">res-47/anim/slide_out_bottom.xml</anim>
+    <anim name="translate_dialog_in">res-47/anim/translate_dialog_in.xml</anim>
+    <anim name="translate_dialog_out">res-47/anim/translate_dialog_out.xml</anim>
+    <anim name="down">res-56/anim/down.xml</anim>
+    <anim name="effect_select_pop_down">res-56/anim/effect_select_pop_down.xml</anim>
+    <anim name="effect_select_pop_up">res-56/anim/effect_select_pop_up.xml</anim>
+    <anim name="fade_in">res-56/anim/fade_in.xml</anim>
+    <anim name="fade_out">res-56/anim/fade_out.xml</anim>
+    <anim name="pb_default">res-56/anim/pb_default.xml</anim>
+    <anim name="record_count_down_bar">res-56/anim/record_count_down_bar.xml</anim>
+    <anim name="slide_down">res-56/anim/slide_down.xml</anim>
+    <anim name="slide_up">res-56/anim/slide_up.xml</anim>
+    <anim name="up">res-56/anim/up.xml</anim>
+    <anim name="h5_tabswitch_in">res-76/anim/h5_tabswitch_in.xml</anim>
+    <anim name="h5_tabswitch_out">res-76/anim/h5_tabswitch_out.xml</anim>
+    <anim name="h5_translate_in_left">res-76/anim/h5_translate_in_left.xml</anim>
+    <anim name="h5_translate_in_right">res-76/anim/h5_translate_in_right.xml</anim>
+    <anim name="h5_translate_out_left">res-76/anim/h5_translate_out_left.xml</anim>
+    <anim name="h5_translate_out_right">res-76/anim/h5_translate_out_right.xml</anim>
+    <anim name="in_alipay_activity_fade_in">res-122/anim/in_alipay_activity_fade_in.xml</anim>
+    <anim name="in_alipay_activity_fade_out">res-122/anim/in_alipay_activity_fade_out.xml</anim>
+</resources>

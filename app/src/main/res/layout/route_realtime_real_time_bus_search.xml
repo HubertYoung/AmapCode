@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#efefef" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/header_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title">
+        <include android:id="@+id/busline_search_header" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/rea_common_search_header"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="9dp" android:layout_below="@+id/header_container">
+        <ListView android:id="@+id/search_sug_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+        <ListView android:id="@+id/history_list_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+    </LinearLayout>
+</RelativeLayout>

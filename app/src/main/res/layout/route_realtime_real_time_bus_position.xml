@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar_a1" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="1" app:action_img="@drawable/icon_a8_normal"/>
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar_b" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/real_time_bus_around" app:title_style="4"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/title_bar">
+        <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:id="@+id/mapInteractiveRelativeLayout" android:paddingBottom="@dimen/rt_page_list_content_padding_bottom" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.autonavi.minimap.route.bus.realtimebus.view.RealBusPositionAttentionView android:id="@+id/realbus_attention_layout" android:background="#f4f4f4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <include android:id="@+id/realbus_around_layout" android:background="@drawable/bg_gray" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/real_bus_position_arround_panel_view"/>
+    </FrameLayout>
+</RelativeLayout>

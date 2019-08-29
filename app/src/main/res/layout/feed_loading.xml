@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="193dp">
+        <ImageView android:background="@drawable/feed_loading1" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+        <ImageView android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="66dp" android:src="@drawable/feed_search" android:scaleType="fitXY" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="2dp" android:paddingTop="10dp" android:paddingRight="2dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="2dp" android:paddingTop="10dp" android:paddingRight="2dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="32dp" android:layout_height="57dp" android:src="@drawable/feed_loading2"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:paddingLeft="24dp" android:paddingTop="15dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:src="@drawable/feed_loading3" android:scaleType="fitXY"/>
+    <ImageView android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="20dp" android:src="@drawable/feed_loading4" android:scaleType="fitXY"/>
+    <ImageView android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="20dp" android:src="@drawable/feed_loading4" android:scaleType="fitXY"/>
+    <ImageView android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="20dp" android:src="@drawable/feed_loading4" android:scaleType="fitXY"/>
+    <ImageView android:paddingLeft="24dp" android:paddingRight="24dp" android:layout_width="match_parent" android:layout_height="20dp" android:layout_marginTop="20dp" android:src="@drawable/feed_loading4" android:scaleType="fitXY"/>
+</LinearLayout>

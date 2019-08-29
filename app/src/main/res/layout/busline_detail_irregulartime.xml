@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/busline_irregulartime_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="13dp" android:layout_marginRight="5dp" android:layout_marginBottom="13dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <TextView android:textSize="13dp" android:textColor="@color/f_c_6" android:id="@+id/busline_irregulartime_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="10dp"/>
+            <com.autonavi.map.widget.FlowLayout android:id="@+id/busline_irregulartime_flowlayout" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" app:horizontalSpacing="8dp" app:verticalSpacing="6dp"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/busline_detail_layout_expandable" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp">
+            <TextView android:textSize="13dp" android:textColor="@color/f_c_6" android:id="@+id/busline_irregulartime_expandable_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="10dp"/>
+            <com.autonavi.map.widget.FlowLayout android:id="@+id/busline_irregulartime_expandable_flowlayout" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="12dp" app:horizontalSpacing="8dp" app:verticalSpacing="6dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

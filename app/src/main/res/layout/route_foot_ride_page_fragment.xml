@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/op_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_35dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/btn_exit_done" android:background="@drawable/route_run_btn_bg_selector" android:padding="@dimen/route_36dp" android:layout_width="@dimen/route_56dp" android:layout_height="@dimen/route_56dp" android:src="@drawable/run_close" android:scaleType="center"/>
+            <Button android:id="@+id/btn_start" android:tag="2" android:background="@drawable/route_run_btn_start_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_25dp" android:layout_marginRight="@dimen/route_25dp"/>
+            <ImageView android:id="@+id/setting" android:background="@drawable/route_run_btn_bg_selector" android:padding="@dimen/route_36dp" android:layout_width="@dimen/route_56dp" android:layout_height="@dimen/route_56dp" android:src="@drawable/hel_setting" android:scaleType="center"/>
+        </LinearLayout>
+    </com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.minimap.route.ride.view.RidePullSectionCustomView android:id="@+id/pull_section_custom_id" android:layout_width="match_parent" android:layout_height="219dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/gps_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_13dp" android:layout_marginTop="@dimen/route_13dp" android:src="@drawable/run_gps_strong"/>
+    <FrameLayout android:id="@+id/anim_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <View android:id="@+id/bottom_bg" android:background="@color/c_5_b" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <TextView android:gravity="center" android:layout_gravity="center" android:id="@+id/bg_view" android:background="@drawable/round_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.8"/>
+        <TextView android:layout_gravity="center" android:id="@+id/wave_view" android:background="@drawable/round_text_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:alpha="0.4"/>
+        <TextView android:textSize="122sp" android:textColor="@color/f_c_1" android:gravity="center" android:layout_gravity="center" android:id="@+id/text" android:paddingTop="30dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3"/>
+    </FrameLayout>
+</FrameLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_pressed="false" android:drawable="@drawable/v2_btn_normal_bg1"/>
+    <item android:state_pressed="true" android:drawable="@drawable/v3_common_btn_pressed"/>
+</selector>

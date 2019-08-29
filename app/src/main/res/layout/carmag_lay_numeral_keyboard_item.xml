@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="16dp" android:textColor="@drawable/car_blue_txt_selector" android:gravity="center" android:id="@+id/number_keyboard_item" android:background="@drawable/carmag_figure_btn" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="7dp" android:layout_marginRight="3dp" android:layout_marginBottom="7dp" android:text="1"/>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <gradient android:startColor="#704c90f9" android:endColor="#704c90f9" android:angle="90" android:centerColor="#204c90f9"/>
+    <stroke android:width="1dp" android:color="#804c90f9"/>
+</shape>

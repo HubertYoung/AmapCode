@@ -1,0 +1,41 @@
+package com.alipay.mobile.beehive.rpc.action;
+
+public class ActionConstant {
+    public static final String BTN_TEXT = "btnText";
+    public static final String DESC = "desc";
+    public static final String EXCEPTION_VIEW_TYPE = "exceptionViewType";
+    public static final String EXCEPTION_VIEW_TYPE_EMPTY = "empty";
+    public static final String EXCEPTION_VIEW_TYPE_OVERFLOW = "overflow";
+    public static final String EXCEPTION_VIEW_TYPE_WARN = "warn";
+    public static final String FORCE_SHOW = "forceShow";
+    public static final String IMG_URL = "imgUrl";
+    public static final String MAIN_BTN_TEXT = "mainBtnText";
+    public static final String OLD_MAIN_BTN_TEXT = "mainText";
+    public static final String OLD_SUB_BTN_TEXT = "subText";
+    public static final String SCHEMA = "schema";
+    public static final String SUB_BTN_TEXT = "subBtnText";
+    public static final String SUB_DESC = "subDesc";
+    public static final String THIRD_DESC = "thirdDesc";
+    public static final String TITLE = "title";
+    public static final String TRIGGER_ACTIONS = "triggerActions";
+    public static final String TRIGGER_TYPE = "triggerType";
+    public static final String TRIGGER_TYPE_AUTO = "auto";
+    public static final String TRIGGER_TYPE_CANCEL = "cancel";
+    public static final String TRIGGER_TYPE_CERTIFY_FAIL = "certifyFail";
+    public static final String TRIGGER_TYPE_CERTIFY_SUCCESS = "certifySuccess";
+    public static final String TRIGGER_TYPE_CLICK = "click";
+    public static final String TRIGGER_TYPE_MAIN_CLICK = "mainClick";
+    public static final String TRIGGER_TYPE_REALNAME_FAIL = "realnameFail";
+    public static final String TRIGGER_TYPE_REALNAME_SUCCESS = "realnameSuccess";
+    public static final String TRIGGER_TYPE_SUB_CLICK = "subClick";
+    public static final String TYPE = "type";
+    public static final String TYPE_ALERT = "alert";
+    public static final String TYPE_BIG_ALERT = "bigAlert";
+    public static final String TYPE_CERTIFY = "certify";
+    public static final String TYPE_FINISH_PAGE = "finishPage";
+    public static final String TYPE_LINK = "link";
+    public static final String TYPE_RETRY = "retry";
+    public static final String TYPE_SHOW_EXCEPTION_VIEW = "showExceptionView";
+    public static final String TYPE_SHOW_WARN = "showWarn";
+    public static final String TYPE_TOAST = "toast";
+}

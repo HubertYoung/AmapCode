@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include android:id="@+id/viewstub_car_scene_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/route_car_result_map_tips"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/route_car_result_setting_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignTop="@+id/mapTopInteractiveView"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/btn_navi_action" android:clickable="true" android:layout_width="match_parent" android:layout_height="67dp" android:layout_alignParentBottom="true" android:splitMotionEvents="false"/>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:background="#00000000" android:layout_width="match_parent" android:layout_height="153dp" android:layout_alignParentBottom="true"/>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/title_left_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/title_back_img" android:paddingLeft="@dimen/title_bar_back_padding" android:paddingRight="@dimen/title_bar_back_padding_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/icon_a1_selector" android:scaleType="center"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title_center_layout" android:paddingRight="@dimen/title_e1_padding" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <com.autonavi.widget.ui.ClearableEditText android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_4" android:id="@+id/title_edit_text" android:background="@drawable/cleanable_edit_bg" android:paddingLeft="@dimen/title_e1_padding" android:paddingRight="@dimen/title_bar_back_padding" android:layout_width="match_parent" android:layout_height="@dimen/title_a1_tab_height" android:singleLine="true" android:drawableLeft="@drawable/icon_b3_normal" android:drawablePadding="@dimen/title_edit_text_padding"/>
+    </LinearLayout>
+    <View android:id="@+id/title_divide" android:background="@color/c_13" android:layout_width="match_parent" android:layout_height="1px"/>
+</merge>

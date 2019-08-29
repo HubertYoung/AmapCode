@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/title_layout2" android:background="@color/bg_color_transparent" android:layout_width="match_parent" android:layout_height="@dimen/selectpoi_top_title_height">
+    <ImageButton android:id="@+id/title_btn_left_custom" android:background="@drawable/title_bar_back_image_preview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/talkback_return"/>
+</RelativeLayout>

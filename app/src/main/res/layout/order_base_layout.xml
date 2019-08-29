@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center" android:background="@color/voucher_backgroud" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/order_base_list_old_empty_layout"/>
+    <include layout="@layout/order_base_list_new_empty_layout"/>
+    <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/order_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="10dp" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/channel_refresh_hl"/>
+    <include android:visibility="gone" layout="@layout/v4_order_hotel_phone_verify_layout"/>
+    <include android:visibility="gone" layout="@layout/order_base_login_layout"/>
+    <include android:visibility="gone" layout="@layout/order_bottom_delete_layout"/>
+</RelativeLayout>

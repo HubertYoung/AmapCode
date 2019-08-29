@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/route_more" app:title_style="4"/>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/listview" android:scrollbars="vertical" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@drawable/common_line" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+    </LinearLayout>
+</LinearLayout>

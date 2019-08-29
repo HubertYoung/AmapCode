@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:id="@+id/search_more_root" android:background="@drawable/search_sugg_history_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/bottom_driver" android:background="@drawable/board_line_selector" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <TextView android:textSize="14dp" android:textColor="@color/f_c_6" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="查看更多搜索结果"/>
+</LinearLayout>

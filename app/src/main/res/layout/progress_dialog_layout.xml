@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center_horizontal" android:background="@drawable/progress_dialog_bg_corner" android:paddingTop="20dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20dp" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="正在下载"/>
+        <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+            <TextView android:textSize="10dp" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="left" android:id="@+id/progress_text_indicator" android:background="@drawable/download_text_bubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="0%" android:ems="3" android:singleLine="true" android:requiresFadingEdge="horizontal"/>
+        </FrameLayout>
+        <com.amap.bundle.appupgrade.NumberProgressBar android:id="@+id/progress_bar_horizontal" android:layout_width="match_parent" android:layout_height="8dp" android:layout_marginLeft="20dp" android:layout_marginTop="4dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:progressDrawable="@drawable/progress_dialog_progress_drawable" style="@style/Widget.ProgressBar.Horizontal"/>
+        <View android:id="@+id/view_bottom_cutline" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <Button android:textSize="18dp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/dismiss_dialog_button" android:background="@drawable/progress_dialog_btn_selector" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="36dp" android:text="转后台下载"/>
+    </LinearLayout>
+</RelativeLayout>

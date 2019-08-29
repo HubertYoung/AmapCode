@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:shape="rectangle">
+    <corners android:radius="3dp"/>
+    <stroke android:width="@dimen/route_1dp" android:color="@color/car_tab_text_blue"/>
+    <solid android:color="#f4f4f4"/>
+</shape>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/layout_root" android:background="#4d000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/dialog_root" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="@color/v4_btn_layout_bg" android:paddingLeft="@dimen/input_left" android:layout_width="match_parent" android:layout_height="44dp">
+            <TextView android:textSize="18dp" android:textColor="#3b3b3b" android:id="@+id/photo_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/shang_chuan_tu_pian"/>
+        </LinearLayout>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/v4_btn_layout_bg" android:paddingLeft="@dimen/input_left" android:paddingRight="@dimen/input_left" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:baselineAligned="false">
+                <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageButton android:id="@+id/take_photo" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/take_photo_circle_selector" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/pick_photo_font_size" android:textColor="@color/pick_photo_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/publish_photo" android:layout_below="@+id/take_photo" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageButton android:id="@+id/from_files" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/from_storage_circle_selector" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/pick_photo_font_size" android:textColor="@color/pick_photo_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/publish_xiangce" android:layout_below="@+id/from_files" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/bind_taobao_panel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageButton android:id="@+id/bind_taobao" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sync_taobao_head_selector" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/pick_photo_font_size" android:textColor="@color/pick_photo_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/taobao_head" android:layout_below="@+id/bind_taobao" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+                <RelativeLayout android:id="@+id/bind_alipay_panel" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <ImageButton android:id="@+id/bind_alipay" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sync_alipay_head_selector" android:layout_centerHorizontal="true"/>
+                    <TextView android:textSize="@dimen/pick_photo_font_size" android:textColor="@color/pick_photo_font_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/alipay_head" android:layout_below="@+id/bind_alipay" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <Button android:textSize="@dimen/font_34" android:textColor="@color/red" android:gravity="center" android:id="@+id/delete_files" android:background="@drawable/v4_com_btn_choose_selector" android:paddingTop="@dimen/input_font_updown" android:paddingBottom="@dimen/input_font_updown" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_updown" android:text="@string/publish_cancle"/>
+            <Button android:textSize="@dimen/font_34" android:textColor="#ffffffff" android:gravity="center" android:id="@+id/photo_cancle" android:background="@drawable/common_btn_black" android:paddingTop="@dimen/input_font_updown" android:paddingBottom="@dimen/input_font_updown" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_updown" android:layout_marginBottom="@dimen/input_updown" android:text="@string/cancel"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

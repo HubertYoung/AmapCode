@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.bundle.activities.view.InterruptableRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height" app:title_style="10"/>
+    <include android:id="@+id/id_web_bottom" android:layout_width="match_parent" android:layout_height="50dp" android:layout_alignParentBottom="true" layout="@layout/webview_bottom_controll_bar"/>
+    <RelativeLayout android:id="@+id/load_webview_layout" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/id_web_bottom" android:layout_below="@+id/title">
+        <com.autonavi.widget.ui.LoadingViewBL android:id="@+id/loading_view_modal_style" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" app:loadingType="3" app:closeIconVisibility="2"/>
+        <com.autonavi.widget.ui.LoadingViewBL android:gravity="center" android:id="@+id/loading_view_normal_style" android:background="@color/c_1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" app:loadingType="0" app:closeIconVisibility="2"/>
+    </RelativeLayout>
+</com.autonavi.minimap.bundle.activities.view.InterruptableRelativeLayout>

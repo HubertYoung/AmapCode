@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#e6f8f8f8" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height" android:layout_alignParentTop="true">
+        <TextView android:id="@+id/album_folder_back" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/back_btn"/>
+        <TextView android:textSize="15dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/album_folder_cancel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:text="@string/Cancel" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:id="@+id/album_folder_title" android:text="@string/album_folder_title" style="@style/title_common_style"/>
+        <View android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>

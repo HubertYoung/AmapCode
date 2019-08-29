@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/bus_station_icon" android:background="@drawable/route_bus_detail_item_line_point_bg" android:layout_width="@dimen/route_7dp" android:layout_height="@dimen/route_7dp" android:layout_marginLeft="@dimen/route_9dp" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/bus_station_location_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_25dp" android:src="@drawable/default_path_location_icon_normal" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/bus_include_station_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_40dp" android:layout_marginTop="@dimen/route_2dp" android:layout_marginBottom="@dimen/route_2dp" android:singleLine="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

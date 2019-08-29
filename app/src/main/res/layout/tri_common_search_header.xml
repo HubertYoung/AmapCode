@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/btn_search_back" android:background="@drawable/icon_a1_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_back_padding" android:layout_marginRight="1dp" android:contentDescription="@string/Back"/>
+        <RelativeLayout android:background="@drawable/cleanable_edit_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:layout_weight="1">
+            <com.autonavi.minimap.widget.SearchEdit android:id="@+id/search_search_layout" android:layout_width="match_parent" android:layout_height="@dimen/title_a1_tab_height" android:layout_marginLeft="0dp"/>
+            <com.autonavi.bundle.vui.common.emojiview.VUIEmojiView android:id="@+id/btn_emoji" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/voice_input"/>
+        </RelativeLayout>
+        <Button android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_search" android:layout_width="wrap_content" android:layout_height="@dimen/title_a1_tab_height" android:layout_marginRight="7dp" android:text="搜索" android:contentDescription="@string/common_search_header_search" style="@style/btn_b1"/>
+    </LinearLayout>
+</com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>

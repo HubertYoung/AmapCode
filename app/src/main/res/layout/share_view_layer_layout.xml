@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_5_b" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/share_content_view" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <HorizontalScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_marginBottom="20dp">
+            <com.autonavi.minimap.widget.SimpleList android:orientation="horizontal" android:id="@+id/share_list" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:slDividerHeight="26dp"/>
+        </HorizontalScrollView>
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/share_dialog_cancel_btn_bg_selector" android:layout_width="match_parent" android:layout_height="@dimen/share_dialog_cancel_btn_height" android:layout_marginLeft="20dp" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="20dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

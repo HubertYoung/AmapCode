@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/onfoot_navimap_title_header_height">
+    <ImageView android:id="@+id/icon" android:layout_width="46dp" android:layout_height="46dp" android:layout_marginLeft="18dp" android:layout_marginRight="12dp" android:src="@drawable/sou15" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="60dp" android:layout_toRightOf="@+id/icon" android:layout_centerVertical="true">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:id="@+id/linearLayout_current" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="3dp">
+            <TextView android:id="@+id/current_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:text="" style="@style/route_foot_navi_top_text_small"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="bottom" android:orientation="horizontal" android:id="@+id/linearLayout_prompt" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:id="@+id/next_action" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:text="" style="@style/route_foot_navi_top_text_small"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/next_layout" android:background="#00ffffff" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerInParent="true" android:alpha="0.3">
+        <TextView android:textSize="12dp" android:textColor="#888888" android:id="@+id/next_seg_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:text="@string/route_foot_navi_then"/>
+        <ImageView android:id="@+id/next_icon" android:visibility="gone" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/sou15" android:contentDescription="@null"/>
+    </LinearLayout>
+</RelativeLayout>

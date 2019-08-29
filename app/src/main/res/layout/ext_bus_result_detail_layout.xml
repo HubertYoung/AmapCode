@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.route.bus.widget.RouteBusResultDetailView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/animation_top_view" android:background="@drawable/route_bus_result_title_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height">
+        <ImageView android:id="@+id/title_btn_left" android:padding="@dimen/route_7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_bus_result_title_back"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/animation_bottom_view" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.widget.slidinguppanel.SlidingUpPanelLayout android:gravity="bottom" android:id="@+id/sliding_view" android:focusable="false" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="47dp" app:dragView="@+id/summary_view" app:initialState="0" app:sensitivity="1.1">
+            <FrameLayout android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <include android:id="@+id/summary_view" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/route_bus_result_detail_summary_layout"/>
+                <ListView android:id="@+id/bus_detail_List" android:background="@color/bg_f5" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@null" android:divider="@null"/>
+            </LinearLayout>
+        </com.autonavi.widget.slidinguppanel.SlidingUpPanelLayout>
+    </RelativeLayout>
+</com.autonavi.minimap.route.bus.widget.RouteBusResultDetailView>

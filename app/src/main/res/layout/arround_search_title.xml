@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/title_layout" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height" android:layout_centerVertical="true">
+        <ImageButton android:id="@+id/title_btn_left" android:background="@drawable/icon_a1_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_back_padding" android:layout_marginRight="1dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/Back"/>
+        <RelativeLayout android:background="@drawable/cleanable_edit_bg" android:layout_width="match_parent" android:layout_height="@dimen/title_a1_tab_height" android:layout_marginRight="7dp" android:layout_toRightOf="@+id/title_btn_left" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/tv_search" android:background="@null" android:paddingLeft="@dimen/title_e1_padding" android:paddingRight="@dimen/title_bar_back_padding" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/title_a1_tab_height" android:text="@string/search_nearby" android:singleLine="true" android:includeFontPadding="false" android:drawableLeft="@drawable/icon_b3_normal" android:drawablePadding="@dimen/title_edit_text_padding" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:background="@color/c_13" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/title_layout"/>
+</RelativeLayout>

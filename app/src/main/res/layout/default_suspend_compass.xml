@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.autonavi.map.suspend.refactor.compass.UICompassWidget android:id="@+id/Compass" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/compass_layer_tip" android:background="@drawable/layer_tip_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_toRightOf="@+id/Compass">
+        <TextView android:textSize="13dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/compass_layer_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/compass_map_tip" android:drawablePadding="5dp"/>
+    </LinearLayout>
+</merge>

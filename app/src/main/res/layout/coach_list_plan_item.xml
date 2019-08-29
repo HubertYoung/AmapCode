@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/route_15dp" android:paddingTop="@dimen/route_24dp" android:paddingRight="@dimen/route_15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/coach_departure_time_container" android:layout_width="@dimen/route_100dp" android:layout_height="wrap_content" android:layout_marginTop="-3dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="bottom" android:id="@+id/coach_departure_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="07:25"/>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/coach_departure_time_shift_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_1dp" android:text="前乘车"/>
+        </LinearLayout>
+        <LinearLayout android:paddingLeft="@dimen/route_10dp" android:paddingRight="@dimen/route_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/coach_plan_price" android:layout_toRightOf="@+id/coach_departure_time_container" android:layout_alignParentTop="true">
+            <LinearLayout android:gravity="top" android:layout_gravity="top" android:id="@+id/coach_start_img_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_5dp">
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="@dimen/route_14dp" android:layout_height="@dimen/route_14dp" android:src="@drawable/coach_plan_dep_station"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/coach_departure_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="强生强生高桥强生高桥强生强生高桥强生高桥强生强生高桥强生高桥强生强生高桥强生高桥强生" android:maxLines="2" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/f_s_18" android:textColor="@color/f_c_8" android:gravity="right" android:id="@+id/coach_plan_price" android:layout_width="@dimen/route_65dp" android:layout_height="wrap_content" android:text="¥50" android:includeFontPadding="false" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/route_15dp" android:paddingTop="@dimen/route_13dp" android:paddingRight="@dimen/route_15dp" android:paddingBottom="@dimen/route_24dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_6dp">
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_12" android:id="@+id/coach_shift_type" android:layout_width="@dimen/route_100dp" android:layout_height="wrap_content" android:text="固定班车" android:includeFontPadding="false" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:paddingLeft="@dimen/route_10dp" android:paddingRight="@dimen/route_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/coach_plan_count" android:layout_toRightOf="@+id/coach_shift_type">
+            <LinearLayout android:gravity="top" android:layout_gravity="top" android:id="@+id/coach_arr_img_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_5dp">
+                <ImageView android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="@dimen/route_14dp" android:layout_height="@dimen/route_14dp" android:src="@drawable/coach_plan_arrive_station"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/coach_arrive_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津天津" android:maxLines="2" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="right" android:layout_gravity="right" android:id="@+id/coach_plan_count" android:layout_width="@dimen/route_65dp" android:layout_height="wrap_content" android:text="50张" android:includeFontPadding="false" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="2dp"/>
+            <solid android:color="@color/progress_background"/>
+        </shape>
+    </item>
+    <item android:id="@android:id/progress">
+        <scale android:drawable="@drawable/navitts_progress_bar_ct" android:scaleWidth="100%"/>
+    </item>
+</layer-list>

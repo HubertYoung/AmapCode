@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/dark_transparent" android:paddingTop="45dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/chooseTitle" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sns_select_city_button"/>
+        <FrameLayout android:orientation="vertical" android:id="@+id/all_list_view" android:background="@color/frame_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_marginBottom="67dp">
+            <ExpandableListView android:scrollbarStyle="outsideOverlay" android:id="@+id/ex_city_list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" android:childDivider="@null" android:divider="@null" android:dividerHeight="0dp"/>
+            <com.autonavi.minimap.widget.IndexView android:layout_gravity="right" android:id="@+id/index_view" android:layout_width="32dp" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/v4_clear_bottom"/>
+    </RelativeLayout>
+</LinearLayout>

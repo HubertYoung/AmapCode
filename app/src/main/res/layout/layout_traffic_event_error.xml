@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="180dp">
+    <ImageView android:id="@+id/restrict_tips_error_icon" android:visibility="visible" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="54dp" android:src="@drawable/restricted_area_fragment_loading_failed_selector" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:layout_marginBottom="54dp" android:text="@string/tv_report_error" android:layout_below="@+id/restrict_tips_error_icon" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

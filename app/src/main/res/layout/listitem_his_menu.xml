@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="56dp">
+    <TextView android:textSize="@dimen/font_30" android:textColor="@color/v3_font_white" android:gravity="center_vertical" android:id="@+id/tvFavor" android:background="@drawable/v3_icon_btn_selector3" android:paddingLeft="13dp" android:layout_width="0dp" android:layout_height="56dp" android:text="@string/list_item_favorites" android:drawablePadding="6dp" android:layout_weight="1"/>
+    <View android:background="@color/frame_line" android:layout_width="0.66dp" android:layout_height="56dp"/>
+    <TextView android:textSize="@dimen/font_30" android:textColor="@color/v3_font_white" android:gravity="center_vertical" android:id="@+id/tvDel" android:background="@drawable/v3_icon_btn_selector3" android:paddingLeft="13dp" android:layout_width="0dp" android:layout_height="56dp" android:text="@string/list_item_delete" android:drawableLeft="@drawable/v3_search_empty" android:drawablePadding="6dp" android:layout_weight="1"/>
+</LinearLayout>

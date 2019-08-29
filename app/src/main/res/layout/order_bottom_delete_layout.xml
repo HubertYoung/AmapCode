@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:id="@+id/order_delete_layout" android:layout_width="match_parent" android:layout_height="45dp" android:layout_alignParentBottom="true">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/order_select_all_layout" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_weight="1">
+        <CheckBox android:id="@+id/select_all_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:checked="false" android:button="@drawable/checkbox_selector"/>
+        <TextView android:textSize="16dp" android:textColor="@android:color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/fav_quan_xuan"/>
+    </LinearLayout>
+    <TextView android:textSize="16dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/order_delete" android:background="#fe6732" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/delete" android:layout_weight="1"/>
+</LinearLayout>

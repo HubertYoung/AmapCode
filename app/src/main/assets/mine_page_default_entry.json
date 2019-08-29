@@ -1,0 +1,103 @@
+[
+  {
+    "name": "我的",
+    "entry_list": [
+      {
+        "name": "评论",
+        "label": "写评论赢海量金币",
+        "icon": "comment",
+        "action": "comment"
+      },
+      {
+        "name": "订单",
+        "label": "酒店、门票、火车票等",
+        "icon": "order",
+        "action": "order"
+      },
+      {
+        "name": "地点贡献",
+        "label": "参与贡献赢取多重好礼",
+        "icon": "devote",
+        "action": "devote"
+      },
+      {
+        "name": "钱包",
+        "label": "可提现到支付宝",
+        "icon": "wallet",
+        "action": "wallet"
+      }
+    ]
+  },
+  {
+    "name": "驾车",
+    "entry_list": [
+      {
+        "name": "驾车头条",
+        "label": "驾车技巧、新手必看",
+        "icon": "drive_news",
+        "action": "drive_news"
+      },
+      {
+        "name": "扫一扫",
+        "label": "车机版本扫码登录",
+        "icon": "qrcode",
+        "action": "qrcode"
+      }
+    ]
+  },
+  {
+    "name": "其他",
+    "entry_list": [
+      {
+        "name": "活动专区",
+        "label": "高德用户专享福利",
+        "icon": "activity",
+        "action": "activity"
+      },
+      {
+        "name": "车主商城",
+        "label": "车品好货精选",
+        "icon": "car_owner_mall",
+        "action": "car_owner_mall"
+      },
+      {
+        "name": "帮助与反馈",
+        "label": "使用说明及我的反馈",
+        "icon": "feedback",
+        "action": "feedback"
+      },
+      {
+        "name": "特别鸣谢",
+        "label": "感谢高德热心用户",
+        "icon": "thanks",
+        "action": "thanks"
+      }
+    ]
+  }
+  /*
+  ,{
+    "name": "GGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGG",
+    "icon": "http://www.autonavi.com/attach/images/logo.png",
+    "entry_list": [
+      {
+        "name": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+        "label": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+        "icon": "drive_news",
+        "action": "androidamap://openFeature?featureName=Settings&sourceApplication=softname",
+        "extra_info": [
+          "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+        ]
+      },
+      {
+        "name": "NNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNNN",
+        "label": "LLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLLL",
+        "icon": "http://www.autonavi.com/attach/images/logo.png?",
+        "action": "amapuri://settings/mapsettings",
+        "extra_info": [
+          "EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEE"
+        ]
+      }
+    ]
+  }
+*/
+]

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/linear_path_container_main" android:layout_width="@dimen/my_route_width" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center" android:id="@+id/linear_path_container" android:background="@drawable/my_route_press_selector" android:clickable="true" android:layout_width="@dimen/my_route_width" android:layout_height="@dimen/my_route_height" android:layout_centerInParent="true" android:contentDescription="@string/path_lines_condesc">
+            <ImageView android:id="@+id/image_path_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/my_route_icon_press_selector"/>
+            <TextView android:textSize="16dp" android:textColor="@drawable/my_route_txt_selector" android:id="@+id/tv_path_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/my_route_path_margin" android:src="@drawable/route_btn_icon" android:text="@string/path_lines"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/realtimebus_label_main" android:paddingBottom="@dimen/route_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.autonavi.minimap.route.common.view.RealtimeStrokeTextView android:textSize="@dimen/route_13dp" android:textColor="@color/f_c_2" android:id="@+id/realtimebus_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_12dp" android:text="北京站"/>
+    </LinearLayout>
+</LinearLayout>

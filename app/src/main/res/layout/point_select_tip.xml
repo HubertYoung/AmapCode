@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/tip_shadow_scale" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/taxi_tip_shadow_scaled" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tip_status_container" android:background="@drawable/taxi_start_point_tip_circle_bg" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_above="@+id/tip_marker_below" android:layout_centerHorizontal="true">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp">
+                <TextView android:textSize="@dimen/f_s_18" android:textColor="@color/f_c_6" android:ellipsize="end" android:gravity="center" android:id="@+id/tip_status_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." android:maxLines="1" android:includeFontPadding="false" android:layout_centerHorizontal="true" android:lineSpacingExtra="0dp"/>
+                <TextView android:textSize="@dimen/f_s_10" android:textColor="@color/f_c_6" android:ellipsize="end" android:gravity="center" android:id="@+id/tip_status_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/f_s_18" android:text="分钟" android:maxLines="1" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <View android:layout_gravity="center_vertical" android:id="@+id/tip_divider" android:background="@color/c_26" android:layout_width="1px" android:layout_height="30dp" android:layout_marginLeft="13dp" android:layout_marginRight="13dp"/>
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:ellipsize="end" android:layout_gravity="center_vertical" android:id="@+id/tip_status_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="empty" android:maxLines="1" android:drawableRight="@drawable/taxi_start_point_select_tip_call_taxi" android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/tip_marker_below" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-3dp" android:src="@drawable/taxi_start_point_move" android:layout_above="@+id/tip_shadow" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/tip_shadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:src="@drawable/taxi_start_point_shadow" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

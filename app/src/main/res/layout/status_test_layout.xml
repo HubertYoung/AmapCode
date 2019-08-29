@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn1" android:layout_width="match_parent" android:layout_height="50dp" android:text="发布行程" android:layout_weight="1"/>
+        <Button android:id="@+id/btn2" android:layout_width="match_parent" android:layout_height="50dp" android:text="快速发布行程" android:layout_weight="1"/>
+        <Button android:id="@+id/btn3" android:layout_width="match_parent" android:layout_height="50dp" android:text="取消行程" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn4" android:layout_width="match_parent" android:layout_height="50dp" android:text="取消订单" android:layout_weight="1"/>
+        <Button android:id="@+id/btn5" android:layout_width="match_parent" android:layout_height="50dp" android:text="到达上车地点" android:layout_weight="1"/>
+        <Button android:id="@+id/btn6" android:layout_width="match_parent" android:layout_height="50dp" android:text="上车付钱" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <Button android:id="@+id/btn7" android:layout_width="match_parent" android:layout_height="50dp" android:text="到达目的地" android:layout_weight="1"/>
+        <Button android:id="@+id/btn8" android:layout_width="match_parent" android:layout_height="50dp" android:text="轮询状态" android:layout_weight="1"/>
+        <Button android:id="@+id/btn9" android:layout_width="match_parent" android:layout_height="50dp" android:text="邀请同行" android:layout_weight="1"/>
+    </LinearLayout>
+    <Button android:id="@+id/btn10" android:layout_width="match_parent" android:layout_height="50dp" android:text="司机接单"/>
+    <TextView android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+</LinearLayout>

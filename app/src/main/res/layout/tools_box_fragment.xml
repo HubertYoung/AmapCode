@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="4"/>
+    <RelativeLayout android:id="@+id/bottom_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/default_border_color_j" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <Button android:textColor="@color/f_c_3" android:id="@+id/add_shortcut_btn" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/toolbox_bottom_bar_height" android:text="@string/toolbox_add_shortcut"/>
+        <Button android:textColor="@color/f_c_6" android:id="@+id/cancel_btn" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/toolbox_bottom_bar_height" android:text="@string/toolbox_cancel_add_shortcut"/>
+    </RelativeLayout>
+    <ScrollView android:background="@null" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_above="@+id/bottom_bar" android:layout_below="@+id/title" android:requiresFadingEdge="none">
+        <com.autonavi.mine.page.toolsbox.widget.MineGridView android:id="@+id/toolsBoxGridView" android:background="#dddddd" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:horizontalSpacing="1px" android:verticalSpacing="1px" android:numColumns="4" android:divider="@null"/>
+    </ScrollView>
+</RelativeLayout>

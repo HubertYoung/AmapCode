@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:id="@+id/lLayout_right_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/map_zoom_tip_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:id="@+id/zoomInTip" android:visibility="invisible" android:layout_width="58dp" android:layout_height="@dimen/map_container_btn_size" layout="@layout/zoom_in_tip"/>
+        <include android:id="@+id/zoomOutTip" android:visibility="invisible" android:layout_width="58dp" android:layout_height="@dimen/map_container_btn_size" layout="@layout/zoom_out_tip"/>
+    </LinearLayout>
+    <RelativeLayout android:gravity="right" android:id="@+id/map_zoom_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.autonavi.map.widget.LaterImageButton android:id="@+id/MapZoomIn" android:background="@drawable/icon_c_bg_up" android:layout_width="@dimen/zoom_view_width" android:layout_height="wrap_content" android:src="@drawable/icon_c5_selector" android:contentDescription="@string/zoom_in"/>
+        <com.autonavi.map.widget.LaterImageButton android:id="@+id/MapZoomOut" android:background="@drawable/icon_c_bg_down" android:layout_width="@dimen/zoom_view_width" android:layout_height="wrap_content" android:src="@drawable/icon_c6_selector" android:layout_below="@+id/MapZoomIn" android:contentDescription="@string/zoom_out"/>
+    </RelativeLayout>
+</LinearLayout>

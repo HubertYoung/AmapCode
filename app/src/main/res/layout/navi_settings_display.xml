@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/quickautonavi_setting_display" app:title_style="4"/>
+    <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <ScrollView android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/car_direction" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/car_direction_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_navi_mode" android:drawableLeft="@drawable/quickautonavi_car_direction_icon" android:drawablePadding="@dimen/quickautonavi_drawable_padding"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/height_frame" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp">
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/carhead" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="2dp" android:text="@string/quickautonavi_setting_car_direction_carhead_3d" android:layout_weight="1"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp"/>
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/northhead" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="@string/quickautonavi_setting_car_direction_northhead_2d" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_day_night_mode" android:drawableLeft="@drawable/ns_day_night_mode" android:drawablePadding="@dimen/quickautonavi_drawable_padding"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/height_frame" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp">
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/auto" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/quickauotnavi_setting_day_night_mode_auto" android:layout_weight="1"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp" android:layout_marginLeft="1dp" android:layout_marginRight="1dp"/>
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/day" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/quickautonavi_setting_day_night_mode_day" android:layout_weight="1"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp" android:layout_marginLeft="1dp" android:layout_marginRight="1dp"/>
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/night" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/quickautonavi_setting_day_night_mode_night" android:layout_weight="1"/>
+                </LinearLayout>
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <RelativeLayout android:id="@+id/scale_auto_change_layout" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/scale_auto_change" android:drawableLeft="@drawable/scale_auto_change" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/chk_scale_auto_change" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

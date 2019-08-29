@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:paddingTop="3dp" android:paddingBottom="3dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn1" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sunday"/>
+        <View android:id="@+id/week_set_view_point1" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn2" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/monday"/>
+        <View android:id="@+id/week_set_view_point2" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn3" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tuesday"/>
+        <View android:id="@+id/week_set_view_point3" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn4" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wednesday"/>
+        <View android:id="@+id/week_set_view_point4" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn5" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/thursday"/>
+        <View android:id="@+id/week_set_view_point5" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn6" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friday"/>
+        <View android:id="@+id/week_set_view_point6" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/week_set_view_btn7" android:background="@drawable/week_set_view_item_selector" android:paddingBottom="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:id="@+id/week_set_view_text7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/saturday"/>
+        <View android:id="@+id/week_set_view_point7" android:background="@color/darker_blue" android:layout_width="26dp" android:layout_height="2dp"/>
+    </LinearLayout>
+</LinearLayout>

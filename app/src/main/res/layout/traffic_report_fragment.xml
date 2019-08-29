@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_view_layout"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="@dimen/f_s_16" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="路况上报"/>
+            <com.autonavi.minimap.widget.ExGridView android:gravity="center_horizontal" android:id="@+id/traffic_report_grid" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="24dp" android:layout_marginRight="14dp" android:listSelector="@android:color/transparent" android:verticalSpacing="35dp" android:numColumns="3"/>
+            <TextView android:textSize="12dp" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/traffic_report_link_btn" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp"/>
+            <View android:layout_height="6dp" android:layout_marginTop="24dp" style="@style/Divider"/>
+            <TextView android:textSize="@dimen/f_s_16" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="反馈问题"/>
+            <com.autonavi.minimap.widget.ExGridView android:gravity="center_horizontal" android:id="@+id/traffic_report_bottom_grid_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginTop="24dp" android:layout_marginRight="14dp" android:layout_marginBottom="80dp" android:listSelector="@android:color/transparent" android:verticalSpacing="35dp" android:numColumns="3"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/tip_text_container" android:background="@drawable/tip_pop" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/text_hot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="3dp"/>
+        <TextView android:textSize="14dp" android:textColor="@color/white" android:id="@+id/tip_pop_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/text_hot" android:layout_alignBaseline="@+id/text_hot"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/tip_poi" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2dp" android:src="@drawable/b_poi_hl" android:contentDescription="@null"/>
+</LinearLayout>

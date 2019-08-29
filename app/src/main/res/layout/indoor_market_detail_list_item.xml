@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="top" android:id="@+id/main_layout" android:background="@drawable/v4_board_content_btn" android:clickable="true" android:descendantFocusability="afterDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/horizontalspacing" android:background="@color/gray_lite" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_alignParentBottom="true"/>
+    <RelativeLayout android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_below="@+id/horizontalspacing">
+        <RelativeLayout android:id="@+id/image_view_layout" android:visibility="visible" android:layout_width="80dp" android:layout_height="75dp" android:layout_marginLeft="12dp">
+            <ImageView android:id="@+id/image_view" android:background="@color/image_default_background" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="8dp" android:paddingRight="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toRightOf="@+id/image_view_layout" android:layout_alignParentTop="true">
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="3dp">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/groupbuy_tag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:src="@drawable/poi_group" android:scaleType="center" android:singleLine="true" android:contentDescription="@null"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/poi_ratingbar_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp">
+                <RatingBar android:layout_gravity="center_vertical" android:id="@+id/rating_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:max="5" android:progress="8" android:numStars="5" android:stepSize="0.5" style="@style/RatingBar"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:ellipsize="marquee" android:layout_gravity="center_vertical" android:id="@+id/avgprice" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/poi_distance_ll" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:ellipsize="marquee" android:id="@+id/floor" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:singleLine="true"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:ellipsize="marquee" android:id="@+id/tag" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

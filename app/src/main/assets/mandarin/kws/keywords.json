@@ -1,0 +1,9 @@
+{
+"word_list":[
+    {"name":"你好 小 德", "high_threshold":75.0, "lm_boost":0.0, "am_boost":0.0, "threshold1":-0.080, "min_dur":0.4, "max_dur":2.0, "each_subseg_threshold":"-0.29|-0.24|-0.24", "each_subseg_min_dur":"0.11|0.05|0.05", "each_subseg_max_dur":"1.2|1.0|1.0", "threshold2":12, "is_main":true, "type":"wakeup", "cc_name":"nihaoxiaodecc", "vec_threshold1_transmit":"-0.25|-0.20|-0.16|-0.12|-0.08", "vec_threshold2_transmit":"-1|-1|-1|-1|-1", "transmit_level":0},
+    {"name":"小 德 我 要", "high_threshold":75.0, "lm_boost":0.0, "am_boost":0.0, "threshold1":-0.120, "min_dur":0.4, "max_dur":2.2, "each_subseg_threshold":"-0.4|-0.4|-0.55|-0.55", "each_subseg_min_dur":"0.05|0.05|0.05|0.05", "each_subseg_max_dur":"1.0|1.0|1.0|1.0", "threshold2":17, "is_main":true, "type":"wakeup_oneshot", "cc_name":"xiaodewoyaocc", "endtime_offset":-0.09, "vec_threshold1_transmit":"-0.25|-0.22|-0.19|-0.15|-0.12", "vec_threshold2_transmit":"-1|-1|-1|-1|-1", "transmit_level":0},
+    {"name":"小 德 我 ANTI_YAO", "lm_boost":0.0, "am_boost":0.0, "threshold1":100, "threshold2":101, "is_main":true, "type":"wakeup_oneshot", "cc_name":"xiaodewoyaocc" },
+    {"name":"小1 度 小1 度", "lm_boost":0.0, "am_boost":0.0, "threshold1":100, "threshold2":101, "is_main":true, "type":"wakeup_oneshot", "cc_name":"xiaodewoyaocc"},
+    {"name":"小 德 小 德", "activation":false, "lm_boost":0.0, "am_boost":0.0, "threshold1":-0.120, "min_dur":0.4, "max_dur":2.5, "each_subseg_threshold":"-0.5|-0.4|-0.5|-0.4", "each_subseg_min_dur":"0.05|0.05|0.05|0.05", "each_subseg_max_dur":"1.0|1.0|1.0|1.0", "threshold2":10, "is_main":true, "type":"wakeup", "cc_name":"xiaodexiaodecc", "vec_threshold1_transmit":"-0.25|-0.22|-0.19|-0.15|-0.12", "vec_threshold2_transmit":"-1|-1|-1|-1|-1", "transmit_level":0}
+]
+}

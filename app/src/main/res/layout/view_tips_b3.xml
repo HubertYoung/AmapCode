@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_10_a" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36dp">
+    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_1" android:ellipsize="end" android:gravity="center" android:id="@+id/tip_text" android:paddingTop="@dimen/f_s_10" android:paddingBottom="@dimen/f_s_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_centerVertical="true" android:lineSpacingExtra="@dimen/dp_4"/>
+</RelativeLayout>

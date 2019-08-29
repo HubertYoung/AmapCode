@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:id="@+id/left" android:drawable="@drawable/anim_item_voice_transition" android:right="36dp"/>
+    <item android:id="@+id/center" android:drawable="@drawable/anim_item_voice_transition" android:left="18dp" android:right="18dp"/>
+    <item android:id="@+id/right" android:drawable="@drawable/anim_item_voice_transition" android:left="36dp"/>
+</layer-list>

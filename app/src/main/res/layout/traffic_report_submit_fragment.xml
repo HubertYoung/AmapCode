@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_view_layout"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/traffic_detail_label_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+                <TextView android:layout_height="36dp" android:layout_marginLeft="10dp" android:text="@string/traffic_report_title_driveway" style="@style/traffic_report_title"/>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/drive_way_list1" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.315">
+                        <ToggleButton android:id="@+id/drive_way_diff" android:layout_width="match_parent" android:layout_height="match_parent" style="@style/toggle_drive_way_diff"/>
+                    </RelativeLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.685">
+                        <ToggleButton android:id="@+id/drive_way_left" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1" style="@style/toggle_drive_way_left"/>
+                        <ToggleButton android:id="@+id/drive_way_mid" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1" style="@style/toggle_drive_way_mid"/>
+                        <ToggleButton android:id="@+id/drive_way_right" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1" style="@style/toggle_drive_way_right"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@+id/drive_way_list2" android:layout_width="match_parent" android:layout_height="55dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                    <ToggleButton android:id="@+id/drive_way_diff2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" style="@style/toggle_drive_way_diff"/>
+                    <ToggleButton android:id="@+id/drive_way_same" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_weight="1" style="@style/toggle_drive_way_same"/>
+                </LinearLayout>
+                <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp"/>
+                <TextView android:layout_height="36dp" android:layout_marginLeft="10dp" android:text="@string/traffic_report_title_desc" style="@style/traffic_report_title"/>
+                <com.autonavi.minimap.widget.ExGridView android:gravity="center" android:id="@+id/label_list" android:background="@null" android:scrollbars="none" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@null" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:stretchMode="columnWidth" android:numColumns="3"/>
+            </LinearLayout>
+            <TextView android:textSize="14dp" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/traffic_report_desc" android:background="@drawable/error_report_input_background" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="10dp" android:layout_marginTop="8dp" android:layout_marginRight="10dp" android:hint="@string/traffic_report_desc_hint" android:singleLine="true"/>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" layout="@layout/traffic_report_img_and_poi"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/traffic_report_right_now" android:text="@string/traffic_report_right_now2" style="@style/traffic_report_submit_btn"/>
+    </RelativeLayout>
+</LinearLayout>

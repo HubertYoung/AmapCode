@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/quickautonavi_setting_broadcast_content" app:title_style="4"/>
+    <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <ScrollView android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/broadcast_mode" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="12dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_broadcast_title" android:drawableLeft="@drawable/ns_navigation_voice" android:drawablePadding="@dimen/quickautonavi_drawable_padding"/>
+            </LinearLayout>
+            <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@drawable/height_frame" android:layout_width="0dp" android:layout_height="36dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/detailed_report" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="2dp" android:text="详细播报" android:layout_weight="1"/>
+                    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp"/>
+                    <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/simplified_report" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="简洁播报" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="12dp" android:textColor="#adadad" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:text="@string/broadcast_setting_details_tip" android:singleLine="false"/>
+                <TextView android:textSize="12dp" android:textColor="#adadad" android:gravity="left" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="2.5dp" android:layout_marginBottom="16dp" android:text="@string/broadcast_setting_simple_tip" android:singleLine="false"/>
+            </LinearLayout>
+            <FrameLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:layout_width="match_parent" android:layout_height="36dp" android:layout_marginLeft="12dp" android:text="@string/broadcast_setting_accessibility_tip"/>
+            </FrameLayout>
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/edog_play_switch" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/edog_play_switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_edog_switch" android:drawableLeft="@drawable/ns_edog_switch_icon" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/edog_play_switch_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0.5dp">
+                    <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/play_route_traffic" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/play_route_traffic_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_route_trafic_switch" android:drawableLeft="@drawable/ns_route_traffic_icon" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/play_route_traffic_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+                <RelativeLayout android:id="@+id/navigation_volume_gain_control" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ns_more_volume_gain_control" android:drawableLeft="@drawable/ns_volume_gain_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/chk_navigation_volume_control" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0.5dp">
+                    <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/calling_speak_tts_layout" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/calling_speak_tts" android:drawableLeft="@drawable/calling_speak_tts_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/chk_calling_tts_speak" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/tts_mixed_music_layout" android:background="@drawable/ns_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/tts_mixed_music_text" android:paddingLeft="@dimen/quickautonavi_padding_right" android:layout_width="wrap_content" android:layout_height="44dp" android:text="@string/tts_mixed_music" android:drawableLeft="@drawable/mixed_music_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding"/>
+                    <LinearLayout android:orientation="horizontal" android:background="@drawable/height_frame" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:minHeight="36dp" android:layout_weight="1">
+                        <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/chk_tts_mixed_music" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="2dp" android:text="@string/tts_mixed_music_tab" android:layout_weight="1"/>
+                        <View android:layout_gravity="center_vertical" android:id="@+id/tts_mixed_music_vertical_line" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp"/>
+                        <TextView android:textSize="@dimen/font_28" android:textColor="@color/ns_radio_group_text_color_selector" android:gravity="center" android:id="@+id/chk_tts_pause_music" android:background="@drawable/ns_radio_group2_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="@string/tts_pause_music_tab" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <TextView android:textSize="12dp" android:textColor="@color/f_c_4" android:gravity="left" android:id="@+id/tts_mixed_music_prompt" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quickautonavi_padding_right" android:layout_marginTop="8dp" android:text="@string/tts_mixed_music_prompt" android:singleLine="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:id="@+id/contact_item_head" android:background="@color/alipay_regionBackgroundColor" android:clickable="false" android:layout_width="match_parent" android:layout_height="27dp">
+        <TextView android:textSize="14dp" android:textStyle="normal" android:textColor="@color/alipay_colorBlack" android:layout_gravity="center_vertical" android:id="@+id/contact_item_header_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp"/>
+    </LinearLayout>
+    <View android:id="@+id/region_divider" android:background="@color/alipay_regionDividerColor" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="14dp" android:layout_marginRight="14dp"/>
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/alipay_aliuser_contact_list_item_selector" android:layout_width="match_parent" android:layout_height="54dp">
+        <TextView android:textSize="16dp" android:textStyle="normal" android:textColor="@color/alipay_colorBlack" android:id="@+id/region_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_centerVertical="true"/>
+        <TextView android:textSize="16dp" android:textColor="@color/alipay_colorLightGray" android:id="@+id/region_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</LinearLayout>

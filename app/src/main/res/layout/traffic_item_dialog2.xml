@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/traffic_item_dialog_layout" android:background="@null" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/traffic_event_status_container" android:background="@android:color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <RelativeLayout android:id="@+id/traffic_event_expired" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="180dp">
+            <ImageView android:id="@+id/traffic_tips_expired_icon" android:visibility="visible" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="54dp" android:src="@drawable/common_err" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="13sp" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:layout_marginBottom="54dp" android:text="@string/tv_traffic_event_expired" android:layout_below="@+id/traffic_tips_expired_icon" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/traffic_event_error" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="180dp">
+            <ImageView android:id="@+id/restrict_tips_error_icon" android:visibility="visible" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginTop="54dp" android:src="@drawable/restricted_area_fragment_loading_failed_selector" android:scaleType="fitXY" android:layout_centerHorizontal="true"/>
+            <TextView android:textSize="13sp" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.5dp" android:layout_marginBottom="54dp" android:text="@string/tv_report_error" android:layout_below="@+id/restrict_tips_error_icon" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/traffic_event_loading" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="150dp">
+            <com.autonavi.widget.ui.LoadingViewBL android:id="@+id/restrict_area_on_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" app:loadingType="2"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/img_item_close_not_success" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/operation_title_close" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        <View android:id="@+id/img_item_divider_not_success" android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" android:layout_alignParentTop="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/traffic_event_content" android:background="@null" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true">
+        <LinearLayout android:gravity="center" android:id="@+id/displayallbtn" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/displayallbtn1" android:background="@drawable/icon_c_bg_single" android:paddingLeft="13dp" android:paddingRight="13dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="44dp" android:layout_marginTop="0dp" android:layout_marginBottom="4dp" android:text="@string/show_traffic_event_group"/>
+        </LinearLayout>
+        <View android:id="@+id/grayline" android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="@dimen/line_devide" android:layout_below="@+id/displayallbtn"/>
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/grayline">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp">
+                <ImageView android:id="@+id/layerImage" android:layout_width="27dp" android:layout_height="27dp" android:layout_marginLeft="11dp" android:src="@drawable/traffic_report_accident" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/font_34" android:textStyle="bold" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/layer_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="20dp" android:text="事故" android:singleLine="true" android:layout_toRightOf="@+id/layerImage" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="13sp" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/tv_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46dp" android:layout_marginTop="4dp" android:text="五环主路（西红门南桥哈哈哈哈哈哈哈哈哈哈哈）" android:maxLines="2" android:lineSpacingExtra="3.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/item_url_link_ll" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="46dp" android:layout_marginTop="4dp">
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_6" android:ellipsize="end" android:id="@+id/item_url_link_tv" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="查看详情" android:maxLines="1" android:singleLine="true" android:layout_weight="1"/>
+                <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent">
+                    <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/event_detail_head_url_arrow"/>
+                </FrameLayout>
+                <View android:layout_width="12dp" android:layout_height="match_parent"/>
+            </LinearLayout>
+            <ListView android:id="@+id/lv_traffic_ploy" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="46dp" android:layout_marginTop="9dp" android:listSelector="#00000000" android:divider="#00000000"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/img_item_close" android:paddingLeft="5dp" android:paddingTop="20dp" android:paddingRight="10dp" android:paddingBottom="5dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/operation_title_close" android:layout_below="@+id/grayline" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</RelativeLayout>

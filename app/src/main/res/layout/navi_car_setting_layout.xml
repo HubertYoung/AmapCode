@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:paddingTop="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/navi_truck_vehicle_info" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/car_setting_changetype_tv" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_truck_iam_truck" android:drawableLeft="@drawable/question_mark_gray" android:drawablePadding="5dp"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/car_info_layout" android:background="@color/c_14" android:layout_width="match_parent" android:layout_height="88dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/car_icon_iv" android:layout_width="50dp" android:layout_height="50dp" android:layout_marginLeft="10dp" android:src="@drawable/drive_car_default_logo"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/car_plate_tv" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/car_info_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/setting_icon" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sugg_arrow"/>
+    </LinearLayout>
+    <include android:id="@+id/car_add_item" android:visibility="gone" layout="@layout/navi_setting_additem"/>
+    <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:paddingTop="30dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_truck_preference"/>
+    <com.amap.bundle.drivecommon.route.result.view.RoutingPreferenceView android:id="@+id/car_setting_routing_preference_view" android:layout_width="match_parent" android:layout_height="80dp"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/car_limit_layout" android:layout_width="match_parent" android:layout_height="100dp">
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="bottom" android:id="@+id/car_txt_tv" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/navi_settting_car_avoid_limit"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="top" android:id="@+id/car_strategy_tv" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="@string/navi_setting_car_strategy" android:layout_alignParentBottom="true"/>
+        <com.autonavi.widget.ui.AmapSwitch android:enabled="true" android:layout_gravity="center_vertical" android:id="@+id/car_limit_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/car_txt_tv" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <com.amap.bundle.drivecommon.setting.NaviSwitchParentLayout android:orientation="horizontal" android:id="@+id/car_offline_layout" android:layout_width="match_parent" android:layout_height="100dp">
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="bottom" android:id="@+id/car_offline_txt_tv" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="50dp" android:text="@string/quickautonavi_setting_prefer_offline_navi"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="top" android:paddingTop="6dp" android:layout_width="wrap_content" android:layout_height="50dp" android:layout_marginTop="8dp" android:text="@string/navi_setting_car_limit_switch_tip" android:layout_alignParentBottom="true"/>
+        <com.autonavi.widget.ui.AmapSwitch android:layout_gravity="center_vertical" android:id="@+id/car_offline_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/car_offline_txt_tv" android:layout_alignParentRight="true"/>
+    </com.amap.bundle.drivecommon.setting.NaviSwitchParentLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/camera_pic_parent" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/camera_pic_activity" android:background="#000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="fill_horizontal" android:id="@+id/camera_choose_layout" android:background="#cd000000" android:layout_width="match_parent" android:layout_height="116dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/camera_cancle_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="21sp" android:textColor="#ffffff" android:id="@+id/camera_cancle_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="重拍" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/camera_ok_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/camera_ok_btn" android:background="@drawable/gxdcam_btn_usepic_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

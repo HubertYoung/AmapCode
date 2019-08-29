@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/search_callback_root_layout" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/search_header_layout" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.amap.bundle.planhome.view.RouteEditView android:id="@+id/search_header" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <View android:id="@+id/header_white_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp"/>
+        <ImageView android:id="@+id/botom_white_line" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/search_header_layout"/>
+    </LinearLayout>
+    <com.autonavi.minimap.search.view.SearchCallBackComponent android:id="@+id/search_component" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/search_header_layout"/>
+    <ImageView android:id="@+id/image_shadow_layout" android:background="@drawable/shadow_down" android:layout_width="match_parent" android:layout_height="10dp" android:layout_below="@+id/search_header_layout"/>
+</RelativeLayout>

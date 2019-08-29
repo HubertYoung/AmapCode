@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.agroup.widget.MemberBigTipView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@drawable/agroup_member_bg_big_tip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/layout_nick" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/agroup_leader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_leader_margin_right_big" android:src="@drawable/agroup_leader_big" android:layout_weight="0"/>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/tv_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:singleLine="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:id="@+id/tv_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/nick_and_distance_margin" android:maxLines="1" android:singleLine="true" android:layout_weight="0"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_update_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:maxLines="1" android:singleLine="true" android:layout_below="@+id/layout_nick" android:layout_centerInParent="true"/>
+</com.autonavi.minimap.agroup.widget.MemberBigTipView>

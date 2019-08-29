@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <ImageView android:id="@+id/outer_circle" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_mic_outter_circle_shape" android:layout_alignLeft="@+id/mic_img" android:layout_alignTop="@+id/mic_img" android:layout_alignRight="@+id/mic_img" android:layout_alignBottom="@+id/mic_img" android:contentDescription="@null"/>
+    <ImageView android:id="@+id/inner_circle" android:padding="0.5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_mic_inner_circle_shape" android:layout_alignLeft="@+id/mic_img" android:layout_alignTop="@+id/mic_img" android:layout_alignRight="@+id/mic_img" android:layout_alignBottom="@+id/mic_img" android:contentDescription="@null" android:alpha="0.7"/>
+    <ImageView android:id="@+id/mic_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_mic_drawable" android:layout_centerInParent="true" android:contentDescription="@string/mic_vioce"/>
+    <RelativeLayout android:id="@+id/listening_img" android:background="@drawable/voice_talkmic_bg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8dp" android:layout_alignLeft="@+id/mic_img" android:layout_alignTop="@+id/mic_img" android:layout_alignRight="@+id/mic_img" android:layout_alignBottom="@+id/mic_img">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/voice_mic_waiting" android:layout_centerInParent="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</merge>

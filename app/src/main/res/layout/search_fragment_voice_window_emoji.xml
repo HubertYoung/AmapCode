@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/search_voice_emoji_bg" android:paddingLeft="12dp" android:paddingRight="20dp" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:gravity="right" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="0dp" android:src="@drawable/search_voice_mit_emoji"/>
+        <TextView android:textSize="@dimen/f_s_16" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="4dp" android:text="点击说话"/>
+    </LinearLayout>
+</LinearLayout>

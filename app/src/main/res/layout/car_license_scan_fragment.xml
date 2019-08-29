@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/driveachievement_bg_gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/titlebar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="7"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/titlebar_fragment">
+        <FrameLayout android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="4">
+            <SurfaceView android:layout_gravity="center" android:id="@+id/car_scan_preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+            <com.autonavi.minimap.basemap.route.external.zxingwrapper.view.ViewfinderView android:id="@+id/car_scan_viewfinder_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </FrameLayout>
+        <TextView android:textSize="19dp" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:paddingTop="24dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/car_license_scan_note" android:layout_weight="1"/>
+        <TextView android:textSize="14dp" android:textColor="@color/f_c_6" android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/tvInputLicenseDetail" android:paddingBottom="36dp" android:layout_width="match_parent" android:layout_height="0dp" android:text="@string/car_license_scan_input_detail_manually" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#ffffff" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/guide_layout" android:background="#ffffff" android:visibility="invisible" android:clipChildren="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="6dp" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:id="@+id/trip_choose_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp">
+            <RelativeLayout android:id="@+id/trip_car_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/card_car" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_car_bg"/>
+                <ImageView android:id="@+id/trip_car_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_choose" android:layout_alignRight="@+id/card_car" android:layout_alignBottom="@+id/card_car"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/trip_bus_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_toRightOf="@+id/trip_car_layout">
+                <ImageView android:id="@+id/card_bus" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_bus_bg"/>
+                <ImageView android:id="@+id/trip_bus_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/card_choose" android:layout_alignRight="@+id/card_bus" android:layout_alignBottom="@+id/card_bus"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/trip_choose_btn_layout" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="92dp">
+            <TextView android:textSize="18dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/trip_choose_btn" android:background="@drawable/trip_choose_btn" android:layout_width="263dp" android:layout_height="44dp" android:text="进入地图" android:layout_centerInParent="true" android:lineHeight="27dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/trip_guide_header" android:layout_width="match_parent" android:layout_height="74dp" android:layout_above="@+id/guide_layout">
+        <TextView android:textSize="24dp" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:maxWidth="200dp" android:text="选择你的出行偏好" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="14dp" android:textColor="#61000000" android:id="@+id/trip_guide_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginTop="34dp" android:text="开启个性化地图服务" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/trip_choose_lottie" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="16dp" android:scaleType="fitCenter" android:layout_above="@+id/trip_guide_header" app:lottie_fileName="preference.json" app:lottie_loop="true" app:lottie_imageAssetsFolder="images"/>
+    <TextView android:textSize="16dp" android:textColor="#df000000" android:gravity="center" android:id="@+id/skip_btn" android:background="@drawable/trip_skip_btn_bg" android:layout_width="72dp" android:layout_height="40dp" android:layout_margin="16dp" android:text="跳过" android:layout_alignParentRight="true" android:lineHeight="24dp"/>
+</RelativeLayout>

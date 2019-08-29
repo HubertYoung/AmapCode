@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/bg_f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/bus_real_time_setting_title" app:title_style="4"/>
+    <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1dp" android:layout_marginTop="@dimen/route_10dp"/>
+    <ListView android:id="@+id/lv_route_realtime_settting_repeate" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@null"/>
+</LinearLayout>

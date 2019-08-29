@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.agroup.widget.MemberTipView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@drawable/agroup_member_bg_small_tip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="0.5dp" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/agroup_leader" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/group_leader_margin_right_small" android:src="@drawable/agroup_leader_small"/>
+        <TextView android:textSize="@dimen/f_s_10" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/tv_nick" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-1dp" android:maxWidth="@dimen/member_tip_max_width_small" android:maxLines="1" android:singleLine="true"/>
+    </LinearLayout>
+</com.autonavi.minimap.agroup.widget.MemberTipView>

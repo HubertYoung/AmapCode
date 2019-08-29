@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/main_content_rl" android:background="@drawable/search_sugg_history_item_selector" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_view" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="16dp" android:src="@drawable/clock_search_history" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <FrameLayout android:id="@+id/right_container" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/font_h22" android:textColor="@color/gray" android:layout_gravity="center_vertical" android:id="@+id/distance" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp"/>
+            <ImageView android:textSize="13dp" android:textColor="@color/gray" android:layout_gravity="center_vertical" android:id="@+id/img_plus_view" android:background="@drawable/sugg_arrow" android:focusable="false" android:focusableInTouchMode="false" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="14dp"/>
+        </FrameLayout>
+        <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:minHeight="50dp" android:layout_toLeftOf="@+id/right_container" android:layout_toRightOf="@+id/img_view" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/font_h22" android:textColor="@color/f_c_2" android:id="@+id/text" android:background="@drawable/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="0dp"/>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:ellipsize="middle" android:id="@+id/addr" android:background="@drawable/transparent" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:background="@drawable/board_line_selector" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="52dp"/>
+    <FrameLayout android:duplicateParentState="false" android:layout_width="match_parent" android:layout_height="60dp">
+        <GridView android:gravity="center_horizontal" android:id="@+id/search_child_node_gird_view" android:paddingLeft="52dp" android:paddingRight="12dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:numColumns="5"/>
+    </FrameLayout>
+    <View android:id="@+id/match_parent" android:background="@drawable/board_line" android:duplicateParentState="false" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="52dp"/>
+    <include android:id="@+id/top_list_container" layout="@layout/search_sugg_top_list_item"/>
+</LinearLayout>

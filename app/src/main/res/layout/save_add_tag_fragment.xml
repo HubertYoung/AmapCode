@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/common_title_map" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageButton android:id="@+id/btn_back" android:background="@drawable/title_bar_back" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="18dp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_tag" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/blue" android:gravity="center" android:id="@+id/text_save" android:padding="@dimen/default_margin_5A" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_5A" android:text="@string/save" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/default_margin_6A" android:layout_width="match_parent" android:layout_height="44dp">
+        <com.autonavi.minimap.widget.ClearableEditText android:textSize="@dimen/default_font_size_t30" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:id="@+id/edit_tag_name" android:background="@null" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/input_tag_name" android:singleLine="true"/>
+    </LinearLayout>
+    <View android:background="@color/default_border_color_j" android:layout_width="match_parent" android:layout_height="1dp"/>
+    <RelativeLayout android:id="@+id/total_tag_place" android:paddingLeft="@dimen/default_margin_6A" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_10A">
+        <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:id="@+id/t" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_total_tag"/>
+        <com.autonavi.minimap.basemap.save.widget.TagListView android:id="@+id/tag_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_5A" android:layout_below="@+id/t"/>
+    </RelativeLayout>
+</LinearLayout>

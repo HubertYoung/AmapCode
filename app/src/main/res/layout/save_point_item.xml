@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/layout_save_point_item" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/bg_save_list_item" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/is_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/save_zhiding" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <RelativeLayout android:id="@+id/layout_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_5A" android:layout_centerVertical="true">
+            <CheckBox android:id="@+id/check" android:background="@drawable/bg_edit_radio" android:visibility="gone" android:layout_width="22dp" android:layout_height="22dp" android:button="@null" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/image_status" android:visibility="visible" android:layout_width="22dp" android:layout_height="22dp" android:src="@drawable/save_meishi" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <FrameLayout android:id="@+id/more" android:layout_width="wrap_content" android:layout_height="33dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_6A" android:src="@drawable/save_gengduo" android:contentDescription="@string/more"/>
+        </FrameLayout>
+        <RelativeLayout android:id="@+id/layout_detail" android:paddingTop="@dimen/default_margin_6A" android:paddingBottom="@dimen/default_margin_6A" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_6A" android:layout_toLeftOf="@+id/more" android:layout_toRightOf="@+id/layout_status" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:id="@+id/text_point_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/home" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/default_font_size_t26" android:textColor="@color/f_c_3" android:id="@+id/text_point_detail" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_2A" android:singleLine="true" android:layout_below="@+id/text_point_name"/>
+        </RelativeLayout>
+        <View android:id="@+id/view_divider_part" android:background="@drawable/divider_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout_detail" android:layout_alignLeft="@+id/layout_detail"/>
+        <View android:id="@+id/view_divider_all" android:background="@color/default_border_color_j" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1dp" android:layout_below="@+id/layout_detail"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/error_report_common_dimen_20px">
+        <ImageView android:id="@+id/image_thumbnail" android:background="@drawable/shape_error_photo_add" android:padding="0.5dp" android:clickable="true" android:layout_width="@dimen/traffic_report_pic_width" android:layout_height="@dimen/traffic_report_pic_width" android:scaleType="fitXY" android:layout_centerVertical="true" android:contentDescription="@string/thumbnail"/>
+        <ProgressBar android:id="@+id/progress_error_load" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleSmall"/>
+    </RelativeLayout>
+</LinearLayout>

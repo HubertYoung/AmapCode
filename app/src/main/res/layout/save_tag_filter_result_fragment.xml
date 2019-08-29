@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_layout" android:background="@drawable/common_title_map" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageButton android:id="@+id/btn_back" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="18dp" android:textColor="@color/black" android:gravity="center" android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/set_tag" android:singleLine="true" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <include android:id="@+id/layout_point" layout="@layout/save_point_fragment"/>
+    <ListView android:layout_gravity="center_horizontal" android:id="@+id/container" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:headerDividersEnabled="false"/>
+</LinearLayout>

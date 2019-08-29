@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_view_layout"/>
+    <ScrollView android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/error_report_common_dimen_30px">
+            <FrameLayout android:paddingLeft="@dimen/error_report_common_dimen_30px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/error_report_common_dimen_30px" android:layout_marginBottom="@dimen/error_report_common_dimen_10px">
+                <TextView android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:id="@+id/photo_thumbnail_layout_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/add_pic_title"/>
+                <TextView android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/demo_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/example"/>
+            </FrameLayout>
+            <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px"/>
+            <RelativeLayout android:id="@+id/photo_thumbnail_layout" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@+id/photo_has_taken" android:visibility="gone" android:layout_width="@dimen/error_report_common_dimen_130px" android:layout_height="@dimen/error_report_common_dimen_130px"/>
+                <ImageView android:id="@+id/add_image" android:background="@drawable/shape_error_photo_add" android:layout_width="@dimen/error_report_common_dimen_130px" android:layout_height="@dimen/error_report_common_dimen_130px" android:src="@drawable/plus" android:scaleType="centerInside" android:layout_toRightOf="@+id/photo_has_taken" android:layout_centerVertical="true" android:contentDescription="@string/thumbnail"/>
+            </RelativeLayout>
+            <View android:background="@color/my_order_broder" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px" android:layout_marginBottom="@dimen/error_report_common_dimen_30px"/>
+            <include layout="@layout/error_detail_normal"/>
+            <TextView android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:id="@+id/phone_number_tv" android:paddingLeft="@dimen/error_report_common_dimen_30px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/error_report_common_dimen_30px" android:layout_marginBottom="@dimen/error_report_common_dimen_10px" android:text="@string/your_contact"/>
+            <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px"/>
+            <EditText android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:id="@+id/phone_number" android:background="@color/white" android:paddingLeft="@dimen/error_report_common_dimen_30px" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_dimen_90px" android:hint="@string/phone_number" android:ems="10" android:maxLength="100"/>
+            <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="15dp">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/applyTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activities_apply_maypayed_without_moneycount"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_6" android:gravity="right" android:id="@+id/look_over_activities_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/activities_know_about_safety" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

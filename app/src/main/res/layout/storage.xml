@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/dark_transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/rela" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/dlg_bottom">
+            <TextView android:textSize="@dimen/font_36" android:textColor="@color/f_c_2" android:gravity="center_horizontal" android:id="@+id/storage_tv_title" android:background="@drawable/common_bar_bg" android:paddingTop="20dp" android:paddingBottom="16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/sns_select_city_button"/>
+            <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/storage_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" android:divider="@color/storage_div" android:dividerHeight="0.5dp"/>
+        </LinearLayout>
+        <include android:id="@+id/dlg_bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/f8_v4_clear_bottom"/>
+    </RelativeLayout>
+</LinearLayout>

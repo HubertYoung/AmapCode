@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btn_back" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/Back"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rd_camera_payment_type_title" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="@dimen/rd_camera_payment_common_text_size" android:textColor="@color/f_c_2" android:id="@+id/summary" android:padding="@dimen/rd_camera_payment_type_common_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/rd_camera_payment_type_sumary"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:background="@color/bg_ca" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/type_container" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:divider="@null"/>
+        <ImageView android:background="@color/bg_ca" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/rd_camera_payment_type_common_padding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/rd_camera_payment_text_size_middle" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rd_camera_payment_type_trip_ps"/>
+        <TextView android:textSize="@dimen/rd_camera_payment_text_size_middle" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/know_more_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/rd_camera_payment_type_trip_rule"/>
+    </LinearLayout>
+</LinearLayout>

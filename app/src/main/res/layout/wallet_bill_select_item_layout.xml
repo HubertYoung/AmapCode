@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/select_item_line_ll" android:background="@color/white" android:layout_width="match_parent" android:layout_height="50dp">
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_2" android:id="@+id/wallet_select_item_x_0" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="用户消息" android:layout_centerInParent="true"/>
+            <View android:background="@color/divider_color" android:layout_width="@dimen/line_devide" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_2" android:id="@+id/wallet_select_item_x_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="高德淘金" android:layout_centerInParent="true"/>
+            <View android:background="@color/divider_color" android:layout_width="@dimen/line_devide" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_2" android:id="@+id/wallet_select_item_x_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="你妹" android:layout_centerInParent="true"/>
+            <View android:background="@color/divider_color" android:layout_width="@dimen/line_devide" android:layout_height="match_parent" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_2" android:id="@+id/wallet_select_item_x_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="妈的" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@+id/select_item_divider" android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+</LinearLayout>

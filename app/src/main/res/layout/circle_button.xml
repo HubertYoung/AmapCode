@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.auidebugger.boommenu.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/shadow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sl_cornerRadius="@dimen/default_circle_button_corner_2radius" app:sl_shadowRadius="@dimen/default_shadow_radius" app:sl_shadowColor="@color/shadow" app:sl_dx="0dp" app:sl_dy="0dp">
+    <FrameLayout android:id="@+id/frame_layout" android:background="@drawable/circle_button" android:layout_width="@dimen/default_circle_button_corner_2radius" android:layout_height="@dimen/default_circle_button_corner_2radius">
+        <ImageButton android:layout_gravity="center" android:id="@+id/image_button" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center"/>
+        <View android:id="@+id/ripple" android:background="@drawable/circle_button_ripple" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/image_view" android:background="@drawable/circle_button" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="center"/>
+        <TextView android:textSize="@dimen/default_circle_button_text_size" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="8.5dp" android:maxLines="1"/>
+    </FrameLayout>
+</com.autonavi.minimap.auidebugger.boommenu.ShadowLayout>

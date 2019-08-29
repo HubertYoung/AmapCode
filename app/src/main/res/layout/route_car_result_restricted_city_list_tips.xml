@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/default_bg_color_c" android:layout_width="match_parent" android:layout_height="44dp">
+    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/city_list_tips_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/restricted_city_list_tips_margin_horizontal" android:text="@string/restrict_car_plate_tips"/>
+    <Button android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/city_list_set_car_plate" android:layout_marginRight="@dimen/restricted_city_list_tips_margin_horizontal" android:text="@string/restrict_set_car_plate" style="@style/btn_b1"/>
+    <View android:layout_gravity="bottom" android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px"/>
+</FrameLayout>

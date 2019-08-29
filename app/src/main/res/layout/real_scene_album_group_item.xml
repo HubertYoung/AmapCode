@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <CheckBox android:id="@+id/select_all_checkbox" android:paddingLeft="5dp" android:paddingTop="8dp" android:paddingRight="2dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableLeft="@drawable/real_scene_album_selector"/>
+    <TextView android:textSize="13dp" android:textColor="@color/f_c_2" android:id="@+id/image_taken_date" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp" android:layout_toRightOf="@+id/select_all_checkbox" android:layout_centerVertical="true"/>
+</RelativeLayout>

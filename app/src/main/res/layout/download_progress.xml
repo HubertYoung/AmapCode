@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#414142" android:paddingLeft="23dp" android:paddingRight="14dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/about_process_icon" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <ImageView android:id="@+id/update_cancel_btn" android:layout_width="25dp" android:layout_height="25dp" android:src="@drawable/download_cancel_btn_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <LinearLayout android:id="@+id/relativeLayout1" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="17dp" android:layout_marginRight="17dp" android:layout_toLeftOf="@+id/update_cancel_btn" android:layout_toRightOf="@+id/about_process_icon">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:ellipsize="middle" android:gravity="center_vertical" android:id="@+id/download_process_title_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:singleLine="true" style="@style/notify_title"/>
+            <ProgressBar android:id="@+id/download_process_bar" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:indeterminate="false" style="@style/Download_ProgressBar_Horizontal"/>
+            <TextView android:id="@+id/progress_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0%" style="@style/notify_progress"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

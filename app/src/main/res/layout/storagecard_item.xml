@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffffff" android:paddingLeft="15dp" android:paddingRight="15dp" android:paddingBottom="12.5dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="9">
+            <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:id="@+id/storage_name" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offline_storage_inner"/>
+            <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/storage_path" android:paddingTop="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/storage_name"/>
+            <TextView android:textSize="13dp" android:textColor="@color/offline_down_size" android:id="@+id/storage_Available_size" android:paddingLeft="15dp" android:paddingTop="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/storage_name" android:layout_above="@+id/storage_path" android:layout_alignBottom="@+id/storage_name"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_storage_status" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/offline_sdcard_selected" android:layout_weight="1"/>
+    </LinearLayout>
+    <ImageView android:background="@color/frame_bg" android:layout_width="match_parent" android:layout_height="1.5dp"/>
+</LinearLayout>

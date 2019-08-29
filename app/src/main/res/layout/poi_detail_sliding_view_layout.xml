@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/bottom_banner" android:background="@color/white" android:layout_width="match_parent" android:layout_height="60dp" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/tips_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/bottom_banner"/>
+    <com.autonavi.minimap.ajx3.views.AmapAjxView android:id="@+id/ajx_view" android:focusable="false" android:visibility="visible" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

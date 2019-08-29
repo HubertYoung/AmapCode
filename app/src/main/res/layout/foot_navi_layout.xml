@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="match_parent">
+        <Button android:id="@+id/btn_voice_test" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="voice" android:layout_centerVertical="true"/>
+        <FrameLayout android:id="@+id/top" android:background="@color/white" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/onfoot_navimap_title_header_height" android:layout_alignParentTop="true">
+            <include android:id="@+id/maintop" android:layout_width="match_parent" android:layout_height="@dimen/onfoot_navimap_title_header_height" layout="@layout/foot_navi_top_ex"/>
+            <android.support.v4.view.ViewPager android:id="@+id/foot_navi_top_viewpager" android:background="@color/white" android:paddingRight="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/onfoot_navimap_title_header_height"/>
+            <RelativeLayout android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center_vertical" android:id="@+id/previous" android:background="#00000000" android:visibility="invisible" android:clickable="true" android:layout_width="30dp" android:layout_height="match_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:src="@drawable/route_browser_arrow_left" android:contentDescription="@null"/>
+                </LinearLayout>
+                <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/next" android:background="#00000000" android:visibility="invisible" android:clickable="true" android:layout_width="30dp" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/route_browser_arrow_right" android:contentDescription="@null"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/gps_view_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/top">
+            <View android:id="@+id/foot_navi_divider" android:background="#33000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/route_navi_bg" android:layout_width="match_parent" android:layout_height="37dp">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/foot_navi_gps_no" android:layout_gravity="center_vertical" android:id="@+id/gpsaccurancy" android:paddingRight="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="@string/route_navi_gps_no_signal" android:drawableLeft="@drawable/navi_icon_weakgps" android:drawablePadding="3dp"/>
+                <RelativeLayout android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                    <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_2" android:id="@+id/route_indicator_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_centerInParent="true"/>
+                </RelativeLayout>
+                <ImageView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/route_expansion" android:paddingLeft="8dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="@dimen/route_13dp" android:src="@drawable/route_nav_arrow_up" android:scaleType="center"/>
+            </LinearLayout>
+            <View android:background="#33000000" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        </LinearLayout>
+        <ImageView android:id="@+id/eagle_north" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_15dp" android:layout_marginTop="@dimen/route_17dp" android:src="@drawable/eagle_navi_north" android:layout_below="@+id/gps_view_layout"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/bottom_store" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/error_report_else_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentBottom="true" layout="@layout/error_report_else_problem_layout"/>
+        <include android:id="@+id/error_report_whole_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/foot_error_report_layout"/>
+        <include android:id="@+id/error_report_else_problem_select_poi_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/error_report_else_problem_select_poi_layout"/>
+        <include android:id="@+id/bottom" android:visibility="visible" android:layout_width="match_parent" android:layout_height="@dimen/v4_navi_footer_height" layout="@layout/foot_navi_bottom"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/wrong_direction_notice_view" android:background="@drawable/wrong_direction_notice_bg" android:visibility="gone" android:layout_width="@dimen/route_130dp" android:layout_height="@dimen/route_130dp" android:layout_centerInParent="true">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:paddingBottom="@dimen/route_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/foot_navi_wrong_direction"/>
+            <TextView android:textSize="@dimen/route_17dp" android:textColor="@color/white" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_foot_navi_wrong_direction"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/map_select_center_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true" android:contentDescription="@string/contentDescription" android:translationY="-6dp">
+        <ImageView android:id="@+id/iv_error_not_pass_center_center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/foot_route_select_point_icon_not_pass"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_shadow" android:translationY="-5dp"/>
+    </LinearLayout>
+    <ViewStub android:id="@+id/foot_navi_compass_vs" android:layout="@layout/foot_navi_compass_correction" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

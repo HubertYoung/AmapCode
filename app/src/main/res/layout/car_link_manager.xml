@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/car_link_manager_title" app:title_style="4"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/connect_button_contain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <Button android:textSize="@dimen/font_30" android:textColor="@color/text_color_white" android:id="@+id/connect_button" android:background="@drawable/auto_button_blue_corner_background" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/car_link_start_connection"/>
+            <Button android:textSize="@dimen/font_30" android:textColor="@color/text_color_white" android:id="@+id/retry_connect_button" android:background="@drawable/auto_button_blue_corner_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/car_link_retry_connection"/>
+            <Button android:textSize="@dimen/font_30" android:textColor="@color/text_color_white" android:id="@+id/delete_connect_button" android:background="@drawable/auto_button_gray_corner_background" android:visibility="visible" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/car_link_dell_connection"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/connect_button_contain" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/connected" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/start_connection_sub1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15dp" android:layout_above="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连接前请确认您已经按照" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE"/>
+                <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="汽车上的连接提示做好准备" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fail_connection_sub1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="50dp" android:layout_above="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@+id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="连接失败" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/delete_connection_sub1" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_above="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@+id/textView13" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="已记录您的汽车" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE"/>
+                <TextView android:id="@+id/textView14" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="每次开启高德地图时会自动为您连接" style="@style/ALI_CAR_REMOTE_CONNECTION_STATE"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/fail_connection_sub2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@+id/textView31" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请确认您的汽车已做好连接准备" style="@style/ALI_CAR_REMOTE_CONNECTION_INSTRUCTION"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/delete_connection_sub2" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:id="@+id/textView32" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="若您想连接其他汽车请先取消当前连接记录" style="@style/ALI_CAR_REMOTE_CONNECTION_INSTRUCTION"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

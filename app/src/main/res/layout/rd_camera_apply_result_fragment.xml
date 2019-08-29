@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/bg_a" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_view_layout"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_yellow" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="27dp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/apply_conclusion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:text="@string/activities_applied_payfor_success" android:shadowColor="#44000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="17dp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/conclusion_message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/rd_camera_apply_result_verified_info_for_money_in_html" android:shadowColor="#44000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+            </LinearLayout>
+            <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-40dp" android:src="@drawable/correct_icon_1" android:contentDescription="@null"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/actions_when_login" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="15dp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/apply_result_info" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="36dp" android:layout_marginBottom="70dp" android:text="@string/rd_camera_apply_result_verified_info_for_entrance_in_html" android:layout_weight="1" android:lineSpacingExtra="6dp"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="45dp">
+                    <Button android:textSize="@dimen/v3_name_font_size" android:textColor="@color/white" android:id="@+id/back_to_map_view" android:background="@drawable/activities_back_to_map_btn_bg" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginRight="10dp" android:text="@string/activities_back_to_map" android:layout_weight="1"/>
+                    <Button android:textSize="@dimen/v3_name_font_size" android:textColor="@color/white" android:id="@+id/next_compensation" android:background="@drawable/activities_go_to_detail_btn_bg" android:layout_width="0dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:text="@string/rd_camera_apply_result_action_apply_again" android:layout_weight="1"/>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/actions_not_login" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/use_pay_gold" android:scaleType="center" android:layout_weight="1" android:contentDescription="@null"/>
+                <Button android:textSize="@dimen/v3_name_font_size" android:textColor="@color/white" android:id="@+id/login_btn" android:background="@drawable/activities_orange_corner_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="45dp" android:text="@string/activities_go_to_login"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/bottom_bar" android:background="#373737" android:visibility="visible" android:layout_width="match_parent" android:layout_height="50dp">
+        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="2">
+            <TextView android:textSize="12dp" android:textColor="@color/listview_divider" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/activities_go_to_tell" android:singleLine="true"/>
+            <TextView android:textSize="20dp" android:textStyle="italic" android:textColor="@color/listview_divider" android:id="@+id/friends_text" android:paddingBottom="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activities_friends" android:singleLine="true"/>
+        </LinearLayout>
+        <View android:background="#454545" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/sharing_view" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="12dp" android:textColor="@color/listview_divider" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_share" android:drawableLeft="@drawable/ic_action_social_share" android:drawablePadding="5dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

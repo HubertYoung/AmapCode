@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_14" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/quickautonavi_setting_vcs_content" app:title_style="4"/>
+    <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <ScrollView android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@+id/navi_voice_control" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp">
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quickautonavi_padding_left" android:layout_toRightOf="@+id/light_intensity_icon" android:layout_centerVertical="true">
+                        <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/navi_voice_control_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_vcs_content"/>
+                        <TextView android:textSize="@dimen/quickautonavi_common_dialog_sub_text_size" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_vcs_sub_text"/>
+                    </LinearLayout>
+                    <CheckBox android:id="@+id/navi_voice_control_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="22.5dp" android:layout_marginRight="15.5dp"/>
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/navi_help_center" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="20dp" android:paddingRight="20.65dp" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/quickautonavi_setting_help_center" android:drawableRight="@drawable/sugg_arrow" android:layout_centerVertical="true"/>
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="22.5dp" android:layout_marginRight="15.5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

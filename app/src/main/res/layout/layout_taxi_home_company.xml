@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/taxi_suspend_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center" android:id="@+id/taxi_suspend_btn_home" android:background="@drawable/titlebg" android:layout_width="48dp" android:layout_height="48dp" android:contentDescription="@string/taxi_tohome">
+        <ImageView android:background="@drawable/route_icon_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:contentDescription="@string/traffic_info"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@+id/taxi_suspend_btn_company" android:background="@drawable/titlebg" android:layout_width="48dp" android:layout_height="48dp" android:contentDescription="@string/taxi_tocompany">
+        <ImageView android:background="@drawable/route_icon_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:contentDescription="@string/traffic_info"/>
+    </RelativeLayout>
+</LinearLayout>

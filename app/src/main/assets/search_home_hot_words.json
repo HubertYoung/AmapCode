@@ -1,0 +1,33 @@
+{
+  "resource": "local",
+  "tagsetlist": [
+    {
+      "shp_tags": [
+        {
+          "redirect_type": "SEARCH",
+          "redirect_value": "美食",
+          "log_param": "&tagid=CATE-YZH05&sid=1&city=010&type=0&hour=0",
+          "name": "美食"
+        },
+        {
+          "redirect_type": "SEARCH",
+          "redirect_value": "酒店",
+          "log_param": "&tagid=CATE-YZH1001&sid=1&city=010&type=0&hour=0",
+          "name": "酒店"
+        },
+        {
+          "redirect_type": "SEARCH",
+          "redirect_value": "公交站",
+          "log_param": "&tagid=CATE-150700&sid=1&city=010&type=0&hour=0",
+          "name": "公交站"
+        },
+        {
+          "redirect_type": "SCHEMA",
+          "redirect_value": "ANDROID:SearchMore;IOS:GeneralSearch&page=SearchMore",
+          "log_param": "&tagid=SCHEMA-APP_MORE&sid=1&city=010&type=0&hour=0",
+          "name": "更多>"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/scrollView1" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+    <LinearLayout android:orientation="vertical" android:paddingTop="59dp" android:layout_width="match_parent" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/font_45" android:textColor="@color/black_lite" android:gravity="center" android:id="@+id/big" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/welocome_to_use_amap"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:id="@+id/image_tag" android:background="@drawable/auto_navi_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null"/>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+            <TextView android:textSize="@dimen/font_28" android:id="@+id/tvServices" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="5dp" android:text="@string/body_dial_1" style="@style/confirm_dialog_text_style"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/user" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <CheckBox android:id="@+id/cb_experience" android:layout_width="19dp" android:layout_height="19dp" android:button="@drawable/v4_fromto_checkbox_selector"/>
+                <TextView android:textSize="@dimen/font_28" android:layout_gravity="center" android:id="@+id/user_experience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/join_user_experience_plan" style="@style/confirm_dialog_text_style"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/bottom" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:layout_marginBottom="5dp">
+            <TextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/confirm" android:background="@drawable/bottom_round_corners_blue" android:layout_width="0dp" android:layout_height="44dp" android:layout_marginTop="30dp" android:layout_marginBottom="34dp" android:text="@string/agree" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

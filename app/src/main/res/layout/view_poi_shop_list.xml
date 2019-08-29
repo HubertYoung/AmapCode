@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/c_3n" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/layout_shops" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="10dp"/>
+    <ImageView android:layout_gravity="bottom|right|center_vertical|center_horizontal|center" android:background="@drawable/gouwudai" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:contentDescription="@null"/>
+</FrameLayout>

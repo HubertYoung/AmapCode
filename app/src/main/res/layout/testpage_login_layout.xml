@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="account:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_login_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="账号/手机号/邮箱" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16sp" android:textColor="#000" android:layout_width="80dp" android:layout_height="wrap_content" android:text="password:"/>
+        <EditText android:textSize="16sp" android:id="@+id/et_account_testpage_login_password" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="密码/验证码" android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_account_testpage_login_verifycode" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="验证码"/>
+        <Button android:id="@+id/btn_account_testpage_login_mobile" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="手机登陆"/>
+        <Button android:id="@+id/btn_account_testpage_login_pw" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="密码登陆"/>
+        <Button android:id="@+id/btn_account_testpage_logout" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="退出登陆"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <Button android:id="@+id/btn_account_testpage_login_weixin" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="微信"/>
+        <Button android:id="@+id/btn_account_testpage_login_weibo" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="微博"/>
+        <Button android:id="@+id/btn_account_testpage_login_taobao" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="淘宝"/>
+        <Button android:id="@+id/btn_account_testpage_login_alipay" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="支付宝"/>
+        <Button android:id="@+id/btn_account_testpage_login_qq" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="5dp" android:text="QQ"/>
+    </LinearLayout>
+</LinearLayout>

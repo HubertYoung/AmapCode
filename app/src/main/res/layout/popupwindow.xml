@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/root_layout" android:background="@drawable/round_rect_gray_background" android:layout_width="58dp" android:layout_height="58dp">
+    <TextView android:textSize="@dimen/index_view_selected_textsize" android:textColor="@color/white" android:gravity="center" android:id="@+id/text" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:text="A"/>
+</LinearLayout>

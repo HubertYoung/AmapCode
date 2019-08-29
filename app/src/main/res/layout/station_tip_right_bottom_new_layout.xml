@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/default_busline_bg_bubble_7" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/route_bus_resultmap_tips_main_color" android:gravity="center_vertical" android:id="@+id/title_name" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/mirro_image"/>
+    <View android:id="@+id/line" android:background="#bbcfea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="3dp" android:layout_marginBottom="3dp"/>
+    <TextView android:textSize="@dimen/font_24" android:textColor="@color/route_bus_resultmap_tips_des_color" android:gravity="center_vertical" android:id="@+id/title_des" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginBottom="5dp" android:text="@string/mirro_image"/>
+</LinearLayout>

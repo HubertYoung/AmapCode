@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:background="@drawable/shape_corner_bus_error_report_remind" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="270dp" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:gravity="left" android:id="@+id/tv_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/bus_remind_content" android:layout_centerHorizontal="true" android:lineSpacingExtra="10dp"/>
+    <LinearLayout android:layout_gravity="left" android:orientation="vertical" android:id="@+id/ll_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginBottom="12dp" android:layout_below="@+id/tv_content" android:layout_alignLeft="@+id/tv_content">
+        <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_6" android:id="@+id/btn_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/show_details"/>
+        <View android:background="@color/car_tab_text_blue" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    </LinearLayout>
+    <View android:id="@+id/id_view" android:background="@color/foot_navi_gps_no" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_below="@+id/ll_detail"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:layout_below="@+id/id_view">
+        <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/btn_cancel" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/think_later" android:layout_weight="1"/>
+        <View android:background="@color/foot_navi_gps_no" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/font_32" android:textStyle="bold" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/btn_confirm" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/login_rightnow" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

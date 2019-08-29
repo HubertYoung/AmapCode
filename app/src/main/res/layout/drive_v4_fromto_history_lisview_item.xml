@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/route_history_item_bg_selector" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:paddingLeft="13dp" android:paddingTop="@dimen/list_item_margintop" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="left|right|center_vertical|center_horizontal|fill_horizontal|center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:gravity="center" android:id="@+id/img_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/default_generalsearch_sugg_searchicon_normal" android:contentDescription="@string/autotest_car_route_history_area_point_btn"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="9dp" android:paddingRight="2dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/poiName" android:background="@drawable/transparent" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="1dp" android:drawablePadding="9dp"/>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/gray" android:ellipsize="end" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/addr" android:background="@drawable/transparent" android:visibility="gone" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@+id/his_line" android:background="@color/bg_j" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="40dp" android:layout_marginTop="@dimen/list_item_margintop"/>
+    <View android:id="@+id/his_diver" android:background="@color/bg_j" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="1px" android:layout_marginTop="@dimen/list_item_margintop" android:layout_marginRight="1px"/>
+</LinearLayout>

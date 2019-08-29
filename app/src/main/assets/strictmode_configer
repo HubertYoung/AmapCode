@@ -1,0 +1,2 @@
+# 对于SharePreference获取配置项内容暂时过滤
+android.app.SharedPreferencesImpl.awaitLoadedLocked

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="318dp">
+    <ListView android:id="@+id/lv_main" android:background="@color/c_1" android:layout_width="0dp" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/c_2" android:dividerHeight="1px" android:choiceMode="singleChoice" android:layout_weight="7"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="9">
+        <View android:background="@color/c_3" android:layout_width="15dp" android:layout_height="match_parent"/>
+        <ListView android:id="@+id/lv_sub" android:background="@color/c_3" android:layout_width="0dp" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:divider="@color/c_2" android:dividerHeight="1px" android:choiceMode="singleChoice" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item>
+        <shape>
+            <solid android:color="#c6c8c9"/>
+        </shape>
+    </item>
+    <item android:left="0px" android:top="0px" android:right="0px" android:bottom="1px">
+        <shape>
+            <solid android:color="#ffffff"/>
+        </shape>
+    </item>
+</layer-list>

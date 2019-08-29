@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@drawable/white_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/navitts_banner_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_centerHorizontal="true">
+        <com.autonavi.minimap.drive.navi.navitts.widget.RoundCornerImageView android:id="@+id/banner_img" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY" app:rciv_radius="8dp"/>
+    </RelativeLayout>
+</RelativeLayout>

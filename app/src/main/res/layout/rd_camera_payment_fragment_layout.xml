@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/rd_camera_payment_title" app:title_style="5" app:action_text="@string/activities_know_about_safety"/>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/apply_tab" android:layout_width="match_parent" android:layout_height="29dp" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:layout_marginBottom="12dp">
+        <RadioButton android:textSize="@dimen/font_26" android:textColor="@color/activities_navi_list_tab_text_color" android:gravity="center" android:id="@+id/not_apply" android:background="@drawable/rd_camera_tab_left_bg" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="@string/activities_not_apply_payfor" android:layout_weight="1"/>
+        <RadioButton android:textSize="@dimen/font_26" android:textColor="@color/activities_navi_list_tab_text_color" android:gravity="center" android:id="@+id/has_applied" android:background="@drawable/rd_camera_tab_right_bg" android:layout_width="0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/activities_have_apply_payfor" android:layout_weight="1"/>
+    </RadioGroup>
+    <ViewAnimator android:id="@+id/animator_list" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/not_apply_layout" layout="@layout/rd_camera_payment_not_apply_layout"/>
+        <include android:id="@+id/apply_already_layout" layout="@layout/rd_camera_payment_apply_already_layout"/>
+    </ViewAnimator>
+</LinearLayout>

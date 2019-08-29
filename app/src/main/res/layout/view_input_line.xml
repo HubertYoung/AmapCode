@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <ImageView android:id="@+id/iv_input_line_flag" android:visibility="gone" android:layout_width="31dp" android:layout_height="match_parent" android:src="@drawable/route_icon_input_delete_selector" android:scaleType="center" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_1_d" android:id="@+id/tv_input_line_flag" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_input_universal_margin" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_1" android:textColorHint="@color/f_c_1_d" android:ellipsize="end" android:id="@+id/tv_input_line" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="31dp" android:singleLine="true" android:layout_centerVertical="true"/>
+</merge>

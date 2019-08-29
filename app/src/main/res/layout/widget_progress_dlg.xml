@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:background="@drawable/titlebg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.autonavi.widget.ui.LoadingViewBL android:layout_gravity="center_vertical" android:id="@+id/loading_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:loadingType="3"/>
+    <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:id="@+id/msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/progress_message"/>
+</LinearLayout>

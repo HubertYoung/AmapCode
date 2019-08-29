@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gray" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="4"/>
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="34dp">
+        <RelativeLayout android:id="@+id/wallet_bill_total_rl" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/blue" android:gravity="center" android:id="@+id/wallet_bill_total_tv" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="全部" android:layout_centerInParent="true"/>
+            <View android:id="@+id/wallet_bill_total_bot_line" android:background="@color/blue" android:layout_width="75dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/wallet_bill_status_rl" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/wallet_bill_status_tv" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/status" android:layout_centerInParent="true"/>
+            <ImageView android:gravity="center" android:id="@+id/wallet_bill_status_arrow" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_bill_nav_down" android:layout_toRightOf="@+id/wallet_bill_status_tv" android:layout_centerInParent="true"/>
+            <View android:id="@+id/wallet_bill_status_bot_line" android:background="@color/blue" android:visibility="gone" android:layout_width="75dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/wallet_bill_source_rl" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/wallet_bill_source_tv" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/source" android:layout_centerInParent="true"/>
+            <ImageView android:gravity="center" android:id="@+id/wallet_bill_source_arrow" android:paddingLeft="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/wallet_bill_nav_down" android:layout_toRightOf="@+id/wallet_bill_source_tv" android:layout_centerInParent="true"/>
+            <View android:id="@+id/wallet_bill_source_bot_line" android:background="@color/blue" android:visibility="gone" android:layout_width="75dp" android:layout_height="3dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:background="#959595" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <TextView android:textSize="14sp" android:textColor="#ff3c3c" android:gravity="center" android:id="@+id/tip_info_tv" android:background="@color/words_bg" android:paddingLeft="33dp" android:paddingRight="33dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+                <RelativeLayout android:gravity="center_horizontal" android:id="@+id/empty_rl" android:layout_width="match_parent" android:layout_height="match_parent">
+                    <ImageView android:gravity="center" android:id="@+id/empty_iv" android:background="@drawable/wallet_bill_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="180dp" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+                    <TextView android:textSize="13sp" android:textColor="#cecece" android:gravity="center" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="8dp" android:text="目前无交易" android:singleLine="true" android:layout_below="@+id/empty_iv"/>
+                </RelativeLayout>
+                <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/bill_list" android:background="#efefef" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" app:mPtrAnimationStyle="3"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <View android:id="@+id/transparent_view" android:background="#66000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/status_selection_table_ll" android:background="#4c000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:layout_gravity="top" android:orientation="vertical" android:id="@+id/source_selection_table_ll" android:background="#4c000000" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+</LinearLayout>

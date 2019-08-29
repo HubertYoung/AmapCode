@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <LinearLayout android:orientation="vertical" android:id="@+id/voice_help_list_layout" android:background="@drawable/bg_voice_map_robot_talk" android:paddingLeft="12dp" android:paddingTop="20dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp"/>
+        <ImageView android:id="@+id/voice_help_head" android:clickable="false" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="12dp" android:src="@drawable/voice_robot" android:contentDescription="@string/voice_bot"/>
+    </FrameLayout>
+</FrameLayout>

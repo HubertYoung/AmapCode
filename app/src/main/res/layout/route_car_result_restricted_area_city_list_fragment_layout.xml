@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/frame_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="1"/>
+        <View android:background="@color/bg_h" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+        <ViewStub android:id="@+id/city_list_tips_view_stup" android:layout="@layout/route_car_result_restricted_city_list_tips" android:layout_width="match_parent" android:layout_height="44dp"/>
+        <RelativeLayout android:id="@+id/search_root" android:background="@drawable/search_input_framebg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="8dp" android:layout_marginRight="12dp" android:layout_marginBottom="8dp">
+            <ImageButton android:layout_gravity="center_vertical" android:id="@+id/search_clear" android:background="@drawable/v4_common_title_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_marginRight="9dp" android:src="@drawable/search_input_clean" android:layout_alignParentRight="true" android:contentDescription="@string/clear_input"/>
+            <EditText android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_4" android:ellipsize="end" android:id="@+id/search_text" android:background="@null" android:paddingLeft="6dp" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="0dp" android:hint="@string/act_search_arround_bar" android:singleLine="true" android:maxLength="100" android:drawableLeft="@drawable/route_icon_search" android:drawablePadding="4dp" android:layout_toLeftOf="@+id/search_clear" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:inputType="text" android:imeOptions="actionDone"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:orientation="vertical" android:id="@+id/all_list_view" android:background="@color/frame_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.autonavi.common.cloudsync.widget.IphoneTreeView android:scrollbarStyle="outsideOverlay" android:id="@+id/city_list" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:groupIndicator="@null" android:childIndicator="@null" android:childDivider="@null" android:divider="@null" android:dividerHeight="0dp"/>
+            <com.autonavi.minimap.drive.restrictedarea.DriveIndexView android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/city_index" android:paddingLeft="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" app:indexTextSize="12dp" app:indexDividerHeight="3dp"/>
+            <RelativeLayout android:gravity="center" android:id="@+id/city_list_empty_on_search" android:layout_width="match_parent" android:layout_height="match_parent">
+                <ImageView android:id="@+id/restrict_tips_error_icon" android:layout_width="@dimen/restricted_list_loading_width" android:layout_height="@dimen/restricted_list_loading_height" android:src="@drawable/restrict_city_list_empty" android:layout_centerInParent="true"/>
+                <TextView android:textSize="14dp" android:textColor="@color/default_font_color_cad" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/restrict_city_list_search_failed" android:layout_below="@+id/restrict_tips_error_icon" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </FrameLayout>
+        <FrameLayout android:id="@+id/error_view_layout" android:background="@color/frame_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

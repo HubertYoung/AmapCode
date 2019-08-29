@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@color/whole_bg" android:paddingLeft="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:layout_width="match_parent" android:layout_height="@dimen/route_36dp">
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_1" android:layout_gravity="center_vertical" android:id="@+id/share_bike_ride_order_fee" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/share_bike_using" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_1" android:layout_gravity="center_vertical" android:id="@+id/share_bike_ride_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/share_bike_ride_order_fee" android:layout_centerVertical="true"/>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@+id/share_bike_unlock_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_1" android:gravity="bottom" android:id="@+id/share_bike_unlock_tip_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_1_a" android:gravity="bottom" android:id="@+id/share_bike_unlock_des_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="后开始计费"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="center_vertical" android:id="@+id/share_bike_using_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_1_a" android:gravity="bottom" android:id="@+id/share_bike_using_tip_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_10dp" android:text="@string/share_bike_has_riding_fee"/>
+            <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_1" android:gravity="bottom" android:id="@+id/share_bike_using_detail_tv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取中..."/>
+        </LinearLayout>
+        <include android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" layout="@layout/share_bike_tip_fee_desc"/>
+    </RelativeLayout>
+</merge>

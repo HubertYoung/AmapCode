@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <FrameLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.ProgressView android:id="@+id/progress" android:layout_width="25dp" android:layout_height="25dp" app:progress_Color="@color/c_12" app:progress_strokeWidth="1.5dp" app:progressType="0" app:startSweep="360" app:endSweep="3.6" app:startAngel="270" app:endAngel="990"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/loading_b_2"/>
+    </FrameLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/loading_extra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:gravity="center" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_4" android:gravity="center" android:id="@+id/loading_sub_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

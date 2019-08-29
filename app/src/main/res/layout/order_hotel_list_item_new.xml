@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="130dp">
+    <LinearLayout android:id="@+id/item_top_layout" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/select_checkbox" android:visibility="visible" android:clickable="true" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="15dp" android:button="@drawable/checkbox_selector"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="20dp">
+            <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:id="@+id/order_shop_name" android:paddingTop="15dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/life_order_base_list_item_name" android:layout_toLeftOf="@+id/order_status" android:layout_alignParentLeft="true"/>
+            <TextView android:textSize="12dp" android:textColor="@color/gary_" android:ellipsize="end" android:id="@+id/order_item_left_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/life_order_base_list_item_left_top" android:singleLine="true" android:layout_below="@+id/order_shop_name" android:layout_alignLeft="@+id/order_shop_name"/>
+            <TextView android:textSize="12dp" android:textColor="@color/gary_" android:ellipsize="end" android:id="@+id/order_item_left_bottom" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxWidth="200dp" android:text="@string/life_order_base_list_item_left_center" android:singleLine="true" android:layout_below="@+id/order_item_left_top" android:layout_alignLeft="@+id/order_shop_name" android:lineSpacingExtra="5dp"/>
+            <TextView android:textSize="12dp" android:textColor="@color/gary_" android:gravity="center_horizontal" android:id="@+id/order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_marginRight="10dp" android:text="@string/life_order_base_list_item_order_flag" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <include layout="@layout/poi_tips_bottom_bar2"/>
+</LinearLayout>

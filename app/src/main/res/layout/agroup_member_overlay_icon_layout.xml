@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.agroup.widget.MemberIconView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:id="@+id/member_icon" android:layout_width="@dimen/member_icon_size_big" android:layout_height="@dimen/member_icon_size_big" android:layout_marginTop="@dimen/member_icon_top_margin" android:src="@drawable/agroup_member_icon_default" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/icon_offline_mask" android:background="@drawable/member_offline_mask" android:visibility="gone" android:layout_width="@dimen/member_icon_size_big" android:layout_height="@dimen/member_icon_size_big" android:layout_marginTop="@dimen/member_icon_top_margin" android:layout_centerHorizontal="true"/>
+    <View android:id="@+id/icon_cover" android:background="@drawable/agroup_member_bg_big_online" android:layout_width="60dp" android:layout_height="74dp"/>
+</com.autonavi.minimap.agroup.widget.MemberIconView>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.minimap.route.common.view.RouteBanner android:id="@+id/route_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/route_icon_default" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="40dp" android:layout_below="@+id/route_banner">
+        <ImageView android:layout_gravity="center" android:id="@+id/route_icon_type" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_blank_10"/>
+        <TextView android:textSize="14dp" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_default_text"/>
+    </LinearLayout>
+    <ListView android:id="@+id/base_route_listview" android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:listSelector="@null" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="0dp" android:layout_below="@+id/route_banner"/>
+</RelativeLayout>

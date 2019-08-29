@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/view_top" android:layout_width="match_parent" android:layout_height="12dp"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/layout_group" android:background="@color/white" android:layout_width="match_parent" android:layout_height="36dp">
+        <View android:background="@color/default_border_color_j" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentTop="true"/>
+        <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_3" android:id="@+id/text_group_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_5A" android:text="@string/useful_point" android:layout_centerVertical="true"/>
+        <RelativeLayout android:id="@+id/shaixuan_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/shaixuan_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_6A" android:src="@drawable/save_shaixuan" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <TextView android:textSize="@dimen/default_font_size_t28" android:textColor="@color/f_c_3" android:id="@+id/filter_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_3A" android:text="@string/save_filter_name" android:layout_toLeftOf="@+id/shaixuan_image" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/default_border_color_j" android:layout_width="match_parent" android:layout_height="1dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</LinearLayout>

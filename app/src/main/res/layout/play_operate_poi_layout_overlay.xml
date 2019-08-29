@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/scenic_play_bubble" android:background="@drawable/bg_play_poi_start" android:layout_width="wrap_content" android:layout_height="76dp">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="26dp" android:layout_marginRight="9dp" android:layout_marginBottom="6dp">
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/play_operate_bubble_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="2dp" android:maxWidth="@dimen/scenic_txt_max_width" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="#666666" android:ellipsize="end" android:id="@+id/play_operate_bubble_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/scenic_txt_max_width" android:singleLine="true"/>
+        </LinearLayout>
+        <ImageView android:background="@drawable/poi_bubble_arrow_icon" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="27dp" android:layout_marginRight="19dp"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/play_start_icon" android:background="@drawable/play_start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:layout_below="@+id/scenic_play_bubble" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:clickable="false" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/guide_motor_empty_view" android:background="#a0000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_gravity="right" android:id="@+id/icon_guide_motor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/icon_eyrie_motor_tab"/>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/guide_motor_text" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginRight="8dp" android:src="@drawable/icon_eyrie_motor_text" android:layout_alignParentRight="true"/>
+            <ImageView android:id="@+id/guide_motor_img" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="22dp" android:src="@drawable/icon_eyrie_motor_logo" android:layout_alignTop="@+id/guide_motor_text"/>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

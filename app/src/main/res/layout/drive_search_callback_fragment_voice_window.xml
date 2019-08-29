@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ImageView android:gravity="right" android:id="@+id/mic_ani_area" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:src="@drawable/voice_homepage" android:contentDescription="@string/content_description_voice_button"/>
+</LinearLayout>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:background="#fdb32b" android:layout_width="match_parent" android:layout_height="120dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/banner_left" android:layout_width="150dp" android:layout_height="match_parent">
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/white" android:id="@+id/banner_today_gold_prefix" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="35sp" android:textColor="@color/white" android:id="@+id/banner_today_gold" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/white" android:id="@+id/banner_today_gold_suffix" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comment_text_coin"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/white" android:id="@+id/banner_total_gold" android:padding="3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp"/>
+        </LinearLayout>
+        <View android:layout_gravity="center_vertical" android:background="@color/font_white_per60" android:layout_width="1px" android:layout_height="82dp"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/banner_right" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.autonavi.minimap.widget.CircleImageView android:id="@+id/banner_img1" android:layout_width="55dp" android:layout_height="55dp" android:src="@drawable/comment_banner_icon_default" android:scaleType="centerCrop"/>
+                <com.autonavi.minimap.widget.CircleImageView android:id="@+id/banner_img2" android:layout_width="55dp" android:layout_height="55dp" android:layout_marginLeft="20dp" android:src="@drawable/comment_banner_icon_default" android:scaleType="centerCrop"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_22" android:textColor="@color/white" android:id="@+id/banner_gold_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="13dp" android:layout_marginRight="10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/bg_f5" android:layout_width="match_parent" android:layout_height="10dp"/>
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/alipay_default_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/dialog_bg" android:background="@drawable/alipay_white_corner_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="42dp" android:layout_marginRight="42dp" android:layout_centerInParent="true">
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_confirm" android:background="@drawable/alipay_list_dialog_item_bg_selector" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="16dp" android:textColor="@color/alipay_colorBlack" android:ellipsize="end" android:gravity="left" android:id="@+id/item_confirm_current_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="18dp" android:text="@string/alipay_pre_router_has_auth_account" android:singleLine="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <View android:background="#dddddd" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_change_account" android:background="@drawable/alipay_list_dialog_item_bg_selector" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="16dp" android:textColor="@color/alipay_colorBlack" android:ellipsize="end" android:gravity="left" android:id="@+id/item_change_account" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="18dp" android:text="@string/alipay_used_other_account" android:singleLine="true" android:layout_centerVertical="true"/>
+        </LinearLayout>
+        <View android:background="#dddddd" android:visibility="visible" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/ll_cancel" android:background="@drawable/alipay_list_dialog_item_bottom_bg_selector" android:layout_width="match_parent" android:layout_height="48dp">
+            <TextView android:textSize="16dp" android:textColor="@color/alipay_colorBlack" android:ellipsize="end" android:gravity="left" android:layout_gravity="bottom" android:id="@+id/item_cancel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginRight="18dp" android:text="@string/alipay_pre_router_cancel" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_f5"
+    android:orientation="vertical">
+
+    <com.autonavi.widget.ui.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        app:action_text="@string/third_switch_city"
+        app:title_style="5" />
+
+    <LinearLayout
+        android:id="@+id/header_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_bar"
+        android:orientation="vertical">
+
+        <include
+            android:id="@+id/busline_search_header"
+            layout="@layout/busline_search_layout_search_header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="7dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_container"
+        android:layout_marginBottom="9dp"
+        android:orientation="vertical">
+
+        <ListView
+            android:id="@+id/search_sug_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_list_content_bg"
+            android:divider="@null" />
+
+        <ListView
+            android:id="@+id/history_list_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/board_list_content_bg"
+            android:divider="@null" />
+    </LinearLayout>
+</RelativeLayout>

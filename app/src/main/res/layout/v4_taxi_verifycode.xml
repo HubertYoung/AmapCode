@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/taxi_vertify_contact" app:title_style="4"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/common_plate_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="6dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:background="@color/transparent" android:paddingRight="5dp" android:text="@string/taxi_phone_space" style="@style/Taxi_Text"/>
+            <EditText android:id="@+id/edtPhone" android:background="@drawable/common_input_bg" android:layout_marginRight="10dp" android:hint="@string/taxi_phone_number" android:inputType="phone" style="@style/Taxi_EditText"/>
+        </LinearLayout>
+        <RelativeLayout android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginBottom="10dp">
+            <TextView android:id="@+id/txtLabel" android:paddingRight="5dp" android:text="@string/taxi_verification_code_space" android:layout_alignParentLeft="true" android:layout_centerVertical="true" style="@style/Taxi_Text"/>
+            <Button android:textSize="15dp" android:textColor="@color/white" android:id="@+id/btn_verifi" android:background="@drawable/v4_taxi_submit_selector" android:layout_width="90dp" android:layout_height="40dp" android:layout_marginLeft="10dp" android:text="@string/taxi_vertify_require_code" android:singleLine="true" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            <EditText android:id="@+id/edtVerify" android:background="@drawable/common_input_bg" android:hint="@string/taxi_add_verification_code" android:layout_toLeftOf="@+id/btn_verifi" android:layout_toRightOf="@+id/txtLabel" android:layout_centerVertical="true" android:inputType="phone" style="@style/Taxi_EditText"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <Button android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_6" android:id="@+id/btn_submit" android:background="@drawable/route_taxi_submit_btn_dra" android:layout_width="match_parent" android:layout_height="@dimen/route_45dp" android:layout_marginLeft="@dimen/route_8dp" android:layout_marginRight="@dimen/route_8dp" android:text="@string/taxi_order_submit"/>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="27dp" android:src="@drawable/taxi_verify" android:contentDescription="@null"/>
+</LinearLayout>

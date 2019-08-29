@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageButton android:id="@+id/btn_back" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/Back"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/activities_apply_payfor" android:layout_centerInParent="true"/>
+        <Button android:textSize="14dp" android:textColor="@color/poidetail_dlg_right_btn_text_color_selector" android:id="@+id/doconfirmmappoint" android:background="@drawable/go_here_btn_selector" android:paddingLeft="9dp" android:paddingRight="9dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:text="@string/activities_know_about_safety" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <RadioGroup android:orientation="horizontal" android:id="@+id/apply_tab" android:layout_width="match_parent" android:layout_height="29dp" android:layout_marginLeft="10dp" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:layout_marginBottom="12dp">
+        <RadioButton android:textSize="@dimen/font_26" android:textColor="@color/activities_navi_list_tab_text_color" android:gravity="center" android:id="@+id/not_apply" android:background="@drawable/radio_tab_left_bg" android:layout_width="0dp" android:layout_height="match_parent" android:checked="true" android:button="@null" android:text="@string/activities_not_apply_payfor" android:layout_weight="1"/>
+        <RadioButton android:textSize="@dimen/font_26" android:textColor="@color/activities_navi_list_tab_text_color" android:gravity="center" android:id="@+id/have_apply" android:background="@drawable/radio_tab_right_bg" android:layout_width="0dp" android:layout_height="match_parent" android:button="@null" android:text="@string/activities_have_apply_payfor" android:layout_weight="1"/>
+    </RadioGroup>
+    <ViewAnimator android:id="@+id/animator_list" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include layout="@layout/activities_apply_payfor_naviinfo_list"/>
+        <include layout="@layout/activities_apply_payfor_naviinfo_refreshable_list"/>
+    </ViewAnimator>
+</LinearLayout>

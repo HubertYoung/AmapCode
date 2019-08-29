@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:gravity="bottom|center_vertical|center_horizontal|center" android:id="@+id/default_layout" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="69">
+            <ImageView android:id="@+id/imageview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35dp" android:src="@drawable/auto_navi_logo"/>
+        </RelativeLayout>
+        <ScrollView android:layout_width="match_parent" android:layout_height="0dp" android:fillViewport="true" android:layout_weight="31" android:layout_alignParentBottom="true">
+            <RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@+id/bottom" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="match_parent">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="22dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/splashy_tip" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/splashy_tip_margin_top" android:text="@string/welocome_to_use_amap"/>
+                <Button android:textSize="16dp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/btnStart" android:background="@drawable/splash_btn_blue_selector" android:visibility="visible" android:layout_width="222dp" android:layout_height="44dp" android:layout_marginTop="@dimen/btn_start_margin_top" android:text="@string/enter_map" android:layout_below="@+id/splashy_tip" android:layout_centerHorizontal="true"/>
+                <LinearLayout android:gravity="center" android:id="@+id/experience_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/experience_layout_margin_bottom" android:layout_below="@+id/btnStart" android:layout_alignParentBottom="true">
+                    <CheckBox android:id="@+id/experience" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/v4_radio_map_popup_selector"/>
+                    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="#6f7980" android:gravity="center" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/accept_amap_terms"/>
+                    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/tv_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/service_terms"/>
+                    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="#6f7980" android:gravity="center" android:paddingLeft="@dimen/splash_terms_margin" android:paddingRight="@dimen/splash_terms_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/and"/>
+                    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/tv_detail2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/privacy_terms"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_40" android:textColor="@color/splash_skip" android:id="@+id/skip" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="23dp" android:layout_marginRight="23dp" android:text="@string/splash_skip" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+</RelativeLayout>

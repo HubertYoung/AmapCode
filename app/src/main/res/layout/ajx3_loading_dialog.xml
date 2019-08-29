@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:background="@drawable/ajx3_title_background" android:paddingLeft="30dp" android:paddingTop="22dp" android:paddingRight="30dp" android:paddingBottom="22dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <ProgressBar android:layout_gravity="center_vertical" android:id="@+id/progressbar" android:layout_width="20dp" android:layout_height="20dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/ajx3_common_progressbar" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp">
+        <TextView android:textSize="16dp" android:textColor="#000000" android:id="@+id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载中"/>
+    </LinearLayout>
+</LinearLayout>

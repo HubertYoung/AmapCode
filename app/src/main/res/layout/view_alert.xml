@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/parentPanel" android:background="@drawable/bg_alert" android:paddingTop="20dp" android:clickable="true" android:layout_width="270dp" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/topPanel" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/title_template" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="10dp">
+            <ImageView android:layout_gravity="top" android:id="@+id/icon" android:paddingTop="6dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/alertTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+        <ImageView android:gravity="fill_horizontal" android:id="@+id/titleDivider" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px" android:src="@color/c_2" android:scaleType="fitXY"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/contentPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <com.autonavi.widget.ui.MaxHeightScrollView android:gravity="center" android:id="@+id/scrollView" android:layout_width="match_parent" android:layout_height="wrap_content" android:fillViewport="false" android:overScrollMode="ifContentScrolls">
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/message" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:text="" android:lineSpacingExtra="4dp"/>
+        </com.autonavi.widget.ui.MaxHeightScrollView>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/customPanel" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_marginBottom="16dp">
+        <FrameLayout android:gravity="center" android:id="@+id/custom" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </FrameLayout>
+    <ImageView android:gravity="fill_horizontal" android:id="@+id/messageDivider" android:layout_width="match_parent" android:layout_height="1px" android:src="@color/c_2" android:scaleType="fitXY"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/buttonPanel" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/button_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:measureWithLargestChild="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/leftSpacer" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+            <com.autonavi.widget.ui.AdaptiveButton android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/button1" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="44dp" android:singleLine="true" android:layout_weight="1"/>
+            <View android:id="@+id/divide_left" android:background="@color/c_2" android:layout_width="1px" android:layout_height="match_parent"/>
+            <com.autonavi.widget.ui.AdaptiveButton android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/button3" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="44dp" android:singleLine="true" android:layout_weight="1"/>
+            <View android:id="@+id/divide_right" android:background="@color/c_2" android:layout_width="1px" android:layout_height="match_parent"/>
+            <com.autonavi.widget.ui.AdaptiveButton android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/button2" android:layout_width="0dp" android:layout_height="wrap_content" android:minHeight="44dp" android:text="@string/operation" android:singleLine="true" android:layout_weight="1"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/rightSpacer" android:visibility="gone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="0.25"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

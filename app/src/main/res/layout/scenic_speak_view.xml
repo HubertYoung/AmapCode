@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/scenic_speak_root" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.autonavi.bundle.uitemplate.mapwidget.common.MapWidgetTip android:id="@+id/scenic_speak_operate_name" android:layout_width="wrap_content" android:layout_height="38dp" android:layout_toRightOf="@+id/scenic_speak_icon_layout" android:layout_centerVertical="true" app:arrow_direction="2" app:max_lines="1"/>
+    <RelativeLayout android:id="@+id/scenic_speak_icon_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <include android:layout_gravity="center" android:layout_width="@dimen/map_widget_WH_s" android:layout_height="@dimen/map_widget_WH_s" layout="@layout/map_widget_layout_bg_white_s"/>
+        <ImageView android:id="@+id/scenic_speak_icon" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/map_widget_guide_speak" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

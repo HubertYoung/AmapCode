@@ -1,0 +1,10 @@
+{
+    "framework_version": "3.3.0",
+    "configs": [
+        {
+            "config_file_name":"zoloz_biometric.json",
+            "bundle_name":"android-phone-zoloz-zcloud",
+            "dynamic":false
+        }
+    ]
+}

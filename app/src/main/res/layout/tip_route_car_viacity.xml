@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-10dp">
+        <RelativeLayout android:gravity="center" android:id="@+id/tips_layout" android:background="@drawable/tip_route_car_viacity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="14dp" android:textColor="@color/v3_font_white" android:gravity="center" android:layout_gravity="center" android:id="@+id/txt_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/subway_text_name"/>
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="12dp" android:textColor="@color/v3_font_white" android:gravity="left" android:id="@+id/txt_etcinfo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/txt_name"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/tips_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-8dp" android:src="@drawable/tip_fromto_car_result_map_arrow" android:layout_below="@+id/tips_layout" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/tips_marker" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="16dp" android:layout_below="@+id/tips_arrow" android:layout_centerHorizontal="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</LinearLayout>

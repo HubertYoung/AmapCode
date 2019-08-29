@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="left|center_vertical|center_horizontal|center" android:orientation="vertical" android:background="@drawable/map_widget_nearby_search_bg" android:layout_width="114dp" android:layout_height="54dp">
+    <RelativeLayout android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/nearby_search_container" android:layout_width="114dp" android:layout_height="54dp" android:layout_marginLeft="5dp">
+        <ImageView android:id="@+id/nearby_search_fresh" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/map_widget_nearby_search_icon" android:layout_alignParentLeft="true"/>
+        <TextView android:textSize="14dp" android:textColor="#738193" android:gravity="center" android:id="@+id/nearby_search_label" android:layout_width="wrap_content" android:layout_height="28dp" android:text="@string/map_widget_nearby_search_label" android:layout_toRightOf="@+id/nearby_search_fresh"/>
+        <ImageView android:id="@+id/nearby_search_right_arrow" android:layout_width="28dp" android:layout_height="28dp" android:src="@drawable/map_widget_nearby_search_right_arrow" android:layout_toRightOf="@+id/nearby_search_label"/>
+    </RelativeLayout>
+    <View android:layout_gravity="center_horizontal" android:id="@+id/deliver_line" android:background="#0f000000" android:visibility="gone" android:layout_width="98dp" android:layout_height="0.5dp"/>
+    <LinearLayout android:gravity="left|center_vertical|center_horizontal|center" android:orientation="horizontal" android:id="@+id/attachment_msg_container" android:visibility="gone" android:layout_width="114dp" android:layout_height="22dp" android:layout_marginLeft="8dp">
+        <TextView android:textSize="10dp" android:textColor="#8f000000" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="left|center_vertical|center_horizontal|center" android:id="@+id/restrict_label" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="20dp" android:text="38限行"/>
+        <LinearLayout android:gravity="right|center_vertical|center_horizontal|center" android:layout_gravity="right" android:orientation="horizontal" android:id="@+id/weather_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="8dp">
+            <ImageView android:id="@+id/weather_icon" android:layout_width="20dp" android:layout_height="20dp" android:layout_marginRight="2dp"/>
+            <TextView android:textSize="12dp" android:textColor="#8f000000" android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/weather_temperature_label" android:layout_width="wrap_content" android:layout_height="20dp" android:text="18°"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

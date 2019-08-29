@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.autonavi.minimap.route.sharebike.view.ShareRidingTipInNaviView android:id="@+id/share_bike_riding_tip" android:background="@color/whole_bg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    <RelativeLayout android:id="@+id/ajx_view_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_below="@+id/share_bike_riding_tip"/>
+</RelativeLayout>

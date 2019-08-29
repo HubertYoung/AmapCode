@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/layout_title_taximapview"/>
+        <include android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" layout="@layout/v4_taxi_footer"/>
+    </com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/title_bar_default_height">
+        <com.autonavi.minimap.drive.taxi.view.MultiDirectionSlidingDrawer android:id="@+id/drawer" android:visibility="gone" android:layout_width="match_parent" android:layout_height="220dp" app:content="@+id/content" app:direction="top_to_bottom|right_to_left|bottom_to_top" app:handle="@+id/handle" app:allowSingleTap="true" app:animateOnClick="true">
+            <include android:id="@+id/content" layout="@layout/pen_content"/>
+            <RelativeLayout android:id="@+id/handle" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:gravity="right" android:layout_gravity="right" android:id="@+id/imghandle" android:background="@drawable/default_taxi_icon_paypal_down" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+                <TextView android:gravity="right" android:id="@+id/txtYouHui" android:background="@drawable/default_taxi_youhui" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15dp" android:layout_toLeftOf="@+id/imghandle"/>
+            </RelativeLayout>
+        </com.autonavi.minimap.drive.taxi.view.MultiDirectionSlidingDrawer>
+    </LinearLayout>
+</RelativeLayout>

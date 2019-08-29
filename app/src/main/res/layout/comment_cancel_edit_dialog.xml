@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:background="@color/dialog_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/basemap_dialog_background" android:layout_width="270dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="@dimen/font_34" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/result_title" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginTop="17dp" android:layout_marginBottom="17dp" android:text="@string/comment_cancel_edit" android:layout_weight="1" android:lineSpacingExtra="4dp"/>
+        <View android:background="@color/d_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/button_zone" android:layout_width="match_parent" android:layout_height="55dp">
+            <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_drop" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/comment_cancel_drop" android:layout_weight="1"/>
+            <View android:background="@color/d_gray" android:layout_width="1px" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="8dp"/>
+            <TextView android:textSize="@dimen/font_32" android:textColor="@color/comment_highlight_bule" android:gravity="center" android:layout_gravity="center" android:id="@+id/btn_goon" android:background="@null" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/comment_cancel_goon" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

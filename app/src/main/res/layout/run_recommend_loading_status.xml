@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/route_80dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/run_recommend_net_status_no_data" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_blank_1"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_12dp" android:text="@string/run_recommend_net_status_no_data" android:lineSpacingExtra="@dimen/route_12dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/run_recommend_net_status_no_network" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_12dp" android:src="@drawable/run_recommend_loading_refresh"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/run_recommend_net_status_no_network"/>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/l_time" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_specific_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="具体时段：0：00 - 5:00" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="开始时间：0：00 - 5:00" android:singleLine="true"/>
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="结束时段：0：00 - 5:00 " android:singleLine="true"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/img_item_photo_tips" android:layout_width="51.5dp" android:layout_height="51.5dp" android:layout_marginTop="6dp" android:layout_marginRight="8dp" android:src="@drawable/img_item_photo_tips" android:scaleType="fitXY"/>
+        <TextView android:textSize="@dimen/font_26" android:textColor="#ff999999" android:ellipsize="end" android:id="@+id/content" android:scrollbars="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:layout_marginRight="10dp" android:text="占据右侧车道 ? 111111111111111111111111141111111212111111111111111111111111" android:maxLines="3" android:lineSpacingExtra="1dp"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginTop="6dp">
+        <TextView android:textSize="@dimen/font_22" android:textColor="@color/f_c_3" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/nick" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/amap_app_name" android:singleLine="true" android:drawablePadding="4dp" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/font_22" android:textColor="@color/f_c_3" android:id="@+id/tv_report_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="最近一次啊哈哈哈"/>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/font_22" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_others" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.5dp" android:layout_marginRight="10dp" android:text="的点点滴滴打打,的点点滴滴打打,的点点滴滴打打打打...等5名用户也在此处上报" android:singleLine="true"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/traffic_button_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="4dp" android:layout_marginBottom="16dp" android:baselineAligned="false"/>
+</LinearLayout>

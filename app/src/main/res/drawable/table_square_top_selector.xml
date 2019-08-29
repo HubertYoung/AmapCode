@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_pressed="true" android:state_activated="false">
+        <nine-patch android:src="@drawable/table_square_top_press"/>
+    </item>
+    <item android:state_enabled="false">
+        <nine-patch android:src="@drawable/table_square_top"/>
+    </item>
+    <item>
+        <nine-patch android:src="@drawable/table_square_top"/>
+    </item>
+</selector>

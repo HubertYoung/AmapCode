@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.autonavi.bundle.searchcommon.view.SearchKeywordResultTitleView android:id="@+id/view_normal_title" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height"/>
+    <include android:id="@+id/view_voice_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/voice_view_title"/>
+</com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>

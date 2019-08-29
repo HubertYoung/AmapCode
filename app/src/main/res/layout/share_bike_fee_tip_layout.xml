@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:background="@drawable/share_bike_fee_tip_bg" android:paddingLeft="@dimen/route_16dp" android:paddingTop="@dimen/route_52dp" android:paddingRight="@dimen/route_16dp" android:paddingBottom="@dimen/route_16dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/route_16dp" android:layout_centerInParent="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:paddingBottom="@dimen/route_8dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="39dp" android:textColor="@color/f_c_6" android:id="@+id/share_bike_fee_notice_top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.99"/>
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="bottom" android:paddingBottom="@dimen/route_8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:layout_gravity="center" android:paddingBottom="@dimen/route_48dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="骑行费用"/>
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_28dp">
+                <View android:background="@color/grey_stroke" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_centerVertical="true"/>
+                <TextView android:textSize="@dimen/f_s_11" android:textColor="@color/f_c_4" android:id="@+id/share_bike_pay_detail" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="费用明细" android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+            <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ListView android:id="@+id/share_bike_cost_section_lv" android:background="@color/transparent" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_84dp" android:listSelector="@android:color/transparent" android:cacheColorHint="@color/transparent" android:divider="@null" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false"/>
+                <Button android:layout_gravity="bottom" android:id="@+id/share_bike_fee_confirm" android:layout_width="match_parent" android:layout_height="@dimen/route_44dp" android:text="@string/share_bike_confirmed" style="@style/btn_c2"/>
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

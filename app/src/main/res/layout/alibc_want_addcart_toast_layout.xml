@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:background="@drawable/alibc_want_bg_addcart_result" android:paddingRight="25dp" android:layout_width="270dp" android:layout_height="120dp">
+    <RelativeLayout android:paddingBottom="25dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="10sp" android:id="@+id/tv_err_no" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp"/>
+        <ImageView android:id="@+id/iv_addcart_result" android:layout_width="70dp" android:layout_height="70dp" android:layout_marginLeft="25dp" android:layout_marginTop="25dp"/>
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp">
+        <TextView android:textSize="16sp" android:textColor="@color/alibc_want_text_color" android:id="@+id/tv_addcart_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/alibc_want_addcart_toast_msg_max_width"/>
+        <TextView android:textSize="14sp" android:textColor="@color/alibc_want_text_color" android:id="@+id/tv_addcart_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:maxWidth="@dimen/alibc_want_addcart_toast_msg_max_width"/>
+    </LinearLayout>
+</LinearLayout>

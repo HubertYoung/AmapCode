@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/cell_root" android:background="@drawable/alert_button_selector" android:layout_width="match_parent" android:layout_height="45dp">
+    <View android:id="@+id/cell_top_divide" android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentTop="true"/>
+    <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/cell_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/cell_view_left_margin" android:singleLine="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <FrameLayout android:paddingRight="@dimen/cell_view_left_margin" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_toRightOf="@+id/cell_text" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/cell_desc" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+        <EditText android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_4" android:ellipsize="end" android:id="@+id/cell_edit" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+    </FrameLayout>
+    <View android:id="@+id/cell_bottom_divide" android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

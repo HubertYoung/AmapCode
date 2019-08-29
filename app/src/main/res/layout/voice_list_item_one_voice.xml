@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/nvl_item_one_voice" android:background="@drawable/navi_voice_item_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="60dp">
+        <ImageView android:id="@+id/play_status" android:background="@drawable/navitts_play" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/sentence_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:text="@string/custom_navitts_example_over_speed" android:layout_toRightOf="@+id/play_status" android:layout_centerVertical="true"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:drawableRight="@drawable/navitts_sentence_next" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:background="@color/d_gray" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="8dp"/>
+</LinearLayout>

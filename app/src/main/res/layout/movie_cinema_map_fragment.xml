@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/mapTopInteractiveView" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="@dimen/title_bar_height" android:layout_alignParentTop="true">
+        <ImageButton android:id="@+id/title_btn_left" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/life_title_backbutton_description"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/title_text_name" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:singleLine="true" android:layout_weight="1"/>
+        <Button android:textSize="14dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/title_btn_right" android:background="@drawable/title_btn_bg" android:paddingLeft="8dp" android:paddingRight="5dp" android:layout_width="60dp" android:layout_height="32dp" android:layout_marginRight="8dp" android:text="@string/life_title_list" android:drawableLeft="@drawable/title_btn_liebiao"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.autonavi.map.widget.RecyclableViewPager android:id="@+id/movie_cinema_result_map_pager" android:layout_width="match_parent" android:layout_height="111dp"/>
+    </RelativeLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/attention_show_no_realtimebus_info_layout" layout="@layout/layout_rt_follow_default"/>
+    <RelativeLayout android:id="@+id/attention_show_realtimebus_info_layout" android:background="@color/c_3" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/attention_ls_realtimebus_position" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@null" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+    </RelativeLayout>
+</RelativeLayout>

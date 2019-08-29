@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/route_page_top_view" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/route_fragment_header_with_shadow" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@+id/route_fragment_header" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/route_voice_header"/>
+                <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.amap.bundle.planhome.view.RouteEditView android:id="@+id/route_page_input_edit_view" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <com.autonavi.minimap.route.common.view.RouteTabScrollView android:id="@+id/tab_holder" android:background="@color/white" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_40dp" android:overScrollMode="never">
+                        <com.amap.bundle.planhome.view.RouteZoomTabView android:id="@+id/tab" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="@dimen/route_46dp"/>
+                    </com.autonavi.minimap.route.common.view.RouteTabScrollView>
+                    <ImageView android:id="@+id/tab_left_shadow" android:layout_width="@dimen/route_19dp" android:layout_height="@dimen/route_46dp" android:src="@drawable/tab_left_shadow" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <ImageView android:id="@+id/tab_right_shadow" android:layout_width="@dimen/route_19dp" android:layout_height="@dimen/route_46dp" android:src="@drawable/tab_right_shadow" android:scaleType="center"/>
+                        <ImageView android:layout_gravity="center_vertical" android:id="@+id/tab_tool_bar_img" android:background="@color/white" android:paddingLeft="@dimen/route_10dp" android:paddingTop="@dimen/route_13dp" android:paddingRight="@dimen/route_10dp" android:paddingBottom="@dimen/route_13dp" android:layout_width="@dimen/route_40dp" android:layout_height="@dimen/route_46dp" android:src="@drawable/route_tab_toolbar" android:scaleType="centerInside" android:layout_alignParentLeft="true"/>
+                    </LinearLayout>
+                </RelativeLayout>
+                <com.autonavi.widget.ui.TitleBar android:id="@+id/route_favorite_title_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="4"/>
+                <ImageView android:id="@+id/title_btn_left" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_10dp" android:layout_marginTop="@dimen/route_12dp" android:src="@drawable/etrip_back_btn" android:contentDescription="@string/autonavi_back"/>
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/smart_trip_description" android:background="@color/c_19" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp"/>
+            </LinearLayout>
+            <View android:id="@+id/route_input_view_container_shadow" android:background="@drawable/shadow_down" android:layout_width="match_parent" android:layout_height="@dimen/route_10dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

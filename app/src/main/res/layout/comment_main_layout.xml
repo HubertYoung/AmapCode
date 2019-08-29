@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/comment_backgroud" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" app:title_style="13" app:action_text="@string/comment_publish" app:back_text="@string/cancel"/>
+    <View android:background="@color/gray_c" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/font_26" android:textColor="@color/comment_login_tip_text" android:ellipsize="end" android:gravity="center" android:id="@+id/login_tip" android:background="@color/comment_login_tip_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/comment_login_tip" android:maxLines="1"/>
+    <View android:id="@+id/login_tip_diveder" android:background="#f6ffe25c" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="match_parent" android:layout_height="46dp">
+                <com.autonavi.map.search.comment.widget.RatingBar android:id="@+id/rating_bar" android:paddingLeft="0dp" android:paddingRight="@dimen/comment_margin" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_marginLeft="@dimen/comment_margin" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:maxRating="5" app:ratedDrawable="@drawable/comment_rating_selected" app:unratedDrawable="@drawable/comment_rating_unselected" app:margin="22dp"/>
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/txt_rating_desc" android:layout_width="wrap_content" android:layout_height="46dp" android:layout_marginRight="@dimen/comment_margin" android:text="@string/comment_rate_default" android:layout_toRightOf="@+id/rating_bar" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <View android:background="@color/comment_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="15dp" android:layout_marginRight="15dp"/>
+            <RelativeLayout android:paddingLeft="@dimen/comment_margin" android:paddingTop="@dimen/comment_margin" android:paddingRight="@dimen/comment_margin" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="130dp">
+                <EditText android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:textColorHint="@color/comment_tip" android:gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/edt_comments" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/txt_comment_tip" android:inputType="textMultiLine"/>
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:id="@+id/txt_comment_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <View android:background="@color/comment_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/comment_margin" android:layout_marginRight="@dimen/comment_margin"/>
+            <android.support.v7.widget.RecyclerView android:id="@+id/grid_album" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <View android:background="@color/comment_line" android:layout_width="match_parent" android:layout_height="1px"/>
+            <ViewStub android:id="@+id/scenic_comment_stub" android:layout="@layout/comment_scenic_area" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/recommend_header_bg" android:background="#f4f4f4" android:visibility="gone" android:layout_width="match_parent" android:layout_height="35dp">
+                <ImageView android:background="@drawable/comment_visited_num_header_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+                <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:id="@+id/recommend_header_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:layout_marginRight="13dp"/>
+                <ImageView android:background="@drawable/comment_visited_num_header_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+            </LinearLayout>
+            <View android:id="@+id/recommend_container_top" android:background="#ececec" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/recommend_container" android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

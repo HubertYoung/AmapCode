@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/section_item_title_layout" android:background="@drawable/route_bus_detail_item_title_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_10dp" android:minHeight="@dimen/route_25dp">
+        <ImageView android:layout_gravity="center_vertical" android:id="@+id/section_item_title_icon" android:layout_width="@dimen/route_25dp" android:layout_height="@dimen/route_25dp" android:scaleType="center" android:contentDescription="@null"/>
+        <com.autonavi.map.widget.FlowLayout android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_15dp" android:layout_marginTop="@dimen/route_3dp" android:layout_marginRight="@dimen/route_8dp" android:layout_marginBottom="@dimen/route_3dp">
+            <TextView android:textSize="@dimen/font_32" android:textStyle="bold" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/section_item_title_name" android:paddingRight="@dimen/route_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/white" android:ellipsize="end" android:id="@+id/section_item_bus_direction" android:paddingTop="@dimen/route_2dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:singleLine="true"/>
+        </com.autonavi.map.widget.FlowLayout>
+    </LinearLayout>
+    <FrameLayout android:id="@+id/section_item_content_layout" android:background="@drawable/route_bus_detail_item_content_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_10dp">
+        <LinearLayout android:orientation="vertical" android:layout_width="@dimen/route_25dp" android:layout_height="match_parent">
+            <View android:layout_gravity="center_horizontal" android:id="@+id/content_line_view" android:background="@drawable/route_bus_detail_item_line_bg" android:layout_width="1.5dp" android:layout_height="0dp" android:layout_marginTop="25dp" android:layout_marginBottom="25dp" android:layout_weight="1"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/up_station_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_15dp" android:layout_marginBottom="@dimen/route_15dp" layout="@layout/route_bus_result_detail_section_up_down_station_name"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_40dp" android:layout_marginBottom="@dimen/route_4dp">
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/railway_cost_time" android:paddingRight="@dimen/route_4dp" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:layout_gravity="center_vertical" android:id="@+id/railway_more" android:paddingLeft="@dimen/route_4dp" android:paddingRight="@dimen/route_6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_ext_more_trains" android:singleLine="true" android:drawableRight="@drawable/route_ext_bus_more" android:drawablePadding="@dimen/route_5dp"/>
+            </LinearLayout>
+            <include android:id="@+id/down_station_name_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_15dp" android:layout_marginBottom="@dimen/route_15dp" layout="@layout/route_bus_result_detail_section_up_down_station_name"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

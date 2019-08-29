@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/layout_sms" android:paddingTop="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/btn_share_item" android:background="@drawable/bg_btn_share_sns" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+        <TextView android:textSize="13dp" android:textColor="#494949" android:id="@+id/txt_share_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/information"/>
+    </LinearLayout>
+</LinearLayout>

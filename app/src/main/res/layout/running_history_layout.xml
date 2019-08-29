@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="match_parent" android:layout_height="wrap_content" app:title="@string/running_route_history" app:title_style="16"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/c_12" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/route_16dp" android:paddingTop="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:paddingBottom="@dimen/route_30dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/f_s_34" android:textColor="@color/f_c_1" android:layout_gravity="center_horizontal" android:id="@+id/running_history_length" android:paddingBottom="-8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_running_history_length"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1_e" android:layout_gravity="center_horizontal" android:id="@+id/running_history_length_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_running_history_length_tip" android:includeFontPadding="false"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/c_1_d" android:layout_width="match_parent" android:layout_height="@dimen/route_60dp">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_1" android:id="@+id/running_history_time_cost" android:paddingBottom="-2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_running_history_time_cost"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1_e" android:id="@+id/running_history_time_cost_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_route_history_time_unit_tip_zero" android:includeFontPadding="false"/>
+            </LinearLayout>
+            <View android:layout_gravity="center" android:background="@color/c_1_b" android:layout_width="@dimen/route_1px" android:layout_height="@dimen/route_26dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:paddingLeft="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_1" android:id="@+id/running_history_heat_cost" android:paddingBottom="-2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/default_running_history_heat_cost"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1_e" android:id="@+id/running_history_heat_cost_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_route_history_heat_unit_zero_tip" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/running_history_no_item_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:layout_width="@dimen/route_75dp" android:layout_height="@dimen/route_75dp" android:layout_marginBottom="@dimen/route_8dp" android:src="@drawable/rt_list_data_error"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_28dp" android:text="@string/running_history_no_trace_str"/>
+            <TextView android:gravity="center" android:id="@+id/running_history_to_navi" android:clickable="true" android:layout_width="@dimen/route_69dp" android:layout_height="@dimen/route_26dp" android:text="@string/running_history_to_navi_tip" style="@style/btn_b1"/>
+        </LinearLayout>
+        <com.autonavi.minimap.route.run.view.PinnedSectionListView android:id="@+id/pinnedsectionlistview" android:background="@color/c_3" android:visibility="gone" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@android:color/transparent" android:cacheColorHint="#00000000" android:divider="@null" android:overScrollMode="always"/>
+        <Button android:id="@+id/test_addtrace" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Add Trace"/>
+    </RelativeLayout>
+</LinearLayout>

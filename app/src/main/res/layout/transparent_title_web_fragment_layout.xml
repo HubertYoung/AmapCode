@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#fafafa" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.amap.bundle.webview.widget.ExtendedWebView android:id="@+id/webView" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <ImageButton android:id="@+id/title_btn_left_transparent" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:src="@drawable/transparent_title_back" android:minWidth="60dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/img_desc"/>
+        <ImageButton android:id="@+id/title_btn_right_transparent" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/transparent_title_share" android:minWidth="60dp" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/img_desc"/>
+    </RelativeLayout>
+</RelativeLayout>

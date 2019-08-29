@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/arriving_bus_info_item_1" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/route_arriving_bus_info_item"/>
+    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="@dimen/route_1px" android:layout_height="23dp"/>
+    <include android:id="@+id/arriving_bus_info_item_2" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/route_arriving_bus_info_item"/>
+    <View android:layout_gravity="center_vertical" android:background="@color/bg_ea" android:layout_width="@dimen/route_1px" android:layout_height="23dp"/>
+    <include android:id="@+id/arriving_bus_info_item_3" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" layout="@layout/route_arriving_bus_info_item"/>
+</LinearLayout>

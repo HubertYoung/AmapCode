@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#f8f8f8" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="#212121" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="20dp" android:layout_marginRight="24dp" android:text="@string/welcome_privacy_policy"/>
+    <TextView android:textSize="13dp" android:textColor="#61000000" android:id="@+id/desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="24dp" android:layout_marginTop="4dp" android:layout_marginRight="24dp" android:text="@string/desc_privacy_policy" android:layout_below="@+id/title"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/bottom_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="12dp" android:textColor="#61000000" android:id="@+id/policy_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp"/>
+        <TextView android:textSize="18dp" android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/agree" android:background="@drawable/background_privacy_agree" android:layout_width="263dp" android:layout_height="48dp" android:layout_marginTop="15dp" android:text="同意" android:contentDescription="同意"/>
+        <TextView android:textSize="15dp" android:textColor="#8f000000" android:layout_gravity="center_horizontal" android:id="@+id/disagree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:layout_marginBottom="20dp" android:text="我再想想" android:contentDescription="我再想想"/>
+    </LinearLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="20dp" android:layout_above="@+id/bottom_container" android:layout_below="@+id/desc" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:background="@drawable/background_permission_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginRight="20dp">
+                <ImageView android:id="@+id/icon_location" android:background="@drawable/ic_policy_location" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/icon_location" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/title_permission_location"/>
+                    <TextView android:textSize="12dp" android:textColor="#8f000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/desc_permission_location"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/background_permission_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <ImageView android:id="@+id/icon_voice" android:background="@drawable/ic_policy_voice" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/icon_voice" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/title_permission_micro"/>
+                    <TextView android:textSize="12dp" android:textColor="#8f000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/desc_permission_micro"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/background_permission_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <ImageView android:id="@+id/icon_storage" android:background="@drawable/ic_policy_storage" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/icon_storage" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/title_permission_storage"/>
+                    <TextView android:textSize="12dp" android:textColor="#8f000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/desc_permission_storage"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/background_permission_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <ImageView android:id="@+id/icon_phone" android:background="@drawable/ic_policy_phone" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/icon_phone" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/title_permission_phone"/>
+                    <TextView android:textSize="12dp" android:textColor="#8f000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/desc_permission_phone"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:background="@drawable/background_permission_desc" android:layout_width="match_parent" android:layout_height="64dp" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp">
+                <ImageView android:id="@+id/icon_notification" android:background="@drawable/ic_policy_notification" android:layout_width="30dp" android:layout_height="30dp" android:layout_marginLeft="12dp" android:scaleType="centerCrop" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toRightOf="@+id/icon_notification" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="#de000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/title_permission_notification"/>
+                    <TextView android:textSize="12dp" android:textColor="#8f000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10dp" android:text="@string/desc_permission_notification"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

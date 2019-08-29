@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/search_result_list_indoor_footer_layout" android:layout_width="match_parent" android:layout_height="64dp">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/v4_board_no_pic_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="@dimen/search_result_list_indoor_layout_padding_top">
+        <View android:background="@color/gray_disabled" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <RelativeLayout android:orientation="horizontal" android:background="@drawable/v4_board_no_pic_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="46dp">
+            <TextView android:textSize="@dimen/search_result_list_indoor_layout_text_size" android:textColor="@color/search_result_list_add_point_text" android:gravity="left|center_vertical|center_horizontal|center" android:layout_gravity="center_horizontal" android:id="@+id/indoor_footer_textview" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginLeft="10dp" android:text="@string/search_result_list_indoor_footer_text_start" android:layout_alignParentLeft="true" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/indoor_footer_imageview" android:duplicateParentState="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:src="@drawable/common_litblack_right_arrow" android:layout_alignRight="@+id/indoor_footer_textview" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        </RelativeLayout>
+        <View android:background="@color/gray_disabled" android:layout_width="match_parent" android:layout_height="1dp"/>
+    </LinearLayout>
+</RelativeLayout>

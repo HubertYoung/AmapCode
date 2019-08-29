@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/busdetail_tip_geton_and_off_bg" android:background="@drawable/pop_bus_foot_ride_bg" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_14dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_10dp">
+        <TextView android:textSize="12sp" android:textColor="@color/f_c_4" android:gravity="center" android:id="@+id/busdetail_on_off_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_3dp" android:text="上车" android:maxLines="1"/>
+        <TextView android:textSize="14sp" android:textColor="@color/c_15" android:gravity="center" android:id="@+id/label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_5dp" android:text="阜通地铁" android:maxLines="1"/>
+        <View android:background="#d8d8d8" android:layout_width="@dimen/route_1dp" android:layout_height="match_parent" android:layout_margin="@dimen/route_8dp"/>
+        <ImageView android:id="@+id/busdetail_foot_tip_navi_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_3dp" android:layout_marginRight="@dimen/route_6dp" android:layout_marginBottom="@dimen/route_3dp" android:src="@drawable/bus_walk_navi_icon"/>
+    </LinearLayout>
+</LinearLayout>

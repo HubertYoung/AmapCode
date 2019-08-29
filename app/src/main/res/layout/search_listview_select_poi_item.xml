@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/favorite_layer_icon" android:contentDescription="@null"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="14dp">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_30" android:textColor="@color/black_lite" android:ellipsize="end" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+            <TextView android:textSize="12dp" android:textColor="@color/f_c_6" android:ellipsize="end" android:id="@+id/status_desc" android:background="@drawable/search_result_status_blue_bkg" android:paddingLeft="3dp" android:paddingRight="3dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4dp" android:singleLine="true"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/poi_info_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/distance_info_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/compassView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navi_search_result_detail" android:scaleType="matrix" android:contentDescription="@null"/>
+                <TextView android:textSize="@dimen/font_26" android:textColor="@color/gary" android:ellipsize="marquee" android:gravity="center_vertical" android:id="@+id/poiDisNum" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/gary" android:ellipsize="end" android:id="@+id/addr" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

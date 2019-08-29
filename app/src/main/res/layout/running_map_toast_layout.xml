@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/auto_stop_tv_toast" android:background="@drawable/run_static_tip_bg" android:layout_width="133dp" android:layout_height="@dimen/route_44dp" android:layout_marginBottom="150dp" android:text="@string/run_auto_pause_tip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

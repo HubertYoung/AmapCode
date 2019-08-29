@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/relat_container" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+    <ImageView android:id="@+id/img_msgbox" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_c26" android:scaleType="center" android:layout_centerInParent="true" android:contentDescription="@string/msgbox_message_desc"/>
+    <ImageView android:id="@+id/img_msgbox_tip" android:paddingRight="6dp" android:paddingBottom="24dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/idle_info" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+</RelativeLayout>

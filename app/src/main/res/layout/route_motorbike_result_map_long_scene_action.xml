@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/route_longdis_action" android:layout_width="@dimen/map_container_btn_size" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/route_btn_service_area" android:layout_width="match_parent" android:layout_height="@dimen/map_container_btn_size">
+        <ImageView android:id="@+id/route_service_area_icon" android:background="@drawable/icon_c_bg_up" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_c10" android:scaleType="center" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/route_btn_weather_area" android:layout_width="match_parent" android:layout_height="@dimen/map_container_btn_size">
+        <ImageView android:id="@+id/route_weather_icon" android:background="@drawable/icon_c_bg_mid" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/default_icon_weather_normal" android:scaleType="center" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/route_btn_supply" android:layout_width="match_parent" android:layout_height="@dimen/map_container_btn_size">
+        <ImageView android:id="@+id/route_supply_icon" android:background="@drawable/icon_c_bg_down" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_supply" android:scaleType="center" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <com.autonavi.minimap.bundle.agroup.widget.AGroupSuspendView android:id="@+id/route_btn_agroup" android:background="@drawable/icon_c_bg_down" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/map_container_btn_size" app:isDriveLongScene="true"/>
+</LinearLayout>

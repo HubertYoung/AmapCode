@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="left" android:layout_width="67dp" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:src="@drawable/real3d_switch_view_triangle" android:scaleType="centerInside"/>
+    <RelativeLayout android:background="@drawable/real3d_switch_view_bg_new" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="15dp" android:layout_marginBottom="15dp" android:text="@string/real3d_switch_description" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <CheckBox android:enabled="true" android:id="@+id/cbReal3DSwitch" android:background="@drawable/real3d_switch_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:layout_marginRight="10dp" android:button="@null" android:layout_alignParentRight="true" android:contentDescription="@string/real3d_switch"/>
+        <FrameLayout android:layout_width="67dp" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true">
+            <FrameLayout android:layout_gravity="center" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="1dp" android:src="@drawable/real3d_switch_view_triangle"/>
+            </FrameLayout>
+        </FrameLayout>
+    </RelativeLayout>
+</merge>

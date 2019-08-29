@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:oneshot="false">
+    <item android:duration="420" android:drawable="@drawable/bus_gif_012"/>
+    <item android:duration="420" android:drawable="@drawable/bus_gif_013"/>
+    <item android:duration="920" android:drawable="@drawable/bus_gif_014"/>
+    <item android:duration="420" android:drawable="@drawable/bus_gif_011"/>
+</animation-list>

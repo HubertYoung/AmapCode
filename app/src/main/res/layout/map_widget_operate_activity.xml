@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center" android:paddingLeft="5dp" android:layout_width="@dimen/map_widget_WH_n" android:layout_height="@dimen/map_widget_WH_n">
+    <ImageView android:layout_gravity="center" android:id="@+id/activity_png" android:layout_width="@dimen/map_widget_WH_n" android:layout_height="@dimen/map_widget_WH_n" android:src="@drawable/v3_icon" android:scaleType="centerCrop" android:contentDescription="@string/map_widget_operate_activity"/> /&gt;\10
+    <com.autonavi.bundle.uitemplate.mapwidget.widget.activity.MvpGifImageView android:layout_gravity="center" android:id="@+id/activity_gif" android:layout_width="@dimen/map_widget_WH_n" android:layout_height="@dimen/map_widget_WH_n" android:scaleType="centerCrop" android:contentDescription="@string/map_widget_operate_activity"/>
+    <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@+id/activity_lottie" android:layout_width="@dimen/map_widget_WH_n" android:layout_height="@dimen/map_widget_WH_n" android:scaleType="centerCrop" android:contentDescription="@string/map_widget_operate_activity"/>
+</FrameLayout>

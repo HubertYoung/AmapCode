@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="top" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:background="@drawable/realtimebus_pop_stop" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/refresh_icon" android:layout_width="@dimen/route_19dp" android:layout_height="@dimen/route_19dp" android:layout_marginRight="@dimen/route_3dp" android:src="@drawable/run_recommend_loading_refresh"/>
+        <TextView android:textSize="15sp" android:textColor="@color/f_c_13" android:id="@+id/no_net_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alert_realtime_no_net_msg" android:maxLines="1"/>
+    </LinearLayout>
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="40dp"/>
+</LinearLayout>

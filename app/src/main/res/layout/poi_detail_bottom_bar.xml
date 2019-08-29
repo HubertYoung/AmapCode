@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="48dp">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="48dp">
+        <RelativeLayout android:id="@+id/comments" android:background="@drawable/poi_detail_bottom_bar_btn_bg" android:visibility="gone" android:clickable="true" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_20" android:textColor="@color/f_c_6" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_comments" android:drawableLeft="@drawable/funicon_poidetail_comments" android:drawablePadding="4dp" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_save" android:background="@drawable/poi_detail_bottom_bar_btn_bg" android:clickable="true" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_save" android:drawableLeft="@drawable/funicon_poidetail_fav_un" android:drawablePadding="4dp" android:layout_centerInParent="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/layout_share" android:background="@drawable/poi_detail_bottom_bar_btn_bg" android:clickable="true" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/share" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_share" android:drawableLeft="@drawable/funicon_poidetail_share" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_feedback" android:background="@drawable/poi_detail_bottom_bar_btn_bg" android:clickable="true" android:layout_width="0dp" android:layout_height="48dp" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/feedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_errorback" android:drawableLeft="@drawable/funicon_poidetail_error" android:drawablePadding="4dp" android:layout_centerInParent="true"/>
+            <ImageView android:id="@+id/feed_double_red" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3dp" android:layout_marginTop="6dp" android:src="@drawable/feed_double_new" android:layout_toRightOf="@+id/feedback"/>
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

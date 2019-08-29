@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" style="@style/alipay_client_application_gray_bg">
+    <com.ali.user.mobile.ui.widget.APTitleBar android:id="@+id/account_manager_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:alipay_titleText="@string/alipay_accountmanager"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true" android:layout_below="@+id/account_manager_title">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="match_parent">
+            <include android:id="@+id/am_not_login_view" android:visibility="gone" layout="@layout/alipay_account_manager_not_login"/>
+            <include android:id="@+id/am_has_login_view" android:visibility="gone" layout="@layout/alipay_account_manager_has_login"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

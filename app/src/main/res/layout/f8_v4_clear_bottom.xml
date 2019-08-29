@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/clear_layout" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+    <Button android:textSize="@dimen/font_34" android:textColor="@color/bluegary" android:id="@+id/clean_history" android:background="@drawable/v4_com_btn_choose_selector" android:paddingTop="14dp" android:paddingBottom="14dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="10dp" android:text="@string/cancle_text"/>
+</LinearLayout>

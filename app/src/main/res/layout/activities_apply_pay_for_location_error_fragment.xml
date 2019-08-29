@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/oper_payfor" app:title_style="5" app:action_text="@string/submit"/>
+    <ScrollView android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+                <RelativeLayout android:orientation="vertical" android:id="@+id/btnFetchPoint" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_dimen_72px" android:layout_marginBottom="15dp">
+                    <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px" android:layout_alignParentTop="true"/>
+                    <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/correctLocationTv" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginLeft="15dp" android:text="@string/find_location" android:singleLine="true" android:drawableLeft="@drawable/error_report_location_icon" android:layout_alignParentLeft="true"/>
+                    <TextView android:textSize="@dimen/font_26" android:textColor="@color/error_reoprt" android:gravity="center_vertical" android:id="@+id/selectedTv" android:paddingLeft="6dp" android:layout_width="wrap_content" android:layout_height="36dp" android:layout_marginRight="15dp" android:text="@string/tagged" android:singleLine="true" android:layout_toRightOf="@+id/correctLocationTv"/>
+                    <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_5" android:id="@+id/mustInputCorrentLocationTv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="34dp" android:text="@string/must_input" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/navigation_title_right" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                    <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px" android:layout_alignParentBottom="true"/>
+                </RelativeLayout>
+                <include layout="@layout/error_detail_normal"/>
+                <TextView android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:id="@+id/yourContactTv" android:paddingLeft="@dimen/error_report_common_dimen_30px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/error_report_common_dimen_30px" android:layout_marginBottom="@dimen/error_report_common_dimen_10px" android:text="@string/your_contact"/>
+                <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px"/>
+                <EditText android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:id="@+id/contact" android:background="@color/white" android:paddingLeft="@dimen/error_report_common_dimen_30px" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_dimen_90px" android:hint="@string/phone_number" android:ems="10" android:maxLength="100"/>
+                <View android:background="@drawable/common_line" android:layout_width="match_parent" android:layout_height="@dimen/error_report_common_divider_1px"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="15dp" android:layout_marginTop="10dp">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/applyTip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/activities_apply_maypayed_without_moneycount"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_6" android:gravity="right" android:id="@+id/look_over_activities_view" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:singleLine="true"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

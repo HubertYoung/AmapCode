@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_pressed="false">
+        <shape>
+            <corners android:radius="@dimen/route_2dp"/>
+            <solid android:color="#4196f9"/>
+            <stroke android:width="@dimen/route_1dp" android:color="@color/grey_stroke"/>
+        </shape>
+    </item>
+</selector>

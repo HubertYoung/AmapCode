@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/alibc_want_addcart_tips_text_size" android:textColor="@color/alibc_want_text_color" android:gravity="center" android:id="@+id/tv_goods_tips" android:background="@drawable/alibc_want_bg_addcart_tips" android:paddingLeft="12dp" android:paddingRight="38dp" android:layout_width="wrap_content" android:layout_height="40dp" android:maxWidth="@dimen/alibc_want_addcart_tips_max_width" android:singleLine="true"/>
+    <LinearLayout android:gravity="center" android:id="@+id/ll_addcart_logo" android:background="@drawable/alibc_want_bg_addcart_logo" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="-30dp" android:scaleType="centerInside">
+        <ImageButton android:gravity="center" android:id="@+id/ibtn_addcart_logo" android:background="@android:color/transparent" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="centerInside"/>
+    </LinearLayout>
+</LinearLayout>

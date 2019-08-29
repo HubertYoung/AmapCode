@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.route.common.view.RouteViewGroup xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/route_view_group" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.amap.bundle.planhome.view.RouteTabToolBarContainer android:id="@+id/route_input_tool_bar_container" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.amap.bundle.planhome.view.RouteInputViewContainer android:id="@+id/route_input_view_container" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <RelativeLayout android:id="@+id/route_flow_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.amap.bundle.planhome.view.RoutePageContainer android:id="@+id/page_container_id" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginTop="-10.5dp" android:layout_below="@+id/route_input_view_container"/>
+    </RelativeLayout>
+</com.autonavi.minimap.route.common.view.RouteViewGroup>

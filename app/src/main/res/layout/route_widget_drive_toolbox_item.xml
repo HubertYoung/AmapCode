@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="68dp" android:layout_height="94dp">
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+        <ImageView android:id="@+id/icon" android:background="@drawable/route_toolbox_bg" android:layout_width="53dp" android:layout_height="53dp" android:layout_centerHorizontal="true"/>
+        <TextView android:textSize="@dimen/f_s_11" android:textColor="@color/black" android:gravity="center" android:layout_gravity="center_horizontal" android:id="@+id/icon_txt" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4dp" android:layout_centerHorizontal="true"/>
+    </LinearLayout>
+</RelativeLayout>

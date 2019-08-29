@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ScrollView android:scrollbars="vertical" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <TextView android:textColor="@android:color/black" android:id="@+id/logdisplay" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </ScrollView>
+    <LinearLayout android:textColor="@android:color/black" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:weightSum="3">
+        <TextView android:gravity="center" android:id="@+id/testmqtt" android:background="@color/c_9" android:layout_width="0dp" android:layout_height="wrap_content" android:text="MQTT" android:layout_weight="1"/>
+        <TextView android:gravity="center" android:id="@+id/testpolling" android:background="@color/c_5_c" android:layout_width="0dp" android:layout_height="wrap_content" android:text="POLLING" android:layout_weight="1"/>
+        <TextView android:gravity="center" android:id="@+id/testmix" android:background="@color/c_9_b" android:layout_width="0dp" android:layout_height="wrap_content" android:text="MIX" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

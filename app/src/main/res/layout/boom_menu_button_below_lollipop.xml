@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.auidebugger.boommenu.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/shadow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sl_cornerRadius="56dp" app:sl_shadowRadius="4dp" app:sl_shadowColor="@color/shadow" app:sl_dx="2dp" app:sl_dy="2dp">
+    <FrameLayout android:layout_gravity="center" android:layout_width="56dp" android:layout_height="56dp">
+        <FrameLayout android:layout_gravity="center" android:id="@+id/frame_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <View android:id="@+id/ripple" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </FrameLayout>
+</com.autonavi.minimap.auidebugger.boommenu.ShadowLayout>

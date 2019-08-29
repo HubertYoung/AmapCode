@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/bg_f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/bus_real_time_setting_title" app:title_style="5" app:action_text="@string/real_time_add_finish"/>
+    <ScrollView android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_marginTop="@dimen/route_10dp"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingTop="@dimen/route_12dp" android:paddingRight="@dimen/route_5dp" android:paddingBottom="@dimen/route_12dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/f_c_2" android:id="@+id/tv_bus_name" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+                    <TextView android:textSize="@dimen/route_13dp" android:textColor="@color/f_c_3" android:id="@+id/tv_bus_to" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_8dp" android:text=""/>
+                </LinearLayout>
+                <ImageView android:id="@+id/route_attention_switch_btn" android:background="@drawable/prefer_setting_btn_off" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_15dp"/>
+            </LinearLayout>
+            <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+            <TextView android:textSize="@dimen/route_13dp" android:textColor="@color/f_c_3" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_12dp" android:layout_marginTop="@dimen/route_6dp" android:layout_marginRight="@dimen/route_12dp" android:layout_marginBottom="@dimen/route_15dp" android:text="@string/busline_setting_desc"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/ll_alart" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_5dp" android:layout_width="match_parent" android:layout_height="@dimen/route_45dp">
+                    <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/f_c_2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/busline_setting_alart" android:layout_weight="1"/>
+                    <ImageView android:id="@+id/route_alert_switch_btn" android:background="@drawable/prefer_setting_btn_off" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@+id/ll_timeday" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_marginLeft="@dimen/route_12dp"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_10dp" android:layout_width="match_parent" android:layout_height="@dimen/route_45dp">
+                        <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/f_c_2" android:layout_width="0dp" android:layout_height="wrap_content" android:text="@string/busline_setting_time" android:layout_weight="1"/>
+                        <TextView android:textSize="@dimen/route_13dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/tv_select_time" android:layout_width="wrap_content" android:layout_height="match_parent" android:drawableRight="@drawable/common_litblack_right_arrow" android:drawablePadding="@dimen/route_5dp"/>
+                    </LinearLayout>
+                    <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_marginLeft="@dimen/route_12dp"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_10dp" android:layout_width="match_parent" android:layout_height="@dimen/route_45dp">
+                        <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/busline_setting_repeate"/>
+                        <TextView android:textSize="@dimen/route_13dp" android:textColor="@color/f_c_2" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/tv_repeate" android:layout_width="0dp" android:layout_height="match_parent" android:drawableRight="@drawable/common_litblack_right_arrow" android:drawablePadding="@dimen/route_5dp" android:layout_weight="1"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <View android:background="@color/bg_ea" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+                <TextView android:textSize="@dimen/route_13dp" android:textColor="@color/f_c_3" android:background="@color/bg_f5" android:paddingLeft="@dimen/route_12dp" android:paddingTop="@dimen/route_6dp" android:paddingRight="@dimen/route_12dp" android:paddingBottom="@dimen/route_15dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/busline_setting_alert_desc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

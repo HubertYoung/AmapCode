@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="4"/>
+    <RelativeLayout android:gravity="bottom" android:id="@+id/bottomLayout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp">
+            <TextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/confirm" android:background="@drawable/bottom_round_corners_blue" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp" android:layout_marginBottom="10dp" android:text="@string/agree" android:layout_weight="1"/>
+            <TextView android:textSize="16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/cancel" android:background="@drawable/bottom_round_corners_gray" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="12dp" android:text="@string/cancel" android:layout_weight="1"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView android:id="@+id/ScrollView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/bottomLayout" android:layout_below="@+id/title_bar">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:id="@+id/declare_info" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" style="@style/confirm_dialog_text_style"/>
+            <TextView android:id="@+id/cooperation_title" android:paddingLeft="13dp" android:paddingRight="13dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="88dp" android:text="@string/taxi_cooperative_partner" android:layout_below="@+id/declare_info" style="@style/confirm_dialog_text_style"/>
+            <ImageView android:id="@+id/IV_cooperation" android:background="@drawable/taxi_cooperation" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37dp" android:layout_marginTop="9dp" android:layout_below="@+id/cooperation_title" android:layout_alignParentLeft="true" android:contentDescription="@null"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp">
+        <RelativeLayout android:background="@drawable/bg_voice_map_robot_talk" android:paddingLeft="12dp" android:paddingRight="12dp" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+            <Button android:textSize="14dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/voice_goset_btn" android:background="@drawable/voice_white_stroke_corner" android:paddingLeft="11dp" android:paddingTop="9dp" android:paddingRight="11dp" android:paddingBottom="9dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="21dp" android:text="去设置" android:includeFontPadding="false" android:layout_alignParentRight="true"/>
+            <LinearLayout android:orientation="vertical" android:id="@+id/voice_go_set_layout" android:paddingTop="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/voice_goset_btn" android:layout_alignWithParentIfMissing="true">
+                <TextView android:textSize="22dp" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/voice_goset_content_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="您还没有设置公司的地址" android:singleLine="true" android:includeFontPadding="false"/>
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/voice_goset_info_tv" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:layout_marginBottom="12dp" android:text="您还没有设置公司的地址" android:singleLine="true" android:includeFontPadding="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <ImageView android:id="@+id/voice_assistant_head" android:clickable="false" android:layout_width="40dp" android:layout_height="40dp" android:layout_marginLeft="12dp" android:src="@drawable/voice_robot" android:contentDescription="@string/voice_bot"/>
+    </FrameLayout>
+</FrameLayout>

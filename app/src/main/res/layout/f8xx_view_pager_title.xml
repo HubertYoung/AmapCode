@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/container" android:background="@color/white" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/top" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@+id/top_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/tv_title" android:paddingTop="8dp" android:paddingBottom="6dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="录音文件"/>
+            <TextView android:textSize="@dimen/font_22" android:textColor="#adadad" android:id="@+id/tv_head" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </LinearLayout>
+        <CheckBox android:layout_gravity="center_vertical" android:id="@+id/tv_operate" android:background="@drawable/v4_checkbox_bg" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:checked="true" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/iv_background" android:layout_width="match_parent" android:layout_height="1px" android:src="#dddddd" android:layout_alignBottom="@+id/top"/>
+</RelativeLayout>

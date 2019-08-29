@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_6_a" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="30dp">
+    <ImageView android:id="@+id/tip_image" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bg_tips_close_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_10" android:ellipsize="end" android:gravity="center_vertical" android:id="@+id/tip_text" android:paddingTop="@dimen/f_s_10" android:paddingBottom="@dimen/f_s_10" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_toLeftOf="@+id/tip_image" android:layout_centerVertical="true" android:lineSpacingExtra="@dimen/dp_4"/>
+    <View android:background="@color/c_7" android:layout_width="match_parent" android:layout_height="1px" android:layout_below="@+id/tip_text"/>
+</RelativeLayout>

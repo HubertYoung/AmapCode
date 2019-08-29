@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/choose_point_layout" android:background="#ffffff" android:layout_width="match_parent" android:layout_height="@dimen/selectpoi_bottom_listview_maxheight">
+    <RelativeLayout android:orientation="vertical" android:id="@+id/choose_point_detail_subinfo_layout" android:layout_width="match_parent" android:layout_height="@dimen/selectpoi_bottom_listview_maxheight">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="15dp" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/choose_point_near_nohave_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:text="附近没有其他地点" android:singleLine="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/choose_point_loading_request_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.autonavi.widget.ui.LoadingView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" app:loadingType="2"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/choose_point_request_error_view" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="15dp" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="加载失败，" android:singleLine="true"/>
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="15dp" android:textColor="@color/f_c_6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="点击重试" android:singleLine="true"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <ListView android:id="@+id/choose_point_detail_list" android:visibility="gone" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@null" android:dividerHeight="1px" android:layout_alignParentBottom="true"/>
+</LinearLayout>

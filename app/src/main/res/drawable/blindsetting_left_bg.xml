@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item>
+        <shape>
+            <solid android:color="#90a5ef"/>
+            <corners android:topLeftRadius="3dp" android:bottomLeftRadius="3dp"/>
+        </shape>
+    </item>
+</selector>

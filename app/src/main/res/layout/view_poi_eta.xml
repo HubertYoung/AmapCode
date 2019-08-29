@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/layout_eta" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/txt_drive_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:drawableLeft="@drawable/eta_time" android:drawablePadding="@dimen/default_margin_2A"/>
+        <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/txt_bus_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_3A" android:singleLine="true" android:drawableLeft="@drawable/eta_bus" android:drawablePadding="@dimen/default_margin_2A"/>
+    </LinearLayout>
+</merge>

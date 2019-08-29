@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:background="@drawable/foot_navi_bubble_bg" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/route_15dp" android:textColor="@color/f_c_2" android:id="@+id/bubble_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/bubble_tip_first_des"/>
+    <TextView android:textSize="@dimen/route_15dp" android:textColor="@color/f_c_2" android:id="@+id/bubble_text_second" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/route_foot_navi_straight"/>
+</LinearLayout>

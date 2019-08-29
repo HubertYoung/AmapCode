@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/commute_tips_view_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/commute_tip_root_container" android:layout_width="242dp" android:layout_height="89.5dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+            <RelativeLayout android:layout_width="@dimen/commute_tip_width" android:layout_height="@dimen/commute_tip_height" android:layout_centerInParent="true">
+                <RelativeLayout android:background="@drawable/commute_tips_bg_mask" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                    <ImageView android:id="@+id/commute_tips_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp" android:layout_marginTop="8dp" android:src="@drawable/commute_tips_home"/>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="48dp" android:layout_marginLeft="8dp" android:layout_toRightOf="@+id/commute_tips_icon">
+                        <TextView android:textSize="@dimen/f_s_14" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/commute_tips_spend_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="回家18分钟"/>
+                        <TextView android:textSize="@dimen/f_s_12" android:textStyle="bold" android:textColor="@color/f_c_3" android:id="@+id/commute_tips_traffic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="35.2公里 拥堵22公里"/>
+                    </LinearLayout>
+                    <ImageView android:id="@+id/commute_tips_arr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginRight="2dp" android:src="@drawable/commute_tips_arrow" android:layout_alignParentRight="true"/>
+                    <com.autonavi.minimap.commute.RainbowBarView android:id="@+id/commute_rainbow_bar" android:layout_width="@dimen/commute_rainbow_width" android:layout_height="@dimen/commute_rainbow_height" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <ImageView android:id="@+id/commute_tips_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/commute_tips_close2" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+        <View android:layout_width="242dp" android:layout_height="4dp" android:layout_below="@+id/commute_tip_root_container"/>
+    </RelativeLayout>
+</RelativeLayout>

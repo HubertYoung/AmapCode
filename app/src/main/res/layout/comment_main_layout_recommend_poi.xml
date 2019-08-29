@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="6dp" android:paddingRight="15dp" android:paddingBottom="6dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14sp" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/recommend_title" android:paddingLeft="0dp" android:paddingRight="5dp" android:layout_width="0dp" android:layout_height="wrap_content" android:maxLines="1" android:layout_weight="1"/>
+        <Button android:textSize="14sp" android:textColor="@color/comment_9" android:ellipsize="end" android:gravity="center" android:id="@+id/recommend_action" android:background="@drawable/comment_recommend_button_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="28dp" android:minWidth="62dp" android:maxLines="1"/>
+    </LinearLayout>
+    <View android:id="@+id/recommend_divider" android:background="#ececec" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

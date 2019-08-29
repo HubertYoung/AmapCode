@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/ib_back" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/common_title_backimage_description"/>
+        <TextView android:textSize="18dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/txt_title" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="50dp" android:text="@string/common_title_texttitle" android:singleLine="true" android:layout_weight="1"/>
+    </LinearLayout>
+</com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>

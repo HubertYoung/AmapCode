@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/error_report_common_font_32pt" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/error_report_location_label" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/error_report_common_dimen_24px" android:layout_marginRight="@dimen/error_report_common_dimen_24px" android:layout_marginBottom="@dimen/error_report_common_dimen_8px" android:text="" android:singleLine="true"/>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/error_report_common_dimen_24px" android:layout_marginBottom="@dimen/error_report_common_dimen_24px">
+        <ImageView android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/must_input_description" android:visibility="invisible" android:layout_width="@dimen/error_report_common_dimen_24px" android:layout_height="wrap_content" android:baselineAligned="true" style="@style/must_input_sign"/>
+        <TextView android:textSize="@dimen/error_report_common_font_26pt" android:textColor="@color/f_c_2" android:id="@+id/error_report_description_label" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/error_report_description_label"/>
+    </LinearLayout>
+    <include layout="@layout/error_detail_normal_include"/>
+    <View android:layout_width="match_parent" android:layout_height="12dp"/>
+</LinearLayout>

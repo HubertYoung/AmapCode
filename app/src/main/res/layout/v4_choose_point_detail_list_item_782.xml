@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/choose_point_list_item_layout" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/selectpoi_bottom_listview_item_height_782">
+    <com.autonavi.map.widget.AmapButton android:gravity="center" android:id="@+id/choose_point_submit_btn" android:layout_width="75dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:text="确定选点" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/talkback_search" style="@style/btn_b1"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingBottom="1px" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/choose_point_submit_btn" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+        <RelativeLayout android:gravity="center" android:layout_width="42dp" android:layout_height="42dp">
+            <ImageView android:id="@+id/choose_point_list_icon" android:background="@drawable/default_generalsearch_sugg_tqueryicon_normal" android:layout_width="20dp" android:layout_height="20dp"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="16dp" android:textColor="@color/f_c_2" android:id="@+id/choose_point_text_name" android:padding="0dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="[位置]" android:singleLine="true"/>
+            <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/choose_point_text_address" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="未知地址" android:singleLine="true"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@drawable/choose_point_detail_list_item_divider" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

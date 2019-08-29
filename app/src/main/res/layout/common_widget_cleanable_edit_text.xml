@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="44dp">
+    <EditText android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_4" android:ellipsize="end" android:id="@+id/edit_text" android:background="@null" android:paddingLeft="5dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="32dp" android:singleLine="true" android:selectAllOnFocus="true" android:layout_toLeftOf="@+id/btn_clean" android:layout_centerVertical="true" android:inputType="textVisiblePassword"/>
+    <ImageButton android:id="@+id/btn_clean" android:background="@null" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15dp" android:src="@drawable/icon_b4_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+</RelativeLayout>

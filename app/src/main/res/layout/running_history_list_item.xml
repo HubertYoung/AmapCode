@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:paddingLeft="@dimen/route_16dp" android:paddingRight="@dimen/route_16dp" android:paddingBottom="@dimen/route_16dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/route_foot_running_history_preview_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@+id/running_history_list_preview_img" android:background="@color/grey_mask_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/route_1px"/>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/route_16dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:paddingBottom="@dimen/route_15dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/route_30dp" android:textColor="@color/f_c_2" android:id="@+id/running_history_list_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_running_history_list_distance_tip"/>
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:id="@+id/running_history_list_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_route_start_running_unit_km"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/route_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/running_history_list_time_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_24dp" android:text="@string/debug_running_history_list_time_tip"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:id="@+id/running_history_list_heat" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/debug_running_history_list_heat"/>
+                <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_3" android:id="@+id/running_history_list_heat_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_route_start_running_heat_unit"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/running_history_item_delete" android:padding="@dimen/route_10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/delete_history" android:layout_alignParentRight="true"/>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/drive_recommend_layout" android:background="@drawable/icon_c_bg_single" android:layout_width="wrap_content" android:layout_height="match_parent">
+        <TextView android:textSize="@dimen/f_s_13" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/recommend_tv" android:paddingLeft="12dp" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitCenter" android:text="智能推荐" android:contentDescription="@string/recommend_view_info"/>
+        <ImageView android:layout_gravity="center_vertical" android:clickable="false" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginLeft="4dp" android:layout_marginRight="6dp" android:src="@drawable/ic_tri_angle_scn8"/>
+    </LinearLayout>
+</LinearLayout>

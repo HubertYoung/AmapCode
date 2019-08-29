@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/quickautonavi_setting_accessibility" app:title_style="4"/>
+    <View android:background="#f5f5f5" android:layout_width="match_parent" android:layout_height="10dp"/>
+    <ScrollView android:scrollbars="none" android:clipChildren="false" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/parking_recommend" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/edog_play_switch_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_parking_recommend" android:drawableLeft="@drawable/ns_parking_preference" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <CheckBox android:id="@+id/parking_recommend_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0.5dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0.5dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/intersection_of_real_map_layout" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/download_intersection_of_real_map" android:drawableLeft="@drawable/real_map_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <CheckBox android:id="@+id/chk_download_real_map" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0.5dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/real_3d_navigation" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/real_3d_navigation_label" android:drawableLeft="@drawable/real_3d_navigation_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                    <CheckBox android:id="@+id/chk_real_3d_navigation" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <LinearLayout android:background="#ffffff" android:layout_width="match_parent" android:layout_height="0.5dp">
+                    <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/light_intensity" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="60dp">
+                <ImageView android:id="@+id/light_intensity_icon" android:background="@drawable/ns_ligntness_control" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/quickautonavi_padding_left" android:layout_toRightOf="@+id/light_intensity_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/light_intensity_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_light_intensity"/>
+                    <TextView android:textSize="@dimen/quickautonavi_common_dialog_sub_text_size" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/quickautonavi_setting_light_intensity_sub_text"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/light_intensity_checkbox" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/voice_control_layout" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <ImageView android:id="@+id/voiceControlIV" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ns_voice_control" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/quickautonavi_drawable_padding" android:paddingRight="@dimen/quickautonavi_drawable_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/chk_voice_control" android:layout_toRightOf="@+id/voiceControlIV" android:layout_centerVertical="true">
+                    <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navi_setting_voice_control"/>
+                    <TextView android:textSize="12dp" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_3dp" android:text="@string/quickautonavi_setting_voice_control_sub_text"/>
+                </LinearLayout>
+                <CheckBox android:id="@+id/chk_voice_control" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <LinearLayout android:id="@+id/speaker_line" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/speaker_play_layout" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:visibility="gone" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bluetooth_speaker_tts" android:drawableLeft="@drawable/bluetooth_speaker_day" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <CheckBox android:id="@+id/chk_bluetooth_speaker_play" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <LinearLayout android:id="@+id/navigation_radar_auto_enter_divider" android:background="#ffffff" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp">
+                <View android:background="#eaeaea" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/navigation_radar_auto_enter" android:background="@drawable/quickautonavi_item_selector" android:paddingLeft="@dimen/quickautonavi_padding_right" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/quickautonavi_common_item_height">
+                <TextView android:textSize="16dp" android:textColor="@color/f_c_2" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radar_mode_auto_enter" android:drawableLeft="@drawable/icon_route" android:drawablePadding="@dimen/quickautonavi_drawable_padding" android:layout_centerVertical="true"/>
+                <CheckBox android:id="@+id/chk_navigation_radar_auto_enter" android:background="@drawable/v4_fromto_prefer_checkbox_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

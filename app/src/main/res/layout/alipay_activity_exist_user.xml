@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.ali.user.mobile.util.ResizeScrollView android:id="@+id/scrollview" android:paddingLeft="20dp" android:paddingRight="20dp" android:focusable="true" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:id="@+id/reg_exist_title" style="@style/alipay_reg_title_text"/>
+            <TextView android:textSize="17dp" android:textColor="@color/alipay_reg_tip" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/alipay_reg_exist_title"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/reg_user_detail" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp">
+                <com.ali.user.mobile.ui.widget.APRoundAngleImageView android:layout_gravity="center_vertical" android:id="@+id/reg_exist_avatar" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitXY" app:alipay_roundWidth="4dp" app:alipay_roundHeight="4dp"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/reg_exist_name_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp"/>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@+id/reg_exist_value_wrapper" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:minWidth="150dp"/>
+            </LinearLayout>
+            <Button android:id="@+id/reg_exist_its_me" android:layout_marginTop="50dp" android:text="@string/alipay_isMineLoginImmediate" style="@style/alipay_reg_main_button"/>
+            <Button android:id="@+id/reg_exist_not_me" android:layout_marginTop="20dp" android:text="@string/alipay_changeAccountRegister" style="@style/alipay_reg_sub_button"/>
+        </LinearLayout>
+    </com.ali.user.mobile.util.ResizeScrollView>
+</RelativeLayout>

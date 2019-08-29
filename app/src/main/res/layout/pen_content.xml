@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="bottom" android:orientation="vertical" android:id="@+id/linearLayoutAlipy" android:background="@color/gray_white" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/linearlayoutPay" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.bundle.banner.view.DBanner android:id="@+id/attention_banner" android:visibility="visible" android:layout_width="match_parent" android:layout_height="80dp" android:layout_marginLeft="6dp" android:layout_marginTop="5dp" android:layout_marginRight="6dp"/>
+        <LinearLayout android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="12dp">
+            <View android:background="#999999" android:layout_width="100dp" android:layout_height="0.1dp"/>
+            <TextView android:textSize="10dp" android:textColor="@color/f_c_3" android:padding="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_by_zhifubao"/>
+            <View android:background="#999999" android:layout_width="100dp" android:layout_height="0.1dp"/>
+        </LinearLayout>
+        <RelativeLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <EditText android:gravity="center_vertical" android:id="@+id/edtFee" android:background="@drawable/default_taxi_frame" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/input_taxi_cost" android:inputType="numberDecimal"/>
+            <TextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="@string/yuan" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <Button android:textSize="15dp" android:textColor="@color/white" android:id="@+id/btnPay" android:background="@drawable/bg_btn_taxi_pay_selector" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginTop="15dp" android:layout_marginBottom="21dp" android:text="@string/sure_to_pay"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/linearlayoutShare" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="25dp">
+            <TextView android:textSize="15dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_success"/>
+            <TextView android:textSize="19dp" android:textColor="#ff7a1d" android:id="@+id/txtPayFee" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="15dp" android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/yuan"/>
+        </LinearLayout>
+        <Button android:textColor="@color/white" android:id="@+id/btnShare" android:background="@drawable/common_title_btn_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:layout_marginBottom="21dp" android:text="@string/share_to_company"/>
+    </LinearLayout>
+</LinearLayout>

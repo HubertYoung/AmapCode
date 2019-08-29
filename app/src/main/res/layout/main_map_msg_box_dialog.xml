@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_gravity="center" android:id="@+id/rlayout_all" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/rlayout_image" android:background="@drawable/main_map_msg_dialog_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <ImageView android:id="@+id/main_map_msg_dialog_iv" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_margin="4dp" android:contentDescription="@null"/>
+        </RelativeLayout>
+        <ImageButton android:id="@+id/main_map_msg_dialog_close" android:background="@drawable/main_map_msg_dialog_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+</ScrollView>

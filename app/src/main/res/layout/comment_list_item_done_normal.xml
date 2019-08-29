@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/gray_c" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginLeft="11dp"/>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/comment_title_part" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="15dp">
+            <TextView android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/poi_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="88dp" android:singleLine="true"/>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_below="@+id/poi_name">
+                <RatingBar android:id="@+id/rating_bar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:max="5" android:progress="3" android:numStars="5" android:stepSize="1" style="@style/RatingBar"/>
+                <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/text_score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp"/>
+            </LinearLayout>
+            <include android:id="@+id/comment_gold" android:layout_width="wrap_content" android:layout_height="25dp" android:layout_alignParentRight="true" layout="@layout/comment_view_badge"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/comment_content_part" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="15dp" android:layout_marginBottom="10dp">
+            <RelativeLayout android:id="@+id/comment_poi_icon_ll" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="7dp">
+                <ImageView android:id="@+id/comment_poi_icon" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/poi_list_item_img_default" android:scaleType="centerCrop"/>
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/white" android:gravity="center" android:id="@+id/text_pic_size" android:background="@color/transparent_black" android:layout_width="20dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/comment_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/comment_poi_icon_ll" android:layout_alignWithParentIfMissing="true" android:lineSpacingExtra="3dp"/>
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_6" android:gravity="center_vertical" android:id="@+id/comment_view_all" android:layout_width="50dp" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="@string/comment_list_item_view_all" android:layout_toRightOf="@+id/comment_poi_icon_ll" android:layout_below="@+id/comment_content" android:layout_alignParentBottom="true" android:layout_alignWithParentIfMissing="true"/>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/gray_c" android:gravity="right|center_vertical|center_horizontal|center" android:id="@+id/comment_delete" android:layout_width="50dp" android:layout_height="20dp" android:layout_marginTop="10dp" android:text="@string/comment_list_item_delete" android:layout_below="@+id/comment_content" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+        <View android:background="@color/gray_c" android:layout_width="wrap_content" android:layout_height="1px" android:layout_marginLeft="10dp"/>
+    </LinearLayout>
+</LinearLayout>

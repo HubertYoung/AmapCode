@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:tag="EvAluAtE" android:layout_width="100dp" android:layout_height="200dp">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:background="@android:color/black" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.72">
+        <Button android:textSize="14dp" android:textColor="#ffffff" android:id="@+id/profile_button_start" android:background="@drawable/evaluate_btn_no_feedback" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="开始" android:layout_weight="2" android:fontFamily="PingFangSC-Medium" android:textAlignment="center"/>
+        <Button android:textSize="14dp" android:textColor="#ffffff" android:id="@+id/profile_button_end" android:background="@drawable/evaluate_btn_feedback" android:layout_width="match_parent" android:layout_height="28dp" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:layout_marginBottom="20dp" android:text="重新录制" android:layout_weight="1" android:fontFamily="PingFangSC-Medium" android:textAlignment="center"/>
+    </LinearLayout>
+</LinearLayout>

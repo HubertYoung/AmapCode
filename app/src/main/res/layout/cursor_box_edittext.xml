@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.autonavi.minimap.drive.widget.CustomEditText android:textSize="@dimen/f_s_22" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/origin_edittext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:imeOptions="flagNoExtractUi" style="@style/Box_PinView"/>
+</merge>

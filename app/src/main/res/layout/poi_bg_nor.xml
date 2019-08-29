@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.autonavi.map.widget.StrokeTextView android:textSize="12dp" android:textColor="@color/map_poi_name" android:id="@+id/tv_space" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <ImageView android:layout_gravity="center" android:id="@+id/img_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/hongdian"/>
+    <com.autonavi.map.widget.StrokeTextView android:textSize="12dp" android:textColor="@color/map_poi_name" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+</LinearLayout>

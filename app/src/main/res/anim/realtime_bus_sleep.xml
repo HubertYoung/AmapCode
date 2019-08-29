@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:oneshot="false">
+    <item android:duration="375" android:drawable="@drawable/realtime_sleep_1"/>
+    <item android:duration="375" android:drawable="@drawable/realtime_sleep_2"/>
+    <item android:duration="375" android:drawable="@drawable/realtime_sleep_3"/>
+    <item android:duration="375" android:drawable="@drawable/realtime_sleep_4"/>
+    <item android:duration="750" android:drawable="@drawable/realtime_sleep_5"/>
+</animation-list>

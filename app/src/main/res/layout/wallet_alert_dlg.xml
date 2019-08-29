@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_back_layout"/>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/resultB" android:paddingTop="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:text="1231312313212\10123213213\10fdsfsf" android:lineSpacingExtra="12dp"/>
+        </LinearLayout>
+        <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+    </LinearLayout>
+    <Button android:textSize="@dimen/font_32" android:gravity="center" android:layout_gravity="center" android:id="@+id/submit" android:layout_marginLeft="12dp" android:layout_marginTop="17dp" android:layout_marginRight="12dp" android:text="@string/wallet_I_kown" style="@style/wallet_blue_btn_style"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="12dp" android:layout_marginRight="12dp">
+        <TextView android:textSize="@dimen/font_26" android:textStyle="normal" android:textColor="@color/f_c_6" android:textColorLink="@color/f_c_6" android:gravity="center_vertical" android:id="@+id/wallet_withdraw_other" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/alipay_withdraw_others" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

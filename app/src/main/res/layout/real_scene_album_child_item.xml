@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/image_zone" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.life.realscene.widget.FilterImageView android:id="@+id/album_image0" android:layout_width="match_parent" android:layout_height="89dp" android:src="@drawable/discover_image_default" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <CheckBox android:id="@+id/album_image_checkbox0" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/real_scene_album_item_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_width="1dp" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.life.realscene.widget.FilterImageView android:id="@+id/album_image1" android:layout_width="match_parent" android:layout_height="89dp" android:src="@drawable/discover_image_default" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <CheckBox android:id="@+id/album_image_checkbox1" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/real_scene_album_item_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_width="1dp" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.life.realscene.widget.FilterImageView android:id="@+id/album_image2" android:layout_width="match_parent" android:layout_height="89dp" android:src="@drawable/discover_image_default" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <CheckBox android:id="@+id/album_image_checkbox2" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/real_scene_album_item_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <View android:layout_width="1dp" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <com.autonavi.minimap.life.realscene.widget.FilterImageView android:id="@+id/album_image3" android:layout_width="match_parent" android:layout_height="89dp" android:src="@drawable/discover_image_default" android:scaleType="fitXY" android:layout_centerInParent="true"/>
+        <CheckBox android:id="@+id/album_image_checkbox3" android:paddingLeft="8dp" android:paddingTop="4dp" android:paddingRight="4dp" android:paddingBottom="8dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@null" android:drawableRight="@drawable/real_scene_album_item_selector" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

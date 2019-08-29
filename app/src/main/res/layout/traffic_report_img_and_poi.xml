@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <TextView android:layout_height="36dp" android:layout_marginLeft="10dp" android:text="@string/traffic_report_title_img" style="@style/traffic_report_title"/>
+    <RelativeLayout android:id="@+id/photo_thumbnail_layout" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/pic_container" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="93dp" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/image_plus" android:background="@drawable/error_report_input_background" android:layout_width="@dimen/traffic_report_pic_width" android:layout_height="@dimen/traffic_report_pic_width" android:src="@drawable/ic_camera2" android:scaleType="centerInside" android:layout_toRightOf="@+id/pic_container" android:layout_centerVertical="true" android:contentDescription="@string/thumbnail"/>
+    </RelativeLayout>
+    <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/traffic_report_poi_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="80dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="13dp" android:text="@string/traffic_report_title_address" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" style="@style/traffic_report_title"/>
+            <TextView android:textSize="12dp" android:textColor="#5681a2" android:gravity="center" android:id="@+id/btn_pick_poi" android:background="@drawable/traffic_report_poi_bg_selector" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="@string/traffic_report_select_poi" android:drawableLeft="@drawable/traffic_report_poi_icon" android:drawablePadding="4dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+            <TextView android:textSize="15dp" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/poi_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginBottom="14dp" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/realtime_tip_more_function_mask" android:background="@color/c_5_b" android:paddingLeft="@dimen/route_10dp" android:paddingRight="@dimen/route_10dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.minimap.route.bus.realtimebus.view.fliprecyclerview.ZoomHorizonBoardViewBg android:orientation="horizontal" android:id="@+id/realtime_tip_more_function_board_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:translationY="-22dp">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/realtime_tip_more_function_content" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/realtime_tip_more_function_favorite_bt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <View android:id="@+id/realtime_tip_more_function_favorite_icon" android:background="@drawable/realtime_bus_select_bus_line_exchange_icon_not_favorite" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="@dimen/route_19dp"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/realtime_tip_more_function_favorite_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_6dp" android:layout_marginBottom="@dimen/route_18dp" android:text="关注车辆"/>
+            </LinearLayout>
+            <View android:background="@color/c_26" android:layout_width="@dimen/route_1px" android:layout_height="match_parent" android:layout_marginTop="@dimen/route_22dp" android:layout_marginBottom="@dimen/route_22dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/realtime_tip_more_function_exchange_bt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <View android:background="@drawable/realtime_bus_select_bus_line_exchange_icon" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="@dimen/route_19dp"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/realtime_tip_more_function_exchange_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_6dp" android:layout_marginBottom="@dimen/route_18dp" android:text="换向"/>
+            </LinearLayout>
+            <View android:background="@color/c_26" android:layout_width="@dimen/route_1px" android:layout_height="match_parent" android:layout_marginTop="@dimen/route_22dp" android:layout_marginBottom="@dimen/route_22dp"/>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@+id/realtime_tip_more_function_detail_bt" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_weight="1">
+                <View android:background="@drawable/realtime_bus_select_bus_line_detail_icon" android:layout_width="22dp" android:layout_height="22dp" android:layout_marginTop="@dimen/route_19dp"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/realtime_tip_more_function_detail_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_6dp" android:layout_marginBottom="@dimen/route_18dp" android:text="线路详情"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.autonavi.minimap.route.bus.realtimebus.view.fliprecyclerview.ZoomHorizonBoardViewBg>
+</RelativeLayout>

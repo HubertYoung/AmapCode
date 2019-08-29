@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="12sp" android:textColor="@color/white" android:gravity="center" android:id="@+id/floor_name" android:background="@drawable/route_foot_tip_text_border" android:paddingLeft="5dp" android:paddingTop="1dp" android:paddingRight="5dp" android:paddingBottom="1dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+    <ImageView android:id="@+id/start_end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_3dp" android:src="@drawable/bubble_start_grey"/>
+</LinearLayout>

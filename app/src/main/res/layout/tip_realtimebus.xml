@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center" android:id="@+id/businfo_layout" android:background="@drawable/directions_realbus_bubble" android:paddingLeft="7dp" android:paddingRight="7dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_10dp">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="12dp" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/staion_time_textview" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/busline_tip_icon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-5dp" android:src="@drawable/real_bus_icon" android:contentDescription="@null"/>
+</LinearLayout>

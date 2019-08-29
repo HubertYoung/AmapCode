@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.widget.ui.ProgressView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/progress" android:layout_width="16dp" android:layout_height="16dp" app:progress_Color="@color/c_12" app:progress_strokeWidth="1.5dp" app:progressType="1" app:startSweep="38" app:endSweep="248" app:startAngel="270" app:endAngel="985"/>

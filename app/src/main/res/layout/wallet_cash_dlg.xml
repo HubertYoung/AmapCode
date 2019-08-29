@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/root" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="5"/>
+    <ScrollView android:id="@+id/item_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/title">
+        <LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/red_3c" android:gravity="center" android:id="@+id/words" android:background="@color/words_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="37dp"/>
+            <RelativeLayout android:background="@drawable/wallet_blue_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="150dp">
+                <TextView android:textSize="@dimen/font_28" android:textColor="@color/white" android:id="@+id/wallet_balance_tv" android:paddingTop="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="23dp" android:text="@string/wallet_balance" android:layout_alignParentLeft="true"/>
+                <TextView android:textSize="@dimen/font_98" android:textColor="@color/white" android:id="@+id/cash" android:paddingBottom="30dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/wallet_balance_tv" android:layout_alignParentBottom="true"/>
+                <TextView android:textSize="@dimen/font_62" android:textColor="@color/white" android:id="@+id/cash_fen" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/cash" android:layout_alignBaseline="@+id/cash"/>
+                <RelativeLayout android:id="@+id/withdraw" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <ImageView android:id="@+id/right_arrow" android:paddingLeft="5dp" android:layout_width="wrap_content" android:layout_height="16dp" android:src="@drawable/wallet_right_white" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                    <TextView android:textSize="@dimen/font_32" android:textColor="@color/white" android:id="@+id/withdraw_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/wallet_withdraw" android:layout_toLeftOf="@+id/right_arrow" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <include android:id="@+id/item_checking" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wallet_money_item"/>
+            <include android:id="@+id/item_cashouting" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wallet_money_item"/>
+            <include android:id="@+id/item_success" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wallet_money_item"/>
+            <include android:id="@+id/item_freeze" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wallet_money_item"/>
+            <include android:id="@+id/item_failure" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wallet_money_item"/>
+            <include android:id="@+id/item_total" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/wallet_money_item"/>
+            <View android:background="@color/divider_color" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+            <TextView android:textSize="@dimen/font_30" android:textColor="@color/red" android:id="@+id/note" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_marginTop="10dp" android:layout_marginRight="20dp" android:text="@string/wallet_nice_hint" android:layout_below="@+id/item_list"/>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

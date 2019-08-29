@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <FrameLayout android:id="@+id/scene_banner" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:padding="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/scene_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/comment_scene_1"/>
+            <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_2" android:id="@+id/scene_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:lineSpacingExtra="2dp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:left="-2dp" android:top="-2dp" android:right="-2dp">
+        <shape>
+            <solid android:color="@android:color/transparent"/>
+            <stroke android:width="0.5dp" android:color="@color/c_26"/>
+            <padding android:top="3.3dp" android:bottom="3.3dp"/>
+        </shape>
+    </item>
+</layer-list>

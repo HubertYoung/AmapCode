@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/commute_tips_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/commute_tips_container" android:background="@drawable/route_commute_tip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="20dp" android:layout_alignParentBottom="true" android:layout_alignParentStart="true">
+            <LinearLayout android:orientation="horizontal" android:id="@+id/commute_tips_home" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/commute_tips_icon_home" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_marginRight="6dp" android:src="@drawable/drive_commute_tips_home"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/commute_info_layout_home" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/f_s_15" android:textStyle="bold" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/commute_tips_destination_home" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:includeFontPadding="false"/>
+                    <com.autonavi.bundle.routecommute.drive.tips.RainbowBarView android:id="@+id/commute_rainbow_bar_home" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="7dp"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/commute_tips_arr_home" android:layout_width="6dp" android:layout_height="11dp" android:layout_marginLeft="12dp" android:layout_marginRight="16dp" android:src="@drawable/route_commute_tip_arrow"/>
+            </LinearLayout>
+            <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1dp"/>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/commute_tips_company" android:layout_width="match_parent" android:layout_height="56dp">
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/commute_tips_icon_company" android:layout_width="24dp" android:layout_height="24dp" android:layout_marginLeft="16dp" android:layout_marginRight="6dp" android:src="@drawable/drive_commute_tips_work"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/commute_info_layout_company" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginTop="13dp" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/f_s_15" android:textStyle="bold" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/commute_tips_destination_company" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxEms="10" android:includeFontPadding="false"/>
+                    <com.autonavi.bundle.routecommute.drive.tips.RainbowBarView android:id="@+id/commute_rainbow_bar_company" android:layout_width="match_parent" android:layout_height="2dp" android:layout_marginTop="7dp"/>
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@+id/commute_tips_arr_company" android:layout_width="6dp" android:layout_height="11dp" android:layout_marginLeft="12dp" android:layout_marginRight="16dp" android:src="@drawable/route_commute_tip_arrow"/>
+            </LinearLayout>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/commute_tips_close" android:layout_width="44dp" android:layout_height="44dp" android:layout_marginRight="-22dp" android:layout_alignRight="@+id/commute_tips_container" android:layout_alignParentTop="true" android:layout_alignEnd="@+id/commute_tips_container">
+            <ImageView android:layout_width="30dp" android:layout_height="30dp" android:src="@drawable/route_commute_tip_close" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:layout_width="wrap_content" android:layout_height="10dp" android:layout_below="@+id/commute_tips_layout"/>
+</RelativeLayout>

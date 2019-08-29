@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@android:id/icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="106dp" android:src="@drawable/crash_warning_a"/>
+    <TextView android:textSize="24dp" android:textStyle="bold" android:textColor="@color/black" android:id="@android:id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="安全模式"/>
+    <TextView android:textSize="14dp" android:textColor="@color/black" android:gravity="center_horizontal" android:id="@android:id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="67.5dp" android:layout_marginTop="4dp" android:layout_marginRight="67.5dp" android:text="检测到您有多次意外退出，建议点击下方按钮尝试修复，修复将清空本地数据"/>
+    <Button android:textSize="16dp" android:textStyle="bold" android:textColor="@color/white" android:id="@android:id/button1" android:background="@drawable/crash_repair_button_bkg" android:layout_width="180dp" android:layout_height="44dp" android:layout_marginTop="40dp" android:text="点此修复"/>
+</LinearLayout>

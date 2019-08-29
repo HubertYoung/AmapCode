@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#66000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/frequent_location_layer_bg_view" android:background="@null" android:focusable="true" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_gravity="top|left|center_vertical|center_horizontal|center" android:id="@+id/location_recycler_host_view" android:background="@null" android:layout_width="@dimen/frequent_view_width" android:layout_height="@dimen/frequent_view_max_height">
+        <RelativeLayout android:id="@+id/drag_list_view_container" android:layout_width="@dimen/frequent_view_width" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <com.autonavi.minimap.widget.draglistview.DragSortListView android:id="@+id/drag_list_view" android:background="@drawable/bg_frequent_location_layer" android:layout_width="@dimen/frequent_view_width" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:divider="@null" android:dividerHeight="0dp" android:layout_alignParentBottom="true" app:collapsed_height="2dp" app:drag_scroll_start="0.33" app:max_drag_scroll_speed="0.5" app:track_drag_sort="false" app:float_alpha="1" app:slide_shuffle_speed="0.3" app:drag_enabled="true" app:use_default_controller="false"/>
+            <RelativeLayout android:id="@+id/drag_list_view_footer_container" android:background="@drawable/bg_frequent_location_layer_footer" android:layout_width="@dimen/frequent_view_width" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

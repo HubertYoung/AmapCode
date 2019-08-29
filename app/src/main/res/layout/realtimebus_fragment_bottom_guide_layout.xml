@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/map_guide_layout_root" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="#000000" android:layout_width="match_parent" android:layout_height="match_parent" android:alpha="0.6"/>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@+id/linearLayoutLayerManager" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="65dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true">
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/real_layer" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <View android:id="@+id/view_message_middle" android:visibility="gone" android:layout_width="48dp" android:layout_height="50dp" android:scaleType="center"/>
+            <ImageView android:id="@+id/btn_map_guide_entry" android:background="@drawable/maplayer_btn_bg_selector" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/btn_mapcontainer_guide" android:scaleType="center" android:contentDescription="@string/open_guide_fg"/>
+            <ImageView android:id="@+id/btn_maplayers" android:background="@drawable/suspend_bg_selector" android:visibility="invisible" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/suspend_maplayer_selector" android:scaleType="center" android:contentDescription="@string/open_layer_switch"/>
+            <ImageView android:id="@+id/btn_report" android:background="@drawable/suspend_bg_selector" android:visibility="invisible" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size" android:src="@drawable/suspend_report_selector" android:scaleType="center" android:contentDescription="@string/report_traffic_info"/>
+            <ImageView android:id="@+id/btn_realtimebus" android:background="@drawable/icon_c_bg_single" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size" android:src="@drawable/icon_c20_selector" android:layout_alignParentRight="true" android:contentDescription="@string/realtime_bus_info"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/linearLayoutLayerManager">
+        <View android:id="@+id/view_message_right" android:visibility="gone" android:layout_width="48dp" android:layout_height="50dp" android:scaleType="center"/>
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:id="@+id/realetime_bus_layer_tip_one" android:background="@drawable/realtime_bus_guid_one" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="130dp" android:layout_toLeftOf="@+id/linearLayoutLayerManager" android:layout_alignParentTop="true">
+            <ImageView android:id="@+id/realtime_bus_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10px" android:layout_marginRight="20px" android:src="@drawable/realtime_bus_tip_close"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

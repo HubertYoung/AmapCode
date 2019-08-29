@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/recom_common_small_outside_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/recom_common_small_main" android:background="@drawable/realtimebus_combg_pop" android:layout_width="wrap_content" android:layout_height="39.5dp">
+            <ImageView android:id="@+id/recom_common_small_icon" android:layout_width="13dp" android:layout_height="13dp" android:src="@drawable/realtimebus_search_small_pop"/>
+            <TextView android:textSize="12sp" android:textColor="@color/f_c_3" android:id="@+id/recom_common_small_txt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_3dp" android:text="@string/recommed_search"/>
+        </LinearLayout>
+        <TextView android:id="@+id/recom_common_small_empty" android:layout_width="wrap_content" android:layout_height="@dimen/route_24dp"/>
+    </LinearLayout>
+</LinearLayout>

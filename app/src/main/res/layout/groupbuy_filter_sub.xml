@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:background="@drawable/groupbuy_filter_sub_itembg_selector" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_30" android:textColor="@color/black" android:id="@+id/name" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <TextView android:textSize="@dimen/font_20" android:textColor="@color/gray" android:id="@+id/count" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <ImageView android:id="@+id/ivSelectedIcon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dp" android:src="@drawable/order_hotel_choose_city_selected" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+</RelativeLayout>

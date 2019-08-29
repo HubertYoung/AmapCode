@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_gravity="center" android:id="@+id/centerMarkerLayout" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/tbTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" app:title="@string/v4_mapclick" app:title_style="4"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/map_select_center_offset_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/ivBubbleShadow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/bubble_shadow" android:layout_centerInParent="true"/>
+        <ImageView android:id="@+id/ivStartBubble" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5dp" android:src="@drawable/bubble_start" android:layout_above="@+id/ivBubbleShadow" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/ivEndBubble" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-5dp" android:src="@drawable/bubble_end" android:layout_above="@+id/ivBubbleShadow" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/mapBottomInteractiveView" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="1dp"/>
+        <LinearLayout android:orientation="horizontal" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:layout_width="42dp" android:layout_height="match_parent" android:src="@drawable/ic_start_point" android:scaleType="center"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/road_start_point" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_4" android:ellipsize="end" android:id="@+id/tvStartPoiName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/road_not_select_poi" android:singleLine="true"/>
+            </LinearLayout>
+            <Button android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btnConfirmStartPoint" android:background="@drawable/select_road_confirm_poi_selector" android:layout_width="75dp" android:layout_height="28dp" android:text="@string/road_confirm_select_poi"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tvStartPointSelected" android:visibility="gone" android:layout_width="75dp" android:layout_height="28dp" android:text="@string/road_poi_selected"/>
+        </LinearLayout>
+        <View android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="42dp"/>
+        <LinearLayout android:orientation="horizontal" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="60dp">
+            <ImageView android:layout_width="42dp" android:layout_height="match_parent" android:src="@drawable/ic_end_point" android:scaleType="center"/>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+                <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/road_end_point" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_4" android:ellipsize="end" android:id="@+id/tvEndPoiName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/road_select_another_point" android:singleLine="true"/>
+            </LinearLayout>
+            <Button android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btnConfirmEndPoint" android:background="@drawable/select_road_confirm_poi_selector" android:layout_width="75dp" android:layout_height="28dp" android:text="@string/road_confirm_select_poi"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/tvEndPointSelected" android:visibility="gone" android:layout_width="75dp" android:layout_height="28dp" android:text="@string/road_poi_selected"/>
+        </LinearLayout>
+    </LinearLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

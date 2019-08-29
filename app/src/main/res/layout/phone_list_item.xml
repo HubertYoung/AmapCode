@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="16dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/phone" android:background="@drawable/tel_list_item_btn_selector" android:padding="0dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginBottom="12dp"/>
+</LinearLayout>

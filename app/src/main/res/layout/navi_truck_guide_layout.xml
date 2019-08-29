@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/navi_notruck_icon"/>
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_setting_perfection"/>
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_3" android:gravity="center" android:paddingTop="8dp" android:paddingBottom="30dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_setting_letsgo"/>
+        <Button android:layout_gravity="center_horizontal" android:id="@+id/navi_truckguide_addtruck_btn" android:layout_width="160dp" android:text="@string/navi_setting_inputtruck" style="@style/btn_a2"/>
+    </LinearLayout>
+</LinearLayout>

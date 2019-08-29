@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/stickers_name" app:title_style="4"/>
+        <com.autonavi.widget.ui.CommonTips android:id="@+id/sticker_tips" android:layout_width="match_parent" android:layout_height="wrap_content" app:tip_style="4"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.autonavi.minimap.drive.sticker.StickerTipView android:id="@+id/sticker_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginBottom="8dp"/>
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/mapBottomInteractiveView" android:layout_below="@+id/mapTopInteractiveView">
+        <TextView android:id="@+id/route_sticker_demo_img" android:background="@drawable/route_stickers_demo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:layout_marginRight="4dp" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <ImageView android:id="@+id/search_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/stickers_search_center" android:layout_centerInParent="true"/>
+    <ImageView android:id="@+id/centre" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/center" android:layout_centerInParent="true"/>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

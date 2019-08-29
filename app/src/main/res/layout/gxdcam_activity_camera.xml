@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#cd000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/id_area_sv_parent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <SurfaceView android:id="@+id/id_area_sv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="拍照区域" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/autofocus_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/camera_focus_view" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/gxdcam_white_focus"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/id_flushView_layout" android:background="#cd000000" android:layout_width="match_parent" android:layout_height="40dp">
+            <ImageView android:textSize="13sp" android:id="@+id/ivAutoTake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/id_process_btns_ll" android:background="#cd000000" android:layout_width="match_parent" android:layout_height="116dp" android:layout_alignBottom="@+id/id_area_sv_parent">
+            <RelativeLayout android:orientation="horizontal" android:id="@+id/id_cancle_btn_layout" android:layout_width="100dp" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+                <TextView android:textSize="13sp" android:id="@+id/id_switch_camera_btn" android:background="@drawable/gxdcam_camera_cancle_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@+id/id_capture_btn_layout" android:layout_width="100dp" android:layout_height="match_parent" android:layout_centerHorizontal="true">
+                <ImageView android:gravity="center_horizontal" android:id="@+id/id_capture_btn" android:background="@drawable/gxdcam_btn_new_shutter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <SeekBar android:id="@+id/zoom_seekbar_def" android:layout_width="300dp" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="12dp" android:layout_marginBottom="130dp" android:progress="0" android:thumbOffset="5dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/Widget.SeekBar.Normal"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/usepic_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <include android:id="@+id/usepic_priview_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/gxdcam_show_camerapic_activity"/>
+    </RelativeLayout>
+</FrameLayout>

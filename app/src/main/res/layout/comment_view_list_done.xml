@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/bg_f5" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/special_scene" layout="@layout/comment_view_special_scene"/>
+    <com.autonavi.map.search.comment.view.PullToRefreshFloatingGroupListView android:id="@+id/comment_list" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

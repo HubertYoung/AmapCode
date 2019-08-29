@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/realbus_notime_outside" android:paddingBottom="@dimen/route_28dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/realbus_notime_outside_main" android:layout_width="wrap_content" android:layout_height="82dp">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/realbus_notime_content_main" android:background="@drawable/realtimebus_pop_stop2" android:layout_width="wrap_content" android:layout_height="62.5dp" android:layout_centerVertical="true">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/realbus_notime_main" android:layout_width="wrap_content" android:layout_height="55.5dp" android:layout_marginLeft="12.5dp">
+                    <TextView android:textSize="12sp" android:textColor="@color/f_c_4" android:gravity="center" android:id="@+id/realbus_notime_linename" android:paddingBottom="@dimen/route_3dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="快速公交3号线"/>
+                    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/realbus_notime_businfo_main" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="@color/white" android:id="@+id/realbus_start_txt" android:background="@drawable/realbus_start" android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="1.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="首"/>
+                        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center" android:id="@+id/realbus_start_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_3dp" android:layout_marginRight="9.5dp" android:text="6:00"/>
+                        <TextView android:textSize="9sp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center_vertical" android:id="@+id/realbus_end_txt" android:background="@drawable/realbus_end" android:paddingLeft="2dp" android:paddingRight="2dp" android:paddingBottom="1.5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="末"/>
+                        <TextView android:textSize="12sp" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center" android:id="@+id/realbus_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_3dp" android:text="23:00"/>
+                    </LinearLayout>
+                </LinearLayout>
+                <RelativeLayout android:id="@+id/realbus_notime_flag_main" android:layout_width="12.5dp" android:layout_height="15dp"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/realbus_notime_close" android:layout_width="@dimen/route_30dp" android:layout_height="@dimen/route_30dp" android:src="@drawable/realtimebus_gray_close"/>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

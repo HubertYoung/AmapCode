@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.bundle.searchcommon.view.SearchKeywordResultTitleView android:id="@+id/mapTopInteractiveView" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="@dimen/v3_bottom_bar_height"/>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.autonavi.map.widget.RecyclableViewPager android:id="@+id/search_result_map_pager" android:layout_width="match_parent" android:layout_height="130dp"/>
+    </RelativeLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

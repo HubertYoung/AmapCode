@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@android:id/content" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingRight="@dimen/route_12dp" android:layout_width="match_parent" android:layout_height="55dp">
+        <FrameLayout android:layout_width="@dimen/route_25dp" android:layout_height="match_parent">
+            <View android:layout_gravity="center" android:id="@+id/transfer_line" android:layout_width="@dimen/route_9dp" android:layout_height="match_parent"/>
+            <ImageView android:layout_gravity="center" android:id="@+id/transfer_icon" android:background="@color/white" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="33dp" android:src="@drawable/fromto_bus_detail_transfer_icon" android:contentDescription="@null"/>
+        </FrameLayout>
+        <ImageView android:id="@+id/cur_location_img" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_25dp" android:src="@drawable/default_path_location_icon_normal" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_2" android:id="@+id/section_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_40dp" android:layout_centerVertical="true"/>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/foot_icon_container" android:layout_width="wrap_content" android:layout_height="23dp" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/follow_me_click_area" android:background="@drawable/follow_me_btn_selector" android:paddingLeft="8dp" android:paddingRight="6dp" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/follow_me_btn_text" android:drawableLeft="@drawable/fromto_bus_detail_foot_icon" android:drawablePadding="6dp"/>
+        </LinearLayout>
+    </RelativeLayout>
+</FrameLayout>

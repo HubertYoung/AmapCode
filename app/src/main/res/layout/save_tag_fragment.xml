@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:paddingBottom="@dimen/default_margin_10A" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/title" android:background="@drawable/common_title_map" android:layout_width="match_parent" android:layout_height="50dp">
+            <ImageButton android:id="@+id/btn_back" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="18dp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_tag_filter" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/custom_tag_linear" android:paddingLeft="@dimen/default_margin_6A" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_10A" android:layout_below="@+id/title">
+            <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:id="@+id/cutom_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_custom_tag"/>
+            <com.autonavi.minimap.basemap.save.widget.TagListView android:id="@+id/custom_taglist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_5A" android:layout_below="@+id/cutom_title"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/classification_tag_linear" android:paddingLeft="@dimen/default_margin_6A" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_10A" android:layout_below="@+id/custom_tag_linear">
+            <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:id="@+id/class_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_classification_tag"/>
+            <com.autonavi.minimap.basemap.save.widget.TagListView android:id="@+id/classification_taglist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_5A" android:layout_below="@+id/class_title"/>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/citycode_tag_linear" android:paddingLeft="@dimen/default_margin_6A" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_10A" android:layout_below="@+id/classification_tag_linear">
+            <TextView android:textSize="@dimen/font_30" android:textColor="@color/f_c_2" android:id="@+id/city_code_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/save_city_code_tag"/>
+            <com.autonavi.minimap.basemap.save.widget.TagListView android:id="@+id/citycode_taglist" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_5A" android:layout_below="@+id/city_code_title"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

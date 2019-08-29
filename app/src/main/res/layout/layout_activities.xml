@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="5"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ListView android:id="@+id/listview" android:background="@color/white" android:visibility="visible" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@null"/>
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/empty" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="20dp">
+            <ImageView android:gravity="center" android:id="@+id/emptyA" android:background="@drawable/err" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            <TextView android:textSize="13dp" android:textColor="@color/v6_navi_average_speed_color" android:gravity="center" android:layout_width="match_parent" android:layout_height="40dp" android:text="@string/error_activities" android:singleLine="true" android:layout_below="@+id/emptyA"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

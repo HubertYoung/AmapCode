@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:paddingLeft="15dp" android:paddingRight="15dp" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:paddingTop="30dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/navi_setting_voice"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/common_setting_voice_layout" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/common_setting_voice_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sugg_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/navi_setting_voice_type"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/common_setting_voice_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/common_setting_voice_iv"/>
+    </RelativeLayout>
+    <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/common_setting_broadcast_layout" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/common_setting_broadcast_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sugg_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/quickautonavi_setting_broadcast_content"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/common_setting_broadcast_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/common_setting_broadcast_iv"/>
+    </RelativeLayout>
+    <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/common_setting_vcs_layout" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/common_setting_vcs_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sugg_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/quickautonavi_setting_vcs_content"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/common_setting_vcs_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/common_setting_vcs_iv"/>
+    </RelativeLayout>
+    <View android:id="@+id/vcs_line" android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:orientation="horizontal" android:id="@+id/common_setting_bt_sound_channel_layout" android:layout_width="match_parent" android:layout_height="60dp">
+        <ImageView android:id="@+id/common_setting_bt_sound_channel_iv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sugg_arrow" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/quickautonavi_setting_bt_sound_channel_content"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/common_setting_bt_sound_channel_tv" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="10dp" android:layout_toLeftOf="@+id/common_setting_bt_sound_channel_iv"/>
+    </RelativeLayout>
+    <View android:id="@+id/bt_channel_line" android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:text="@string/navi_setting_map"/>
+    <include android:id="@+id/eagle_setting_layout" layout="@layout/eagle_setting_item_layout"/>
+    <View android:id="@+id/eagle_setting_line" android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/common_setting_map_tv" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/navi_setting_mapshow" android:drawableRight="@drawable/sugg_arrow"/>
+    <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/common_car_logo_tv" android:layout_width="match_parent" android:layout_height="60dp" android:text="@string/navi_setting_carlogo" android:drawableRight="@drawable/sugg_arrow"/>
+    <View android:id="@+id/common_car_logo_line" android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center_vertical" android:id="@+id/common_assist_tv" android:layout_width="match_parent" android:layout_height="60dp" android:layout_marginTop="10dp" android:text="@string/navi_setting_assist" android:drawableRight="@drawable/sugg_arrow"/>
+</LinearLayout>

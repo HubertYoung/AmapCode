@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/blank_container" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:id="@+id/empty_layout" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/root_view"/>
+    <LinearLayout android:orientation="vertical" android:id="@+id/root_view" android:background="@color/c_3" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/navi_setting_voice" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/ns_small_text_size" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/navi_setting_preference_caption" android:paddingLeft="@dimen/route_12dp" android:layout_width="match_parent" android:layout_height="35dp" android:text="@string/foot_setting_voice_tip" android:drawableLeft="@drawable/foot_voice_reminder" android:drawablePadding="@dimen/route_12dp"/>
+            <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px"/>
+            <RelativeLayout android:id="@+id/navi_setting_voice_view" android:background="@drawable/bg_item_foot_voice_selector" android:layout_width="match_parent" android:layout_height="44dp">
+                <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/f_c_2" android:id="@+id/navi_setting_current_voice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:text="@string/foot_default_voice_setting" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+                <ImageView android:background="@drawable/icon_foot_setting_voice_foward" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/navi_setting_navigation_mode" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/ns_small_text_size" android:textColor="@color/f_c_3" android:gravity="left|center_vertical|center_horizontal|center" android:id="@+id/navi_setting_navigation_caption" android:paddingLeft="@dimen/route_12dp" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/foot_nav_perspective" android:drawableLeft="@drawable/icon_foot_navigation_mode" android:drawablePadding="@dimen/route_12dp"/>
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/bg_foot_setting_nav_mode" android:layout_width="match_parent" android:layout_height="39dp" android:layout_marginLeft="@dimen/route_12dp" android:layout_marginRight="@dimen/route_12dp" android:layout_marginBottom="@dimen/route_8dp">
+                <TextView android:textSize="@dimen/font_28" android:textColor="@drawable/bg_foot_navi_item" android:gravity="center" android:id="@+id/navi_setting_mode_2d" android:background="@drawable/bg_foot_setting_item_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginRight="2dp" android:text="@string/foot_nav_mode_2d" android:layout_weight="1"/>
+                <View android:layout_gravity="center_vertical" android:id="@+id/navigation_mode_vertical_line" android:background="@color/bg_ea" android:layout_width="1px" android:layout_height="25dp"/>
+                <TextView android:textSize="@dimen/font_28" android:textColor="@drawable/bg_foot_navi_item" android:gravity="center" android:id="@+id/navi_setting_mode_3d" android:background="@drawable/bg_foot_setting_item_selector" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="@string/foot_nav_mode_3d" android:layout_weight="1"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@color/c_12" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginTop="10dp">
+            <TextView android:textSize="@dimen/route_16dp" android:textColor="@color/white" android:gravity="center" android:id="@+id/navi_setting_exit" android:background="@drawable/bg_foot_setting_exit" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/real_time_close"/>
+        </LinearLayout>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/default_font_size_t26" android:textColor="@color/f_c_3" android:ellipsize="end" android:gravity="center" android:id="@+id/child_tv" android:background="@drawable/sugg_child_item_bg" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="match_parent" android:layout_height="28dp" android:minEms="5" android:singleLine="true"/>
+</LinearLayout>

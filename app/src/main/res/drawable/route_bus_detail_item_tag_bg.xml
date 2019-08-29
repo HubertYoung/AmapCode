@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:id="@+id/background">
+        <shape android:shape="rectangle">
+            <solid android:color="#ffffff"/>
+            <corners android:topLeftRadius="2dp" android:topRightRadius="2dp" android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp"/>
+        </shape>
+    </item>
+    <item android:id="@+id/foreground">
+        <shape android:shape="rectangle">
+            <solid android:color="#399fff"/>
+            <corners android:topLeftRadius="2dp" android:topRightRadius="2dp" android:bottomLeftRadius="2dp" android:bottomRightRadius="2dp"/>
+        </shape>
+    </item>
+</layer-list>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:id="@+id/bg_layout" android:background="@drawable/route_blur_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/route_run_recomend_bg_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/title" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/f_s_19" android:textStyle="bold" android:textColor="@color/f_c_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_46dp" android:text="@string/route_run"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_9dp" android:text="@string/route_run_recommend_second_title"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/content" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_28dp" android:layout_marginTop="@dimen/route_61dp" android:layout_marginRight="@dimen/route_28dp" android:layout_below="@+id/title">
+        <RelativeLayout android:id="@+id/btn_run_page" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@+id/iv_run_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_run_dialog_icon" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/f_s_17" android:textStyle="bold" android:textColor="@color/f_c_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_route_start_run" android:layout_toLeftOf="@+id/iv_go_run" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_go_run" android:layout_width="@dimen/route_24dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_12dp" android:src="@drawable/route_result_run_arrow" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignRight="@+id/iv_run_page" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@+id/btn_rec_page" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_28dp">
+            <ImageView android:id="@+id/iv_recommend_page" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/route_run_recommend_dialog_icon" android:scaleType="fitCenter" android:layout_centerInParent="true"/>
+            <TextView android:textSize="@dimen/f_s_17" android:textStyle="bold" android:textColor="@color/f_c_1" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route_run_recommend_line_short" android:layout_toLeftOf="@+id/iv_go_rec" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/iv_go_rec" android:layout_width="@dimen/route_24dp" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_12dp" android:src="@drawable/route_result_run_arrow" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignRight="@+id/iv_recommend_page" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+    <ImageView android:id="@+id/close_rec_dialog" android:padding="@dimen/route_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_50dp" android:src="@drawable/route_result_run_close" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</RelativeLayout>

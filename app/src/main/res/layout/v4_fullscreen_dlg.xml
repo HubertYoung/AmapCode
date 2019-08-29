@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/layout_root" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/imageView" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/font_34" android:textColor="@color/blue" android:gravity="center" android:id="@+id/btn_ok" android:background="@drawable/v4_com_btn_choose_selector" android:layout_width="match_parent" android:layout_height="46dp" android:layout_marginTop="9dp" android:layout_marginBottom="5dp" android:text="@string/sns_checkin_ok"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

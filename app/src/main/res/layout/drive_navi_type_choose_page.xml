@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/c_5_e" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ViewStub android:id="@+id/choose_view" android:layout="@layout/drive_navi_type_choose_view_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+    <ViewStub android:id="@+id/supplement_view" android:visibility="gone" android:layout="@layout/drive_navi_type_supplement_view_day" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

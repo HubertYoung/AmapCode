@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/set_layout" android:background="@color/bind_waiting_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/titleBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/titlebar_close_normal"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:id="@+id/bindErrorLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.4dp">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="153dp" android:layout_height="153dp" android:layout_marginTop="97dp" android:src="@drawable/bind_error"/>
+            <TextView android:textSize="18dp" android:textColor="@color/bind_error" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="27dp" android:layout_marginRight="16dp" android:layout_marginBottom="7dp" android:text="@string/system_error_try_later"/>
+            <Button android:id="@+id/comfirmSetting" android:layout_marginTop="33dp" android:text="@string/iKnow" style="@style/subButtonStyle"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

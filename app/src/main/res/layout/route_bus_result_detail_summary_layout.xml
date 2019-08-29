@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/handle_view" android:background="@drawable/search_result_handle_bg" android:layout_width="match_parent" android:layout_height="31dp">
+        <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_8dp" android:src="@drawable/search_result_handle"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/handle_view">
+        <android.support.v4.view.ViewPager android:id="@+id/header_viewpager" android:layout_width="match_parent" android:layout_height="80dp"/>
+        <com.autonavi.minimap.route.bus.localbus.view.CirclePageIndicator android:id="@+id/header_indicator" android:paddingBottom="@dimen/route_8dp" android:layout_width="match_parent" android:layout_height="wrap_content" app:route_strokeWidth="0dp" app:fillColor="#54adff" app:pageColor="#e4e4e4" app:route_radius="2.5dp" app:distance="@dimen/route_7dp"/>
+        <View android:id="@+id/summary_divider" android:background="@color/route_divider_color" android:layout_width="match_parent" android:layout_height="1px"/>
+    </LinearLayout>
+</RelativeLayout>

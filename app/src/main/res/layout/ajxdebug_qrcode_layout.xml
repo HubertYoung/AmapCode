@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <com.autonavi.minimap.qrcode.QRCodeFinderView2 android:id="@+id/viewfinder_view" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/progressLayout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="100dp" android:layout_margin="5dp" android:layout_centerInParent="true">
+            <ProgressBar android:id="@+id/progressbar" android:layout_width="match_parent" android:layout_height="wrap_content" android:secondaryProgress="1" android:layout_centerInParent="true" style="@style/Widget.ProgressBar.Horizontal"/>
+            <TextView android:textColor="#ffffffff" android:gravity="center" android:layout_gravity="center" android:id="@+id/msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="下载中...(1/30)"/>
+        </LinearLayout>
+        <include android:id="@+id/include1" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/ajxdebug_title"/>
+    </RelativeLayout>
+</FrameLayout>

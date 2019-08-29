@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:background="@color/c_1_f" android:layout_width="match_parent" android:layout_height="1px"/>
+    <TextView android:textSize="13dp" android:textColor="@color/f_c_4" android:gravity="center" android:layout_width="match_parent" android:layout_height="36dp" android:text="@string/car_error_choose_category"/>
+    <View android:background="@color/c_1_f" android:layout_width="match_parent" android:layout_height="1px"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/error_category_layout" android:layout_width="match_parent" android:layout_height="122dp">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/cannot_pass_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_cannot_pass_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/car_error_category_restriction_info_error"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/around_way_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_around_way_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/car_error_category_around_error"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/other_question_category" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:background="@drawable/car_error_report_other_question_selector" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="@string/car_error_category_other_error"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

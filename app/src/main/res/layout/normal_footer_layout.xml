@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="60dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/normal_main_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/normal_refresh_imageview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="6dp" android:src="@drawable/refresh" android:contentDescription="@null"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center" android:layout_gravity="center" android:id="@+id/normal_textview" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="4dp" android:text="@string/reloading"/>
+        </LinearLayout>
+        <LinearLayout android:id="@+id/normal_loading_layout" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="24dp" android:layout_toRightOf="@+id/normal_main_layout" android:layout_centerInParent="true">
+            <com.autonavi.widget.ui.LoadingViewBL android:layout_width="24dp" android:layout_height="match_parent" android:layout_marginTop="4dp" app:loadingType="4"/>
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="2dp" android:text="@string/loading"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

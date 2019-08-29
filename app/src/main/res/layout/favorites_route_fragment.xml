@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/fav_route_no_data_rl" android:background="@color/c_3" android:layout_width="match_parent" android:layout_height="match_parent">
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8dp" android:src="@drawable/amap_no_data"/>
+                <TextView android:textSize="14dp" android:textColor="@color/f_c_4" android:gravity="center" android:id="@+id/text_no_route_data" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/fav_no_route_data" android:lineSpacingExtra="10dp" android:lineSpacingMultiplier="0.5"/>
+            </LinearLayout>
+        </FrameLayout>
+        <ListView android:layout_gravity="center_horizontal" android:id="@+id/list_route" android:background="@color/transparent" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@color/transparent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:headerDividersEnabled="false" android:splitMotionEvents="false"/>
+    </FrameLayout>
+</LinearLayout>

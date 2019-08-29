@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.ajx3.views.AmapAjxView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/freeride_ajxView" android:layout_width="match_parent" android:layout_height="match_parent"/>

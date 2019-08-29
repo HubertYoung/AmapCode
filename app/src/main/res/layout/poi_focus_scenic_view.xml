@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@drawable/b_poi_bg_focus_scenic" android:padding="2dp" android:layout_width="wrap_content" android:layout_height="76dp">
+    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="7dp" android:layout_marginRight="9dp">
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/tv_bubble_scenic_shortname" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/scenic_txt_max_width" android:text="" android:maxLines="1"/>
+        <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/tv_bubble_scenic_duration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/scenic_txt_max_width" android:text="" android:maxLines="1"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/poi_bubble_arrow_icon" android:layout_width="12dp" android:layout_height="12dp" android:layout_marginTop="19dp" android:layout_marginRight="14dp"/>
+</LinearLayout>

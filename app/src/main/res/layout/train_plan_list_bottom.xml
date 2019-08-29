@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@drawable/slide_panel_bg" android:layout_width="match_parent" android:layout_height="@dimen/route_48dp">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="39">
+        <CheckBox android:layout_gravity="center" android:id="@+id/train_list_sort_by_time_checkbox" android:background="@drawable/train_list_condition_selector" android:layout_width="@dimen/route_18dp" android:layout_height="@dimen/route_18dp" android:checked="false" android:button="@null"/>
+        <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_3" android:id="@+id/train_list_sort_by_time_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_5dp" android:text="@string/train_cost_least_time"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="39">
+        <CheckBox android:layout_gravity="center" android:id="@+id/train_list_sort_by_ticket_remind_checkbox" android:background="@drawable/train_list_condition_selector" android:layout_width="@dimen/route_18dp" android:layout_height="@dimen/route_18dp" android:checked="false" android:button="@null"/>
+        <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_3" android:id="@+id/train_list_sort_by_ticket_remain_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_5dp" android:text="@string/train_search_left_tickets"/>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="22">
+        <View android:background="@color/c_26" android:layout_width="1px" android:layout_height="match_parent" android:layout_alignParentLeft="true"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/train_plan_filter_more" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="22" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@+id/filter_more_select_view" android:background="@drawable/train_plan_filter_icon" android:layout_width="@dimen/route_18dp" android:layout_height="@dimen/route_18dp" android:checked="true"/>
+            <TextView android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_3" android:id="@+id/filter_more_select_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_5dp" android:text="@string/train_screening_tickets"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

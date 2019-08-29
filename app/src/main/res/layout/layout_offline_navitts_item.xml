@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:padding="20dp" android:focusable="false" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+        <RelativeLayout android:id="@+id/rl_trylisten" android:layout_width="60dp" android:layout_height="60dp" android:layout_marginRight="10dp" android:layout_centerVertical="true">
+            <com.autonavi.minimap.drive.navi.navitts.widget.RoundCornerImageView android:id="@+id/iv_trylisten_bg" android:background="@drawable/default0" android:layout_width="60dp" android:layout_height="60dp" android:scaleType="fitXY" app:rciv_radius="4dp"/>
+            <Button android:id="@+id/btn_trylisten" android:layout_width="60dp" android:layout_height="60dp" android:src="@drawable/play" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true"/>
+            <ProgressBar android:id="@+id/pb_trylisten" android:visibility="gone" android:layout_width="14dp" android:layout_height="14dp" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/common_progressbar" android:indeterminateDuration="1000" android:indeterminateBehavior="repeat" android:layout_centerInParent="true"/>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/item_right_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <RelativeLayout android:id="@+id/download_statu_layout" android:background="@drawable/tts_download_shape" android:layout_width="58dp" android:layout_height="28dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <com.autonavi.minimap.drive.navi.navitts.widget.DownloadBackgroundLayout android:id="@+id/progress_bg_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/tv_operate" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/offline_data_download" android:layout_centerInParent="true"/>
+                <RelativeLayout android:id="@+id/rl_progress" android:background="@drawable/tts_download_pause_shape" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_centerInParent="true">
+                    <ImageView android:id="@+id/download_prog_icon" android:background="@drawable/download_pause_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/f_s_12" android:textColor="#8191b0" android:id="@+id/tv_progress_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1dp" android:singleLine="true" android:layout_toRightOf="@+id/download_prog_icon" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </RelativeLayout>
+            <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_3" android:layout_gravity="center_horizontal" android:id="@+id/tv_size" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="11.1M" android:singleLine="true"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/center_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/item_right_container" android:layout_toRightOf="@+id/rl_trylisten" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/tv_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/navitts_default_name" android:singleLine="true" android:drawableRight="@drawable/tj" android:drawablePadding="6dp"/>
+            <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.5dp" android:text="@string/navitts_default_desc" android:maxLines="2" android:layout_below="@+id/tv_name"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

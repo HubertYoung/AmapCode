@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/scenic_play_route_widget_root" android:background="@drawable/map_widget_play_route_bg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/map_scenic_play_route_widget_margin_space" android:layout_marginRight="@dimen/map_scenic_play_route_widget_margin_space">
+    <RelativeLayout android:id="@+id/scenic_play_route_count" android:background="@drawable/scenicarea_play_route_grad_color_bg" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@+id/scenic_play_route_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="56dp">
+            <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#212121" android:ellipsize="end" android:id="@+id/scenic_play_route_count_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="5dp" android:layout_marginRight="4dp" android:layout_marginBottom="5dp" android:singleLine="true" android:includeFontPadding="false" android:layout_weight="1" android:layout_centerVertical="true"/>
+            <ImageView android:layout_gravity="center_vertical" android:id="@+id/scenic_play_route_count_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_widget_play_route_arrow" android:layout_weight="0"/>
+        </LinearLayout>
+        <RelativeLayout android:id="@+id/scenic_play_route_close" android:background="@drawable/scenicarea_play_route_close_bg" android:layout_width="40dp" android:layout_height="24dp" android:layout_alignParentRight="true">
+            <ImageView android:id="@+id/scenic_play_route_close_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/map_widget_close" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@+id/scenic_play_route_view" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/scenic_play_route_count" android:overScrollMode="never"/>
+</RelativeLayout>

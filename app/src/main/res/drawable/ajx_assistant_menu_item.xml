@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:state_pressed="false" android:drawable="@drawable/ajx_assistant_menu_normal">
+        <objectAnimator android:duration="@android:integer/config_shortAnimTime" android:valueFrom="4dp" android:valueTo="0dp" android:valueType="floatType" android:propertyName="translationZ"/>
+    </item>
+    <item android:state_pressed="true" android:drawable="@drawable/ajx_assistant_menu_pressed">
+        <objectAnimator android:duration="@android:integer/config_shortAnimTime" android:valueFrom="0dp" android:valueTo="4dp" android:valueType="floatType" android:propertyName="translationZ"/>
+    </item>
+    <item android:state_focused="true" android:drawable="@drawable/ajx_assistant_menu_pressed"/>
+</selector>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textSize="@dimen/route_50dp" android:textColor="@color/f_c_2" android:id="@+id/share_riding_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="- -:- -:- -" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/route_3dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/share_riding_time">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="@dimen/route_23dp" android:layout_height="@dimen/route_23dp" android:src="@drawable/share_riding_distance_icon"/>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/f_s_27" android:textColor="@color/f_c_2" android:gravity="bottom" android:id="@+id/share_riding_distance_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_6dp" android:layout_marginRight="@dimen/route_3dp" android:text="- -" android:includeFontPadding="false"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_2" android:gravity="bottom" android:id="@+id/share_riding_distance_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="公里" android:translationY="-2dp"/>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1">
+            <ImageView android:layout_width="@dimen/route_23dp" android:layout_height="@dimen/route_23dp" android:src="@drawable/share_riding_fee_icon"/>
+            <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_6dp">
+                <TextView android:textSize="@dimen/f_s_27" android:textColor="@color/f_c_8" android:gravity="bottom" android:id="@+id/share_riding_fee_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_3dp" android:text="- -" android:includeFontPadding="false"/>
+                <TextView android:textSize="@dimen/f_s_12" android:textColor="@color/f_c_2" android:gravity="bottom" android:id="@+id/share_riding_fee_unit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="元" android:translationY="-2dp"/>
+                <include android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" layout="@layout/share_bike_tip_fee_desc"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:id="@+id/share_riding_electronic_lock" android:background="@drawable/share_riding_display_electronic_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/route_44dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sharebike_close_lock_tip_msg" android:layout_weight="2"/>
+        <View android:background="#e0e0e0" android:layout_width="@dimen/route_1px" android:layout_height="@dimen/route_20dp"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/share_riding_electronic_notice_tip" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="关锁未结算？" android:layout_weight="1"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/share_riding_mechanical_lock" android:layout_width="match_parent" android:layout_height="@dimen/route_44dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="#ff5b5a" android:gravity="center" android:id="@+id/share_riding_mechanical_finish_riding_bt" android:background="@drawable/share_riding_display_mechanical_finish_bg_selecter" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/is_to_finish_share_machincal_confirm" android:layout_weight="2"/>
+        <View android:layout_width="8dp" android:layout_height="match_parent"/>
+        <TextView android:textSize="@dimen/f_s_14" android:textColor="#212121" android:gravity="center" android:id="@+id/share_riding_mechanical_error_report" android:background="@drawable/share_riding_unlock_tip_bt_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="@string/sharebike_error_report" android:layout_weight="1"/>
+    </LinearLayout>
+</merge>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@android:id/icon" android:background="@color/line_background" android:visibility="gone" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+    <ImageView android:id="@+id/bus_temporary_change_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:src="@drawable/bus_temporary_change_tip"/>
+    <ImageView android:id="@+id/bus_temporary_change_more" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12dp" android:layout_marginTop="2dp" android:layout_marginRight="12dp" android:src="@drawable/bus_temporary_change_down" android:layout_alignParentRight="true"/>
+    <TextView android:textSize="@dimen/font_26" android:textColor="#f86b26" android:id="@+id/bus_temporary_change_text" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_toLeftOf="@+id/bus_temporary_change_more" android:layout_toRightOf="@+id/bus_temporary_change_logo"/>
+</RelativeLayout>

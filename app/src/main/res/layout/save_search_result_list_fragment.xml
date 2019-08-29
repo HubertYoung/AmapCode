@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout android:orientation="vertical" android:id="@+id/mapTopInteractiveView" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.bundle.searchcommon.view.SearchKeywordResultTitleView android:id="@+id/view_normal_title" android:layout_width="match_parent" android:layout_height="@dimen/v3_bottom_bar_height"/>
+    </com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>
+    <View android:id="@+id/title_splitline" android:layout_width="match_parent" android:layout_height="0dp"/>
+    <com.autonavi.widget.pulltorefresh.PullToRefreshListView android:id="@+id/vouchers_pull_refresh_list" android:scrollbars="none" android:fadingEdge="none" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="@color/transparent" android:divider="@color/transparent" android:dividerHeight="14dp" android:fastScrollEnabled="false" android:headerDividersEnabled="false" android:footerDividersEnabled="false" android:smoothScrollbar="true" android:dividerPadding="4dp" app:ptrHeaderTextColor="@color/black" app:ptrDrawable="@drawable/pull_refresh_icon" app:ptrAnimationStyle="1"/>
+    <include android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" layout="@layout/voice_view_title_feed_back"/>
+</LinearLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:textColor="#fff" android:id="@+id/eventbar" android:background="#666" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginTop="10dp" android:layout_marginRight="10dp" android:text="叫车中，司机还有5分钟到达..." android:layout_alignParentTop="true"/>
+    <com.autonavi.bundle.uitemplate.mapwidget.MapWidgetContainer android:id="@+id/mapwidget_container" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginBottom="150dp" android:layout_below="@+id/eventbar">
+        <TextView android:textColor="#000" android:id="@+id/btn_mine" android:background="#aaa" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="我的" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:layout_below="@+id/btn_mine" android:layout_alignParentLeft="true">
+            <TextView android:textColor="#000" android:id="@+id/btnupdlide" android:background="#ccc" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="UPGLIDE" android:layout_centerInParent="true"/>
+            <TextView android:textColor="#000" android:id="@+id/btnslide" android:background="#ccc" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SLIDE" android:layout_centerInParent="true"/>
+            <TextView android:textColor="#000" android:id="@+id/btnfixed" android:background="#ccc" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="FIXED" android:layout_centerInParent="true"/>
+        </LinearLayout>
+        <TextView android:textColor="#000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="我是主图" android:layout_centerInParent="true"/>
+        <TextView android:textColor="#000" android:id="@+id/btn_planhome" android:background="#aaa" android:padding="10dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20dp" android:text="路线" android:layout_alignParentRight="true" android:layout_alignParentBottom="true"/>
+        <TextView android:textColor="#000" android:id="@+id/btn_nearby" android:background="#aaa" android:padding="10dp" android:layout_width="100dp" android:layout_height="55dp" android:layout_margin="20dp" android:text="附近" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true"/>
+    </com.autonavi.bundle.uitemplate.mapwidget.MapWidgetContainer>
+    <com.autonavi.bundle.uitemplate.container.SlideContainer android:id="@+id/container" android:layout_width="match_parent" android:layout_height="match_parent" app:anchorHeight="220dp" app:minHeight="80dp" app:transparentHeight="35dp">
+        <LinearLayout android:orientation="horizontal" android:background="#333" android:layout_width="match_parent" android:layout_height="60dp">
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="搜索"/>
+            <EditText android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="搜索周边美女" android:editable="false" android:layout_weight="1"/>
+            <TextView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="GO"/>
+        </LinearLayout>&gt;\10
+        <TextView android:textSize="30dp" android:textColor="#ccc" android:gravity="center" android:background="#333" android:layout_width="match_parent" android:layout_height="match_parent" android:text="我是QuickService" android:layout_alignParentBottom="true"/>
+    </com.autonavi.bundle.uitemplate.container.SlideContainer>
+</RelativeLayout>

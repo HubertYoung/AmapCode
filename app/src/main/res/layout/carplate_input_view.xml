@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:background="@drawable/carplate_shape" android:visibility="gone" android:clickable="true" android:layout_width="47dp" android:layout_height="50dp" android:layout_marginRight="10dp">
+        <TextView android:textSize="20dp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/carplate_province" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/car_plate_cursor_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_0" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp"/>
+        <FrameLayout android:id="@+id/fl_last" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp">
+            <com.autonavi.minimap.drive.widget.CursorEditText android:id="@+id/box_id_6" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <ImageView android:id="@+id/img_new_energy" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

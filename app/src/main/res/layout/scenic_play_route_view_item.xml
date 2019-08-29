@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/scenic_play_route_root_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/scenic_play_route_item_layout" android:paddingLeft="10dp" android:paddingRight="10dp" android:layout_width="wrap_content" android:layout_height="52dp" android:layout_centerInParent="true">
+        <TextView android:textSize="14dp" android:textStyle="bold" android:textColor="#de000000" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/scenic_play_route_item_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="杭州西湖" android:maxLines="1"/>
+        <TextView android:textSize="11dp" android:textColor="#616161" android:ellipsize="end" android:gravity="center_horizontal" android:id="@+id/scenic_play_route_item_desc" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="杭州西湖" android:maxLines="1" android:layout_below="@+id/scenic_play_route_item_name"/>
+    </RelativeLayout>
+    <View android:id="@+id/scenic_play_route_item_divider" android:background="#1a000000" android:layout_width="0.5dp" android:layout_height="20dp" android:layout_alignParentRight="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

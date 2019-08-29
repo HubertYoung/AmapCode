@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@drawable/widget_filter_main_itembg_selector" android:padding="0dp" android:layout_width="match_parent" android:layout_height="45dp">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/secondary" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/name" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+        <TextView android:textSize="15dp" android:textColor="@color/gray" android:gravity="bottom" android:layout_gravity="bottom" android:id="@+id/count" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=""/>
+        <ImageView android:gravity="bottom" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:src="@drawable/more_setting" android:contentDescription="@null"/>
+    </LinearLayout>
+    <TextView android:textSize="16dp" android:textColor="@color/black" android:gravity="bottom" android:id="@+id/name" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/secondary" android:layout_centerVertical="true"/>
+</RelativeLayout>

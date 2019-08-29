@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/title_view_layout"/>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/traffic_report_status_layout" android:background="#fffbc9" android:visibility="gone" android:layout_width="match_parent" android:layout_height="36dp">
+        <TextView android:textSize="@dimen/font_26" android:textColor="#976c22" android:gravity="center" android:id="@+id/traffic_report_status_text" android:paddingLeft="12dp" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="您上次的事故报警正在处理"/>
+        <TextView android:textSize="@dimen/font_26" android:textColor="#976c22" android:gravity="center" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginRight="12dp" android:text="@string/oper_click_look" android:drawableRight="@drawable/right_arrow" android:drawablePadding="5dp" android:layout_alignParentRight="true"/>
+        <View android:background="#ffe25c" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp">
+            <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="36dp">
+                <TextView android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:text="@string/traffic_report_title_tel_number" style="@style/traffic_report_title"/>
+                <TextView android:textSize="@dimen/font_32" android:textColor="#ff5b5a" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="5dp" android:layout_marginTop="3dp" android:text="*"/>
+            </LinearLayout>
+            <EditText android:textSize="14dp" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/traffic_report_tel_number" android:background="@drawable/error_report_input_background" android:paddingLeft="8dp" android:paddingRight="8dp" android:layout_width="match_parent" android:layout_height="38dp" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:hint="@string/traffic_report_hint_tel_number" android:maxLength="11" android:inputType="phone"/>
+            <View android:background="#e2e2e2" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="8dp"/>
+            <TextView android:layout_height="36dp" android:layout_marginLeft="10dp" android:text="@string/traffic_report_title_hurt" style="@style/traffic_report_title"/>
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <ToggleButton android:id="@+id/traffic_report_hurt" android:layout_width="0dp" android:textOn="@string/traffic_report_title_hurt_desc" android:textOff="@string/traffic_report_title_hurt_desc" android:layout_weight="0.33" style="@style/traffic_report_toggle_label"/>
+                <RelativeLayout android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="0.67"/>
+            </LinearLayout>
+            <include android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" layout="@layout/traffic_report_img_and_poi"/>
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:padding="10dp" android:layout_width="match_parent" android:layout_height="54dp">
+        <Button android:id="@+id/traffic_report_right_now" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/traffic_report_right_now2" style="@style/traffic_report_submit_btn"/>
+        <View android:id="@+id/traffic_report_right_now_shield" android:background="@null" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</LinearLayout>

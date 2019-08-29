@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#f0f0f0" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/header_view" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <include layout="@layout/title_view_layout"/>
+        <View android:id="@+id/title_split_line" android:layout_width="match_parent" android:layout_height="0dp"/>
+        <include android:id="@+id/tab_layout" android:visibility="gone" layout="@layout/widget_tab_layout"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@+id/date_picker_layout" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.map.widget.wheel.TimePickerWidgetView android:id="@+id/date_picker" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <Button android:textSize="16dp" android:textStyle="bold" android:textColor="@color/white" android:gravity="center" android:id="@+id/confirm_button" android:background="@drawable/v4_common_blue_btn_selector" android:padding="5dp" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="12dp" android:layout_marginTop="10dp" android:layout_marginRight="12dp" android:layout_marginBottom="12dp" android:minWidth="60dp" android:minHeight="33dp" android:text="@string/alert_button_confirm"/>
+    </LinearLayout>
+    <ListView android:id="@+id/list" android:alwaysDrawnWithCache="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:cacheColorHint="#00000000" android:divider="@null" android:dividerHeight="3dp"/>
+</LinearLayout>

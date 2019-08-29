@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@+id/iv_group_status" android:layout_width="match_parent" android:layout_height="match_parent" android:src="@drawable/icon_c45_selector"/>
+    <TextView android:textSize="10dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/tv_group_desc" android:paddingBottom="2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/a_group" android:layout_alignParentBottom="true" android:layout_centerInParent="true"/>
+</RelativeLayout>

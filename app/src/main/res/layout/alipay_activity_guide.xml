@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:paddingBottom="20dp" style="@style/alipay_client_application_bg">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/titleLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/brandLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/avatar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="101dp" android:src="@drawable/alipay_android_logo" android:scaleType="centerCrop"/>
+        <TextView android:textSize="14dp" android:textColor="@color/alipay_colorLightGrayV2" android:id="@+id/brand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/alipay_ant_group_brand"/>
+    </LinearLayout>
+    <Button android:id="@+id/loginButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="40dp" android:text="@string/alipay_login" android:layout_below="@+id/brandLayout" style="@style/alipay_mainButtonStyle"/>
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/loginButton">
+        <Button android:id="@+id/registerButton" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginTop="20dp" android:text="@string/alipay_newUserRegister" style="@style/alipay_subButtonStyle"/>
+        <View android:id="@+id/guide_tag" android:visibility="invisible" android:layout_width="1dp" android:layout_height="1dp" android:layout_alignParentTop="true" android:layout_centerHorizontal="true"/>
+        <Button android:textSize="9.3dp" android:textColor="@color/alipay_colorWhite" android:background="@drawable/alipay_btn_sub_tip_background" android:focusable="false" android:clickable="false" android:layout_width="39dp" android:layout_height="16.7dp" android:layout_marginLeft="50.75dp" android:layout_marginTop="24dp" android:text="@string/alipay_reg_get_lucky_money" android:layout_toRightOf="@+id/guide_tag"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/routeView" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/route_car_error_report_title" app:title_style="5"/>
+    </RelativeLayout>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <include android:id="@+id/car_error_category_bottom" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/car_error_report_page_category_bottom"/>
+        <include android:id="@+id/truck_error_category_bottom" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/truck_error_report_page_category_bottom"/>
+        <include android:id="@+id/error_edit_detail_bottom" android:background="@color/white" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/car_error_edit_detail_bottom"/>
+    </RelativeLayout>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/bubble_confirm_layout" android:layout_width="match_parent" android:layout_height="200dp">
+        <RelativeLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/poi_confirm_choose" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_above="@+id/iv_center" android:layout_centerHorizontal="true">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/confirm_poi_rectangle_layout" android:background="@drawable/car_error_select_poi_confirm_bg" android:paddingTop="4dp" android:paddingBottom="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:id="@+id/car_error_tip_confirm_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="8dp" android:text="@string/car_error_tip_confirm_tip"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/poi_confirm_btn" android:background="@drawable/car_error_submit_bg" android:layout_width="50dp" android:layout_height="28dp" android:layout_marginRight="8dp" android:text="@string/car_error_tip_confirm_right"/>
+            </LinearLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-2.5dp" android:src="@drawable/car_error_confirm_poi_tip_triangle" android:layout_below="@+id/confirm_poi_rectangle_layout" android:layout_centerHorizontal="true"/>
+        </RelativeLayout>
+        <ImageView android:id="@+id/iv_center" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="-7dp" android:src="@drawable/car_error_iv_center" android:layout_above="@+id/iv_bubble_shadow" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/iv_bubble_shadow" android:visibility="gone" android:layout_width="8dp" android:layout_height="12dp" android:src="@drawable/car_error_bubble_shadow" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <TextView android:textSize="15dp" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/move_map_tip_tv" android:background="@drawable/car_error_submit_bg" android:paddingTop="5dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="155dp" android:layout_height="wrap_content" android:layout_marginBottom="170dp" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true"/>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

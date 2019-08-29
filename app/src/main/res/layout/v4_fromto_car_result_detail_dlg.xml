@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.drive.view.RouteResultListview xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/car_detail_List" android:background="@color/gary_frame" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:cacheColorHint="#00000000" android:divider="@null"/>

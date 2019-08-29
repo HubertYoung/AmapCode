@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="@color/font_c66" android:ellipsize="end" android:gravity="center" android:id="@+id/item1" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="@color/font_c66" android:ellipsize="end" android:gravity="center" android:id="@+id/item2" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+    <TextView android:textSize="@dimen/default_font_size_t24" android:textColor="@color/font_c66" android:ellipsize="end" android:gravity="center" android:id="@+id/item3" android:layout_width="0dp" android:layout_height="wrap_content" android:singleLine="true" android:layout_weight="1"/>
+</LinearLayout>

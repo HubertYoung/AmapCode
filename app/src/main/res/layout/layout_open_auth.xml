@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="#fff" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:background="#fff" android:padding="15dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="18dp" android:textColor="#000" android:ellipsize="end" android:gravity="center" android:layout_width="match_parent" android:layout_height="30dp" android:text="@string/fast_open_auth_title" android:maxLines="1"/>
+        <RelativeLayout android:gravity="center_horizontal" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp">
+            <ImageView android:id="@+id/appLogo" android:layout_width="48dp" android:layout_height="48dp" android:src="@drawable/auth_logo"/>
+            <ImageView android:id="@+id/sign" android:layout_width="30dp" android:layout_height="21dp" android:layout_marginLeft="20dp" android:src="@drawable/auth_arrow" android:layout_toRightOf="@+id/appLogo" android:layout_centerVertical="true"/>
+            <ImageView android:id="@+id/alipayLogo" android:layout_width="48dp" android:layout_height="48dp" android:layout_marginLeft="20dp" android:src="@drawable/logo_alipay" android:layout_toRightOf="@+id/sign"/>
+        </RelativeLayout>
+        <TextView android:textSize="14dp" android:textColor="#333333" android:gravity="center_vertical" android:id="@+id/authAgreement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:text="@string/fast_open_auth_agreements"/>
+        <View android:background="#eee" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="5dp"/>
+        <TextView android:textSize="13dp" android:textColor="#a2a2a2" android:id="@+id/authAgreementList" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:lineSpacingExtra="10dp"/>
+        <TextView android:textSize="14dp" android:textColor="#a2a2a2" android:id="@+id/authAgreementLink" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp"/>
+        <Button android:textSize="20dp" android:textColor="#fff" android:id="@+id/authLoginButton" android:background="#108ee9" android:layout_width="match_parent" android:layout_height="45dp" android:layout_marginTop="10dp" android:text="@string/fast_open_auth_button"/>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="25dp" android:layout_marginTop="20dp">
+            <ImageView android:layout_width="13dp" android:layout_height="13dp" android:layout_marginBottom="1dp" android:src="@drawable/sign"/>
+            <TextView android:textSize="12dp" android:textColor="#a2a2a2" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="20dp" android:layout_marginLeft="3dp" android:text="@string/fast_open_auth_sign"/>
+        </LinearLayout>
+    </LinearLayout>
+    <com.alipay.mobile.accountopenauth.ui.widget.ClearView android:id="@+id/authCloseBtn" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentRight="true"/>
+</RelativeLayout>

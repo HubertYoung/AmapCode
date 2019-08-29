@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <LinearLayout android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="72dp">
+        <RelativeLayout android:id="@+id/home_layout" android:background="@drawable/route_drive_item_bg_selector" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <FrameLayout android:id="@+id/home_layout_right" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageButton android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/home_image_edit" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:src="@drawable/drive_route_edit" android:contentDescription="@null"/>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@+id/home_layout_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="30dp" android:baselineAligned="false">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:id="@+id/home_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_label_home"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:textColorHint="@color/f_c_3" android:id="@+id/home_tmc_textview" android:background="@drawable/route_drive_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true"/>
+            </LinearLayout>
+            <RelativeLayout android:id="@+id/home_tmc_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/home_layout_top">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/home_tv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/click_for_setting" android:singleLine="true"/>
+                <ImageView android:id="@+id/home_tmc_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginTop="14dp" android:scaleType="fitXY" android:layout_below="@+id/home_tv"/>
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@+id/divider" android:background="@color/c_26" android:layout_width="1px" android:layout_height="match_parent"/>
+        <RelativeLayout android:id="@+id/company_layout" android:background="@drawable/route_drive_item_bg_selector" android:clickable="true" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+            <FrameLayout android:id="@+id/company_layout_right" android:layout_width="40dp" android:layout_height="40dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+                <ImageButton android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/company_image_edit" android:background="@null" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:layout_marginRight="16dp" android:src="@drawable/drive_route_edit" android:contentDescription="@null"/>
+            </FrameLayout>
+            <RelativeLayout android:id="@+id/company_layout_top" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="16dp" android:layout_marginRight="30dp">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:id="@+id/company_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/v4_label_company"/>
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:textColorHint="@color/f_c_3" android:ellipsize="end" android:id="@+id/company_tmc_textview" android:background="@drawable/route_drive_item_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:singleLine="true" android:layout_toRightOf="@+id/company_logo" android:layout_centerVertical="true"/>
+            </RelativeLayout>
+            <RelativeLayout android:id="@+id/company_tmc_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginRight="16dp" android:layout_below="@+id/company_layout_top">
+                <com.autonavi.minimap.widget.AmapTextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/company_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/click_for_setting" android:singleLine="true"/>
+                <ImageView android:id="@+id/company_tmc_bar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="3dp" android:layout_marginTop="14dp" android:scaleType="fitXY" android:layout_below="@+id/company_tv"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</merge>

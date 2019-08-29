@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="100dp">
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <Button android:id="@+id/pay_test_tn_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="获取TN"/>
+            <EditText android:id="@+id/pay_test_et" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="输入TN，或点击左侧按钮"/>
+        </LinearLayout>
+        <Button android:id="@+id/pay_test_pay_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="支付"/>
+        <TextView android:textColor="@color/black" android:id="@+id/pay_test_result_tv" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+    </LinearLayout>
+</RelativeLayout>

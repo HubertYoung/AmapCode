@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/title_layout" android:background="@drawable/common_bar_bg" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_height">
+        <ImageButton android:id="@+id/title_btn_left" android:background="@drawable/title_bar_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/talkback_return"/>
+        <Button android:textSize="@dimen/font_28" android:textColor="@color/search_btn_text_color" android:gravity="center" android:id="@+id/title_btn_right" android:background="@drawable/common_search_btn_selector" android:paddingLeft="12dp" android:paddingRight="12dp" android:layout_width="60dp" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginRight="7dp" android:layout_marginBottom="7dp" android:text="@string/talkback_search" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@string/talkback_search"/>
+        <TextView android:textSize="@dimen/font_38" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/title_text_name" android:clickable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="20dp" android:text="@string/autonavi_train_search" android:singleLine="true" android:layout_toLeftOf="@+id/title_btn_right" android:layout_toRightOf="@+id/title_btn_left" android:layout_centerInParent="true" android:layout_alignWithParentIfMissing="true"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:id="@+id/menu_footer" android:background="@drawable/common_bar_bg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/v3_bottom_bar_height">
+        <TextView android:textSize="@dimen/font_30" android:textColor="@color/black" android:id="@+id/title_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/train_time" android:layout_centerInParent="true"/>
+        <ImageButton android:id="@+id/train_dlg_close" android:background="@drawable/v4_com_btn_close_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:background="@color/gary_tab" android:layout_width="match_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btnStation" android:background="@drawable/v4_favorite_btn_selector" android:paddingLeft="@dimen/input_left" android:paddingTop="@dimen/input_font_updown" android:paddingBottom="@dimen/input_font_updown" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:gravity="center" android:layout_gravity="center" android:id="@+id/station_title" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/search_station"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@+id/btnNo" android:background="@drawable/v4_favorite_btn_selector" android:paddingTop="@dimen/input_font_updown" android:paddingRight="@dimen/input_left" android:paddingBottom="@dimen/input_font_updown" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+            <TextView android:textSize="@dimen/font_28" android:gravity="center" android:layout_gravity="center" android:id="@+id/no_title" android:duplicateParentState="true" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/search_no"/>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="9dp" android:layout_marginTop="@dimen/input_updown" android:layout_marginRight="9dp">
+        <com.autonavi.minimap.route.train.view.TrainSearchStationStartView android:id="@+id/train_search_startStation" android:background="@drawable/search_input_framebg" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+        <com.autonavi.minimap.route.train.view.TrainSearchStationEndView android:id="@+id/train_search_endStation" android:background="@drawable/search_input_framebg" android:focusable="true" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/input_updown"/>
+        <com.autonavi.minimap.route.train.view.TrainSearchInfoView android:id="@+id/train_search_no" android:background="@drawable/search_input_framebg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/train_no_hint"/>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="13dp" android:textColor="@color/f_c_6" android:id="@+id/autonavi_announcement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="15dp" android:text="@string/autonavi_announcement" android:drawableRight="@drawable/directions_more_up_blue"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/announcement_content" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="18dp" android:layout_marginTop="15dp" android:layout_marginRight="18dp">
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="top" android:background="@drawable/train_ticket_disclaimer_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/announcement_page_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:lineSpacingExtra="7dp"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="12dp">
+                <ImageView android:layout_gravity="top" android:background="@drawable/train_ticket_disclaimer_gray_circle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp"/>
+                <TextView android:id="@+id/announcement_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

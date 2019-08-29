@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/commute_tips_sim_container" android:background="@drawable/commute_tips_bg_sim" android:layout_width="40dp" android:layout_height="44dp">
+        <ImageView android:id="@+id/commute_tips_sim_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:src="@drawable/commute_tips_home_sim" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+    <View android:layout_width="40dp" android:layout_height="10dp" android:layout_below="@+id/commute_tips_sim_container"/>
+</RelativeLayout>

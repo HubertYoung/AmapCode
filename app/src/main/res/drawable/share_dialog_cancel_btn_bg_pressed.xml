@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:shape="rectangle">
+    <solid android:color="@color/c_14"/>
+    <stroke android:width="0.5dp" android:color="@color/f_c_4"/>
+    <corners android:topLeftRadius="@dimen/share_dialog_cancel_btn_corner" android:topRightRadius="@dimen/share_dialog_cancel_btn_corner" android:bottomLeftRadius="@dimen/share_dialog_cancel_btn_corner" android:bottomRightRadius="@dimen/share_dialog_cancel_btn_corner"/>
+</shape>

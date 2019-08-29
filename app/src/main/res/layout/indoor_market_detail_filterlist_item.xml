@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/market_detail_filter_item_layout" android:background="@drawable/groupbuy_filter_main_itembg_selector" android:padding="0dp" android:layout_width="match_parent" android:layout_height="38dp">
+    <TextView android:textSize="13dp" android:textColor="@color/black" android:gravity="bottom" android:id="@+id/textView" android:paddingLeft="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true"/>
+</RelativeLayout>

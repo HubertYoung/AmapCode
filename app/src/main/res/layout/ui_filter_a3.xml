@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/c_1" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="318dp">
+    <GridView android:id="@+id/lv_main" android:paddingTop="15dp" android:paddingBottom="15dp" android:clipToPadding="false" android:layout_width="match_parent" android:layout_height="0dp" android:layout_marginLeft="12dp" android:layout_marginRight="12dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:horizontalSpacing="10dp" android:verticalSpacing="10dp" android:numColumns="3" android:divider="@color/c_2" android:dividerHeight="1px" android:choiceMode="multipleChoice" android:layout_weight="1"/>
+    <View android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+    <LinearLayout android:layout_width="match_parent" android:layout_height="44dp" android:divider="@drawable/ui_filter_btn_sep" android:showDividers="middle" android:dividerPadding="8.5dp">
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/reset" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/ui_filter_reset" android:layout_weight="1"/>
+        <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/confirm" android:layout_width="0dp" android:layout_height="match_parent" android:text="@string/ui_filter_confirm" android:layout_weight="1"/>
+    </LinearLayout>
+</LinearLayout>

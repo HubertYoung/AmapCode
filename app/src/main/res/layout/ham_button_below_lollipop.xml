@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.auidebugger.boommenu.ShadowLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/shadow_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" app:sl_cornerRadius="2dp" app:sl_shadowColor="@color/shadow" app:sl_dx="0dp" app:sl_dy="0dp">
+    <FrameLayout android:orientation="horizontal" android:id="@+id/frame_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <View android:id="@+id/ripple" android:background="@color/transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent"/>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/linear_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/image" android:layout_width="56dp" android:layout_height="56dp" android:layout_marginLeft="5dp" android:scaleType="center" android:layout_marginStart="5dp"/>
+            <TextView android:textSize="16sp" android:textColor="@android:color/white" android:gravity="left|center_vertical|center_horizontal|center|start" android:layout_gravity="left|center_vertical|center_horizontal|center|start" android:id="@+id/text" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:maxLines="2" android:layout_weight="1" android:layout_marginStart="5dp" android:layout_marginEnd="5dp"/>
+        </LinearLayout>
+    </FrameLayout>
+</com.autonavi.minimap.auidebugger.boommenu.ShadowLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@+id/new_userguid" android:background="#dcf3ff" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:id="@+id/logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="80dp" android:src="@drawable/splogo" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/app_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:layout_below="@+id/logo" android:layout_centerHorizontal="true"/>
+        <CheckBox android:textColor="@color/black" android:id="@+id/app_check" android:paddingLeft="20dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:checked="true" android:layout_below="@+id/app_logo" android:layout_centerHorizontal="true" style="@style/MySplashCheckBox"/>
+        <Button android:gravity="center" android:id="@+id/newbtnStart" android:background="@drawable/open_amap_pressed" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="36dp" android:layout_below="@+id/app_check" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</LinearLayout>

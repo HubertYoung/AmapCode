@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <com.autonavi.minimap.ajx3.views.AmapAjxView android:id="@+id/sharebike_ajx_banner" android:visibility="gone" android:layout_width="match_parent" android:layout_height="91dp" android:layout_below="@+id/sharebike_tab_rel"/>
+    <RelativeLayout android:id="@+id/sharebike_tab_rel" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_below="@+id/sharebike_title">
+        <com.autonavi.minimap.route.common.view.RouteTabScrollView android:id="@+id/tab_holder" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <com.autonavi.minimap.route.common.view.CircleTabView android:id="@+id/tab" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                <View android:id="@+id/route_input_view_container_shadow" android:background="@drawable/share_bike_shadow" android:layout_width="match_parent" android:layout_height="8px"/>
+            </LinearLayout>
+        </com.autonavi.minimap.route.common.view.RouteTabScrollView>
+        <ImageView android:id="@+id/sharebike_tab_left" android:background="@drawable/sharebike_tab_left" android:visibility="gone" android:layout_width="@dimen/route_37dp" android:layout_height="@dimen/route_40dp" android:layout_alignParentLeft="true" android:layout_alignParentTop="true"/>
+        <ImageView android:id="@+id/sharebike_tab_right" android:background="@drawable/sharebike_tab_right" android:visibility="gone" android:layout_width="@dimen/route_37dp" android:layout_height="@dimen/route_40dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <com.autonavi.minimap.ajx3.views.AmapAjxView android:id="@+id/share_bike_ajxview" android:visibility="invisible" android:layout_width="match_parent" android:layout_height="@dimen/route_95dp" android:layout_below="@+id/sharebike_title"/>
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/sharebike_title" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/sharebike_title" app:title_style="7" app:action_img="@drawable/icon_a19_selector"/>
+    <View android:id="@+id/title_line" android:background="@color/c_13" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_below="@+id/sharebike_tab_rel"/>
+    <com.autonavi.minimap.route.sharebike.view.ShareBikeIndicatorView android:id="@+id/route_indicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_57dp"/>
+    <include layout="@layout/sharebike_page_bottom"/>
+    <include layout="@layout/sharebike_page_action_select_view"/>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

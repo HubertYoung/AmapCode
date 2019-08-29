@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.route.bus.realtimebus.view.RTBusLineDetailItemView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/route_5dp" android:paddingRight="@dimen/route_5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_marginLeft="@dimen/route_5dp" android:layout_marginRight="@dimen/route_5dp">
+        <ImageView android:id="@+id/busline_detail_line_icon" android:background="@drawable/direction_result_line" android:layout_width="wrap_content" android:layout_height="match_parent" android:contentDescription="@null"/>
+        <ImageView android:gravity="center" android:layout_gravity="center" android:id="@+id/busline_detail_station_icon" android:background="@drawable/direction_bus_list_blue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null"/>
+    </FrameLayout>
+    <RelativeLayout android:id="@+id/realbus_item_detail_content" android:layout_width="match_parent" android:layout_height="match_parent">
+        <FrameLayout android:id="@+id/add_attention_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <TextView android:textSize="@dimen/dp_26" android:textColor="@color/f_c_3" android:id="@+id/already_attention_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:text="@string/real_time_bus_already_attention"/>
+            <ImageView android:id="@+id/busline_detail_add_attention" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false"/>
+        </FrameLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/v4_linedetail_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/add_attention_container">
+            <com.autonavi.map.widget.FlowLayout android:layout_gravity="center_vertical" android:id="@+id/busline_detail_station_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginTop="8dp" android:layout_marginBottom="8dp">
+                <TextView android:textSize="@dimen/comment_text_size" android:textStyle="normal" android:textColor="@color/black" android:id="@+id/busline_detail_station_name" android:paddingRight="4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:layout_marginBottom="5dp"/>
+            </com.autonavi.map.widget.FlowLayout>
+        </LinearLayout>
+        <View android:layout_gravity="bottom" android:background="#efeeee" android:layout_width="match_parent" android:layout_height="@dimen/dp_1" android:layout_marginRight="7dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+</com.autonavi.minimap.route.bus.realtimebus.view.RTBusLineDetailItemView>

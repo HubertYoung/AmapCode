@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/map_cover" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.autonavi.widget.ui.TitleBar android:id="@+id/mapTopInteractiveView" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title="@string/stickers_name" app:title_style="4"/>
+    <RelativeLayout android:id="@+id/mapBottomInteractiveView" android:background="@color/sticker_gary" android:paddingBottom="12dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <View android:background="@color/sticker_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        <LinearLayout android:orientation="vertical" android:id="@+id/share_content" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+                <TextView android:textColor="@color/f_c_3" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/sticker_text_padding" android:layout_width="98dp" android:layout_height="wrap_content" android:text="@string/route_sticker_position"/>
+                <TextView android:textColor="#ff333333" android:layout_gravity="center" android:id="@+id/sticker_position_tv" android:paddingLeft="@dimen/sticker_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/sticker_text_padding" android:text=""/>
+            </LinearLayout>
+            <FrameLayout android:id="@+id/strict_control_frame" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14dp" android:textColor="@color/f_c_3" android:gravity="center_vertical" android:id="@+id/strict_control_detail" android:background="@drawable/sticker_details_frame" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp" android:layout_marginBottom="8dp" android:singleLine="false"/>
+            </FrameLayout>
+            <RelativeLayout android:id="@+id/normal_mode_frame" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/sticker_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                <TextView android:textSize="18dp" android:gravity="center" android:id="@+id/sticker_status" android:background="@color/white" android:paddingRight="@dimen/sticker_text_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/sticker_status" android:layout_centerVertical="true">
+                    <LinearLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+                        <TextView android:textColor="@color/f_c_3" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/sticker_text_padding" android:layout_width="98dp" android:layout_height="wrap_content" android:text="@string/route_sticker_last_time_in_share"/>
+                        <TextView android:textColor="#ff333333" android:layout_gravity="center" android:id="@+id/sticker_last_time_tv" android:paddingLeft="@dimen/sticker_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <View android:background="@color/sticker_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+                    <LinearLayout android:paddingTop="8dp" android:paddingBottom="8dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="44dp">
+                        <TextView android:textColor="@color/f_c_3" android:layout_gravity="center_vertical" android:paddingLeft="@dimen/sticker_text_padding" android:layout_width="98dp" android:layout_height="wrap_content" android:text="@string/stickers_total_count_name"/>
+                        <TextView android:textColor="#ff333333" android:layout_gravity="center" android:id="@+id/sticker_frequency_tv" android:paddingLeft="@dimen/sticker_text_padding" android:layout_width="match_parent" android:layout_height="wrap_content" android:text=""/>
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <View android:background="@color/sticker_line" android:layout_width="match_parent" android:layout_height="1px"/>
+        </LinearLayout>
+        <Button android:textSize="@dimen/font_30" android:textColor="@color/white" android:id="@+id/sticer_btn_confirm" android:background="@drawable/sticker_share_button_selector" android:layout_width="match_parent" android:layout_height="@dimen/ns_item_height" android:layout_marginLeft="12dp" android:layout_marginTop="18dp" android:layout_marginRight="12dp" android:text="@string/drive_share" android:layout_below="@+id/share_content"/>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/mapBottomInteractiveView" android:layout_below="@+id/mapTopInteractiveView" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <ImageView android:id="@+id/status_img" android:layout_width="150dp" android:layout_height="150dp" android:layout_marginTop="24dp" android:src="@drawable/sticker_tips_safe" android:layout_centerInParent="true"/>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <TextView android:textSize="32dp" android:textColor="@color/white" android:id="@+id/sticker_count_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:text="2029"/>
+            <TextView android:textSize="12dp" android:textColor="@color/white" android:id="@+id/sticker_count_tip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/route_sticker_time_as_latest"/>
+        </LinearLayout>
+    </RelativeLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

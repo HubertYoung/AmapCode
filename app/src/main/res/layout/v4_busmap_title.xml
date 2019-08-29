@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:background="@drawable/poi_detail_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/v4_buslinetomapview_bottom_height" android:layout_alignParentTop="true">
+        <android.support.v4.view.ViewPager android:id="@+id/horizontal_pager" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    </RelativeLayout>
+</RelativeLayout>

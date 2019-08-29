@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="68dp">
+    <View android:layout_gravity="center_horizontal" android:background="@drawable/run_recommend_arr_line" android:layout_width="match_parent" android:layout_height="@dimen/route_8dp" android:layout_marginLeft="@dimen/route_10dp" android:layout_marginRight="@dimen/route_10dp"/>
+    <com.autonavi.minimap.route.run.view.RunRecommendScrollView android:id="@+id/horizontal_scroll" android:background="#00000000" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="60dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_scroll_root" android:paddingTop="@dimen/route_15dp" android:layout_width="match_parent" android:layout_height="60dp" android:baselineAligned="true"/>
+    </com.autonavi.minimap.route.run.view.RunRecommendScrollView>
+    <View android:background="@drawable/run_recommend_shade_white_left" android:layout_width="@dimen/route_80dp" android:layout_height="@dimen/route_60dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <View android:background="@drawable/run_recommend_shade_white_right" android:layout_width="@dimen/route_80dp" android:layout_height="@dimen/route_60dp" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@drawable/run_recommend_bottom_line" android:layout_width="match_parent" android:layout_height="@dimen/route_1px" android:layout_marginLeft="@dimen/route_10dp" android:layout_marginRight="@dimen/route_10dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

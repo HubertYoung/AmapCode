@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <View android:background="@color/font_cdg" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+    <TextView android:textSize="@dimen/font_22" android:textColor="@color/f_c_3" android:ellipsize="end" android:id="@+id/tv_others" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9dp" android:text="xxx,xxx,xxx也在此处上报" android:singleLine="true"/>
+</LinearLayout>

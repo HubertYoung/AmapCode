@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/root_layout" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout android:id="@+id/mapInteractiveRelativeLayout" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout android:orientation="vertical" android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:background="@drawable/icon_c_bg_single" android:layout_width="match_parent" android:layout_height="@dimen/top_searchbar_height" android:layout_marginLeft="@dimen/map_container_btn_margin" android:layout_marginTop="@dimen/map_container_btn_margin" android:layout_marginRight="@dimen/map_container_btn_margin">
+                <com.autonavi.map.search.view.SearchResultHeaderView android:id="@+id/view_normal_title" android:layout_width="match_parent" android:layout_height="@dimen/v3_bottom_bar_height"/>
+            </LinearLayout>
+        </com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>
+        <RelativeLayout android:gravity="center" android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="48dp" android:layout_alignParentBottom="true">
+            <View android:layout_width="match_parent" android:layout_height="0dp"/>
+        </RelativeLayout>
+        <LinearLayout android:gravity="center" android:id="@+id/top_find_here_layout" android:background="@drawable/search_map_find_here_selector" android:paddingLeft="16dp" android:paddingTop="8dp" android:paddingRight="16dp" android:paddingBottom="8dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="32dp" android:layout_marginTop="4dp" android:layout_below="@+id/mapTopInteractiveView" android:layout_centerHorizontal="true">
+            <ImageView android:paddingRight="@dimen/left_6" android:layout_width="@dimen/dimen_32px" android:layout_height="@dimen/dimen_32px" android:src="@drawable/search_visial_search_magnifier"/>
+            <TextView android:textSize="@dimen/f_s_12" android:textStyle="bold" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/find_here_text" android:layout_width="wrap_content" android:layout_height="@dimen/dimen_32px" android:text="@string/map_view_find_here" android:includeFontPadding="false"/>
+        </LinearLayout>
+    </com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>
+</FrameLayout>

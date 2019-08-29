@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:background="@drawable/bg_alert" android:paddingLeft="8dp" android:paddingRight="14dp" android:layout_width="wrap_content" android:layout_height="56dp">
+    <com.autonavi.widget.ui.GifMovieView android:id="@+id/gif_view" android:layout_width="40dp" android:layout_height="40dp" app:gif_src="@drawable/loading_a"/>
+    <TextView android:textSize="@dimen/f_s_16" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/loading_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/loading_a" android:maxEms="10" android:singleLine="true"/>
+    <ImageView android:id="@+id/close" android:layout_width="25dp" android:layout_height="25dp" android:layout_marginLeft="6dp" android:src="@drawable/icon_a2_selector"/>
+</LinearLayout>

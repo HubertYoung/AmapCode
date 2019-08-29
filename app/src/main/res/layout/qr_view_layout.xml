@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextureView android:id="@+id/preview_view" android:layout_width="match_parent" android:layout_height="match_parent"/>
+    <com.autonavi.minimap.ajx3.support.qrview.QRCodeFinderView android:id="@+id/viewfinder_view" android:background="@color/transparent" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</FrameLayout>

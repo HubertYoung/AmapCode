@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:paddingLeft="20dp" android:paddingRight="20dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="18sp" android:textColor="#000000" android:id="@+id/msg" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp"/>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ajx_engine_performance_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="性能打点 "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_engine_performance" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ajx_engine_eagle_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="DOM调试 "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_engine_eagle" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ajx_engine_js_debug_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="JS调试"/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_engine_js_debug" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ajx_eye_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="鹰眼开关 "/>
+        <com.autonavi.widget.switchview.SwitchButton android:id="@+id/ajx_eye" android:layout_width="30dp" android:layout_height="18dp"/>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/ajx_eyeip_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:layout_width="70dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:text="鹰眼IP "/>
+        <EditText android:textSize="14sp" android:id="@+id/ajx_eyeip" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

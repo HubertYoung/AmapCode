@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <FrameLayout android:id="@+id/layout_add_save_point" android:background="@drawable/tel_list_item_btn_selector" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp" android:layout_marginLeft="@dimen/default_margin_6A" android:layout_marginTop="@dimen/default_margin_6A" android:layout_marginRight="@dimen/default_margin_6A" android:layout_marginBottom="@dimen/default_margin_6A" android:contentDescription="@string/add_new_desc">
+        <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/blue" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_new" android:drawableLeft="@drawable/ic_save_add" android:drawablePadding="@dimen/default_margin_1_5A"/>
+    </FrameLayout>
+</LinearLayout>

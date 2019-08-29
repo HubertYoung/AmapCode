@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:background="@drawable/common_title_map" android:layout_width="match_parent" android:layout_height="50dp">
+        <ImageButton android:id="@+id/btn_back" android:background="@drawable/title_bar_back" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="18dp" android:textColor="@color/black" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/edit_save_point" android:layout_centerInParent="true"/>
+        <TextView android:textSize="14dp" android:textColor="@color/blue" android:gravity="center" android:id="@+id/text_save" android:padding="@dimen/default_margin_5A" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_5A" android:text="@string/save" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <ScrollView android:layout_width="match_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_6A">
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp">
+                <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_6A" android:layout_marginRight="@dimen/default_margin_6A" android:text="@string/address_name"/>
+                <com.autonavi.minimap.widget.ClearableEditText android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:id="@+id/edit_name" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_5A" android:hint="@string/fav_qing_shu_ru_nei_rong" android:singleLine="true"/>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_save_list_item" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin_6A">
+                <RelativeLayout android:orientation="horizontal" android:id="@+id/layout_set_useful" android:background="@drawable/bg_save_list_item" android:clickable="true" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_6A" android:text="@string/set_useful_address" android:layout_toLeftOf="@+id/check_set_useful" android:layout_centerVertical="true"/>
+                    <CheckBox android:layout_gravity="center_vertical" android:id="@+id/check_set_useful" android:background="@drawable/v4_checkbox_bg" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:button="@null" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@drawable/divider_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/default_margin_6A"/>
+                <LinearLayout android:orientation="vertical" android:id="@+id/layout_useful_alias" android:background="@drawable/bg_save_list_item" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:layout_width="match_parent" android:layout_height="44dp">
+                        <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_6A" android:layout_marginRight="@dimen/default_margin_6A" android:text="@string/useful_alias"/>
+                        <com.autonavi.minimap.widget.ClearableEditText android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_3" android:id="@+id/edit_useful_alias" android:background="@null" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/input_useful_alias_hint" android:singleLine="true"/>
+                    </LinearLayout>
+                    <View android:background="@drawable/divider_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/default_margin_6A"/>
+                </LinearLayout>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/layout_set_tag" android:background="@drawable/bg_save_list_item" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_6A" android:text="@string/set_tag" android:layout_toLeftOf="@+id/image_tag_arrow" android:layout_centerVertical="true"/>
+                    <ImageView android:id="@+id/image_tag_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin_4A" android:src="@drawable/more_setting" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                </RelativeLayout>
+                <View android:background="@drawable/divider_line" android:layout_width="match_parent" android:layout_height="1dp" android:layout_marginLeft="@dimen/default_margin_6A"/>
+                <RelativeLayout android:gravity="center_vertical" android:id="@+id/layout_set_shortcut" android:background="@drawable/bg_save_list_item" android:clickable="true" android:descendantFocusability="blocksDescendants" android:layout_width="match_parent" android:layout_height="44dp">
+                    <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/f_c_2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin_6A" android:text="@string/add_quick_navi_screen" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+                <View android:background="@drawable/divider_line" android:layout_width="match_parent" android:layout_height="1dp"/>
+            </LinearLayout>
+            <TextView android:textSize="@dimen/default_font_size_t32" android:textColor="@color/red_del" android:gravity="center" android:id="@+id/text_delete" android:background="@drawable/tel_list_item_btn_selector" android:padding="@dimen/default_margin_6A" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin_6A" android:text="@string/delete_save"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

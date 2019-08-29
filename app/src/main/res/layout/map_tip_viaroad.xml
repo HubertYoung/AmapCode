@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/tips_layout" android:background="@drawable/route_car_viaroad" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="10dp" android:textColor="@color/v3_font_white" android:gravity="center" android:id="@+id/txt_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/tip_fromto_result_map_distance" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/login_adapter_layout" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="21dp" android:textColor="@color/alipay_mainTextColor" android:gravity="center_vertical" android:id="@+id/name" android:background="@drawable/alipay_bg_input_unfocus" android:layout_width="match_parent" android:layout_height="48dp" android:layout_marginLeft="@dimen/alipay_dp_85" android:singleLine="true"/>
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/set_layout" android:background="@color/colorWhite" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/titleBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/titlebar_close_normal"/>
+    <ScrollView android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="13.4dp">
+            <ImageView android:layout_gravity="center_horizontal" android:id="@+id/imageTip" android:layout_width="63dp" android:layout_height="63dp" android:layout_marginTop="46dp" android:src="@drawable/bind_info"/>
+            <TextView android:textSize="16dp" android:textColor="@color/colorLightGray" android:gravity="center" android:id="@+id/textTip" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="30dp" android:layout_marginRight="16dp" android:layout_marginBottom="60dp" android:text="@string/bindTaobaoBindPhone"/>
+            <TextView android:textSize="20dp" android:textColor="#f4c600" android:gravity="center" android:id="@+id/textTip1" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="10dp" android:layout_marginRight="16dp" android:text="@string/bindFail"/>
+            <TextView android:textSize="16dp" android:textColor="@color/colorLightGray" android:gravity="center" android:id="@+id/textTip2" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="16dp" android:layout_marginTop="7dp" android:layout_marginRight="16dp" android:layout_marginBottom="26dp" android:text="@string/bindFailTip"/>
+            <Button android:id="@+id/comfirmSetting" android:layout_marginTop="33dp" android:text="@string/bindIKnow" style="@style/mainButtonStyle"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

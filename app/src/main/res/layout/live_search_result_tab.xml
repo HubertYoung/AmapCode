@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/tab_layout" android:background="@drawable/filter_layout_bg" android:paddingLeft="3dp" android:paddingRight="3dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:tag="layout1" android:paddingTop="10dp" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/margin_14dp" android:tag="textview1" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="分" style="@style/filter_btn_text_style"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/filter_btn_sep" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:contentDescription="@null"/>
+    <LinearLayout android:gravity="center" android:tag="layout2" android:paddingTop="10dp" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/margin_14dp" android:tag="textview2" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="搜索" style="@style/filter_btn_text_style"/>
+    </LinearLayout>
+    <ImageView android:background="@drawable/filter_btn_sep" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:contentDescription="@null"/>
+    <LinearLayout android:gravity="center" android:tag="layout3" android:paddingTop="10dp" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="@dimen/margin_14dp" android:tag="textview3" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="分类搜索" style="@style/filter_btn_text_style"/>
+    </LinearLayout>
+    <ImageView android:tag="divider3" android:background="@drawable/filter_btn_sep" android:layout_width="1px" android:layout_height="match_parent" android:layout_marginTop="7dp" android:layout_marginBottom="7dp" android:contentDescription="@null"/>
+    <LinearLayout android:gravity="center" android:tag="layout4" android:paddingTop="10dp" android:paddingBottom="10dp" android:descendantFocusability="blocksDescendants" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <TextView android:textSize="14dp" android:textColor="@color/filter_text_click_selector" android:ellipsize="end" android:gravity="center" android:id="@+id/more_condition_textView" android:tag="textview4" android:layout_width="wrap_content" android:layout_height="match_parent" android:text="更多筛选" android:singleLine="true"/>
+    </LinearLayout>
+</LinearLayout>

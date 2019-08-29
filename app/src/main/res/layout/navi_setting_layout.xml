@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/navi_setting_title_bar" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:title_style="1"/>
+        <com.autonavi.widget.ui.TitleBar android:id="@+id/navi_setting_single_bar" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <ScrollView android:id="@+id/navi_setting_sv" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <include android:id="@+id/car_layout" android:visibility="gone" layout="@layout/navi_car_setting_layout"/>
+                <include android:id="@+id/truck_layout" android:visibility="gone" layout="@layout/navi_truck_setting_layout"/>
+                <include android:id="@+id/motor_layout" android:visibility="gone" layout="@layout/navi_motor_setting_layout"/>
+                <View android:background="@color/c_26" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="@dimen/route_15dp" android:layout_marginRight="@dimen/route_15dp"/>
+                <include android:id="@+id/common_layout" layout="@layout/navi_common_layout"/>
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@+id/navi_truckguide_layout" layout="@layout/navi_truck_guide_layout"/>
+    </LinearLayout>
+    <RelativeLayout android:id="@+id/truck_guide_layout" android:background="@color/transparent_black" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/truck_moved_icon" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</FrameLayout>

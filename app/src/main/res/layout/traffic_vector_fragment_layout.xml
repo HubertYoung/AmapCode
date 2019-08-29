@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/traffic_vector_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_layout" layout="@layout/title_view_layout"/>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@+id/traffic_top_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/title_layout" android:layout_centerHorizontal="true">
+        <TextView android:textSize="17sp" android:textColor="@android:color/white" android:id="@+id/traffic_index" android:paddingTop="@dimen/traffic_vector_margin_top" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+        <TextView android:textSize="12sp" android:textColor="@android:color/white" android:gravity="center" android:id="@+id/traffic_last_update" android:paddingBottom="10dp" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:drawableLeft="@drawable/clock_search_history_small" android:drawablePadding="6dp"/>
+    </LinearLayout>
+    <TextView android:id="@+id/traffic_net_err" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/net_error_message" android:layout_centerInParent="true"/>
+    <RelativeLayout android:id="@+id/traffic_open_map_layout" android:background="@color/traffic_edge_bg" android:layout_width="match_parent" android:layout_height="38dp" android:layout_alignParentBottom="true">
+        <TextView android:textSize="16sp" android:textColor="@android:color/white" android:id="@+id/traffic_open_map" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/traffic_open_map" android:layout_centerInParent="true"/>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2dp" android:src="@drawable/channel_right_hl_white" android:layout_toRightOf="@+id/traffic_open_map" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.autonavi.widget.photoview.PhotoView android:id="@+id/traffic_board" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/traffic_open_map_layout" android:layout_below="@+id/traffic_top_layout"/>
+</RelativeLayout>

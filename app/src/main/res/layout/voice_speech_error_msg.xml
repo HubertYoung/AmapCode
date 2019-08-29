@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <TextView android:textSize="14dp" android:textColor="@color/f_c_3" android:gravity="top|left|center_vertical|center_horizontal|center" android:layout_gravity="center" android:id="@+id/tv_voice_msg" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="22dp" android:layout_marginRight="22dp" android:text="" android:lineSpacingExtra="4dp"/>
+</RelativeLayout>

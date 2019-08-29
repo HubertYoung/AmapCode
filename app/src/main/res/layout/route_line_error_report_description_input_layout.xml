@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/root_layout" android:background="#4d000000" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="horizontal" android:id="@+id/edit_input_container" android:background="@color/white" android:padding="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/edit_problem_input_layout" android:background="@drawable/car_error_detail_layout_bg" android:paddingTop="7dp" android:paddingBottom="7dp" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="10dp" android:minHeight="34dp" android:layout_weight="1">
+            <EditText android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_2" android:textColorHint="@color/f_c_4" android:id="@+id/edit_input" android:background="@null" android:paddingLeft="7dp" android:focusable="false" android:scrollbars="vertical" android:clickable="false" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="" android:maxLines="3"/>
+        </LinearLayout>
+        <com.autonavi.map.widget.AmapButton android:textSize="@dimen/f_s_15" android:textColor="@color/f_c_1" android:layout_gravity="bottom" android:id="@+id/car_error_des_submit" android:background="@drawable/car_error_submit_selector" android:layout_width="60dp" android:layout_height="34dp" android:text="@string/route_car_error_report_done"/>
+    </LinearLayout>
+</RelativeLayout>

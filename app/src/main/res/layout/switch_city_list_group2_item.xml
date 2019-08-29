@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/list_group2" android:background="@color/white" android:paddingTop="13dp" android:paddingBottom="13dp" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_34" android:textColor="@color/list_large_txt_color" android:id="@+id/name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13dp" android:text="@string/amap_app_name" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+        <ImageView android:id="@+id/image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="13dp" android:src="@drawable/favorite_down" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+    </RelativeLayout>
+    <View android:id="@+id/switch_city_list_group2_item_line" android:background="@color/gray_lite" android:layout_width="match_parent" android:layout_height="0.5dp"/>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/layout_audio_play" android:background="@drawable/bg_tmc_voice_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:id="@+id/img_audio_play" android:background="@anim/tmc_play_anim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            <ImageView android:id="@+id/img_audio_states" android:background="@drawable/tmc_voice_playing" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@null"/>
+            <ProgressBar android:id="@+id/progress_load_item" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_centerVertical="true" style="?android:attr/progressBarStyleSmall"/>
+            <TextView android:textSize="@dimen/font_26" android:textColor="@color/f_c_3" android:id="@+id/txt_audio_length" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="12dp" android:text="15" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

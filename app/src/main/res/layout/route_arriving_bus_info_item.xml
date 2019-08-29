@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.minimap.route.common.view.RouteArrivingBusInfoView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="60dp" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/font_30" android:textColor="@color/route_bus_result_detail_alert_text" android:id="@+id/station_info" android:paddingTop="@dimen/route_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:includeFontPadding="false" android:layout_centerHorizontal="true"/>
+        <ImageView android:id="@+id/realtime_icon" android:layout_width="7dp" android:layout_height="7dp" android:src="@anim/realtime_busline_blue_gif" android:layout_toRightOf="@+id/station_info"/>
+        <TextView android:textSize="@dimen/font_22" android:textColor="@color/f_c_3" android:id="@+id/time_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/station_info" android:layout_centerHorizontal="true"/>
+    </RelativeLayout>
+</com.autonavi.minimap.route.common.view.RouteArrivingBusInfoView>

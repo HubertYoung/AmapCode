@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:paddingLeft="18dp" android:paddingBottom="@dimen/route_20dp" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.autonavi.minimap.route.common.view.RealtimeStrokeTextView android:textSize="16dp" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/focus_station_label" android:paddingTop="@dimen/route_5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="广渠路"/>
+</RelativeLayout>

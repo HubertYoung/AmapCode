@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/navi_data_count_layout" android:background="@color/white" android:layout_width="match_parent" android:layout_height="29dp">
+    <View android:background="@color/gray_lite" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+    <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/information" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:text="@string/activities_destination_record" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    <com.autonavi.minimap.widget.AmapTextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/apply_count" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:text="@string/amap_app_name" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+    <View android:background="@color/gray_lite" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+</RelativeLayout>

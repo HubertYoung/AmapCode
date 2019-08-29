@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:id="@+id/background">
+        <shape android:shape="oval">
+            <solid android:color="@android:color/transparent"/>
+            <size android:height="25dp" android:width="25dp"/>
+        </shape>
+    </item>
+    <item android:id="@+id/foreground">
+        <bitmap android:gravity="center" android:src="@drawable/route_extbus_stop_icon"/>
+    </item>
+</layer-list>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <solid android:color="@color/minibus_avoid_limit_line_lable_solid"/>
+    <stroke android:width="1px" android:color="@color/minibus_avoid_limit_line_lable_stoke"/>
+</shape>

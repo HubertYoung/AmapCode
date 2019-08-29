@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <item android:left="@dimen/map_widget_shadow_width" android:top="@dimen/map_widget_shadow_width" android:right="@dimen/map_widget_shadow_width" android:bottom="@dimen/map_widget_shadow_width">
+        <shape android:shape="oval">
+            <solid android:color="@color/c_1"/>
+        </shape>
+    </item>
+    <item android:left="@dimen/map_widget_shadow_width" android:top="@dimen/map_widget_shadow_width" android:right="@dimen/map_widget_shadow_width" android:bottom="@dimen/map_widget_shadow_width">
+        <selector>
+            <item android:state_pressed="true" android:drawable="@drawable/map_widget_pressed_bg"/>
+        </selector>
+    </item>
+    <item android:drawable="@drawable/map_widget_shadow_b"/>
+</layer-list>

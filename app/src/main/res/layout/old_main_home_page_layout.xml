@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent">
+    <FrameLayout android:id="@+id/footer" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/old_page_bottom_margin" android:layout_marginRight="@dimen/old_page_bottom_margin" android:layout_marginBottom="@dimen/old_page_bottom_margin" android:layout_alignParentBottom="true"/>
+    <FrameLayout android:id="@+id/route_line_container" android:layout_width="@dimen/old_map_widget_route_line_width" android:layout_height="@dimen/old_map_widget_route_line_height" android:layout_marginBottom="2dp" android:layout_above="@+id/footer" android:layout_centerHorizontal="true"/>
+    <FrameLayout android:id="@+id/home_page_drawer_content" android:background="#00000000" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textColor="@color/red" android:id="@+id/ajx_path" android:visibility="gone" android:clickable="false" android:layout_width="wrap_content" android:layout_height="40dp" android:text=""/>
+    <RelativeLayout android:id="@+id/boomLayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/ajx_path">
+        <com.autonavi.minimap.auidebugger.boommenu.BoomMenuButton android:id="@+id/boom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.5" android:layout_alignParentStart="true" app:boom_inActionBar="false" app:boom_button_color="#ff4081"/>
+        <TextView android:textSize="10sp" android:textColor="#ffffff" android:gravity="center" android:id="@+id/text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="js" android:layout_centerInParent="true"/>
+        <TextView android:textColor="#ffffff" android:gravity="center" android:id="@+id/ajx_path_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="●" android:layout_toRightOf="@+id/text" android:layout_centerInParent="true"/>
+    </RelativeLayout>
+</RelativeLayout>

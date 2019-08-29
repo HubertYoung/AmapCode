@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="horizontal" android:id="@+id/map_skin_list_row_ll" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/map_skin_item_0_ll" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+            <FrameLayout android:id="@+id/map_skin_item_0_fl" android:layout_width="88dp" android:layout_height="59dp">
+                <ImageView android:id="@+id/map_skin_item_0_icon_iv" android:layout_width="88dp" android:layout_height="59dp" android:src="@drawable/map_skin_item_occupy_pic" android:scaleType="fitXY"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/skin_item_0_new_sign_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_skin_new_sign"/>
+                <ImageView android:id="@+id/map_skin_item_0_check_iv" android:visibility="gone" android:layout_width="88dp" android:layout_height="59dp" android:src="@drawable/map_skin_item_select_pic" android:scaleType="fitXY"/>
+            </FrameLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:id="@+id/map_skin_item_0_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="皮肤"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_width="5dp" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/map_skin_item_1_ll" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_centerVertical="true">
+            <FrameLayout android:id="@+id/map_skin_item_1_fl" android:layout_width="88dp" android:layout_height="59dp">
+                <ImageView android:id="@+id/map_skin_item_1_icon_iv" android:layout_width="88dp" android:layout_height="59dp" android:src="@drawable/map_skin_item_occupy_pic" android:scaleType="fitXY"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/skin_item_1_new_sign_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_skin_new_sign"/>
+                <ImageView android:id="@+id/map_skin_item_1_check_iv" android:visibility="gone" android:layout_width="88dp" android:layout_height="59dp" android:src="@drawable/map_skin_item_select_pic" android:scaleType="fitXY"/>
+            </FrameLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:id="@+id/map_skin_item_1_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="皮肤"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:layout_width="5dp" android:layout_height="match_parent"/>
+    <RelativeLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1">
+        <LinearLayout android:orientation="vertical" android:id="@+id/map_skin_item_2_ll" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <FrameLayout android:id="@+id/map_skin_item_2_fl" android:layout_width="88dp" android:layout_height="59dp">
+                <ImageView android:id="@+id/map_skin_item_2_icon_iv" android:layout_width="88dp" android:layout_height="59dp" android:src="@drawable/map_skin_item_occupy_pic" android:scaleType="fitXY"/>
+                <ImageView android:layout_gravity="top|right|center_vertical|center_horizontal|center" android:id="@+id/skin_item_2_new_sign_iv" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/map_skin_new_sign"/>
+                <ImageView android:id="@+id/map_skin_item_2_check_iv" android:visibility="gone" android:layout_width="88dp" android:layout_height="59dp" android:src="@drawable/map_skin_item_select_pic" android:scaleType="fitXY"/>
+            </FrameLayout>
+            <TextView android:textSize="12dp" android:textColor="@color/f_c_2" android:layout_gravity="center_horizontal" android:id="@+id/map_skin_item_2_name_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="皮肤"/>
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

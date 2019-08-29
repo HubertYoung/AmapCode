@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:id="@+id/rootView" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/title_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" layout="@layout/title_view_layout"/>
+    <LinearLayout android:orientation="vertical" android:background="@drawable/v4_board_list_content_bg_selector" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="15dp">
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/v6_color_gray" android:id="@+id/tishi" android:background="@drawable/border_bg" android:paddingTop="8dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="17dp" android:layout_marginTop="2dp" android:text="@string/another_is_find"/>
+        <ListView android:scrollbarStyle="outsideOverlay" android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="5dp" android:layout_marginRight="5dp" android:listSelector="#00000000" android:cacheColorHint="#00000000" android:childIndicator="@null" android:divider="@drawable/common_line"/>
+    </LinearLayout>
+</LinearLayout>

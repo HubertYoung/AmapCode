@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/dialog_bg" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/basemap_dialog_background" android:layout_width="270dp" android:layout_height="wrap_content" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" android:layout_centerInParent="true">
+        <TextView android:textSize="@dimen/font_34" android:textColor="@color/f_c_2" android:gravity="top|center_vertical|center_horizontal|center" android:id="@+id/txt_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28dp" android:text="@string/comment_publishing" android:lineSpacingExtra="4dp"/>
+        <ProgressBar android:id="@+id/progress_bar" android:paddingLeft="30dp" android:paddingTop="20dp" android:paddingRight="30dp" android:paddingBottom="25dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:maxHeight="20dp" android:max="100" android:progress="0" android:indeterminate="false" android:indeterminateOnly="false" android:progressDrawable="@drawable/comment_publish_progress" android:minHeight="20dp"/>
+        <View android:id="@+id/line" android:background="@color/comment_line" android:layout_width="match_parent" android:layout_height="1px" android:layout_marginLeft="12dp" android:layout_marginRight="12dp"/>
+        <TextView android:textSize="@dimen/font_34" android:textColor="@color/comment_highlight_bule" android:gravity="center" android:id="@+id/btn_cancle" android:layout_width="match_parent" android:layout_height="44dp" android:text="@string/cancel"/>
+    </LinearLayout>
+</RelativeLayout>

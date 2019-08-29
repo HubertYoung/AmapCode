@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.bundle.uitemplate.mapwidget.common.MapWidgetTip android:id="@+id/redesign_pull_tip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:arrow_direction="-1" app:max_lines="1" app:text_context="上拉查看更多功能"/>
+</RelativeLayout>

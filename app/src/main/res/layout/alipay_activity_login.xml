@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" style="@style/alipay_client_application_bg">
+    <RelativeLayout android:layout_width="match_parent" android:layout_height="48dp">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/titleLayout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        <com.ali.user.mobile.ui.widget.APTitleBar android:id="@+id/titleBar" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@+id/titleLayout" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <com.ali.user.mobile.util.ResizeScrollView android:id="@+id/viewContainers" android:paddingLeft="16dp" android:paddingRight="16dp" android:scrollbars="none" android:layout_width="match_parent" android:layout_height="match_parent" android:fillViewport="true"/>
+</LinearLayout>

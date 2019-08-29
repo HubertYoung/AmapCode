@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center_vertical" android:orientation="horizontal" android:clipChildren="false" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <com.amap.bundle.drive.result.view.RouteOnLineBreathView android:layout_gravity="bottom" android:id="@+id/route_car_result_online_icon" android:layout_width="@dimen/map_container_btn_size" android:layout_height="@dimen/map_container_btn_size"/>
+    <TextView android:textColor="@color/white" android:id="@+id/route_car_result_online_tip" android:background="@drawable/layer_tip_left" android:paddingLeft="14dp" android:paddingTop="5dp" android:paddingRight="4dp" android:paddingBottom="5dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/autonavi_car_result_online_tip" android:maxLines="2"/>
+</LinearLayout>

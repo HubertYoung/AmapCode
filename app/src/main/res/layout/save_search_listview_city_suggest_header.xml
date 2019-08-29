@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:id="@+id/city_layout" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="4dp">
+        <TextView android:textSize="@dimen/font_h19" android:textColor="@color/v6_color_gray" android:gravity="center" android:id="@+id/error_city_both_hide" android:padding="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dp" android:text="@string/can_not_find_reslut_in_this_area"/>
+        <View android:id="@+id/divider" android:background="@drawable/board_line" android:paddingLeft="15dp" android:layout_width="match_parent" android:layout_height="0.8dp"/>
+        <TextView android:textSize="@dimen/font_26" android:textColor="@color/v6_color_gray" android:background="@color/white" android:paddingLeft="15dp" android:paddingTop="10dp" android:paddingBottom="10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/chose_city_reslut"/>
+    </LinearLayout>
+</LinearLayout>

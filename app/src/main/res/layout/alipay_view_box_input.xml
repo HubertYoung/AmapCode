@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <EditText android:textColor="#00000000" android:id="@+id/box_input_real_input" android:layout_width="1dp" android:layout_height="1dp" android:cursorVisible="false" android:inputType="number"/>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/box_input_wrapper" android:background="@color/alipay_colorWhite" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</merge>

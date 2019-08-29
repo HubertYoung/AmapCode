@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:background="@color/white" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font_28" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/route_bus_detail_irregular_time_title"/>
+        <View android:background="#dddddd" android:layout_width="match_parent" android:layout_height="@dimen/route_1px"/>
+        <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_15dp" android:layout_marginTop="@dimen/route_15dp" android:layout_marginRight="@dimen/route_15dp">
+            <com.autonavi.map.widget.FlowLayout android:id="@+id/normal_time_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_15dp" app:horizontalSpacing="@dimen/route_15dp" app:verticalSpacing="@dimen/route_8dp">
+                <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            </com.autonavi.map.widget.FlowLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/workday_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_15dp">
+                <TextView android:textSize="@dimen/font_24" android:textColor="@color/white" android:background="#999999" android:paddingLeft="@dimen/route_4dp" android:paddingRight="@dimen/route_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/workday"/>
+                <com.autonavi.map.widget.FlowLayout android:id="@+id/workday_time_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_15dp" app:horizontalSpacing="@dimen/route_15dp" app:verticalSpacing="@dimen/route_8dp">
+                    <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.autonavi.map.widget.FlowLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@+id/holiday_container" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_15dp">
+                <TextView android:textSize="@dimen/font_24" android:textColor="@color/white" android:background="#999999" android:paddingLeft="@dimen/route_4dp" android:paddingRight="@dimen/route_4dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/holiday"/>
+                <com.autonavi.map.widget.FlowLayout android:id="@+id/holiday_time_list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_15dp" app:horizontalSpacing="@dimen/route_15dp" app:verticalSpacing="@dimen/route_8dp">
+                    <TextView android:textSize="@dimen/font_24" android:textColor="@color/f_c_3" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+                </com.autonavi.map.widget.FlowLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</FrameLayout>

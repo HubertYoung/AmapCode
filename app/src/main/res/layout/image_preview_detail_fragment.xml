@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@color/bg_color_black" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.map.search.view.FixedViewPager android:id="@+id/image_detail_pager" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_alignParentTop="true"/>
+    <include android:id="@+id/include" layout="@layout/image_preview_title_layout"/>
+</RelativeLayout>

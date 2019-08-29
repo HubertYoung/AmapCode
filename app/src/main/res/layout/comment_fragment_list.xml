@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout android:orientation="vertical" android:background="@color/c_4" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@+id/title_layout" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height">
+            <ImageButton android:id="@+id/title_back_button" android:background="@drawable/icon_a1_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/title_bar_back_padding" android:layout_alignParentLeft="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/title_tab_layout" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/title_tab_left" android:background="@drawable/mine_offlinearrow_tab1_pressed" android:layout_width="@dimen/comment_tab_width" android:layout_height="@dimen/comment_tab_height" android:text="@string/comment_tab_done"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/title_tab_right" android:background="@drawable/mine_offlinearrow_tab2_normal" android:layout_width="@dimen/comment_tab_width" android:layout_height="@dimen/comment_tab_height" android:text="@string/comment_tab_doing"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>
+    <View android:background="@color/c_13" android:layout_width="match_parent" android:layout_height="1px"/>
+    <FrameLayout android:id="@+id/container_layout" android:layout_width="match_parent" android:layout_height="match_parent"/>
+</LinearLayout>

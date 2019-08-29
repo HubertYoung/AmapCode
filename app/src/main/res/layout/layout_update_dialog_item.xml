@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_gravity="center" android:paddingTop="16dp" android:layout_width="@dimen/update_hint_dialog_width" android:layout_height="@dimen/update_hint_dialog_width" android:layout_alignParentTop="true">
+    <ImageView android:id="@+id/update_item_iv" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/update_hint_dialog_width" android:scaleType="fitXY"/>
+    <pl.droidsonroids.gif.InternalGifImageView android:id="@+id/update_item_gif" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/update_hint_dialog_width" android:scaleType="fitXY"/>
+    <com.airbnb.lottie.LottieAnimationView android:id="@+id/update_item_lottie" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/update_hint_dialog_width" android:scaleType="centerInside"/>
+    <com.amap.bundle.appupgrade.config.presenter.TextureVideoView android:id="@+id/update_item_surface_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/update_hint_dialog_width" android:scaleType="centerInside"/>
+</RelativeLayout>

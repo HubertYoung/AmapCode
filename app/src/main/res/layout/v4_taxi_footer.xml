@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/lower_pager" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+        <RelativeLayout android:id="@+id/vacant_layout" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="61dp">
+            <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:id="@+id/vacant_layoutBg" android:background="@drawable/popuphead_poiview_bg" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="49dp" android:layout_alignParentBottom="true"/>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent">
+                <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btn_taxi" android:background="@drawable/bg_btn_taxi_inputtype_selector" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginLeft="8dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <com.autonavi.minimap.widget.AmapTextView android:textSize="15dp" android:textStyle="bold" android:textColor="#007aff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/taxi_audiokeyboard" android:text="@string/taxi_call_now" android:drawableLeft="@drawable/taxi_hp_textinput" android:drawablePadding="2dp"/>
+                </LinearLayout>
+                <com.autonavi.minimap.drive.taxi.view.GestureView android:gravity="center_vertical" android:id="@+id/btn_sound" android:layout_width="60dp" android:layout_height="61dp" android:layout_marginLeft="8dp" android:layout_marginRight="8dp"/>
+                <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:id="@+id/btn_boardtime" android:background="@drawable/bg_btn_taxi_inputtype_selector" android:clickable="true" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:layout_marginBottom="4dp" android:layout_weight="1">
+                    <com.autonavi.minimap.widget.AmapTextView android:textSize="15dp" android:textStyle="bold" android:textColor="#007aff" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taxi_call_type_later" android:drawableLeft="@drawable/taxi_hp_booking" android:drawablePadding="2dp"/>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/waiting_layout" android:background="@drawable/popuphead_poiview_bg" android:visibility="visible" android:clickable="true" android:layout_width="match_parent" android:layout_height="90dp">
+            <com.autonavi.minimap.drive.taxi.view.TextProgressBar android:id="@+id/loop_bg" android:layout_width="40dp" android:layout_height="40dp" android:layout_margin="15dp" android:indeterminateDrawable="@drawable/text_progress" android:indeterminateDuration="@integer/indeterminateDuration" android:layout_alignParentLeft="true" android:layout_centerVertical="true" app:textColor="@color/blue" app:textSize="13dp" app:roundColor="@color/white" app:roundProgressColor="@color/blue" app:roundWidth="4dp"/>
+            <LinearLayout android:gravity="center_vertical" android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@+id/right_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                <ImageView android:layout_gravity="center" android:id="@+id/divider_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/popupdown_poiview_line" android:contentDescription="@null"/>
+                <Button android:textSize="@dimen/font_26" android:textColor="@color/blue" android:gravity="center" android:id="@+id/btnCanOrderTaxi" android:background="@drawable/btn_superfromto_line_selector" android:layout_width="58dp" android:layout_height="match_parent" android:text="@string/cancel"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_toLeftOf="@+id/right_layout" android:layout_toRightOf="@+id/loop_bg" android:layout_centerVertical="true">
+                <TextView android:textSize="@dimen/font_36" android:textColor="@color/f_c_2" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taxi_call_calling" android:singleLine="true"/>
+                <TextView android:textSize="@dimen/font_26" android:textColor="#898989" android:ellipsize="end" android:id="@+id/text_waiting" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/taxi_wait_with_patience" android:singleLine="true"/>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@+id/driver_layout" android:background="@drawable/popuphead_poiview_bg" android:paddingLeft="8dp" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@+id/relative_wt" android:paddingLeft="8dp" android:visibility="visible" android:layout_width="match_parent" android:layout_height="90dp">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@+id/des_layout" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentLeft="true" android:layout_centerVertical="true">
+                    <TextView android:textSize="@dimen/font_36" android:textColor="@color/f_c_2" android:ellipsize="end" android:id="@+id/text_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true"/>
+                    <TextView android:textSize="@dimen/font_26" android:textColor="#898989" android:ellipsize="end" android:id="@+id/text_addr" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:singleLine="true"/>
+                </LinearLayout>
+                <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_alignParentRight="true">
+                    <ImageView android:layout_gravity="center_vertical" android:id="@+id/divider_right" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/popupdown_poiview_line" android:contentDescription="@null"/>
+                    <TextView android:textSize="@dimen/font_26" android:textColor="@color/blue" android:gravity="center" android:layout_gravity="center_vertical" android:id="@+id/btn_call" android:layout_width="58dp" android:layout_height="wrap_content" android:text="@string/taxi_call" android:drawableTop="@drawable/call_popup"/>
+                </LinearLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:visibility="gone" android:layout_width="match_parent" android:layout_height="50dp" android:layout_below="@+id/relative_wt">
+                <ImageView android:layout_width="match_parent" android:layout_height="1dp" android:src="@drawable/divider_line" android:contentDescription="@null"/>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@+id/down_btn_ll" android:layout_width="match_parent" android:layout_height="match_parent" android:baselineAligned="false">
+                    <RelativeLayout android:id="@+id/txt_comment" android:background="@drawable/v4_common_idle_tap_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                        <TextView android:textSize="12dp" android:textColor="#676c65" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taxi_comment" android:drawableLeft="@drawable/icon_taxi_commend" android:drawablePadding="7dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@+id/btnShare" android:background="@drawable/v4_common_idle_tap_selector" android:layout_width="wrap_content" android:layout_height="match_parent" android:layout_weight="1">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/idle_tap_divider" android:layout_centerVertical="true" android:contentDescription="@null"/>
+                        <TextView android:textSize="12dp" android:textColor="#676c65" android:gravity="center" android:id="@+id/tv_fujin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taxi_share" android:drawableLeft="@drawable/funicon_share_tab" android:drawablePadding="7dp" android:layout_centerInParent="true"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <View android:background="@color/frame_blank" android:layout_width="match_parent" android:layout_height="@dimen/line_devide"/>
+    </LinearLayout>
+</LinearLayout>

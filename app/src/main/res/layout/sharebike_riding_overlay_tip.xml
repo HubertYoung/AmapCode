@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@drawable/sharebike_pop_foot_tip_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/route_10dp">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/sharebike_riding_tip_with_addresss" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2dp">
+            <LinearLayout android:orientation="vertical" android:id="@+id/sharebike_riding_tip_edit" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/f_s_12" android:textStyle="bold" android:textColor="@color/f_c_4" android:ellipsize="end" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="前往" android:drawableRight="@drawable/sharebike_edit_address_icon" android:drawablePadding="@dimen/route_4dp"/>
+                <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/c_15" android:ellipsize="end" android:id="@+id/sharebike_tip_address" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150dp" android:minWidth="60dp" android:maxLines="1" android:maxLength="18"/>
+            </LinearLayout>
+            <View android:id="@+id/sharebike_riding_tip_line" android:background="#d8d8d8" android:layout_width="@dimen/route_1dp" android:layout_height="match_parent" android:layout_margin="@dimen/route_8dp"/>
+            <ImageView android:id="@+id/sharebike_riding_tip_navi" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_3dp" android:layout_marginBottom="@dimen/route_3dp" android:src="@drawable/walk_ride_icon"/>
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@+id/sharebike_riding_tip_no_address" android:paddingLeft="@dimen/route_2dp" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="-4dp">
+            <TextView android:textSize="@dimen/f_s_14" android:textColor="@color/c_15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_2dp" android:text="@string/sharebike_edit_address"/>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/sharebike_address_arrow"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

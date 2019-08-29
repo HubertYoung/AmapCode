@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="match_parent">
+    <RelativeLayout android:id="@+id/mapTopInteractiveView" android:layout_width="match_parent" android:layout_height="@dimen/onfoot_navimap_title_header_height">
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+            <ImageView android:id="@+id/foot_browser_left_btn" android:paddingLeft="@dimen/route_8dp" android:paddingRight="@dimen/route_8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/route_browser_arrow_left" android:contentDescription="@string/talkback_previous"/>
+            <android.support.v4.view.ViewPager android:id="@+id/foot_browser_horizontal_pager" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1" android:overScrollMode="never"/>
+            <ImageView android:id="@+id/foot_browser_right_btn" android:paddingLeft="@dimen/route_8dp" android:paddingRight="@dimen/route_8dp" android:clickable="true" android:layout_width="wrap_content" android:layout_height="match_parent" android:src="@drawable/route_browser_arrow_right" android:contentDescription="@string/talkback_next"/>
+        </LinearLayout>
+        <View android:background="#33000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@+id/mapBottomInteractiveView" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <RelativeLayout android:gravity="center" android:background="@color/white" android:layout_width="match_parent" android:layout_height="@dimen/footer_height">
+            <View android:background="#33000000" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_alignParentTop="true"/>
+            <ImageButton android:gravity="center" android:layout_gravity="center" android:id="@+id/foot_browser_exit" android:background="@drawable/route_button_transparent" android:layout_width="@dimen/footer_height" android:layout_height="@dimen/footer_height" android:src="@drawable/default_path_footer_icon_close" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:contentDescription="@string/foot_browser_exit"/>
+            <Button android:textSize="16dp" android:textColor="@color/bus_ride_continue_color" android:gravity="center" android:layout_gravity="center" android:id="@+id/foot_browser_to_navi" android:background="@drawable/route_button_transparent" android:clickable="true" android:layout_width="match_parent" android:layout_height="@dimen/footer_height" android:layout_marginRight="50dp" android:text="@string/autonavi_start_navi" android:layout_toRightOf="@+id/foot_browser_exit" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="#90000000" android:clickable="true" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/basemap_alertdialog_bg" android:layout_width="270dp" android:layout_height="wrap_content" android:minHeight="142dp" android:layout_centerHorizontal="true" android:layout_centerVertical="true">
+        <TextView android:textSize="@dimen/font_34" android:textStyle="bold" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="14dp" android:text="@string/custom_navitts_save_voice"/>
+        <RelativeLayout android:background="@drawable/bg_save_my_voice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="14dp" android:layout_marginRight="14dp">
+            <EditText android:textSize="@dimen/font_32" android:textColor="@color/f_c_2" android:id="@+id/input_package_name" android:background="@null" android:paddingLeft="5dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginRight="40dp" android:minHeight="32dp" android:singleLine="true" android:inputType="text"/>
+            <ImageButton android:id="@+id/btn_clean" android:background="@null" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8dp" android:src="@drawable/search_input_clear_selector" android:layout_alignParentRight="true" android:layout_centerVertical="true"/>
+        </RelativeLayout>
+        <View android:background="@color/d_gray" android:layout_width="match_parent" android:layout_height="0.5dp" android:layout_marginTop="14dp"/>
+        <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="44dp" android:maxHeight="44dp">
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_2" android:gravity="center" android:layout_gravity="center" android:id="@+id/decision_cancel" android:background="@drawable/dlg_decision_selector_left" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/custom_navitts_operation_give_up" android:layout_weight="1"/>
+            <View android:layout_gravity="center_horizontal" android:background="@color/d_gray" android:layout_width="0.5dp" android:layout_height="match_parent"/>
+            <TextView android:textSize="@dimen/f_s_17" android:textColor="@color/f_c_6" android:gravity="center" android:layout_gravity="center" android:id="@+id/decision_confirm" android:background="@drawable/dlg_decision_selector_right" android:layout_width="match_parent" android:layout_height="match_parent" android:text="@string/custom_navitts_operation_save" android:layout_weight="1"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

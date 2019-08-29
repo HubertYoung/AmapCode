@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+    <TextView android:textSize="9sp" android:textColor="@color/f_c_1" android:gravity="center" android:id="@+id/stone_miles" android:background="@drawable/run_mile_stone_shape" android:paddingLeft="@dimen/route_6dp" android:paddingTop="@dimen/route_2dp" android:paddingRight="@dimen/route_6dp" android:paddingBottom="@dimen/route_2dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1km"/>
+</LinearLayout>

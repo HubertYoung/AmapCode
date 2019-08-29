@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/image_default_background" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_view_layout"/>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_yellow" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="27dp" android:textStyle="bold" android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="29dp" android:text="@string/activities_commit_success" android:shadowColor="#44000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+        <com.autonavi.minimap.widget.AmapTextView android:textSize="17dp" android:textColor="@color/white" android:gravity="center_horizontal" android:id="@+id/payforCashTv" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/activities_need_login_to_get_payed" android:shadowColor="#44000000" android:shadowDx="0" android:shadowDy="1" android:shadowRadius="1"/>
+    </LinearLayout>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="-40dp" android:src="@drawable/correct_icon_1" android:contentDescription="@null"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="0dp" android:src="@drawable/use_pay_gold" android:scaleType="center" android:layout_weight="1" android:contentDescription="@null"/>
+    <Button android:textSize="@dimen/v3_name_font_size" android:textColor="@color/white" android:id="@+id/loginBtn" android:background="@drawable/activities_orange_corner_btn_bg" android:clickable="true" android:layout_width="match_parent" android:layout_height="40dp" android:layout_marginLeft="20dp" android:layout_marginRight="20dp" android:layout_marginBottom="45dp" android:text="@string/activities_go_to_login"/>
+</LinearLayout>

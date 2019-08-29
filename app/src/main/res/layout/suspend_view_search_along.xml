@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.amap.bundle.drivecommon.widget.ExpandableIconView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="wrap_content" android:layout_height="wrap_content" app:iconLayoutType="1" app:childIconId="@+id/route_car_result_search_along_btn"/>

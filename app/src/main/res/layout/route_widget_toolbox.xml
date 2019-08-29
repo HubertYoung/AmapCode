@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui">
+    <LinearLayout android:orientation="vertical" android:id="@+id/route_toolbox_contaniner" android:background="@drawable/route_toolbox_bg" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/route_toolbox_width" android:layout_height="wrap_content">
+        <com.autonavi.minimap.widget.draggable.DraggableRecyclerView android:layout_gravity="center_horizontal" android:id="@+id/draggable_grid" android:background="@color/transparent" android:clipChildren="false" android:clipToPadding="false" android:layout_width="@dimen/route_toolbox_grid_width" android:layout_height="@dimen/route_toolbox_grid_height" android:overScrollMode="never"/>
+        <TextView android:textSize="@dimen/f_s_11" android:textColor="@color/f_c_4" android:gravity="center" android:background="@color/transparent" android:paddingTop="9dp" android:paddingBottom="9dp" android:clickable="true" android:layout_width="@dimen/route_toolbox_grid_width" android:layout_height="@dimen/route_toolbox_tip_height" android:text="@string/route_toolbox_tips"/>
+    </LinearLayout>
+</merge>

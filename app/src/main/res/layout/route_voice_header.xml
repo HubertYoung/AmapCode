@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <RelativeLayout android:id="@+id/rLayout_voice_title" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <include android:id="@+id/view_voice_title" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content" layout="@layout/route_voice_view_title"/>
+    </RelativeLayout>
+</RelativeLayout>

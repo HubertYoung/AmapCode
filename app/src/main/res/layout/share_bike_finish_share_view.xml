@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <ImageView android:id="@+id/iv_map_bg" android:layout_width="match_parent" android:layout_height="match_parent" android:scaleType="fitXY"/>
+    <RelativeLayout android:orientation="vertical" android:id="@+id/linearLayout2" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@+id/ll_left_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_4dp" android:layout_marginTop="@dimen/route_20dp" android:layout_alignParentLeft="true">
+            <ImageView android:id="@+id/img_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_4dp" android:src="@drawable/default_main_autonavi_logo"/>
+            <com.autonavi.minimap.route.common.widget.RouteStrokeTextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:id="@+id/run_share_time" android:paddingLeft="12dp" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content"/>
+            <com.autonavi.minimap.route.common.widget.RouteStrokeTextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_2" android:ellipsize="end" android:gravity="center" android:id="@+id/route_title_run" android:visibility="gone" android:layout_width="match_parent" android:layout_height="match_parent" android:maxLines="1" android:alpha="0.9"/>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@+id/run_distance_bottom_view" android:background="@drawable/icon_c_bg_single_a" android:paddingBottom="@dimen/route_10dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_4dp" android:layout_marginTop="5dp" android:layout_marginRight="@dimen/route_4dp" android:layout_below="@+id/ll_left_bottom">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="28.5dp">
+                <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6dp">
+                    <TextView android:textSize="@dimen/route_45dp" android:textColor="@color/f_c_6" android:gravity="center" android:id="@+id/run_distance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0.0" android:drawablePadding="6dp"/>
+                    <include layout="@layout/share_ride_fee_desc"/>
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/tip_fees" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/route_7dp" android:text="前2小时免费" android:layout_centerVertical="true"/>
+                    <View android:id="@+id/msg_cut_line" android:background="@color/c_26" android:visibility="gone" android:layout_width="@dimen/route_1dp" android:layout_height="@dimen/route_11dp" android:layout_marginRight="@dimen/route_7dp" android:layout_toRightOf="@+id/tip_fees" android:layout_centerVertical="true"/>
+                    <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="骑行费用" android:drawablePadding="6dp" android:layout_toRightOf="@+id/msg_cut_line" android:layout_centerVertical="true"/>
+                </RelativeLayout>
+            </LinearLayout>
+            <View android:id="@+id/line_division" android:visibility="gone" android:layout_width="match_parent" android:layout_height="@dimen/route_20dp"/>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@+id/rainbow_flag" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_14dp" android:layout_marginRight="@dimen/route_14dp" android:layout_marginBottom="@dimen/route_17dp">
+                <TextView android:textSize="@dimen/f_s_11" android:textColor="@color/rainbow_slow_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_finish_rainbow_slow"/>
+                <View android:background="@drawable/route_ranibow" android:layout_width="0dp" android:layout_height="@dimen/route_2dp" android:layout_marginLeft="@dimen/route_7dp" android:layout_marginRight="@dimen/route_7dp" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/f_s_11" android:textColor="@color/rainbow_fast_text_color" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/running_finish_rainbow_fast"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="10dp" android:layout_marginRight="10dp">
+                <LinearLayout android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1">
+                    <TextView android:textSize="@dimen/f_s_24" android:textColor="@color/f_c_2" android:id="@+id/run_time_share" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                    <TextView android:textSize="@dimen/f_s_24" android:textColor="@color/f_c_2" android:id="@+id/run_time_share_unit" android:layout_width="wrap_content" android:layout_height="match_parent"/>
+                </LinearLayout>
+                <TextView android:textSize="@dimen/f_s_24" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/run_carlor" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/f_s_24" android:textColor="@color/f_c_2" android:gravity="center" android:id="@+id/run_speed" android:layout_width="0dp" android:layout_height="match_parent" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="match_parent" android:layout_marginLeft="9dp" android:layout_marginRight="9dp" android:layout_marginBottom="@dimen/route_23dp">
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/route_1dp" android:text="@string/share_bike_riding_time" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:id="@+id/run_carlor_unit" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/route_1dp" android:text="@string/share_bike_riding_distance" android:layout_weight="1"/>
+                <TextView android:textSize="@dimen/f_s_13" android:textColor="@color/f_c_3" android:gravity="center" android:layout_width="0dp" android:layout_height="match_parent" android:layout_marginTop="@dimen/route_1dp" android:text="@string/share_bike_riding_reduce_carbon" android:layout_weight="1"/>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@+id/share_logo" android:visibility="visible" android:layout_width="match_parent" android:layout_height="wrap_content">
+                <View android:background="@color/c_2" android:layout_width="match_parent" android:layout_height="@dimen/route_1dp" android:layout_marginLeft="@dimen/route_10dp" android:layout_marginRight="@dimen/route_10dp"/>
+            </LinearLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="@dimen/route_44dp">
+                <View android:id="@+id/share_logo_divider" android:background="@color/f_c_3" android:layout_width="@dimen/route_1px" android:layout_height="@dimen/route_16dp" android:layout_centerInParent="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <ImageView android:id="@+id/shareButton" android:background="@drawable/icon_c_bg_b" android:visibility="gone" android:layout_width="78dp" android:layout_height="78dp" android:layout_marginTop="-39dp" android:layout_marginRight="@dimen/route_20dp" android:src="@drawable/icon_c38" android:layout_alignTop="@+id/run_distance_bottom_view" android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="22dp" android:weightSum="2" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@+id/amap_share_logo" android:layout_width="wrap_content" android:layout_height="@dimen/route_20dp" android:layout_marginRight="@dimen/route_22dp" android:src="@drawable/route_amap_share_logo" android:scaleType="fitCenter" android:layout_weight="1"/>
+        <ImageView android:layout_gravity="center" android:id="@+id/cp_share_logo" android:layout_width="wrap_content" android:layout_height="@dimen/route_19dp" android:layout_marginLeft="@dimen/route_22dp" android:src="@drawable/share_bike_cp_default_logo" android:scaleType="fitXY" android:adjustViewBounds="true" android:layout_weight="1"/>
+    </LinearLayout>
+</RelativeLayout>

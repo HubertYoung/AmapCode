@@ -1,0 +1,448 @@
+[
+  {
+    "category": [
+      {
+        "name": "\u5168\u7ebf",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=tquery"
+      },
+      {
+        "name": "\u5927\u5b66\u57ce",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.308851;y=29.60742"
+      },
+      {
+        "name": "\u9648\u5bb6\u6865",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.328611;y=29.607427"
+      },
+      {
+        "name": "\u5fae\u7535\u56ed",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.362761;y=29.609761"
+      },
+      {
+        "name": "\u8d56\u5bb6\u6865",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.381434;y=29.610371"
+      },
+      {
+        "name": "\u53cc\u7891",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.444302;y=29.605108"
+      },
+      {
+        "name": "\u78c1\u5668\u53e3",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.44644;y=29.576986"
+      },
+      {
+        "name": "\u70c8\u58eb\u5893",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.445447;y=29.567405"
+      },
+      {
+        "name": "\u6768\u516c\u6865",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.45026;y=29.561757"
+      },
+      {
+        "name": "\u6c99\u576a\u575d",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.460469;y=29.556654"
+      },
+      {
+        "name": "\u5c0f\u9f99\u574e",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.468367;y=29.553538"
+      },
+      {
+        "name": "\u9a6c\u5bb6\u5ca9",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.468741;y=29.545521"
+      },
+      {
+        "name": "\u9ad8\u5e99\u6751",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.469282;y=29.53637"
+      },
+      {
+        "name": "\u77f3\u6865\u94fa",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.484972;y=29.532792"
+      },
+      {
+        "name": "\u6b47\u53f0\u5b50",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.497255;y=29.535357"
+      },
+      {
+        "name": "\u77f3\u6cb9\u8def",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.510179;y=29.539267"
+      },
+      {
+        "name": "\u5927\u576a",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.519341;y=29.541962"
+      },
+      {
+        "name": "\u9e45\u5cad",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.533778;y=29.547996"
+      },
+      {
+        "name": "\u4e24\u8def\u53e3",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.548283;y=29.552995"
+      },
+      {
+        "name": "\u4e03\u661f\u5c97",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.563077;y=29.555144"
+      },
+      {
+        "name": "\u8f83\u573a\u53e3",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.571726;y=29.553348"
+      },
+      {
+        "name": "\u5c0f\u4ec0\u5b57",
+        "value": "subway_station_flag=1;subway_line=1\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.583139;y=29.559153"
+      }
+    ],
+    "name": "1\u53f7\u7ebf"
+  },
+  {
+    "category": [
+      {
+        "name": "\u5168\u7ebf",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=tquery"
+      },
+      {
+        "name": "\u65b0\u5c71\u6751",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.476136;y=29.471949"
+      },
+      {
+        "name": "\u5927\u6e21\u53e3",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.478223;y=29.481617"
+      },
+      {
+        "name": "\u5e73\u5b89",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.484379;y=29.488624"
+      },
+      {
+        "name": "\u9a6c\u738b\u573a",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.488784;y=29.496056"
+      },
+      {
+        "name": "\u5927\u5830\u6751",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.498903;y=29.499683"
+      },
+      {
+        "name": "\u52a8\u7269\u56ed",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.509504;y=29.500124"
+      },
+      {
+        "name": "\u6768\u5bb6\u576a",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.513976;y=29.508009"
+      },
+      {
+        "name": "\u8c22\u5bb6\u6e7e",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.517605;y=29.519283"
+      },
+      {
+        "name": "\u8881\u5bb6\u5c97",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.513753;y=29.528872"
+      },
+      {
+        "name": "\u5927\u576a",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.519341;y=29.541962"
+      },
+      {
+        "name": "\u4f5b\u56fe\u5173",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.531772;y=29.549484"
+      },
+      {
+        "name": "\u674e\u5b50\u575d",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.537611;y=29.552764"
+      },
+      {
+        "name": "\u725b\u89d2\u6cb1",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.542553;y=29.560785"
+      },
+      {
+        "name": "\u66fe\u5bb6\u5ca9",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.550231;y=29.566469"
+      },
+      {
+        "name": "\u5927\u6eaa\u6c9f",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.558678;y=29.566057"
+      },
+      {
+        "name": "\u9ec4\u82b1\u56ed",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.564915;y=29.563287"
+      },
+      {
+        "name": "\u4e34\u6c5f\u95e8",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.573743;y=29.558318"
+      },
+      {
+        "name": "\u8f83\u573a\u53e3",
+        "value": "subway_station_flag=1;subway_line=2\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.574264;y=29.553529"
+      }
+    ],
+    "name": "2\u53f7\u7ebf"
+  },
+  {
+    "category": [
+      {
+        "name": "\u5168\u7ebf",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=tquery"
+      },
+      {
+        "name": "\u6c5f\u5317\u673a\u573a",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.638179;y=29.718691"
+      },
+      {
+        "name": "\u78a7\u6d25",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.632843;y=29.711019"
+      },
+      {
+        "name": "\u53cc\u9f99",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.618772;y=29.697864"
+      },
+      {
+        "name": "\u56de\u5174",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.605802;y=29.690296"
+      },
+      {
+        "name": "\u957f\u798f\u8def",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.588518;y=29.687578"
+      },
+      {
+        "name": "\u7fe0\u4e91",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.572778;y=29.685881"
+      },
+      {
+        "name": "\u56ed\u535a\u56ed",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.563943;y=29.674707"
+      },
+      {
+        "name": "\u9e33\u9e2f",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.56036;y=29.66158"
+      },
+      {
+        "name": "\u91d1\u7ae5\u8def",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.567392;y=29.643403"
+      },
+      {
+        "name": "\u91d1\u6e1d",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.570317;y=29.63564"
+      },
+      {
+        "name": "\u7ae5\u5bb6\u9662\u5b50",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.554667;y=29.628371"
+      },
+      {
+        "name": "\u9f99\u5934\u5bfa",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.549502;y=29.616672"
+      },
+      {
+        "name": "\u91cd\u5e86\u5317\u7ad9",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.549445;y=29.606892"
+      },
+      {
+        "name": "\u72ee\u5b50\u576a",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.549165;y=29.601424"
+      },
+      {
+        "name": "\u5510\u5bb6\u9662\u5b50",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.54046;y=29.59928"
+      },
+      {
+        "name": "\u90d1\u5bb6\u9662\u5b50",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.529947;y=29.599513"
+      },
+      {
+        "name": "\u5609\u5dde\u8def",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.522155;y=29.595489"
+      },
+      {
+        "name": "\u7ea2\u65d7\u6cb3\u6c9f",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.526266;y=29.585322"
+      },
+      {
+        "name": "\u89c2\u97f3\u6865",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.533049;y=29.573535"
+      },
+      {
+        "name": "\u534e\u65b0\u8857",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.537246;y=29.563898"
+      },
+      {
+        "name": "\u725b\u89d2\u6cb1",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.542392;y=29.559179"
+      },
+      {
+        "name": "\u4e24\u8def\u53e3",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.548268;y=29.552991"
+      },
+      {
+        "name": "\u94dc\u5143\u5c40",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.551555;y=29.536113"
+      },
+      {
+        "name": "\u5de5\u8d38",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.563393;y=29.53158"
+      },
+      {
+        "name": "\u5357\u576a",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.569902;y=29.525969"
+      },
+      {
+        "name": "\u56db\u516c\u91cc",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.576322;y=29.516534"
+      },
+      {
+        "name": "\u4e94\u516c\u91cc",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.573842;y=29.507202"
+      },
+      {
+        "name": "\u516d\u516c\u91cc",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.573317;y=29.497625"
+      },
+      {
+        "name": "\u4e8c\u5858",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.57282;y=29.488781"
+      },
+      {
+        "name": "\u516b\u516c\u91cc",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.565912;y=29.478155"
+      },
+      {
+        "name": "\u9e92\u9f99",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.562638;y=29.466985"
+      },
+      {
+        "name": "\u4e5d\u516c\u91cc",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.558612;y=29.457748"
+      },
+      {
+        "name": "\u5c94\u8def\u53e3",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.554601;y=29.448582"
+      },
+      {
+        "name": "\u82b1\u6eaa",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.550329;y=29.432212"
+      },
+      {
+        "name": "\u5927\u5c71\u6751",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.543704;y=29.412816"
+      },
+      {
+        "name": "\u5b66\u5802\u6e7e",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.543143;y=29.398003"
+      },
+      {
+        "name": "\u9c7c\u80e1\u8def",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.539137;y=29.377582"
+      },
+      {
+        "name": "\u91d1\u7af9",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.52393;y=29.3756"
+      },
+      {
+        "name": "\u9c7c\u6d1e",
+        "value": "subway_station_flag=1;subway_line=3\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.506013;y=29.376074"
+      }
+    ],
+    "name": "3\u53f7\u7ebf"
+  },
+  {
+    "category": [
+      {
+        "name": "\u5168\u7ebf",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=tquery"
+      },
+      {
+        "name": "\u4e94\u91cc\u5e97",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.564553;y=29.584877"
+      },
+      {
+        "name": "\u7ea2\u571f\u5730",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.551047;y=29.583974"
+      },
+      {
+        "name": "\u9ec4\u6ce5\u585d",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.537775;y=29.588521"
+      },
+      {
+        "name": "\u7ea2\u65d7\u6cb3\u6c9f",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.526266;y=29.585322"
+      },
+      {
+        "name": "\u82b1\u5349\u56ed",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.51274;y=29.58326"
+      },
+      {
+        "name": "\u5927\u9f99\u5c71",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.498791;y=29.590237"
+      },
+      {
+        "name": "\u5189\u5bb6\u575d",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.498854;y=29.598669"
+      },
+      {
+        "name": "\u5149\u7535\u56ed",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.49939;y=29.617008"
+      },
+      {
+        "name": "\u5927\u7af9\u6797",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.478246;y=29.628361"
+      },
+      {
+        "name": "\u5eb7\u5e84",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.478981;y=29.635163"
+      },
+      {
+        "name": "\u793c\u5609",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf;query_type=rqbxy;range=5000;x=106.488841;y=29.667062"
+      }
+    ],
+    "name": "6\u53f7\u7ebf"
+  },
+  {
+    "category": [
+      {
+        "name": "\u5168\u7ebf",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=tquery"
+      },
+      {
+        "name": "\u5317\u789a",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=rqbxy;range=5000;x=106.438208;y=29.825864"
+      },
+      {
+        "name": "\u72b6\u5143\u7891",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=rqbxy;range=5000;x=106.398411;y=29.803003"
+      },
+      {
+        "name": "\u9f99\u51e4\u6eaa",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=rqbxy;range=5000;x=106.403654;y=29.789772"
+      },
+      {
+        "name": "\u8521\u5bb6",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=rqbxy;range=5000;x=106.4922;y=29.731893"
+      },
+      {
+        "name": "\u91d1\u5c71\u5bfa",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=rqbxy;range=5000;x=106.493164;y=29.679666"
+      },
+      {
+        "name": "\u793c\u5609",
+        "value": "subway_station_flag=1;subway_line=6\u53f7\u7ebf(\u5317\u789a\u7ebf);query_type=rqbxy;range=5000;x=106.488841;y=29.667062"
+      }
+    ],
+    "name": "6\u53f7\u7ebf(\u5317\u789a\u7ebf)"
+  },
+  {
+    "category": [
+      {
+        "name": "\u5168\u7ebf",
+        "value": "subway_station_flag=1;subway_line=\u56fd\u535a\u7ebf;query_type=tquery"
+      },
+      {
+        "name": "\u60a6\u6765",
+        "value": "subway_station_flag=1;subway_line=\u56fd\u535a\u7ebf;query_type=rqbxy;range=5000;x=106.548142;y=29.726163"
+      },
+      {
+        "name": "\u56fd\u535a\u4e2d\u5fc3",
+        "value": "subway_station_flag=1;subway_line=\u56fd\u535a\u7ebf;query_type=rqbxy;range=5000;x=106.545528;y=29.71708"
+      },
+      {
+        "name": "\u793c\u5609",
+        "value": "subway_station_flag=1;subway_line=\u56fd\u535a\u7ebf;query_type=rqbxy;range=5000;x=106.488841;y=29.667062"
+      }
+    ],
+    "name": "\u56fd\u535a\u7ebf"
+  }
+]

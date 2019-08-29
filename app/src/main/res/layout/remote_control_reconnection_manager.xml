@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:background="@color/gary_frame" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include layout="@layout/title_view_layout"/>
+    <RelativeLayout android:background="#f4f4f4" android:layout_width="match_parent" android:layout_height="match_parent">
+        <LinearLayout android:orientation="vertical" android:id="@+id/connect_button_contain" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30dp" android:layout_marginRight="30dp" android:layout_marginBottom="30dp" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true" android:layout_alignParentEnd="true">
+            <Button android:textSize="@dimen/font_32" android:textColor="@color/text_color_white" android:id="@+id/auto_retry_connect_button" android:background="@drawable/auto_button_blue_corner_background" android:layout_width="match_parent" android:layout_height="45dp" android:text="@string/auto_car_link_retry_connection"/>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="match_parent" android:layout_above="@+id/connect_button_contain" android:layout_centerHorizontal="true">
+            <ImageView android:id="@+id/imageView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/connection_failed" android:layout_centerHorizontal="true" android:layout_centerVertical="true"/>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/start_connection_sub1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="40dp" android:layout_above="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:textSize="@dimen/font_34" android:textColor="@color/f_c_2" android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="遥控器连接中断"/>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@+id/start_connection_sub2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="40dp" android:layout_below="@+id/imageView2" android:layout_centerHorizontal="true">
+                <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="若您车机、手机蓝牙均已开启"/>
+                <TextView android:textSize="13dp" android:textColor="@color/f_c_3" android:id="@+id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="请尝试重新连接遥控器"/>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

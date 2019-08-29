@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:background="@android:color/white" android:layout_width="match_parent" android:layout_height="match_parent">
+    <include android:id="@+id/album_folder_fragment_title" layout="@layout/album_folder_fragment_title"/>
+    <ListView android:id="@+id/album_folder_list" android:background="@android:color/white" android:scrollbars="none" android:fadingEdge="none" android:fadingEdgeLength="0dp" android:layout_width="match_parent" android:layout_height="match_parent" android:listSelector="@drawable/v4_board_content_btn" android:cacheColorHint="@android:color/transparent" android:divider="@color/transparent" android:dividerHeight="0dp" android:layout_below="@+id/album_folder_fragment_title"/>
+</RelativeLayout>

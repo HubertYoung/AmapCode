@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content">
+    <View android:id="@+id/top_divider" android:background="@color/route_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+    <RelativeLayout android:id="@android:id/content" android:background="@color/white" android:paddingLeft="@dimen/route_12dp" android:paddingTop="2dp" android:paddingRight="@dimen/route_12dp" android:paddingBottom="2dp" android:layout_width="match_parent" android:layout_height="wrap_content" android:minHeight="36dp">
+        <ImageView android:id="@+id/section_name_icon" android:layout_width="@dimen/route_25dp" android:layout_height="wrap_content" android:src="@drawable/fromto_bus_detail_start_icon" android:scaleType="center" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <ImageView android:id="@+id/cur_location_img" android:visibility="gone" android:layout_width="@dimen/route_15dp" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_25dp" android:src="@drawable/default_path_location_icon_normal" android:layout_centerVertical="true" android:contentDescription="@null"/>
+        <TextView android:textSize="@dimen/font_32" android:textStyle="bold" android:textColor="@color/f_c_2" android:id="@+id/section_name" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/route_40dp" android:layout_centerVertical="true"/>
+    </RelativeLayout>
+    <View android:id="@+id/bottom_divider" android:background="@color/route_divider_color" android:visibility="gone" android:layout_width="match_parent" android:layout_height="1px"/>
+</LinearLayout>

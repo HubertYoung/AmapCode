@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/c_5_e" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_above="@+id/center" android:layout_alignParentTop="true">
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/run_recommend_guide_1"/>
+        <TextView android:textSize="@dimen/f_s_21" android:textStyle="bold" android:textColor="@color/f_c_1" android:gravity="center" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/route_25dp" android:text="@string/run_recommend_guide_text" android:lineSpacingExtra="@dimen/route_5dp"/>
+    </LinearLayout>
+    <View android:id="@+id/center" android:background="#00000000" android:layout_width="match_parent" android:layout_height="@dimen/route_68dp" android:layout_above="@+id/bottom"/>
+    <View android:id="@+id/bottom" android:background="@color/c_5_e" android:layout_width="match_parent" android:layout_height="@dimen/route_72dp" android:layout_alignParentBottom="true"/>
+    <ImageView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginBottom="18dp" android:src="@drawable/run_recommend_guide_2" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:layout_alignParentStart="true"/>
+</RelativeLayout>

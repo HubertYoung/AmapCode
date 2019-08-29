@@ -6,17 +6,24 @@ import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
+
 import com.autonavi.amap.app.AMapAppGlobal;
 import com.autonavi.map.fragmentcontainer.page.AbstractBasePage;
 import com.autonavi.map.fragmentcontainer.page.IAMapHomePage;
-import com.autonavi.map.fragmentcontainer.page.utils.IPageStateListener;
 import com.autonavi.minimap.ajx3.Ajx3PageInterface;
 import com.autonavi.minimap.ajx3.loader.AjxPathLoader;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
+
+import defpackage.akc;
+import defpackage.bid;
+import defpackage.bui;
+import defpackage.buk;
+import defpackage.drp;
 
 public class AMapPageUtil {
     private static final String TAG = "AMapPageUtil";
@@ -24,7 +31,7 @@ public class AMapPageUtil {
     /* access modifiers changed from: private */
     public static HashMap<bid, IActvitiyStateListener> mIActvitiyCallbackList = new HashMap<>();
     private static final Map<String, String> mPageIdentifierCache = new HashMap();
-    private static WeakReference<bui> sMvpActivityContext;
+    private static WeakReference< bui > sMvpActivityContext;
 
     @Nullable
     public static bui getMVPActivityContext() {
@@ -65,7 +72,7 @@ public class AMapPageUtil {
     }
 
     @Deprecated
-    public static ArrayList<akc> getPagesStacks() {
+    public static ArrayList< akc > getPagesStacks() {
         bui mvpActivityContext = getMvpActivityContext();
         if (mvpActivityContext == null) {
             return null;
@@ -163,7 +170,7 @@ public class AMapPageUtil {
     }
 
     @NonNull
-    public static HashMap<bid, IActvitiyStateListener> getActvitiyListenerList() {
+    public static HashMap< bid, IActvitiyStateListener> getActvitiyListenerList() {
         return mIActvitiyCallbackList;
     }
 
@@ -201,7 +208,7 @@ public class AMapPageUtil {
         Iterator<akc> it = pagesStacks.iterator();
         while (it.hasNext()) {
             akc next = it.next();
-            if (next != null && (next instanceof buk)) {
+            if (next != null && (next instanceof buk )) {
                 arrayList.add(((buk) next).h());
             }
         }

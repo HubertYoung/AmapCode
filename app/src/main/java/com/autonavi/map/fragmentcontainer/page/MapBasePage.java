@@ -6,16 +6,14 @@ import android.content.res.Configuration;
 import android.view.KeyEvent;
 import android.view.MotionEvent;
 import android.view.View;
+
 import com.autonavi.common.Callback;
-import com.autonavi.common.Page.ON_BACK_TYPE;
-import com.autonavi.common.Page.ResultType;
 import com.autonavi.common.PageBundle;
 import com.autonavi.common.model.GeoPoint;
 import com.autonavi.common.model.POI;
 import com.autonavi.map.core.IOverlayManager.c;
 import com.autonavi.map.core.MapManager;
 import com.autonavi.map.fragmentcontainer.page.ICQLayerController.DetailLayerState;
-import com.autonavi.map.fragmentcontainer.page.IMapPagePresenter;
 import com.autonavi.map.fragmentcontainer.page.dialog.TipContainer;
 import com.autonavi.map.fragmentcontainer.page.utils.AMapPageUtil;
 import com.autonavi.map.fragmentcontainer.page.utils.IPageStateListener;
@@ -33,7 +31,20 @@ import com.autonavi.minimap.map.overlayholder.OverlayPage.VisiblePolicy;
 import com.autonavi.minimap.map.overlayholder.OverlayUtil;
 import com.autonavi.minimap.widget.SyncPopupWindow;
 import com.autonavi.sdk.location.LocationInstrument;
+
 import java.util.List;
+
+import defpackage.als;
+import defpackage.ank;
+import defpackage.bin;
+import defpackage.biv;
+import defpackage.bra;
+import defpackage.bty;
+import defpackage.ccy;
+import defpackage.cdd;
+import defpackage.cep;
+import defpackage.coi;
+import defpackage.ely;
 
 public abstract class MapBasePage<Presenter extends IMapPagePresenter> extends AbstractBaseMapPage<Presenter> implements cep, IPoiDetailPage {
     private coi callback = new coi() {
@@ -583,7 +594,7 @@ public abstract class MapBasePage<Presenter extends IMapPagePresenter> extends A
         return getBottomTipsContainer();
     }
 
-    public boolean onPageLabelClick(List<als> list) {
+    public boolean onPageLabelClick(List< als > list) {
         getSuspendManager();
         return false;
     }

@@ -4,10 +4,16 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.view.View;
 import android.view.View.MeasureSpec;
+
 import com.amap.bundle.logs.AMapLog;
 import com.autonavi.minimap.R;
+
 import java.util.HashSet;
 import java.util.concurrent.ConcurrentHashMap;
+
+import defpackage.amh;
+import defpackage.brx;
+import defpackage.bty;
 
 final class SimpleMarkerFactory {
     public static float POI_HL_X_RATIO = 0.5f;

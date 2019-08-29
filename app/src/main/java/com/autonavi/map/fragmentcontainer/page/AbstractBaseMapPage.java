@@ -6,6 +6,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewParent;
+
 import com.amap.bundle.logs.AMapLog;
 import com.amap.bundle.maplayer.api.VMapPageConfig;
 import com.autonavi.ae.gmap.gloverlay.BaseOverlay;
@@ -18,7 +19,6 @@ import com.autonavi.jni.eyrie.amap.redesign.maps.vmap.VMapPage;
 import com.autonavi.map.core.MapCustomizeManager;
 import com.autonavi.map.core.MapManager;
 import com.autonavi.map.fragmentcontainer.MapInteractiveRelativeLayout;
-import com.autonavi.map.fragmentcontainer.page.IMapPagePresenter;
 import com.autonavi.map.fragmentcontainer.page.dialog.TipContainer;
 import com.autonavi.map.fragmentcontainer.page.dialog.TipContainer.OnTipChangedListener;
 import com.autonavi.map.fragmentcontainer.page.mappage.MapMethodDispatchRecord;
@@ -26,9 +26,12 @@ import com.autonavi.map.fragmentcontainer.page.mappage.UniversalOverlayManager;
 import com.autonavi.minimap.R;
 import com.autonavi.minimap.map.overlayholder.IOverlayHolder;
 import com.autonavi.minimap.map.overlayholder.OverlayHolderImpl;
+
 import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.List;
+
+import defpackage.*;
 
 public abstract class AbstractBaseMapPage<Presenter extends IMapPagePresenter> extends AbstractBasePage<Presenter> implements IMapPage, OnTipChangedListener {
     public static String PAGE_EXTENDS_LAYER = "PAGE_EXTENDS_LAYER";
@@ -419,7 +422,7 @@ public abstract class AbstractBaseMapPage<Presenter extends IMapPagePresenter> e
         ((IMapPagePresenter) this.mPresenter).onEngineVisible(i, z);
     }
 
-    public final boolean onEngineActionGesture(alg alg) {
+    public final boolean onEngineActionGesture( alg alg) {
         this.mDispatchRecord.baseOnEngineActionGestureCalled = false;
         boolean onEngineActionGesture = ((IMapPagePresenter) this.mPresenter).onEngineActionGesture(alg);
         if (this.mDispatchRecord.baseOnEngineActionGestureCalled) {
@@ -446,7 +449,7 @@ public abstract class AbstractBaseMapPage<Presenter extends IMapPagePresenter> e
         throw new IllegalStateException("Must call super.onNoBlankClick()!!");
     }
 
-    public final boolean onLabelClick(List<als> list) {
+    public final boolean onLabelClick(List< als > list) {
         this.mDispatchRecord.baseOnLabelClickCalled = false;
         boolean onLabelClick = ((IMapPagePresenter) this.mPresenter).onLabelClick(list);
         if (this.mDispatchRecord.baseOnLabelClickCalled) {
@@ -490,7 +493,7 @@ public abstract class AbstractBaseMapPage<Presenter extends IMapPagePresenter> e
         }
     }
 
-    public final void onMapAnimationFinished(aln aln) {
+    public final void onMapAnimationFinished( aln aln) {
         this.mDispatchRecord.baseOnMapAnimationFinishedCalled2 = false;
         ((IMapPagePresenter) this.mPresenter).onMapAnimationFinished(aln);
         if (!this.mDispatchRecord.baseOnMapAnimationFinishedCalled2) {

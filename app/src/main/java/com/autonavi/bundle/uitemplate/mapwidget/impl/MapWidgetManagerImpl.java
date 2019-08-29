@@ -9,11 +9,11 @@ import android.view.ViewGroup;
 import android.view.ViewGroup.MarginLayoutParams;
 import android.widget.FrameLayout.LayoutParams;
 import android.widget.LinearLayout;
+
 import com.alipay.mobile.security.bio.utils.HanziToPinyin.Token;
 import com.alipay.rdssecuritysdk.constant.DictionaryKeys;
 import com.autonavi.bundle.uitemplate.api.IWidgetProperty;
 import com.autonavi.bundle.uitemplate.mapwidget.IMapWidgetManager;
-import com.autonavi.bundle.uitemplate.mapwidget.IMapWidgetManager.Stub;
 import com.autonavi.bundle.uitemplate.mapwidget.MapWidgetContainer;
 import com.autonavi.bundle.uitemplate.mapwidget.MapWidgetFactory;
 import com.autonavi.bundle.uitemplate.mapwidget.OnFooterChangeListener;
@@ -25,12 +25,18 @@ import com.autonavi.bundle.uitemplate.mapwidget.widget.combine.CombineMapWidget;
 import com.autonavi.bundle.uitemplate.mapwidget.widget.combine.CombineWidgetPresenter;
 import com.autonavi.map.fragmentcontainer.page.IPage;
 import com.autonavi.minimap.R;
+
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
+
+import defpackage.bew;
+import defpackage.bez;
+import defpackage.bid;
+import defpackage.euk;
 
 public class MapWidgetManagerImpl implements IMapWidgetManager {
     private IMapWidgetContainer mContainer;
@@ -383,7 +389,7 @@ public class MapWidgetManagerImpl implements IMapWidgetManager {
         setWidget(null, iWidgetPropertyArr);
     }
 
-    public void setWidget(bid bid, IWidgetProperty... iWidgetPropertyArr) {
+    public void setWidget( bid bid, IWidgetProperty... iWidgetPropertyArr) {
         IWidgetProperty iWidgetProperty;
         if (iWidgetPropertyArr == null && bid == null) {
             bez.a(getAMapLogTag(), "setWidget widgets: null", new bew[0]);

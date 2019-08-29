@@ -6,11 +6,20 @@ import android.support.annotation.Nullable;
 import android.support.v4.app.FragmentActivity;
 import android.view.KeyEvent;
 import android.view.ViewGroup;
+
 import com.amap.pages.framework.Pages;
 import com.autonavi.map.fragmentcontainer.page.AbstractBasePage;
 import com.autonavi.map.fragmentcontainer.page.IPage;
+
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import defpackage.akc;
+import defpackage.akj;
+import defpackage.bid;
+import defpackage.buk;
+import defpackage.bul;
+import defpackage.bun;
 
 public class PageSupportActivity extends FragmentActivity {
     protected bul a;
@@ -89,12 +98,12 @@ public class PageSupportActivity extends FragmentActivity {
     public void onConfigurationChanged(Configuration configuration) {
         super.onConfigurationChanged(configuration);
         if (a()) {
-            ArrayList<akc> c = this.a.b.c();
+            ArrayList< akc > c = this.a.b.c();
             if (c != null) {
                 Iterator<akc> it = c.iterator();
                 while (it.hasNext()) {
                     akc next = it.next();
-                    if (next instanceof buk) {
+                    if (next instanceof buk ) {
                         bid h = ((buk) next).h();
                         if (h != null && (h instanceof IPage)) {
                             ((IPage) h).onConfigurationChanged(configuration);

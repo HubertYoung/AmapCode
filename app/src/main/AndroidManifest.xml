@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:versionCode="8051" android:versionName="10.05.2.2639" android:installLocation="auto" package="com.autonavi.minimap" platformBuildVersionCode="29" platformBuildVersionName="10">
-    <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="28"/>
+
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
     <uses-permission android:name="android.permission.BROADCAST_STICKY"/>

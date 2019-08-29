@@ -2,18 +2,20 @@ package com.autonavi.map.search.fragment;
 
 import android.content.Context;
 import android.view.View;
+
 import com.amap.bundle.mapstorage.MapSharePreference;
 import com.amap.bundle.mapstorage.MapSharePreference.SharePreferenceName;
-import com.autonavi.common.Page.ON_BACK_TYPE;
 import com.autonavi.common.PageBundle;
 import com.autonavi.map.core.MapManager;
 import com.autonavi.map.fragmentcontainer.page.BaseCQLayerOwner;
 import com.autonavi.map.fragmentcontainer.page.MapBasePage;
-import com.autonavi.map.fragmentcontainer.page.MapBasePage.POI_DETAIL_TYPE;
 import com.autonavi.minimap.base.overlay.PointOverlay;
+
 import java.util.List;
 
-public abstract class SearchResultBasePage extends MapBasePage<cbe> implements bgm, btz {
+import defpackage.*;
+
+public abstract class SearchResultBasePage extends MapBasePage< cbe > implements bgm, btz {
     protected bxk a;
     private boolean b = false;
 
@@ -122,7 +124,7 @@ public abstract class SearchResultBasePage extends MapBasePage<cbe> implements b
 
     public boolean onMapLayerSetDefaultMode() {
         cbe cbe = (cbe) this.mPresenter;
-        if (cbe.a instanceof bxo) {
+        if (cbe.a instanceof bxo ) {
             return ((bxo) cbe.a).ae();
         }
         return false;

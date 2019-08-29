@@ -19,23 +19,34 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager.LayoutParams;
+
 import com.amap.bundle.logs.AMapLog;
 import com.amap.bundle.utils.device.KeyboardUtil;
 import com.autonavi.common.Page;
-import com.autonavi.common.Page.ON_BACK_TYPE;
-import com.autonavi.common.Page.ResultType;
 import com.autonavi.common.PageBundle;
 import com.autonavi.inter.IDialogManifest;
 import com.autonavi.inter.IPageManifest;
 import com.autonavi.map.fragmentcontainer.IViewLayer;
-import com.autonavi.map.fragmentcontainer.page.IPresenter;
 import com.autonavi.map.fragmentcontainer.page.PageTheme.Transparent;
 import com.autonavi.map.fragmentcontainer.page.utils.IPageStateListener;
 import com.autonavi.minimap.R;
+
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;
+
+import defpackage.akg;
+import defpackage.ank;
+import defpackage.bid;
+import defpackage.bqn;
+import defpackage.brr;
+import defpackage.bul;
+import defpackage.bup;
+import defpackage.but;
+import defpackage.dro;
+import defpackage.drp;
+import defpackage.euk;
 
 public abstract class AbstractBasePage<Presenter extends IPresenter> extends bup implements Page, IPage {
     private static final int INVALID_REQUEST_CODE = -1;
@@ -94,7 +105,7 @@ public abstract class AbstractBasePage<Presenter extends IPresenter> extends bup
         return false;
     }
 
-    public void attach(Context context, LayoutInflater layoutInflater, AbstractBasePage abstractBasePage, akg akg, bul bul) {
+    public void attach( Context context, LayoutInflater layoutInflater, AbstractBasePage abstractBasePage, akg akg, bul bul) {
         attach(akg, bul);
         this.mContext = context;
         this.mLayoutInflater = layoutInflater;
@@ -256,7 +267,7 @@ public abstract class AbstractBasePage<Presenter extends IPresenter> extends bup
         StringBuilder sb = new StringBuilder("onStart~~~~~");
         sb.append(getClass().getSimpleName());
         AMapLog.d(TAG, sb.toString());
-        if (euk.a()) {
+        if ( euk.a()) {
             euk.b(getActivity());
         }
         Window window = getActivity().getWindow();
@@ -286,7 +297,7 @@ public abstract class AbstractBasePage<Presenter extends IPresenter> extends bup
         TopStackPageRecorder.record(this);
         this.mState = 20;
         this.mPageLifeCycleHooker.c(new WeakReference(this));
-        if (but.e != null) {
+        if ( but.e != null) {
             but.e.a(this);
         }
         if (but.d != null) {
@@ -534,7 +545,7 @@ public abstract class AbstractBasePage<Presenter extends IPresenter> extends bup
 
     public final void startScheme(Intent intent) {
         bul mvpActivityContext = getMvpActivityContext();
-        if (mvpActivityContext.d instanceof brr) {
+        if (mvpActivityContext.d instanceof brr ) {
             ((brr) mvpActivityContext.d).b(intent);
         }
     }

@@ -16,6 +16,7 @@ import android.os.HandlerThread;
 import android.os.Looper;
 import android.os.Message;
 import android.text.TextUtils;
+
 import com.amap.api.service.IndoorLocationProvider;
 import com.amap.bundle.blutils.FileUtil;
 import com.amap.bundle.blutils.device.DeviceInfo;
@@ -32,15 +33,15 @@ import com.autonavi.amap.app.AMapAppGlobal;
 import com.autonavi.bundle.uitemplate.mapwidget.inter.WidgetType;
 import com.autonavi.common.Callback;
 import com.autonavi.common.impl.Locator;
-import com.autonavi.common.impl.Locator.LOCATION_SCENE;
-import com.autonavi.common.impl.Locator.Provider;
-import com.autonavi.common.impl.Locator.Status;
 import com.autonavi.common.model.GeoPoint;
 import com.autonavi.jni.ae.pos.DriveModeObserver;
 import com.autonavi.jni.ae.pos.LocListener;
 import com.autonavi.minimap.offline.auto.protocol.utils.AutoJsonUtils;
 import com.autonavi.server.aos.serverkey;
 import com.autonavi.widget.ui.BalloonLayout;
+
+import org.json.JSONObject;
+
 import java.io.File;
 import java.net.URLEncoder;
 import java.util.List;
@@ -51,7 +52,8 @@ import java.util.concurrent.CopyOnWriteArrayList;
 import java.util.concurrent.atomic.AtomicInteger;
 import java.util.concurrent.atomic.AtomicLong;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import org.json.JSONObject;
+
+import defpackage.*;
 import proguard.annotation.Keep;
 import proguard.annotation.KeepClassMembers;
 
@@ -129,7 +131,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
     public LocationNmeaListener mNmeaListener = new LocationNmeaListener() {
         public final void onNmeaStringReceived(long j, String str) {
             if (str != null && str.contains("GSV")) {
-                if (epk.a) {
+                if ( epk.a) {
                     epk.a(LocationInstrument.TAG, "传递nmea语句 ".concat(String.valueOf(str)));
                 }
                 anf.a(j, str);
@@ -221,7 +223,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
                 eoy.a().a(location);
                 if (anf.a) {
                     if (LocationInstrument.this.isInitAE && a(location)) {
-                        if (bno.a && LocationInstrument.this.mFakeNetworkLocation) {
+                        if ( bno.a && LocationInstrument.this.mFakeNetworkLocation) {
                             z = true;
                         }
                         anf.a(location, z);
@@ -367,7 +369,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
         this.mLocation = new Location("network");
         this.mLocation.setLatitude(ahh.a(decode(this.storage.getLatitude())));
         this.mLocation.setLongitude(ahh.a(decode(this.storage.getLongitude())));
-        this.mLocation.setAltitude(ahh.a(decode(this.storage.getAltitude())));
+        this.mLocation.setAltitude( ahh.a(decode(this.storage.getAltitude())));
         this.mLocation.setAccuracy(this.storage.getAccuracy());
         this.mLocation.setTime(0);
         this.locationCache.a(this.mLocation);
@@ -513,7 +515,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
                 jSONObject.put(LocationParams.PARA_COMMON_ADIU, URLEncoder.encode(adiu, "UTF-8"));
             }
             if (context != null) {
-                jSONObject.put(LocationParams.PARA_COMMON_DIU2, URLEncoder.encode(agq.d(context), "UTF-8"));
+                jSONObject.put(LocationParams.PARA_COMMON_DIU2, URLEncoder.encode( agq.d(context), "UTF-8"));
             }
             jSONObject.put(LocationParams.PARA_COMMON_DIU3, URLEncoder.encode(NetworkParam.getIsn(), "UTF-8"));
             jSONObject.put(LocationParams.PARA_COMMON_CIFA, NetworkParam.getCifa());
@@ -766,6 +768,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
         }
     }
 
+    @Override
     public synchronized void doStartLocate() {
         doStartLocate(false);
     }
@@ -1242,7 +1245,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
         return this.locInfo;
     }
 
-    public void addOriginalLocation(ang<Status> ang) {
+    public void addOriginalLocation( ang<Status> ang) {
         eou eou = this.mHandler;
         synchronized (eou.d) {
             eou.d.add(ang);
@@ -1361,7 +1364,7 @@ public class LocationInstrument implements Locator, DriveModeObserver, LocListen
             this.locationManager.setParams(4, jSONObject);
         } catch (Exception unused) {
         }
-        eoy.a().a(epl.c());
+        eoy.a().a( epl.c());
         eoy.a().a(this.mLocationStatusChangedListener.a, this.mLocationStatusChangedListener.b);
         if (this.mWorkHandler != null) {
             try {

@@ -4,7 +4,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.PersistableBundle;
+
 import com.autonavi.bundle.wingui.activity.PageSupportActivity;
+
+import defpackage.bul;
+import defpackage.esg;
+import defpackage.esh;
 
 public class WingActivity extends PageSupportActivity {
     protected boolean e = false;
@@ -73,7 +78,7 @@ public class WingActivity extends PageSupportActivity {
         if (this.e) {
             esg a = esg.a();
             if (a.a == this) {
-                for (esh vAppEnterForeground : a.b) {
+                for ( esh vAppEnterForeground : a.b) {
                     vAppEnterForeground.vAppEnterForeground();
                 }
             }
@@ -144,7 +149,7 @@ public class WingActivity extends PageSupportActivity {
         }
     }
 
-    protected static void a(bul bul) {
+    protected static void a( bul bul) {
         WingApplication.mWingContext.c = bul;
     }
 

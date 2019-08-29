@@ -4,6 +4,7 @@ import android.content.Context;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.text.TextUtils;
+
 import com.autonavi.amap.app.AMapAppGlobal;
 import com.autonavi.bundle.entity.common.searchpoi.DynamicRenderData;
 import com.autonavi.bundle.entity.common.searchpoi.SearchPoi;
@@ -15,18 +16,26 @@ import com.autonavi.minimap.base.overlay.Marker;
 import com.autonavi.minimap.base.overlay.PointOverlay;
 import com.autonavi.minimap.base.overlay.PointOverlayItem;
 import com.autonavi.minimap.search.templete.type.PoiLayoutTemplate;
+
 import java.io.InputStream;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Iterator;
 
-public abstract class SearchPoiOverlay extends PointOverlay<bbr> {
+import defpackage.bbo;
+import defpackage.bbr;
+import defpackage.bby;
+import defpackage.bkf;
+import defpackage.bty;
+import defpackage.bxz;
+
+public abstract class SearchPoiOverlay extends PointOverlay< bbr > {
     private static final int FOCUSEDPOIINDEX = -2;
     private int mBrandCurIndex = 0;
     private Bitmap mDefaultIcon;
     private bbo mFocusChangeCallback;
     private int mFocusedPoiIndex = -2;
-    private HashMap<bkf, Object> mMap;
+    private HashMap< bkf, Object> mMap;
     private HashMap<String, Marker> mMarkerCache;
     private int mNormalCurIndex = 0;
     protected SearchPoi mSearchPoi;
@@ -38,7 +47,7 @@ public abstract class SearchPoiOverlay extends PointOverlay<bbr> {
     /* access modifiers changed from: protected */
     public abstract Marker getFocusMarkerByIndexAndPoi(int i, SearchPoi searchPoi);
 
-    public SearchPoiOverlay(bty bty) {
+    public SearchPoiOverlay( bty bty) {
         super(bty);
         if (bty != null) {
             this.mMarkerCache = new HashMap<>();
@@ -77,7 +86,7 @@ public abstract class SearchPoiOverlay extends PointOverlay<bbr> {
                 bbr.mFocusMarker = createMarker(R.drawable.b_poi_hl, 5);
                 bbr.mBgMarker = getIconBgMarker(this.mSearchPoi);
             }
-            if (bxz.a(poi)) {
+            if ( bxz.a(poi)) {
                 GeoPoint point = poi.getPoint();
                 this.mMapView.a(point.x, point.y, 2, (float) bbr.mDefaultMarker.mWidth, (float) bbr.mDefaultMarker.mHeight, poi.getId());
                 this.poiFilters.add(poi.getId());

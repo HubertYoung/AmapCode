@@ -9,9 +9,9 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.ViewGroup.LayoutParams;
+
 import com.autonavi.ae.gmap.gloverlay.BaseMapOverlay;
 import com.autonavi.bundle.searchcommon.view.SearchKeywordResultTitleView;
-import com.autonavi.common.Page.ResultType;
 import com.autonavi.common.PageBundle;
 import com.autonavi.common.SuperId;
 import com.autonavi.common.model.GeoPoint;
@@ -31,11 +31,23 @@ import com.autonavi.minimap.map.BasePoiOverlay;
 import com.autonavi.minimap.map.BasePoiOverlayItem;
 import com.autonavi.minimap.search.model.searchpoi.ISearchPoiData;
 import com.autonavi.sdk.location.LocationInstrument;
-import java.util.ArrayList;
-import java.util.List;
+
 import org.json.JSONObject;
 
-public class SaveSearchResultMapPage extends MapBasePage<crp> implements launchModeSingleTask {
+import java.util.ArrayList;
+import java.util.List;
+
+import defpackage.als;
+import defpackage.aud;
+import defpackage.bty;
+import defpackage.cde;
+import defpackage.cqy;
+import defpackage.crp;
+import defpackage.crr;
+import defpackage.crs;
+import defpackage.euk;
+
+public class SaveSearchResultMapPage extends MapBasePage< crp > implements launchModeSingleTask {
     int a = -1;
     int b = -1;
     private SuperId c;
@@ -191,7 +203,7 @@ public class SaveSearchResultMapPage extends MapBasePage<crp> implements launchM
         a() {
         }
 
-        public final /* synthetic */ void onItemClick(bty bty, BaseMapOverlay baseMapOverlay, Object obj) {
+        public final /* synthetic */ void onItemClick( bty bty, BaseMapOverlay baseMapOverlay, Object obj) {
             BasePoiOverlayItem basePoiOverlayItem = (BasePoiOverlayItem) obj;
             MapManager mapManager = SaveSearchResultMapPage.this.getMapManager();
             if (mapManager != null) {
@@ -212,7 +224,7 @@ public class SaveSearchResultMapPage extends MapBasePage<crp> implements launchM
         a();
         this.m = new crr(this);
         this.l = (SearchKeywordResultTitleView) contentView.findViewById(R.id.mapTopInteractiveView);
-        if (euk.a()) {
+        if ( euk.a()) {
             int paddingTop = this.l.getPaddingTop() + euk.a(getContext());
             this.l.setPadding(this.l.getPaddingLeft(), paddingTop, this.l.getPaddingRight(), this.l.getPaddingBottom());
             LayoutParams layoutParams = this.l.getLayoutParams();
@@ -462,7 +474,7 @@ public class SaveSearchResultMapPage extends MapBasePage<crp> implements launchM
         }
     }
 
-    public boolean onPageLabelClick(List<als> list) {
+    public boolean onPageLabelClick(List< als > list) {
         if (list != null && list.size() > 0) {
             this.a = -1;
             this.e.clearFocus();

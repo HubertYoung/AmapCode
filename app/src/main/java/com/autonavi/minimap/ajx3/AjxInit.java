@@ -12,6 +12,7 @@ import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.text.TextUtils;
+
 import com.alipay.mobile.beehive.photo.view.RemotePhotoGridView;
 import com.amap.bundle.blutils.app.ConfigerHelper;
 import com.amap.bundle.cloudconfig.appinit.FunctionSupportConfiger;
@@ -79,11 +80,20 @@ import com.autonavi.minimap.ajx3.widget.scale.Ajx3ScaleView;
 import com.autonavi.minimap.intent.BaseIntentDispatcher;
 import com.autonavi.widget.ui.AlertView;
 import com.autonavi.widget.ui.AlertView.a;
+
+import org.json.JSONObject;
+
 import java.io.File;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
 import java.util.List;
-import org.json.JSONObject;
+
+import defpackage.agp;
+import defpackage.akq;
+import defpackage.bid;
+import defpackage.bqn;
+import defpackage.bty;
+import defpackage.ema;
 
 public class AjxInit {
     private static final String SO_NAME = "ajx_v3";
@@ -246,7 +256,7 @@ public class AjxInit {
                 LogManager.actionLogV2(str, str2, jSONObject);
             }
         }).setAjxPageConfigPath(str).setModuleConfigPath("asset://ajx_module.txt").setAppVersion(a.a().a).setBuildType(ConfigerHelper.getInstance().getNetCondition()).setBaseJsPath("path://base.js").setDebugBaseJsPath(str2).setLruCache(new Ajx3LruCache(ImageLoader.a(applicationContext).f)).setHttpLoadAction(new Ajx3HttpLoadAction(ajx3LoaderExecutor)).setAjxFileInfo(new AjxFileInfo(Ajx3ConfigConst.AJX_FILE_BASE_DIR, Ajx3UpgradeManager.getInstance().getDiffDir(), Ajx3ConfigConst.AJX_FILE_DEFAULT_BASE_JS, Ajx3UpgradeManager.getInstance().getFileInfoMap())).setImageLoader(ajx3LoaderExecutor);
-        if (agp.a(context) != DisplayType.CUTOUT) {
+        if ( agp.a(context) != DisplayType.CUTOUT) {
             z = false;
         }
         ajxConfig = imageLoader.setScreenIsCutout(z).setJsRuntimeExceptionListener(new IJsRuntimeExceptionListener() {
@@ -414,7 +424,7 @@ public class AjxInit {
         Ajx.getInstance().registerView("scaleline", Ajx3ScaleView.class);
         Ajx.getInstance().registerCustomTypeface("Oswald-Regular", "font/regular.ttf");
         AjxViewSizeProvider.register(DefaultAjxViewSizeProvider.getInstance(context));
-        List<Class<? extends T>> loadServices = ((IMultipleServiceLoader) bqn.a(IMultipleServiceLoader.class)).loadServices(ema.class);
+        List<Class<? extends T>> loadServices = ((IMultipleServiceLoader) bqn.a(IMultipleServiceLoader.class)).loadServices( ema.class);
         if (loadServices != null) {
             for (Class newInstance : loadServices) {
                 try {

@@ -5,9 +5,27 @@ import android.graphics.Bitmap;
 import android.support.annotation.NonNull;
 import android.view.MotionEvent;
 import android.widget.ImageView;
+
 import com.autonavi.ae.gmap.AMapSurface;
 import com.autonavi.jni.ae.gmap.GLMapState;
 import com.autonavi.jni.ae.gmap.gloverlay.GLOverlayBundle.GLAmapFocusHits;
+
+import defpackage.akq;
+import defpackage.aky;
+import defpackage.alg;
+import defpackage.aln;
+import defpackage.ami;
+import defpackage.amj;
+import defpackage.amn;
+import defpackage.ank;
+import defpackage.awb;
+import defpackage.bro;
+import defpackage.brx;
+import defpackage.bts;
+import defpackage.btv;
+import defpackage.btw;
+import defpackage.bty;
+import defpackage.ccz;
 import proguard.annotation.KeepName;
 import proguard.annotation.KeepPublicClassMembers;
 
@@ -17,16 +35,16 @@ public class MapManager implements bro {
     private final awb mMapEventService;
     private final bro mRealMapManager = ((bro) ank.a(bro.class));
 
-    public void init(Context context, akq akq, AMapSurface aMapSurface, ImageView imageView) {
+    public void init( Context context, akq akq, AMapSurface aMapSurface, ImageView imageView) {
     }
 
     public MapManager(Context context, akq akq, AMapSurface aMapSurface, ImageView imageView) {
         if (this.mRealMapManager != null) {
             this.mRealMapManager.init(context, akq, aMapSurface, imageView);
         }
-        this.mMapEventService = (awb) a.a.a(awb.class);
+        this.mMapEventService = ( awb ) a.a.a(awb.class);
         if (this.mRealMapManager != null && this.mMapEventService != null) {
-            this.mMapEventService.b((btw) this.mRealMapManager.getOverlayManager());
+            this.mMapEventService.b(( btw ) this.mRealMapManager.getOverlayManager());
         }
     }
 
@@ -65,7 +83,7 @@ public class MapManager implements bro {
         }
     }
 
-    public void addAllMapEventListener(bts bts) {
+    public void addAllMapEventListener( bts bts) {
         if (this.mMapEventService != null) {
             this.mMapEventService.a(bts);
         }
@@ -199,7 +217,7 @@ public class MapManager implements bro {
         }
     }
 
-    public void updateLockMapAngleState(bty bty, float f) {
+    public void updateLockMapAngleState( bty bty, float f) {
         if (this.mRealMapManager != null) {
             this.mRealMapManager.updateLockMapAngleState(bty, f);
         }
@@ -452,7 +470,7 @@ public class MapManager implements bro {
         }
     }
 
-    public void setMapWidgetListener(amn amn) {
+    public void setMapWidgetListener( amn amn) {
         if (this.mRealMapManager != null) {
             this.mRealMapManager.setMapWidgetListener(amn);
         }
@@ -471,13 +489,13 @@ public class MapManager implements bro {
         return false;
     }
 
-    public void setIRealtimeBusStateListener(ccz ccz) {
+    public void setIRealtimeBusStateListener( ccz ccz) {
         if (this.mRealMapManager != null) {
             this.mRealMapManager.setIRealtimeBusStateListener(ccz);
         }
     }
 
-    public void setEyrieMapGestureListener(amj amj, aky aky) {
+    public void setEyrieMapGestureListener( amj amj, aky aky) {
         if (this.mRealMapManager != null) {
             this.mRealMapManager.setEyrieMapGestureListener(amj, aky);
         }

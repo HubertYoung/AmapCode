@@ -1,10 +1,14 @@
 package com.autonavi.ae.gmap.gloverlay;
 
 import android.content.Context;
+
 import com.autonavi.jni.ae.gmap.gloverlay.GLOverlay;
+
 import java.io.Serializable;
 import java.util.List;
 import java.util.Vector;
+
+import defpackage.akq;
 
 public abstract class BaseMapOverlay<T extends GLOverlay, E> implements Serializable {
     private static final long serialVersionUID = 1;

@@ -3,9 +3,11 @@ package com.autonavi.map.fragmentcontainer.page.utils;
 import java.util.HashMap;
 import java.util.Map.Entry;
 
+import defpackage.bid;
+
 public final class ActivityStateDispatch {
     public final void onActivityStartCallback() {
-        HashMap<bid, IActvitiyStateListener> actvitiyListenerList = AMapPageUtil.getActvitiyListenerList();
+        HashMap< bid, IActvitiyStateListener> actvitiyListenerList = AMapPageUtil.getActvitiyListenerList();
         if (actvitiyListenerList.size() > 0) {
             for (Entry next : actvitiyListenerList.entrySet()) {
                 next.getKey();

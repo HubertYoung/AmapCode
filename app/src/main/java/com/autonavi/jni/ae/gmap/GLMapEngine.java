@@ -12,6 +12,7 @@ import android.media.Image.Plane;
 import android.text.TextUtils;
 import android.util.SparseArray;
 import android.view.Surface;
+
 import com.autonavi.ae.gmap.glinterface.GLGeoPoint;
 import com.autonavi.ae.gmap.gloverlay.BaseMapOverlay;
 import com.autonavi.ae.gmap.utils.GLMapStaticValue;
@@ -31,6 +32,7 @@ import com.autonavi.jni.ae.gmap.gloverlay.GLOverlayBundle;
 import com.autonavi.jni.ae.gmap.maploader.MapLoader;
 import com.autonavi.jni.ae.gmap.maploader.MapLoader.ADataRequestParam;
 import com.autonavi.jni.ae.gmap.scenic.Label3rd;
+
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -38,6 +40,33 @@ import java.io.InputStream;
 import java.nio.BufferOverflowException;
 import java.nio.ByteBuffer;
 import java.util.HashMap;
+
+import defpackage.akq;
+import defpackage.akw;
+import defpackage.akx;
+import defpackage.ala;
+import defpackage.alb;
+import defpackage.alc;
+import defpackage.ale;
+import defpackage.aln;
+import defpackage.alo;
+import defpackage.alp;
+import defpackage.alt;
+import defpackage.alu;
+import defpackage.alv;
+import defpackage.amf;
+import defpackage.amh;
+import defpackage.ami;
+import defpackage.amk;
+import defpackage.amo;
+import defpackage.amu;
+import defpackage.amv;
+import defpackage.amw;
+import defpackage.amx;
+import defpackage.amy;
+import defpackage.ana;
+import defpackage.anc;
+import defpackage.and;
 
 public class GLMapEngine {
     public static final int AMAPANIMATION_FLING = 4;
@@ -76,7 +105,7 @@ public class GLMapEngine {
     public long mNativeMapengineInstance = 0;
     /* access modifiers changed from: private */
     public amw mScenicListener = null;
-    private SparseArray<anc> mStateSparseArray = new SparseArray<>();
+    private SparseArray< anc > mStateSparseArray = new SparseArray<>();
     private and mTextTextureGenerator = null;
     private Object mut_lock = new Object();
 
@@ -515,13 +544,13 @@ public class GLMapEngine {
                     nativeAddMapGestureMsg(i, this.mNativeMapengineInstance, a, alb.d, (float) alb.b, (float) alb.c);
                     return;
                 case 3:
-                    nativeAddMapGestureMsg(i, this.mNativeMapengineInstance, a, ((akx) akw).b, 0.0f, 0.0f);
+                    nativeAddMapGestureMsg(i, this.mNativeMapengineInstance, a, (( akx ) akw).b, 0.0f, 0.0f);
                     break;
             }
         }
     }
 
-    public boolean addNaviStateMsg(int i, GLNaviOverlay gLNaviOverlay, amf amf, GLGeoPoint gLGeoPoint, int i2, GLGeoPoint gLGeoPoint2, int i3, int i4, int i5, float f) {
+    public boolean addNaviStateMsg( int i, GLNaviOverlay gLNaviOverlay, amf amf, GLGeoPoint gLGeoPoint, int i2, GLGeoPoint gLGeoPoint2, int i3, int i4, int i5, float f) {
         Point point;
         GLGeoPoint gLGeoPoint3 = gLGeoPoint;
         int i6 = i2;
@@ -937,7 +966,7 @@ public class GLMapEngine {
         GLMapState.nativeSetMinZoomLevel(getStateInstanceWithEngineID(i), f);
     }
 
-    public void setMapMovableArea(int i, alp alp, alp alp2) {
+    public void setMapMovableArea( int i, alp alp, alp alp2) {
         if (alp != null && alp2 != null) {
             GLMapState.nativeSetMovableArea(getStateInstanceWithEngineID(i), alp.a, alp.b, alp2.a, alp2.b);
         }
@@ -1075,7 +1104,7 @@ public class GLMapEngine {
         nativeAddOverlayTexture(i, this.mNativeMapengineInstance, i2, i3, f, f2, bitmap, CheckRepeat.m_genMimps, CheckRepeat.m_isRepeat, true);
     }
 
-    public void addOverlayTexture(int i, amh amh, int[] iArr) {
+    public void addOverlayTexture( int i, amh amh, int[] iArr) {
         amh amh2 = amh;
         if (amh2 == null || amh2.b == null || amh2.b.isRecycled()) {
             if (amh2.c != null) {
@@ -1148,7 +1177,7 @@ public class GLMapEngine {
         }
     }
 
-    public void startPivotZoomRotateAnim(akq akq, int i, Point point, float f, float f2, int i2) {
+    public void startPivotZoomRotateAnim( akq akq, int i, Point point, float f, float f2, int i2) {
         if (f != -9999.0f || f2 != -9999.0f) {
             if (f2 != -9999.0f && f2 < 0.0f) {
                 f2 += 360.0f;
@@ -2154,7 +2183,7 @@ public class GLMapEngine {
         }
     }
 
-    public alt getOpenlayerParam(int i, alu alu) {
+    public alt getOpenlayerParam( int i, alu alu) {
         alt alt = new alt();
         if (this.mNativeMapengineInstance != 0) {
             byte[] nativeGetOpenLayerParam = nativeGetOpenLayerParam(i, this.mNativeMapengineInstance, alu.a);

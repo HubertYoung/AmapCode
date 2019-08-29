@@ -1,15 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
-    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="match_parent" android:layout_height="@dimen/title_bar_default_height">
-        <ImageButton android:layout_gravity="center_vertical" android:id="@+id/btn_search_back" android:background="@drawable/icon_a1_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/title_bar_back_padding" android:layout_marginRight="1dp" android:contentDescription="@string/Back"/>
-        <RelativeLayout android:background="@drawable/cleanable_edit_bg" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginRight="7dp" android:layout_weight="1">
-            <com.autonavi.minimap.widget.SearchEdit android:id="@+id/search_search_layout" android:layout_width="match_parent" android:layout_height="@dimen/title_a1_tab_height" android:layout_marginLeft="0dp"/>
-            <RelativeLayout android:id="@+id/btn_voicesearch" android:layout_width="wrap_content" android:layout_height="@dimen/title_a1_tab_height" android:layout_alignParentRight="true">
-                <ImageView android:id="@+id/btn_voicesearch_img" android:paddingLeft="5dp" android:paddingRight="5dp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_a9_selector" android:layout_centerInParent="true" android:contentDescription="@string/common_search_header_vinput"/>
-                <ImageView android:id="@+id/voice_search_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3dp" android:layout_marginRight="5dp" android:src="@drawable/idle_info" android:layout_alignRight="@+id/btn_voicesearch_img" android:layout_alignParentTop="true" android:contentDescription="@null"/>
+<com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_bar_default_height"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_search_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/title_bar_back_padding"
+            android:layout_marginRight="1dp"
+            android:background="@drawable/icon_a1_selector"
+            android:contentDescription="@string/Back" />
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="7dp"
+            android:layout_weight="1"
+            android:background="@drawable/cleanable_edit_bg">
+
+            <com.autonavi.minimap.widget.SearchEdit
+                android:id="@+id/search_search_layout"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/title_a1_tab_height"
+                android:layout_marginLeft="0dp" />
+
+            <RelativeLayout
+                android:id="@+id/btn_voicesearch"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/title_a1_tab_height"
+                android:layout_alignParentRight="true">
+
+                <ImageView
+                    android:id="@+id/btn_voicesearch_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:contentDescription="@string/common_search_header_vinput"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"
+                    android:src="@drawable/icon_a9_selector" />
+
+                <ImageView
+                    android:id="@+id/voice_search_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignRight="@+id/btn_voicesearch_img"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginRight="5dp"
+                    android:contentDescription="@null"
+                    android:src="@drawable/idle_info"
+                    android:visibility="gone" />
             </RelativeLayout>
-            <com.autonavi.bundle.vui.common.emojiview.VUIEmojiView android:id="@+id/btn_emoji" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignWithParentIfMissing="true" android:contentDescription="@string/voice_input"/>
+
+            <com.autonavi.bundle.vui.common.emojiview.VUIEmojiView
+                android:id="@+id/btn_emoji"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignWithParentIfMissing="true"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@string/voice_input"
+                android:visibility="gone" />
         </RelativeLayout>
-        <Button android:gravity="center" android:layout_gravity="right|center_vertical|center_horizontal|center" android:id="@+id/btn_search" android:layout_width="wrap_content" android:layout_height="@dimen/title_a1_tab_height" android:layout_marginRight="7dp" android:text="搜索" android:contentDescription="@string/common_search_header_search" style="@style/btn_b1"/>
+
+        <Button
+            android:id="@+id/btn_search"
+            style="@style/btn_b1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/title_a1_tab_height"
+            android:layout_gravity="right|center_vertical|center_horizontal|center"
+            android:layout_marginRight="7dp"
+            android:contentDescription="@string/common_search_header_search"
+            android:gravity="center"
+            android:text="搜索" />
     </LinearLayout>
 </com.autonavi.minimap.widget.ImmersiveTitleCompatLinearLayout>

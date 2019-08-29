@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.LinearLayout;
+
 import com.airbnb.lottie.LottieAnimationView;
 import com.airbnb.lottie.LottieAnimationView.CacheStrategy;
 import com.alipay.mobile.common.transportext.biz.diagnose.network.Configuration;
@@ -16,9 +17,14 @@ import com.autonavi.amap.app.AMapAppGlobal;
 import com.autonavi.bundle.vui.vuistate.VUIStateManager;
 import com.autonavi.minimap.R;
 import com.autonavi.widget.ui.BalloonLayout;
+
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Locale;
+
+import defpackage.bfh;
+import defpackage.bfy;
+import defpackage.bno;
 
 public class VUIEmojiView extends LinearLayout implements OnClickListener {
     private static final float END_PROGRESS = 1.0f;
@@ -28,7 +34,7 @@ public class VUIEmojiView extends LinearLayout implements OnClickListener {
     private final String TAG = "VUIEmojiView";
     private AnimatorListener mAnimatorListener = new AnimatorListener() {
         public final void onAnimationStart(Animator animator) {
-            if (bno.a) {
+            if ( bno.a) {
                 StringBuilder sb = new StringBuilder("onAnimationStart()-state:");
                 sb.append(((State) VUIEmojiView.this.mLottieView.getTag()).a);
                 bfh.a("VUIEmojiView", sb.toString());

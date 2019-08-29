@@ -3,17 +3,22 @@ package com.autonavi.minimap;
 import android.annotation.TargetApi;
 import android.app.Activity;
 import android.app.Application;
-import android.app.Application.ActivityLifecycleCallbacks;
 import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Build.VERSION;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
+
 import com.alibaba.baichuan.android.trade.AlibcTradeSDK;
 import com.autonavi.amap.app.BaseMapApplication;
 import com.autonavi.map.activity.NewMapActivity;
 import com.autonavi.minimap.multidexload.MdLoadingActivity;
+
+import defpackage.afu;
+import defpackage.ckz;
+import defpackage.drl;
+import defpackage.drn;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import proguard.annotation.KeepName;
 

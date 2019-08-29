@@ -4,19 +4,24 @@ import android.graphics.Bitmap;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.ImageView;
+
 import com.autonavi.bundle.entity.common.searchpoi.DynamicRenderData;
 import com.autonavi.bundle.entity.common.searchpoi.SearchPoi;
 import com.autonavi.map.search.view.PoiFocusScenicView;
 import com.autonavi.minimap.R;
 import com.autonavi.minimap.base.overlay.Marker;
 import com.autonavi.minimap.search.templete.type.PoiLayoutTemplate;
+
+import defpackage.bby;
+import defpackage.bty;
+import defpackage.cch;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 @SuppressFBWarnings({"SE_NO_SERIALVERSIONID"})
 public class NormalSearchPoiOverlay extends SearchPoiOverlay {
     private int mLastFocusIndex = -1;
 
-    public NormalSearchPoiOverlay(bty bty) {
+    public NormalSearchPoiOverlay( bty bty) {
         super(bty);
     }
 
@@ -73,7 +78,7 @@ public class NormalSearchPoiOverlay extends SearchPoiOverlay {
             sb.append("_hl");
             int a = bby.a(sb.toString(), this.mContext);
             if (a > 0) {
-                if (cch.a(searchPoi)) {
+                if ( cch.a(searchPoi)) {
                     PoiFocusScenicView poiFocusScenicView = new PoiFocusScenicView(this.mContext);
                     poiFocusScenicView.setTitle(searchPoi.getName());
                     poiFocusScenicView.setDesc(searchPoi.getSketchDuration());

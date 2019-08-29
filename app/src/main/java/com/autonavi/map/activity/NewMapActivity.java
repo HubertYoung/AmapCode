@@ -38,6 +38,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager.LayoutParams;
 import android.widget.FrameLayout;
 import android.widget.LinearLayout;
+
 import com.alipay.mobile.beehive.service.PhotoParam;
 import com.alipay.rdssecuritysdk.constant.DictionaryKeys;
 import com.amap.bundle.appupgrade.AppUpgradeController;
@@ -100,15 +101,19 @@ import com.q.Qt;
 import com.sijla.callback.QtCallBack;
 import com.tencent.tauth.IUiListener;
 import com.tencent.tauth.Tencent;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.io.File;
 import java.io.IOException;
 import java.lang.ref.WeakReference;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;
-import org.json.JSONException;
-import org.json.JSONObject;
+
+import defpackage.*;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 public class NewMapActivity extends WingActivity implements brr, buo, IPageHost, jp, defpackage.kj.a {
     private static boolean y = false;
@@ -119,10 +124,10 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
     public Intent D = null;
     private buw E;
     /* access modifiers changed from: private */
-    public GLMapViewGroup F;
+    public GLMapViewGroup atmapsView;
     private brd G = new brd(this);
     /* access modifiers changed from: private */
-    public long H;
+    public long elapsedRealtime;
     private CrashCleanHelper I = new CrashCleanHelper(this);
     private long J = 0;
     private long K = 0;
@@ -136,7 +141,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
     };
     private boolean N = true;
     IPageService b;
-    public FrameLayout c;
+    public FrameLayout fl_content_view;
     defpackage.kj.b d = new defpackage.kj.b() {
         public final void run() {
             if (!NewMapActivity.this.q) {
@@ -146,7 +151,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
 
         public final void reject() {
             if (!NewMapActivity.this.q) {
-                AnonymousClass1 r0 = new Runnable() {
+                aci.AnonymousClass1 r0 = new Runnable() {
                     public final void run() {
                         kj.a((Context) NewMapActivity.this, NewMapActivity.this.d);
                     }
@@ -290,7 +295,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         g() {
         }
 
-        public final void a(bid bid) {
+        public final void a( bid bid) {
             ckg.a(bid);
         }
     }
@@ -325,7 +330,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         this.h = new dli(this);
         this.i = new jh(this);
         if (!this.I.a()) {
-            this.H = SystemClock.elapsedRealtime();
+            this.elapsedRealtime = SystemClock.elapsedRealtime();
             if (this.n) {
                 afu.b((Activity) this);
                 finish();
@@ -337,7 +342,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
                 la.a((String) "NewMapActivity-init");
                 this.e = true;
             } else {
-                this.E = buw.a((Activity) this, (buu) new buu() {
+                this.E = buw.a((Activity) this, ( buu ) new buu() {
                     public final void a() {
                         if (!NewMapActivity.this.q) {
                             NewMapActivity.c(NewMapActivity.this);
@@ -346,7 +351,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
                 });
             }
             ekp a2 = ekp.a();
-            FrameLayout frameLayout = this.c;
+            FrameLayout frameLayout = this.fl_content_view;
             if (frameLayout != null && VERSION.SDK_INT >= 21) {
                 a2.c = this;
                 a2.a = frameLayout;
@@ -516,7 +521,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
 
     public final void h() {
         if (!this.I.a) {
-            ahm.c(new Runnable() {
+            ahm.c( new Runnable() {
                 public final void run() {
                     ISplashManager iSplashManager = (ISplashManager) ank.a(ISplashManager.class);
                     if (iSplashManager != null) {
@@ -551,7 +556,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
                                 if (jSONObject != null) {
                                     try {
                                         str = jSONObject.optString("uploadStatus");
-                                        if (bno.a) {
+                                        if ( bno.a) {
                                             StringBuilder sb = new StringBuilder("QT-callback:");
                                             sb.append(jSONObject.toString());
                                             AMapLog.debug("paas.main", "NewMapActivity", sb.toString());
@@ -719,7 +724,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
             this.D = intent;
         }
         try {
-            if (!(cse.a == null || cse.a.get() == null || !((Dialog) cse.a.get()).isShowing())) {
+            if (!( cse.a == null || cse.a.get() == null || !((Dialog) cse.a.get()).isShowing())) {
                 ((Dialog) cse.a.get()).dismiss();
             }
             if (!(this.f == null || this.f.getOverlayManager() == null)) {
@@ -762,10 +767,10 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         new MapSharePreference((String) "basemap").getStringValue("new_user_guide_is_shown", "");
         bfo bfo = (bfo) defpackage.esb.a.a.a(bfo.class);
         if (bfo != null) {
-            bfo.a((ViewGroup) this.c);
+            bfo.a((ViewGroup) this.fl_content_view );
         }
         if (apr != null) {
-            apr.a((bui) this.a);
+            apr.a(( bui ) this.a);
         }
     }
 
@@ -1036,7 +1041,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
             epu.a();
             bty mapView = this.f.getMapView();
             if (mapView != null) {
-                mapView.a((amw) null);
+                mapView.a(( amw ) null);
             }
         }
         bec bec = (bec) ank.a(bec.class);
@@ -1067,7 +1072,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
                         for (jk next : a3.a.values()) {
                             if (next.f != null) {
                                 yq.a();
-                                yq.a((bph) next.f);
+                                yq.a(( bph ) next.f);
                                 next.d = false;
                             }
                             if (next.g != null) {
@@ -1102,8 +1107,8 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
             }
             StatusBarManager.d().b();
             UiThreadWrapper.getInstance().onUiDestroyed();
-            if (this.F != null) {
-                this.F.destroyMapView();
+            if (this.atmapsView != null) {
+                this.atmapsView.destroyMapView();
             }
             if (this.f != null) {
                 bty mapView2 = this.f.getMapView();
@@ -1164,7 +1169,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
     }
 
     private void r() {
-        if (agq.b(getApplication())) {
+        if ( agq.b(getApplication())) {
             IMapEventListener iMapEventListener = (IMapEventListener) ank.a(IMapEventListener.class);
             if (iMapEventListener != null) {
                 iMapEventListener.a(this);
@@ -1280,13 +1285,15 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         this.x = new ActivityStateDispatch();
         this.s = new b(this, 0);
         this.A = new BroadcastReceiver() {
-            public void onReceive(Context context, Intent intent) {
+            @Override
+            public void onReceive( Context context, Intent intent) {
                 if (intent.getAction().equals("android.net.conn.CONNECTIVITY_CHANGE")) {
                     NativeSupport.getInstance().getNetworkMonitor().onConnectionChanged(((ConnectivityManager) MapApplication.getContext().getSystemService("connectivity")).getActiveNetworkInfo());
                 }
             }
         };
         this.B = new BroadcastReceiver() {
+            @Override
             public void onReceive(Context context, Intent intent) {
                 if (intent.getAction().equals("com.autonavi.minimap")) {
                     String stringExtra = intent.getStringExtra("NAVI");
@@ -1298,6 +1305,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
             }
         };
         this.z = new BroadcastReceiver() {
+            @Override
             public void onReceive(Context context, Intent intent) {
                 String action = intent.getAction();
                 if (action.equals("android.intent.action.SCREEN_OFF")) {
@@ -1311,9 +1319,11 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         };
         n();
         this.C = new defpackage.drn.c() {
+            @Override
             public final void c() {
             }
 
+            @Override
             public final void a() {
                 Application application = AMapAppGlobal.getApplication();
                 if ((application instanceof MapApplication) && ((MapApplication) application).getAliveActivityCount() > 1) {
@@ -1349,30 +1359,30 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         ccm.a.a(a2.c);
         la.a((String) "startProcessActivityCreateTask");
         akq.a("test".equals(ConfigerHelper.getInstance().getMapNetCondition()));
-        akq.a((alq) new brk());
+        akq.a(( alq ) new brk());
         la.a((String) "setGLMapViewMode");
         setContentView(R.layout.new_map_activity);
-        this.c = (FrameLayout) findViewById(R.id.fl_content_view);
+        this.fl_content_view = (FrameLayout) findViewById(R.id.fl_content_view);
         la.i();
-        this.F = (GLMapViewGroup) findViewById(R.id.atmapsView);
-        AMapSurface aMapSurface = this.F.getAMapSurface();
-        akq amapController = this.F.getAmapController();
+        this.atmapsView = (GLMapViewGroup) findViewById(R.id.atmapsView);
+        AMapSurface aMapSurface = this.atmapsView.getAMapSurface();
+        akq amapController = this.atmapsView.getAmapController();
         boolean equals = "test".equals(ConfigerHelper.getInstance().getMapNetCondition());
         akq.b("setDebugMode: ".concat(String.valueOf(equals)));
         anb.a = equals;
-        this.f = new MapManager(this, amapController, aMapSurface, this.F.getScreenshotImageView());
+        this.f = new MapManager(this, amapController, aMapSurface, this.atmapsView.getScreenshotImageView());
         DoNotUseTool.setMapManager(this.f);
-        this.F.setMapView(this.f.getMapView());
-        if (this.c != null) {
-            ViewGroup viewGroup = (ViewGroup) this.c.findViewById(R.id.widget_container_root);
-            Stub.getMapWidgetManager().initialize(this.c, (LinearLayout) viewGroup.findViewById(R.id.msg_state_bar), (ViewGroup) viewGroup.findViewById(R.id.widget_container));
+        this.atmapsView.setMapView(this.f.getMapView());
+        if (this.fl_content_view != null) {
+            ViewGroup viewGroup = (ViewGroup) this.fl_content_view.findViewById(R.id.widget_container_root);
+            Stub.getMapWidgetManager().initialize(this.fl_content_view, (LinearLayout) viewGroup.findViewById(R.id.msg_state_bar), (ViewGroup) viewGroup.findViewById(R.id.widget_container));
         }
         la.a((String) "initGLMapView");
         this.g = new cde(this, this.f);
         DoNotUseTool.setSuspendManager(this.g);
         la.a((String) "SuspendManager");
-        ckc.a(getString(R.string.engine_initialization), SystemClock.elapsedRealtime() - this.H);
-        this.H = SystemClock.elapsedRealtime();
+        ckc.a(getString(R.string.engine_initialization), SystemClock.elapsedRealtime() - this.elapsedRealtime );
+        this.elapsedRealtime = SystemClock.elapsedRealtime();
         FragmentTransaction beginTransaction = getSupportFragmentManager().beginTransaction();
         List<Fragment> fragments = getSupportFragmentManager().getFragments();
         if (fragments != null) {
@@ -1406,7 +1416,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
         p();
         la.a((String) "setupDefaultFragment");
         this.u = new LocatorCallback(this.g.d().h(), this.f);
-        this.f.getMapView().a((amm) new amm() {
+        this.f.getMapView().a(( amm ) new amm() {
             public final void onRenderDeviceCreated(int i) {
             }
 
@@ -1418,8 +1428,8 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
 
             public final void onSurfaceCreated(int i) {
                 ckb.a((String) "NewMapActivity#onSurfaceCreated");
-                if (NewMapActivity.this.F != null) {
-                    NewMapActivity.this.F.clearMapViewBackground(true);
+                if (NewMapActivity.this.atmapsView != null) {
+                    NewMapActivity.this.atmapsView.clearMapViewBackground(true);
                 }
                 emv.d();
                 if (NewMapActivity.this.f != null) {
@@ -1433,7 +1443,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
                 NewMapActivity.this.r = true;
                 NewMapActivity.this.getWindow().getDecorView().setBackgroundColor(-1182466);
                 NewMapActivity.this.getWindow().setBackgroundDrawable(null);
-                NewMapActivity.this.f.getMapView().s(brv.a());
+                NewMapActivity.this.f.getMapView().s( brv.a());
             }
 
             public final void onSurfaceChanged(int i, int i2, int i3, int i4) {
@@ -1463,8 +1473,8 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
             public final void onDrawFrameFirst(int i) {
                 ckb.a((String) "NewMapActivity#onDrawFrameFirst");
                 cke.e();
-                if (NewMapActivity.this.F != null) {
-                    NewMapActivity.this.F.clearMapViewBackground(false);
+                if (NewMapActivity.this.atmapsView != null) {
+                    NewMapActivity.this.atmapsView.clearMapViewBackground(false);
                 }
                 Message obtainMessage = NewMapActivity.this.j.obtainMessage(0);
                 obtainMessage.what = 0;
@@ -1479,7 +1489,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
                 la.e();
                 long elapsedRealtime = SystemClock.elapsedRealtime();
                 ckc.b(NewMapActivity.this.getString(R.string.map_display_time), elapsedRealtime - ckc.a);
-                ckc.a(NewMapActivity.this.getString(R.string.map_display), elapsedRealtime - NewMapActivity.this.H);
+                ckc.a(NewMapActivity.this.getString(R.string.map_display), elapsedRealtime - NewMapActivity.this.elapsedRealtime );
             }
         });
         AjxInit.initAjxBLEnvironment(this.f.getMapView());
@@ -1537,7 +1547,7 @@ public class NewMapActivity extends WingActivity implements brr, buo, IPageHost,
             }
         });
         miVar.b(R.string.cancel, new defpackage.mj.a() {
-            public final void a(mi miVar) {
+            public final void a(defpackage.mi miVar) {
                 miVar.a.dismiss();
                 if (runnable2 != null) {
                     runnable2.run();

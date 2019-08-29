@@ -5,9 +5,21 @@ import android.os.Looper;
 import android.util.AndroidRuntimeException;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+
 import java.lang.ref.WeakReference;
 import java.util.ArrayList;
 import java.util.Iterator;
+
+import defpackage.akc;
+import defpackage.akd;
+import defpackage.ake;
+import defpackage.akf;
+import defpackage.akg;
+import defpackage.akh;
+import defpackage.aki;
+import defpackage.akj;
+import defpackage.akl;
+import defpackage.akm;
 
 public final class Pages {
     public final akj a;
@@ -26,7 +38,7 @@ public final class Pages {
             this.a = new WeakReference<>(pages);
         }
 
-        public final void a(Class<? extends akc> cls, int i, akh akh, aki aki, ake ake) {
+        public final void a( Class<? extends akc > cls, int i, akh akh, aki aki, ake ake) {
             Pages pages = (Pages) this.a.get();
             if (pages != null) {
                 Pages.a();
@@ -397,7 +409,7 @@ public final class Pages {
             }
         }
 
-        public final void a(akg akg, ake ake) {
+        public final void a( akg akg, ake ake) {
             Pages pages = (Pages) this.a.get();
             if (pages != null) {
                 Pages.a();

@@ -6,15 +6,23 @@ import android.content.Intent;
 import android.graphics.Rect;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+
 import com.autonavi.ae.gmap.glinterface.GLGeoPoint;
 import com.autonavi.map.core.MapManager;
+
 import java.lang.ref.WeakReference;
+
+import defpackage.brr;
+import defpackage.bty;
+import defpackage.buc;
+import defpackage.buo;
+import defpackage.cde;
 
 public class DoNotUseTool {
     private static WeakReference<Activity> mActivity;
     private static buc mMapVirtualizationPageService;
     private static WeakReference<MapManager> sManagerWeakRef;
-    private static WeakReference<cde> sSuspendManagerRef;
+    private static WeakReference< cde > sSuspendManagerRef;
 
     @Deprecated
     public static MapManager getMapManager() {
@@ -67,7 +75,7 @@ public class DoNotUseTool {
     public static void startScheme(Intent intent) {
         Activity activity = getActivity();
         if (activity != null) {
-            ((brr) activity).b(intent);
+            (( brr ) activity).b(intent);
         }
     }
 
@@ -115,7 +123,7 @@ public class DoNotUseTool {
     @Deprecated
     public static boolean haveStatusbarView() {
         Activity activity = getActivity();
-        if (activity == null || !(activity instanceof buo)) {
+        if (activity == null || !(activity instanceof buo )) {
             return false;
         }
         return ((buo) activity).k();

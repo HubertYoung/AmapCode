@@ -7,6 +7,7 @@ import android.os.Message;
 import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.widget.Toast;
+
 import com.amap.bundle.aosservice.request.AosRequest;
 import com.amap.bundle.aosservice.response.AosByteResponse;
 import com.amap.bundle.aosservice.response.AosResponseCallback;
@@ -23,11 +24,16 @@ import com.autonavi.minimap.ajx3.platform.ackor.AjxFileInfo;
 import com.autonavi.minimap.aocs.AocsRequestHolder;
 import com.autonavi.minimap.aocs.param.Updatable11Request;
 import com.autonavi.minimap.falcon.base.FalconAosResponseCallback;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
-import org.json.JSONArray;
-import org.json.JSONException;
+
+import defpackage.bny;
+import defpackage.dkn;
 
 public class Ajx3UpgradeManager {
     static final String AJX_DIFF_DIR = "ajx_diff";
@@ -63,7 +69,7 @@ public class Ajx3UpgradeManager {
     };
     private Ajx3WebResourcesConfig mResourceConfig = null;
     /* access modifiers changed from: private */
-    public RollbackDownloadFinishCallback mRollbackDownloadCallback = null;
+    public Ajx3Rollback.RollbackDownloadFinishCallback mRollbackDownloadCallback = null;
     public String mStatId = "";
     private List<BundleGroup> mSuspendList = new ArrayList();
     private AosRequest mUpdateRequest;

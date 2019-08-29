@@ -2,14 +2,17 @@ package com.autonavi.minimap.base.overlay;
 
 import android.graphics.Bitmap;
 import android.view.View;
+
 import com.autonavi.ae.gmap.glinterface.GLGeoPoint;
 import com.autonavi.ae.gmap.gloverlay.BaseMapOverlay;
 import com.autonavi.common.model.GeoPoint;
 import com.autonavi.jni.ae.gmap.gloverlay.GLPointOverlay;
 import com.autonavi.map.delegate.BaseOverlayDelegate;
-import com.autonavi.minimap.base.overlay.PointOverlayItem;
+
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
+
+import defpackage.*;
 
 public abstract class PointOverlay<E extends PointOverlayItem> extends BaseOverlayDelegate<GLPointOverlay, E> implements xq {
     private static int MAX_ZOOM_LEVEL = 19;
@@ -32,7 +35,7 @@ public abstract class PointOverlay<E extends PointOverlayItem> extends BaseOverl
     }
 
     public interface OnItemClickListener<E> {
-        void onItemClick(bty bty, BaseMapOverlay<?, ?> baseMapOverlay, E e);
+        void onItemClick( bty bty, BaseMapOverlay<?, ?> baseMapOverlay, E e);
     }
 
     public void onPause() {
@@ -116,7 +119,7 @@ public abstract class PointOverlay<E extends PointOverlayItem> extends BaseOverl
         }
     }
 
-    public void setClickList(List<aly> list) {
+    public void setClickList(List< aly > list) {
         if (this.mGLOverlay != null) {
             ((GLPointOverlay) this.mGLOverlay).setClickList(list);
         }

@@ -1,5 +1,7 @@
 package com.autonavi.minimap.base.overlay;
 
+import defpackage.amb;
+
 public class Marker extends amb {
     public int mAnchor = 4;
     public int mHeight;

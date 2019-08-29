@@ -1,8 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.autonavi.minimap.widget.SafeRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent">
-    <LinearLayout android:gravity="center" android:layout_gravity="top" android:orientation="horizontal" android:id="@+id/top_view" android:visibility="gone" android:layout_width="match_parent" android:layout_height="wrap_content"/>
-    <FrameLayout android:id="@+id/fl_content_view" android:layout_width="match_parent" android:layout_height="match_parent">
-        <com.autonavi.map.core.GLMapViewGroup android:layout_gravity="bottom" android:id="@+id/atmapsView" android:background="@null" android:layout_width="match_parent" android:layout_height="match_parent" mode="-1" server="$map_url"/>
-        <FrameLayout android:layout_gravity="bottom" android:id="@+id/fragment_container" android:layout_width="match_parent" android:layout_height="match_parent"/>
+<com.autonavi.minimap.widget.SafeRootLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/top_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/fl_content_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.autonavi.map.core.GLMapViewGroup
+            android:id="@+id/atmapsView"
+            mode="-1"
+            server="$map_url"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom"
+            android:background="@null" />
+
+        <FrameLayout
+            android:id="@+id/fragment_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom" />
     </FrameLayout>
 </com.autonavi.minimap.widget.SafeRootLinearLayout>

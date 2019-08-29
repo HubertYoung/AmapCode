@@ -1,2 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui" android:id="@+id/lottie_view" android:layout_width="32dp" android:layout_height="32dp" android:scaleType="centerInside" android:contentDescription="@string/talkback_emojiview_hint"/>
+<com.airbnb.lottie.LottieAnimationView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aui="http://schemas.android.com/apk/res/com.alipay.mobile.antui"
+    android:id="@+id/lottie_view"
+    android:layout_width="32dp"
+    android:layout_height="32dp"
+    android:contentDescription="@string/talkback_emojiview_hint"
+    android:scaleType="centerInside" />
